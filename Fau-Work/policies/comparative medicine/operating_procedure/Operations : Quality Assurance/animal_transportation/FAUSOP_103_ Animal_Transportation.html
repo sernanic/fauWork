@@ -1,0 +1,619 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Animal Transportation
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Animal Transportation" />
+        <meta name="keywords" content="Animal Transportation" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine personnel involved in animal transportation
+                                procedures. Animal transportation procedures include steps to be taken before, during
+                                and after
+                                transportation. Transport personnel are to maintain an acceptable bio-security level for
+                                all
+                                research animals in transport from an animal housing area to any other work area.
+                                
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp;Facilities Manager</div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp; To outline the procedures for
+                                transporting animals into and between vivaria as well as to
+                                and from a vivarium to a laboratory on the same campus.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All Vivaria and research
+                                laboratories
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <ol>
+                    <li>
+                        <h2>Responsibilities</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Animal Care Technician (ACT):</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Comparative Medicine personnel are to adhere to procedures as outlined in
+                                            this SOP including
+                                            recordkeeping requirements.</p>
+                                    </li>
+                                    <li>
+                                        <p>Observation of non-compliance must be reported first to your supervisor, the
+                                            Veterinarian or
+                                            lastly a member of the IACUC.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Management/Facility Manager (FM)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure vivaria personnel are scheduled for appropriate training.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Training Coordinator</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Ensure appropriate training is provided to personnel.</p>
+                                    </li>
+                                    <li>
+                                        <p>Schedule refresher training to maintain SOP competency.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Director/Veterinarian</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Evaluate animals for transportation readiness.</p>
+
+
+                                    </li>
+                                    <li>
+                                        <p>Review health status and approve animals for transfer between locations,
+                                            buildings or rooms
+                                            with different health status than the originating housing location.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate transportation contracts are in place for transportation
+                                            of critical to
+                                            maintain animals in the event of disaster plan implementation.</p>
+                                    </li>
+                                    <li>
+                                        <p>Will secure adequate designated animal transportation vehicle.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>General</h2>
+                        <ol type="a">
+                            <li>
+                                <p>The Guide for the Care and Use of Laboratory Animals has specific direction regarding
+                                    animal
+                                    transport. Following these guidelines will reduce animal transport stress, potential
+                                    health concerns
+                                    and prepare personnel for strategies for animal care if transportation is disrupted.
+                                </p>
+                            </li>
+                            <li>
+                                <p>All animal transport between the animal facilities, buildings and rooms managed by
+                                    Comparative
+                                    Medicine personnel will be completed promptly and with as little disturbance to the
+                                    animals as
+                                    possible to minimize animal distress. Care will also be taken to ensure that
+                                    favorable environmental
+                                    conditions are maintained and methods for reducing contamination risk are
+                                    implemented before, during
+                                    and after transit.</p>
+                            </li>
+                            <li>
+                                <p>While researchers may transport animals from a vivarium to a laboratory, animals may
+                                    not be returned
+                                    to specific vivaria or particular rooms of a vivarium once removed from their
+                                    housing area.</p>
+                            </li>
+                            <li>
+                                <p>Comparative Medicine personnel will transport animals between holding facilities on
+                                    the same campus
+                                    with 24 hour notice. Up to 48 hours&rsquo; notice is required for transfer of
+                                    animals between
+                                    campuses.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Safety</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Animals in transport are subject to changed temperature, noise, excessive movement of
+                                    transport cages
+                                    and potentially unfavorable weather conditions such as rain and wind. It is
+                                    important to reduce
+                                    these risks to reduce stress to animals in transit.</p>
+                            </li>
+                            <li>
+                                <p>If animal transport is disrupted due to traffic accident or transportation
+                                    environmental control
+                                    failure between campuses, a back-up transportation plan is in place. The driver must
+                                    have a mobile
+                                    communication device to inform the FM immediately of a vehicle malfunction, accident
+                                    or excessive
+                                    delay in transport.</p>
+                            </li>
+                            <li>
+                                <p>Special handling precautions and as applicable signage are to be in place when
+                                    transporting animals
+                                    with known hazard exposure (ABSL2) or zoonotic disease (e.g. salmonella).</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Materials</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Laminar Flow Hood or Biosafety Cabinet (BSC)</p>
+                            </li>
+                            <li>
+                                <p>Transport cage</p>
+                            </li>
+                            <li>
+                                <p>Transport container</p>
+                            </li>
+                            <li>
+                                <p>Transportation vehicle</p>
+                            </li>
+                            <li>
+                                <p>Animal Identification cage/container card</p>
+                            </li>
+                            <li>
+                                <p>Rubber band(s)</p>
+
+                            </li>
+                            <li>
+                                <p>Designated disinfectant</p>
+                            </li>
+                            <li>
+                                <p>Emergency Contact Information Sheet and mobile communication device</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Procedures</h2>
+
+                        <ol>
+                            <li>
+                                <p>Procedures for transferring animals between campuses using a vehicle</p>
+                                <ol type="a">
+                                    <li>
+                                        <p>Each cage with animals requested to be transported will be marked with a
+                                            blue colored
+                                            card behind the regular cage card by the authorized person requesting
+                                            transfer. The
+                                            &ldquo;transport cards&rdquo; are available within the animal housing
+                                            room.</p>
+                                    </li>
+                                    <li>
+                                        <p>An animal transfer request will be submitted via VSATS 24 hours prior to
+                                            building or room
+                                            transfer on the same campus or a minimum of 48 hours&rsquo; notice for
+                                            transfer between
+                                            campuses. A large number of cages to be transferred requires advanced
+                                            notice and should
+                                            be requested no later than 72 hours in advance. All transport/transfer
+                                            requests have to
+                                            be made through VSATS.</p>
+                                    </li>
+                                    <li>
+                                        <p>After the transfer request form is completed, veterinary approval is
+                                            granted, and a new
+                                            cage card has been issued to the animals reflecting the destination
+                                            housing location,
+                                            the FM will make arrangements for the transfer (i.e. delivery time,
+                                            personnel, and
+                                            housing space).</p>
+                                    </li>
+                                    <li>
+                                        <p>Preparation of the rodent cage for transport:</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>In most cases animals will be placed into commercially available
+                                                    transport cages
+                                                    with HEPA filters in the lid. Make sure dividers in shipping
+                                                    containers are
+                                                    secure to prevent animals from wandering to the wrong
+                                                    compartment. In some
+                                                    circumstances animals will be transported in their home cages,
+                                                    especially if
+                                                    animals stay in the same facility.</p>
+                                            </li>
+                                            <li>
+                                                <p>If regular micro-isolator cages are used for transport water
+                                                    bottle(s) will be
+                                                    removed from caging and rubber bands might have to be placed
+                                                    around cages so
+                                                    that during transport the cage filter top will not become
+                                                    unsecured.</p>
+                                            </li>
+                                            <li>
+                                                <p>For extended travel or high temperatures, hydrogel or wetted feed
+                                                    for rodents
+                                                    must be placed on the cage floor.</p>
+                                            </li>
+                                            <li>
+                                                <p>If the animals are on special diet, the feed must be available at
+                                                    the new
+                                                    destination.</p>
+                                            </li>
+                                            <li>
+                                                <p>Any cage(s) used for transport must be safely secured in the
+                                                    transport vehicle to
+                                                    avoid sliding of the cages during driving.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Preparation of other containers for animal transport:</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>Aquatic species should be transported either in their home tank
+                                                    or water from
+                                                    their home tank being used when a different tank or plastic bag
+                                                    will be
+                                                    utilized.</p>
+                                            </li>
+                                            <li>
+                                                <p>Oxygenated water should be used and an oxygen cap provided if a
+                                                    sealed bag is
+                                                    utilized. For longer transports of aquatic species oxygen might
+                                                    have to be
+                                                    supplemented.</p>
+                                            </li>
+                                            <li>
+                                                <p>Containers for aquatic species will be secured to prevent
+                                                    movement during
+                                                    transportation.</p>
+                                            </li>
+                                            <li>
+                                                <p>The vehicle temperature will be adjusted per Veterinary
+                                                    instruction based upon
+                                                    the species to be transported.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Preparation of the vehicle for transport:</p>
+
+                                        <ol type="i">
+                                            <li>
+                                                <p>The FM or transportation driver will check the preventative
+                                                    maintenance log to
+                                                    ensure the vehicle is ready for use.</p>
+                                            </li>
+                                            <li>
+                                                <p>The driver will start the vehicle and assure temperature achieves
+                                                    the appropriate
+                                                    degree per species (for rodents, 74 degrees) prior to loading
+                                                    animals.</p>
+                                            </li>
+                                            <li>
+                                                <p>Records must reflect that the vehicle was sanitized after the
+                                                    last use and not to
+                                                    exceed one month since last sanitation.</p>
+                                            </li>
+                                            <li>
+                                                <p>An Emergency Contact Information Sheet must be readily available
+                                                    inside the
+                                                    vehicle in a visible location near the animal transport
+                                                    containers. This
+                                                    reference sheet contains current contact numbers of Comparative
+                                                    Medicine key
+                                                    personnel and external vehicle service responder(s). The list
+                                                    also contains
+                                                    highway patrol contact information.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>New cage card and transfer paperwork will accompany the transport
+                                            container. The Per Diem
+                                            Sheet will be marked to reflect census reduction.</p>
+                                    </li>
+                                    <li>
+                                        <p>Transport container will be placed on a cart, in a transport bag for foot
+                                            traffic and/or
+                                            loaded into the climate controlled transport vehicle. Care will be taken
+                                            to ensure
+                                            animals are not exposed to harmful environmental conditions (excessive
+                                            heat or cold
+                                            and/or heavy rain) and have adequate airflow during transport.</p>
+                                    </li>
+                                    <li>
+                                        <p>A direct route will be taken to the delivery destination and the animals
+                                            will be unloaded
+                                            immediately, placed onto a cart, and/or transported into the receiving
+                                            are of the
+                                            destination facility.</p>
+                                    </li>
+                                    <li>
+                                        <p>The outside of the transport container will be sprayed with the site
+                                            designated
+                                            disinfectant and allowed appropriate contact time before unpacking
+                                            animals from the
+                                            transport container.</p>
+                                    </li>
+                                    <li>
+                                        <p>The transport container will be unpacked within the receiving animal room
+                                            or appropriate
+                                            available area.</p>
+                                    </li>
+                                    <li>
+                                        <p>The animals will be placed in clean cages if applicable. Assure that food
+                                            and water is
+                                            provided. The animals will be observed for health conditions to ensure
+                                            that animals were
+                                            not injured or became ill during transport. If any animals are found to
+                                            be injured, the
+                                            laboratory animal technician must immediately notify the FM or
+                                            Veterinarian. Place a
+                                            health card in the cage card holder and document observation on the
+                                            Progress Notes.</p>
+                                    </li>
+                                    <li>
+                                        <p>The Per Diem Sheet in the destination room receiving the animals will be
+                                            marked to
+                                            reflect the increase in census.</p>
+                                    </li>
+                                    <li>
+                                        <p>The non-disposable transport cage will be taken directly to dirty side
+                                            cage wash to be
+                                            cleaned and sanitized or brought back to the original facility if the
+                                            receiving facility
+                                            has no cagewash area. Disposable transport cages may be disposed of in
+                                            regular trash
+                                            unless ABSL2 animals were transported in the disposable cage. ABSL2
+                                            contaminated cages
+                                            are to be disposed of as biohazardous waste.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Procedures for transferring animals between buildings and rooms within the same
+                                    building:</p>
+                                <ol>
+                                    <li>
+                                        <p>All steps are the same except for section 5 f.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Animals may be removed from quarantine areas only with veterinary approval.</p>
+                            </li>
+                        </ol>
+
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Maintenance and Repairs</h2>
+                        <ol type="a">
+                            <li>
+                                <p>If vehicle or animal transport equipment is in need of repair, notify the FM
+                                    immediately.</p>
+                            </li>
+                            <li>
+                                <p>An emergency road repair or towing vehicle will be secured to provide emergency
+                                    service should a
+                                    vehicle fail during transport or a secondary conditioned vehicle will be immediately
+                                    available for
+                                    back-up transport upon notification of need.</p>
+                            </li>
+                            <li>
+                                <p>The transport vehicle will have regularly scheduled preventative maintenance
+                                    recommended by the
+                                    manufacturer to maintain optimal condition with special attention directed to
+                                    environmental
+                                    conditioning equipment. Although the service provider may keep maintenance records,
+                                    vehicle
+                                    maintenance must be logged in the Vehicle Care and Use log.</p>
+                            </li>
+                            <li>
+                                <p>The designated transport vehicle&rsquo;s interior surfaces are disinfected after each
+                                    use using site
+                                    designated chemical disinfectant.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Record Keeping</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Animal transportation request must be maintained in a log (i.e. VSATS Transfer
+                                    Request Form). If a
+                                    contamination were to occur, these records are essential to tracing where
+                                    contaminated animals have
+                                    been distributed.</p>
+                            </li>
+                            <li>
+                                <p>EH&amp;S Signage for Biohazardous contents or animals with potential zoonosis)</p>
+                            </li>
+                            <li>
+                                <p>A vehicle preventative maintenance log (i.e. Vehicle Care and Use Log) will be
+                                    maintained by the FM.
+                                </p>
+                            </li>
+                            <li>
+                                <p>An Emergency Contact Information Sheet must be readily available inside the vehicle.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <hr/>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                                <p>6/22/17</p>
+                            </td>
+                            <td>
+                                <p>FAUSOP 103.2</p>
+                            </td>
+                            <td>
+                                <p>Included insuring that food and</p>
+                                <p>water is available at final destination after transport</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

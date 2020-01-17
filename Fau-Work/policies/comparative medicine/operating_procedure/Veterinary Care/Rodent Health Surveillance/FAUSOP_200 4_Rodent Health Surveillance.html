@@ -1,0 +1,947 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title> Rodent Health Surveillance Program
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content=" Rodent Health Surveillance Program" />
+        <meta name="keywords" content=" Rodent Health Surveillance Program" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine personnel involved in
+                                the sentinel rodent health surveillance program.
+                                </p>
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp; Attending Veterinarian
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp;To define the microbial status of
+                                rodent colonies and outline the proper
+                                procedures for specimen collection and examination if applicable</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All Facilities
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <h2>
+                    References
+                </h2>
+                <ol>
+                    <li>
+                        <p>
+                            Guide for the Care and Use of Laboratory Animals. National Research Council; National
+                            Academy Press, Washington, D.C., 2011
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Public Health Service Policy on Humane Care and Use of Laboratory Animals. OLAW (NIH) 2015
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Biosafety in Microbiological and Biomedical Laboratories, 5th Edition, CDC/NIH, 2009
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            AVMA Guidelines for the Euthanasia of Animals, American Veterinary Medical Association, 2013
+                            Edition
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Laboratory Animal Medicine. JG Fox, LC Anderson, G Otto, KR Pritchett- Corning and MT Whary,
+                            Academic Press, 3rd Edition, San Diego, CA, 2015
+                        </p>
+                    </li>
+                </ol>
+                <ol type="I">
+                    <li>
+                        <h2>
+                            Responsibilities
+                        </h2>
+                        <ol type="A">
+                            <li>
+                                <p>
+                                    Animal Care Technician (ACT)
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Adhere to procedures as outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Document all activities as outlined below in Recordkeeping.
+                                        </p>
+
+                                        <p>
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Inform veterinarian about any health concerns with the sentinel animals.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Coordinator, Administrative Services (CAS)
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Train CM staff on this SOP regularly but at least once a year. Newly hired
+                                            personnel will be trained during the initial training period.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Train CM staff on appropriate procedures necessary to perform health
+                                            evaluations, necropsies, tissue collections and relevant diagnostic
+                                            procedures.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Facilities Manager (FM)
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Oversees receipt of animals into quarantine housing, initial health
+                                            evaluation, care/husbandry procedures, pre-placement and final collection of
+                                            test samples, shipping to commercial laboratory and in- house testing as
+                                            directed by AV and outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Inform AV immediately about any equivocal or positive results and abnormal
+                                            findings and/or observations.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Assures that responsible Animal Care Technicians are appropriately trained
+                                            and implement procedures as delineated in this SOP.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Veterinarian/Director
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Adhere to procedures as outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Ensure procedures are followed as outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Ensure appropriate training is provided to particular personnel performing
+                                            this function.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Review all health records and test results if applicable.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Updates rodent health surveillance program as new knowledge, information and
+                                            diagnostic procedures become available.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>
+                            Safety
+                        </h2>
+                        <ol type="A">
+                            <li>
+                                <p>
+                                    Eating, drinking, chewing gum, and applying cosmetics is not permitted within the
+                                    facility.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Appropriate PPE has to be worn and universal precautions followed when working with
+                                    rodents.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Wash hands after handling animals and specimen for examination.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Mice are capable of inflicting scratches and bites. Use caution and proper handling
+                                    and restraint techniques.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    In the event of a bite or a scratch, notify Supervisor immediately and complete
+                                    injury report. All positive results of in-house tests have to be confirmed by the
+                                    veterinarian.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Test results received from Charles River have to be reviewed by the Attending
+                                    Veterinarian and appropriate follow up steps implemented if results are positive for
+                                    tested pathogens.
+                                </p>
+
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>
+                            Procedure
+                        </h2>
+                        <ol type="A">
+                            <li>
+                                <p>
+                                    General:
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Surveillance is conducted for subclinical and clinical diseases that could
+                                            jeopardize the validity and reproducibility of research data, or complicate
+                                            its interpretation, or cause zoonotic concerns.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            The SOP outlines the proper procedures for exposing sentinel rodents or
+                                            contact animals to soiled bedding or colony animals, respectively as well as
+                                            testing colony animals directly (see also FAUSOP 200 Cage Changing).
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            All mouse and rat colonies are monitored according to this SOP. Rodent
+                                            populations for acute studies, i.e. less than 6 weeks housed in CM
+                                            facilities, can be exempted from sentinel health surveillance at the
+                                            Attending Veterinarian&rsquo;s discretion.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Sentinel animals are procured from an approved commercial vendor&rsquo;s
+                                            SPF/VAF colony.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Mouse sentinels will be tested before distribution throughout the facilities
+                                            and housed in isolation either in micro-isolator units or separate room
+                                            until test results are confirmed negative. Feces and fur swabs will be
+                                            collected from 10 animals when they arrive, samples pooled and sent to the
+                                            commercial laboratory for PCR evaluation for Mouse Prevalent PRIA panel
+                                            (PCR).
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Immunologically mature (6-8 weeks of age) rodents of like species are placed
+                                            in each rodent room for an exposure interval of at least10 weeks. Animals
+                                            are euthanized at the below specified times or transferred to another
+                                            protocol such as the training protocol if appropriate.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Sentinel animals are housed in pairs in the same manner as the population,
+                                            receive the same bedding, food and water. One to two sentinel cages are
+                                            placed per rack for double sided racks depending on the density of occupancy
+                                            of the particular racks. In rooms with low cage density more racks can be
+                                            monitored by one sentinel cage. However, each sentinel cage can monitor no
+                                            more than 70 cages, either IVC (individually ventilated cages) or
+                                            microisolator cages
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Sentinel cages are located on the farthest bottom right slot on individually
+                                            ventilated racks. In the vivarium in building 71, there will be at least one
+                                            cage per room with microisolator caging depending on actual cage count. The
+                                            sentinel cage will be placed either in an empty cube or in the cube with the
+                                            lowest cage count if all cubes in the room are occupied.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Once sentinels are placed, each sentinel cage is labeled with a cage card
+                                            containing the following information:
+                                        </p>
+                                        <ol type="a">
+                                            <li>
+                                                <p>
+                                                    Sentinel&rsquo;s location in the facility, i.e. room, rack(s), rack
+                                                    side (A &ndash; representing lower numbers, B- representing side
+                                                    with higher numbers)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Animal information, i.e. date of birth (DOB), date of placement
+                                                    (DOP), sex, source
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    PI and IACUC protocol#.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Each sentinel cage/sample is identified by a unique code containing facility
+                                            affiliation (i.e. COM = COM Building 71, 35A = Building 35A, J17 = Jupiter
+                                            facility MC17, J19 = Jupiter facility MC19), room number, cube number, rack
+                                            number(s) and rack side (A or B) if applicable. For example COM412 denotes
+                                        </p>
+
+
+                                        <p>
+                                            College of Medicine facility building 71, room 412 or 35A/110/7/B denotes
+                                            building 35A facility, room 110, rack 7 and rack side B.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If sentinels are relocated to another room/rack/rack side with the group of
+                                            animals they represent, the new location/information is recorded on the cage
+                                            card so that the sentinel can be traced to all its previous locations.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Maintain and sample a minimum of two sentinel mice or rats per sentinel
+                                            cage. More sentinels can be housed in the same cage to serve as backups.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            At every bedding change, contaminate the sentinel cage with 2-5ml dirty
+                                            bedding from every monitored cage or more if a small number of cages is
+                                            monitored.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Colony representative animals can be used to characterize the microbial
+                                            status of rodent production colonies at the discretion of the veterinarian.
+                                            Animal(s) will be selected with the help of the PI to assure testing
+                                            immunologically mature animals that are representative of the health history
+                                            of their particular colony. Either non- lethal sample techniques will be
+                                            employed or animals chosen that are not essential for a research study or
+                                            breeding.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Any unexpected health concern of a sentinel animal has to be recorded
+                                            including details regarding signs observed, diagnosis, treatment and outcome
+                                            of case if applicable. Whenever a sentinel is found dead a necropsy has to
+                                            be performed. If either mice or rats in a sentinel cage die and a cause for
+                                            death cannot be established a follow up investigation, e.g. testing of a
+                                            corresponding colony representative, has to be initiated by the veterinary
+                                            staff. The Attending Veterinarian has to be informed about any health
+                                            concerns or deaths.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Sample collection
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            The Attending Veterinarian is responsible for the testing of all sentinels
+                                            or colony animals assisted by animal care staff trained for the procedures.
+                                            The findings concerning each sentinel evaluation are recorded and reported
+                                            to the Attending Veterinarian for interpretation and/or resolution as
+                                            needed.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Tests are performed and samples for submission to Charles River Laboratories
+                                            collected either on a quarterly interval for mice or every 4 months for
+                                            rats.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Sentinels are tested twice a year. One sentinel animal per cage is
+                                            undergoing the testing described as follows:
+                                        </p>
+                                        <ol type="a">
+                                            <li>
+                                                <p>
+                                                    Testing for endoparasites is accomplished by fecal flotation. At
+                                                    least one &ndash; preferably fresh &ndash; pellet is collected per
+                                                    animal. Up to 10 fecal pellets can be collected per fecal flotation
+                                                    from sentinel cages from one housing room.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    One sentinel animal per cage is euthanized and blood collected via
+                                                    cardiac stick. The serum or dried blood spot test is submitted for
+                                                    serology for various panels (see table 1)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    A gross necropsy will be performed, the cecum evaluated for
+                                                    endoparasites, esp. pinworm as well as histological and
+                                                    microbiological samples collected of lesions when present.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Evaluation for fur mites and pinworm by cellophane tape test taken
+                                                    at the perineum and abdomen. This is an optional test and needs to
+                                                    be performed when clinical or other indications for ectoparasites or
+                                                    pinworm are present.
+                                                </p>
+
+
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Mesenteric lymph nodes are collected from all sentinels during the
+                                                    fourth quarter of the calendar year coinciding with the assessment
+                                                    plus serology panel. Mesenteric lymph nodes are pooled and submitted
+                                                    for parvovirus PCR.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    The second sentinel per cage is continued to be housed as described
+                                                    above until all test results have been evaluated. If all results are
+                                                    negative this sentinel will either be euthanized without further
+                                                    testing or transferred to the respective training protocol or any
+                                                    other appropriate protocol as determined by the Attending
+                                                    Veterinarian. If any of the results are positive for murine
+                                                    pathogens the responsible veterinarian will determine the further
+                                                    testing approach.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Mesenteric lymph nodes are collected from the second sentinel and
+                                                    frozen at -20&deg;C but only after the first sentinel test result
+                                                    turned out to be equivocal or positive. These specimens are stored
+                                                    until respective results are received and discarded when the
+                                                    serology results are determined to be negative for all pathogens
+                                                    tested.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Mesenteric lymph nodes are collected and frozen at -20&deg; if the
+                                                    backup sentinel is missing from the cage (i.e. removed for a health
+                                                    concern or unexpected death) until respective results are received
+                                                    and discarded when the serology results are determined to be
+                                                    negative for all pathogens tested.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Serum or dried blood spot for testing is sent to Charles River Laboratory to
+                                            include different serology profiles, which is either prevalent, tracking or
+                                            assessment plus panel.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Samples from colony animals are collected twice a year from mice and once a
+                                            year from rats (see table 1).
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Only samples from animals of the same health status will be pooled.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                        <h1>
+                            Species/Time Protocol Specimen Type Population
+                        </h1>
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <th>Species/Time</th>
+                                    <th>Protocol</th>
+                                    <th>Specimen Type</th>
+                                    <th>Population</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            MOUSE
+                                        </p>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            Month 3
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            PRIA Prevalent (PCR)
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Body Swab &amp;Fecal Pools
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Colony
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            Month 6
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Prevalent Serology Panel
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Dried Blood Spot 2:1
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Sentinel
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            Month 9
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            PRIA Prevalent (PCR)
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Body Swab &amp;Fecal Pools
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Colony
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            Month 12
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Assessment Plus Serology Panel
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Dried Blood Spot 2:1
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Sentinel
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            RAT
+                                        </p>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            Month 4
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Tracking Serology Panel
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Dried Blood Spot 2:1
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Sentinel
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>
+                                            Month 8
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            PRIA Prevalent (PCR)
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Body Swab &amp;Fecal Pools
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Colony
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                            <tr>
+                                <td>
+                                    <p>
+                                        Month 12
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        Assessment Plus Serology Panel
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        Dried Blood Spot 2:1
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>
+                                        Sentinel
+                                    </p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </li>
+                    <li>
+                        <h2>
+                            Test Results and Record Maintenance
+                        </h2>
+                        <ol>
+                            <li>
+                                <p>
+                                    All positive results of in-house tests have to be confirmed by the veterinarian.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Test results received from Charles River have to be reviewed by the Attending
+                                    Veterinarian and appropriate follow up steps implemented if results are equivocal or
+                                    positive for tested pathogens.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Additional health evaluations may be conducted upon request from the research staff
+                                    or at the discretion of the Attending Veterinarian.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    All results, written reports and evaluations as a result of these procedures are
+                                    maintained by the responsible care technician as a hard copy and electronically
+                                    organized by year and location. Test results will be archived if older than 3 years.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    Review Date
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Revision Date
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Revision Number
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Description of Revision
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    07/15/13
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    07/15/13
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    200.2
+                                </p>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    07/26/16
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    07/26/16
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    200.3
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Title Change, updated regulatory references, added responsibilities, updated sample
+                                    collection, changes
+                                </p>
+                                <p>
+                                    to record maintenance and archiving
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    01/13/17
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    01/13/17
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    200.4
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Cellophane Tape Test now optional
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

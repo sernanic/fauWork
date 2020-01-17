@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+<config>
+	<filename>index</filename>
+	<parameter name="pagetype" type="text" group="Admins" prompt="Page Type" alt="Please select the layout type you would like to use.">generic</parameter>
+
+</config>
+	<properties>
+		<!-- com.omniupdate.properties -->
+		<title>Research In Action Blog</title>
+<parameter name="badge" type="radio" group="Everyone" prompt="Site Name" alt="Do you want to display the site name?">
+<option value="true" selected="false">Yes</option>
+<option value="false" selected="true">No</option>
+</parameter>		
+<parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation" alt="Do you want to display the top/horizontal navigation?">
+<option value="true" selected="true">Yes</option>
+<option value="false" selected="false">No</option>
+</parameter>
+		<parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel" alt="Do you want to display a carousel or banner?">
+<option value="true" selected="false">Yes</option>
+<option value="false" selected="true">No</option>
+</parameter>
+<parameter name="layout" type="radio" group="Everyone" prompt="Layout" alt="Which column layout do you want to display?">
+<option value="1" selected="true">Full Page Width No Navigation</option>
+<option value="2a" selected="false">Left Navigation with Content Column</option>
+<option value="2b" selected="false">Right Navigation with Content Column</option>
+<option value="3" selected="false">Left and Right Navigation with Content Column</option>
+<option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+</parameter>
+		
+		
+		<!-- /com.omniupdate.properties -->
+	</properties>
+	<metadata>
+		<!-- com.omniupdate.properties -->
+		<meta name="description" content="Boca Raton Public Library Research In Action Series Speaker Blog" />
+		<meta name="keywords" content="FAU Research In Action, FAU research in excellence fund, Boca Raton Public Library Lecture Series, Lecture Series, Speaker Blog" />
+		<!-- /com.omniupdate.properties -->
+	</metadata>
+	<content>
+		<maincontent>
+			<!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+			<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+			
+			<style>
+				html {
+					scroll-behavior: smooth;
+				}
+				h1, h2, h3, h4, p, a li {
+					font-family: 'Nunito', sans-serif; /* google fonts approximation of Avenir */
+				}
+				.sm-header {
+					font-size: 1.14em;
+                }
+                
+                .mobileHide { display: inline; } 
+
+			  /* Smartphone Portrait and Landscape */ 
+			  @media only screen 
+				and (min-device-width : 320px) 
+				and (max-device-width : 480px){ 
+				 .mobileHide { display: none;}
+              }
+              .mobileShow {display: none;} 
+
+            /* Smartphone Portrait and Landscape */ 
+            @media only screen 
+                and (min-device-width : 320px) 
+                and (max-device-width : 480px){ 
+                .mobileShow {display: inline;}
+            }
+			</style>
+    <div class="container-fluid">
+		
+		<div class="row">   
+            
+            <div class="col-lg-9 pagetop" style="valign: top;">
+                <a name="top"></a>
+                <h3 class="divname">Research In Action</h3>
+                <h1 class="rshead">2019 Speaker Blog</h1>
+				<br /><br />
+            </div>
+            <div class="col-md-3" style="position: sticky;">
+                <div class="mobileHide">
+                        <ul style="list-style-type: none;position: fixed;">
+                            <li style="margin: 10px 0"><a href="#energyHumanities" style="color: #737373">Energy and the Humanities</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#whatWeDontKnow" style="color: #737373">Science: What we <strong><em>Don’t</em></strong> Know</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#SoYouWannaBeAnEntrepreneur" style="color: #737373">So You Wanna be an Entrepreneur?</a></li>
+							<hr style="border: 2px solid #00447C"/>
+							<li style="margin: 10px 0"><a href="#SarajediniBlog" style="color: #737373">The Formation &amp; Evolution of Our Galaxy</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#relationshipBetweenPlants" style="color: #737373">The Relationship Between Plants and People</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                         </ul>
+                </div>
+                    
+                <div class="mobileShow">
+                        <ul style="list-style-type: none;">
+                            <li style="margin: 10px 0"><a href="#energyHumanities" style="color: #737373">Energy and the Humanities</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#whatWeDontKnow" style="color: #737373">Science: What we <strong><em>Don’t</em></strong> Know</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#SoYouWannaBeAnEntrepreneur" style="color: #737373">So You Wanna be an Entrepreneur?</a></li>
+							<hr style="border: 2px solid #00447C"/>
+							<li style="margin: 10px 0"><a href="#SarajediniBlog" style="color: #737373">The Formation &amp; Evolution of Our Galaxy</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#relationshipBetweenPlants" style="color: #737373">The Relationship Between Plants and People</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                         </ul>
+                </div>     
+                </div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<img src="http://ibrain.fau.edu/images/people/Ania_Knapinska_Dec%202016_crop.jpg" alt="photo research in Action" style="width: 120px;height: 120px;"/>
+			</div>
+			<div class="col-md-7">
+                        <a name="SarajediniBlog">
+                            <h3>Bringing Better Treatments Out of the Lab</h3>
+                        </a>
+                        <p>By Ania Knapinska, Ph.D.</p>
+                
+
+                        <p>
+                            Ania Knapinska, Ph.D., brings a wealth of experience, talent and dedication to her multiple professional roles. She is a
+                            research professor in molecular pharmacology in the departments of chemistry and biochemistry, an associate director of
+                            the Center of Molecular Biology and Biotechnology, and CEO of MMP Biopharma Inc., a company she co-founded with Gregg
+                            Fields, Ph.D., executive director of the FAU Institute for Human Health and Disease Intervention (I-Health). <br/> <br/>
+                            
+                            Since its creation in 2017, MMP Biopharma has focused on finding novel therapeutic strategies for people with diseases
+                            characterized by the degradation of collagen, such as osteoarthritis. There is currently no cure for this painful joint
+                            condition, which is the leading cause of knee and hip replacements. MMP Biopharma is building upon knowledge gained
+                            through the Fields laboratory’s osteoarthritis project, which Knapinska has overseen for seven years. An exciting
+                            breakthrough came when FAU researchers discovered a molecule with the ability to inhibit a crucial enzyme that causes
+                            cartilage destruction in osteoarthritis. <br/> <br/>
+                            
+                            Knapinska is also a co-founder of Deep Science (along with Silke Dodel, Ph.D., a visiting assistant professor in the
+                            Charles E. Schmidt College of Science), a startup that develops artificial intelligence and cognitive computing
+                            solutions to generate actionable insight from biomedical and healthcare data. Deep Science helps to accelerate progress
+                            in the biomedical sciences by helping clients conquer information overload and leverage biological complexity. <br/> <br/>
+                            
+                            Both companies have achieved recognition in the annual FAU Tech Runway competition for start-up assistance for promising
+                            new enterprises. MMP won a spot in Venture Class 5 and Deep Science in Venture Class 7. <br/> <br/>
+                             <br/>
+                            Knapinska holds a bachelor’s degree in biotechnology from FAU and a Ph.D. in molecular pharmacology from Rutgers
+                            University, where she was a National Science Foundation Integrative Graduate Education and Research Traineeship (IGERT)
+                            fellow. IGERT is the National Science Foundation’s flagship interdisciplinary training program. <br/> <br/>
+                            
+                            Prior to joining FAU’s research faculty in 2015, Knapinska was a senior scientist and laboratory manager at the Torrey
+                            Pines Institute for Molecular Studies and a research associate at Scripps Florida. She has authored or co-authored many
+                            articles in peer-reviewed journals. <br/> <br/>
+                            
+                            Knapinska is fluent in English, Polish and Spanish. <br/> <br/>
+                            
+                            Here is more information about her, in her own words: <br/> <br/>
+
+
+                        </p>
+                        <div id="accordion" class="panel-group"><a id="vp"> </a>
+                            <div id="panel1" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><button class="collapsed" data-toggle="collapse" data-target="#collapseOne">When did you develop an interest in scientific research?</button></h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            I became a scientist because I wanted to help millions of people. I also have passion for creative and detective work.
+                                            Developing drugs for diseases affecting people’s health really combines all these passions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel2" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><button class="collapsed" data-toggle="collapse" data-target="#collapseTwo">Was there someone who encouraged you early on – a special teacher or mentor?</button></h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            During my undergraduate studies Dr. Nwadiuto Esiobu (who is still a professor at FAU) taught a very interesting
+                                            lab-based biotechnology course. I was already getting interested in science at that time, but she inspired me to pursue
+                                            science full-time. I really appreciated her passion for teaching and encouraging students.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel3" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><button class="collapsed" data-toggle="collapse" data-target="#collapseThree">When did you start focusing on your current primary research interest?</button></h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            I started focusing on this research when I joined the Fields laboratory eight years ago. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel4" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><button class="collapsed" data-toggle="collapse" data-target="#collapseFour">What is your goal for this research?</button></h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            To provide treatments and better diagnostics for people suffering from diseases caused by dysregulated collagen
+                                            turnover, such as osteoarthritis, cancer metastasis, cancers affecting the bone and others.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel5" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><button class="collapsed" data-toggle="collapse" data-target="#collapseFive">Why do you consider FAU the best place to carry out your research?</button></h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                                FAU delivers a great platform for research by providing excellent lab facilities, access to graduate and undergraduate
+                                                students and facilitating intra-institutional and interdisciplinary research interactions. Over the last few years, we
+                                                have seen more and more support for research, and it is exciting to be taking part in this research “revolution.” The
+                                                presence of the Tech Runway Program, modeled after the world-class MIT program, gives hugely needed support and
+                                                encouragement to take our research and inventions into real-world application. <br/>
+                                                
+                                                This extraordinary program gives FAU researchers a big advantage over other institutions by providing mentorship,
+                                                business training and an entrepreneurship hub. In addition, the proximity to Scripps Florida and Max Planck Institutes
+                                                in Jupiter gives us a huge advantage to be able to collaborate with other world-class researchers, stimulating new ideas
+                                                and research directions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel6" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><button class="collapsed" data-toggle="collapse" data-target="#collapseSix">Do you spend all your time in the lab or do you teach in the classroom as well?</button></h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Over the last few years I have mentored the research projects of several undergraduate and graduate students 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel7" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><button class="collapsed" data-toggle="collapse" data-target="#collapseSeven"> How many younger associates do you work with and what is your relationship with them?</button></h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                                I currently manage Dr. Fields’ laboratory, which includes 11 members of all ages. Every year I mentor from two to seven
+                                                students, ranging from high school age to the Ph.D. level.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel8" class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><button class="collapsed" data-toggle="collapse" data-target="#collapseEight"> If you could speak directly to a young person who is considering a career in research, what would you say?</button></h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            It takes a lot of dedication to pursue career in research. However, a multitude of directions can be pursued after a
+                                            student gains scientific knowledge and research experience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="panel9" class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><button class="collapsed" data-toggle="collapse" data-target="#collapseNine"> What do you hope your legacy will be?</button></h4>
+                                    </div>
+                                    <div id="collapseNine" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>
+                                                I hope to improve people’s quality of life by bringing better treatments and diagnostics from the lab and into the
+                                                marketplace. I also hope to inspire many young people to pursue careers in science, as well as follow their dreams and
+                                                aspirations.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+            </div>
+           
+		</div>
+        <hr/>
+		
+       
+		
+		
+	
+   		
+                
+ 
+		
+	</div> <!-- close container -->
+		
+		<!-- /com.omniupdate.div -->
+		</maincontent>
+		<maincontent2>
+			<!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ --><h1>The University...at a Glance</h1>
+Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with every student who earns a degree, every researcher who makes a discovery and every community that is transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first public university in southeast Florida and the first in America designed for upper division students only. Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+		</maincontent2>
+	</content>
+</document>
+
+

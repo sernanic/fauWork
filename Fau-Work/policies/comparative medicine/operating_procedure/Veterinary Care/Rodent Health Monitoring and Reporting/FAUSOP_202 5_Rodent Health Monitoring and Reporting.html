@@ -1,0 +1,928 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Rodent Health Monitoring and Reporting
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Rodent Health Monitoring and Reporting" />
+        <meta name="keywords" content="Rodent Health Monitoring and Reporting" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all Comparative Medicine personnel involved in the daily animal monitoring and veterinary care program.
+                                
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp;Certified Veterinary Technician (CVT)
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp; To describe the procedures involved in the daily health monitoring and care of rodent colonies housed in facilities operated by Comparative Medicine.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All Facilities
+                                laboratories
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+    <h2>
+        References
+    </h2>
+    <ol>
+        <li>
+            <p>
+                Guide for the Care and Use of Laboratory Animals. National Research Council; National Academy Press, Washington, D.C., 2011
+            </p>
+        </li>
+        <li>
+            <p>
+                Public Health Service Policy on Humane Care and Use of Laboratory Animals. OLAW (NIH) 2015
+            </p>
+        </li>
+        <li>
+            <p>
+                AVMA Guidelines for the Euthanasia of Animals, American Veterinary Medical Association, 2013 Edition
+            </p>
+        </li>
+        <li>
+            <p>
+                Laboratory Animal Medicine. JG Fox, LC Anderson, G Otto, KR Pritchett- Corning and MT Whary, Academic Press, 3rd Edition, San Diego, CA, 2015
+            </p>
+        </li>
+        <li>
+            <p>
+                CM#051 Approved Email Templates
+            </p>
+        </li>
+        <li>
+            <p>
+                FAUSOP #213 Workflow In and Between Vivaria
+            </p>
+        </li>
+        <li>
+            <p>
+                FAUSOP #204 Rodent Quarantine
+            </p>
+        </li>
+    </ol>
+    <hr/>
+    <ol type="I">
+        <li>
+            <h2>
+                Responsibilities
+            </h2>
+            <ol type="A">
+                <li>
+                    <p>
+                        Laboratory Animal Technician (LAT)
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Adhere to procedures as outlined in this SOP.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Document all activities as outlined below in Recordkeeping.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Inform PI and/or Vet Staff immediately about any emergency and within the time limit specified in this SOP about any abnormal findings.
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        Training Coordinator
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Train CM staff on this SOP regularly but at least once a year. Newly hired personnel will be trained during the initial training period.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Train CM staff on appropriate procedures necessary to perform health evaluations and treatments as prescribed by the Vet Staff.
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        Facilities Manager (FM)
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Oversees receipt of animals into regular housing, initial health evaluation, care/husbandry procedures, possible treatments, collection of test samples, shipping to commercial laboratory and in-house testing as directed by AV and outlined in this SOP.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Inform Vet Staff immediately about any uncertain or positive results and abnormal findings and/or observations.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Assures that responsible LATs are appropriately trained and implement procedures as delineated in this SOP.
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        Certified Veterinary Technician (CVT)
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Adhere to procedures as outlined in this SOP.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Maintain direct and frequent communication with LATs and research staff; visit each facility at least once a week and more often if necessary.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Evaluate animals, diagnose, and prescribe increased monitoring and/or treatment as necessary. Provide consultation to research staff in regards to treatment or euthanasia.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Review all health records and test results, if applicable, regularly.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Inform AV or Clinical Veterinarian immediately of any abnormal findings and/or observations.
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        Clinical Veterinarian
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Adhere to procedures as outlined in this SOP.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ensure procedures are followed as outlined in this SOP.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Evaluate animals, diagnose, and prescribe increased monitoring and/or treatment as necessary. Provide consultation to CVT and research staff in regards to treatment or euthanasia.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Inform AV, if necessary, of any abnormal findings and/or observations.
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        Director/Attending Veterinarian (AV)
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Adhere to procedures as outlined in this SOP.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ensure procedures are followed as outlined in this SOP.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Ensure appropriate training is provided to particular personnel performing this function.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Maintain direct and frequent communication with LATs and research staff as necessary.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Evaluate animals, diagnose, and prescribe increased monitoring and/or treatment as necessary. Provide consultation to CVT, Clinical Veterinarian and research staff in regards to treatment or euthanasia.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Review all health records and test results, if applicable, regularly.
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <h2>
+                Safety
+            </h2>
+            <ol type="A">
+                <li>
+                    <p>
+                        Eating, drinking, chewing gum, and applying cosmetics is not permitted within the facility.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Appropriate PPE has to be worn and universal precautions followed when working with rodents.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Wash hands after handling animals and specimen for examination.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Mice and rats are capable of inflicting scratches and bites. Use caution and proper handling and restraint techniques.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In the event of a bite or a scratch, notify Supervisor immediately and complete injury report.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In the event of an emergency, seek medical help immediately.
+                    </p>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <h2>
+                Procedure
+            </h2>
+            <ol type="A">
+                <li>
+                    <p>
+                        GENERAL
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Health monitoring is an important part of an animal care and use program. All animals will be monitored by Comparative Medicine at least once daily from the day of arrival or being born until final disposition.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If animals are procured from approved vendors animals are allowed to enter the colony without further action. Shipping health reports will be filed and web health reports will be screened as described in Quarantine SOP (FAUSOP 204).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Animals from an unapproved vendor will be quarantined as per FAUSOP 204 Quarantine to establish their health status. Quarantined animals will be observed at least once daily also.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Arrival of animals requires that the shipping crate be sprayed with an approved disinfectant prior to entry into the vivarium. Each animal is examined for any abnormal signs while transferring from the shipping crate to the permanent cage. Any abnormalities found at this time need to be reported to the relevant research staff and the Vet Staff.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Any health concerns will be communicated with the research staff. Even if a senior person in the research lab is authorized to make decisions regarding animals the Principle Investigator will be copied on all emails sent to the research lab, so that she/he is aware of the particular situation.
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        EQUIPMENT
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Flashlight/Penlight (red light)
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Scale (optional)
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        DAILY HEALTH MONITORING
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Use flash light/penlight or red light in reverse light cycle room to easily visualize the entire inside of an animal cage; checking food and water levels at least once daily to be sure animals have access at all times and is provided ad libitum (unless otherwise noted per the protocol). Refill/Top-off as appropriate.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                During daily checks, visually inspect each cage of animals for signs of illness, injury or distress. See &ldquo;Illness, Injury and Distress&rdquo; section below, in this SOP. Rodent health checks should be completed as early as possible in the workday, but workflow has to correspond with the differing health status levels. See FAUSOP 213 Workflow In and Between Vivaria.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If health concerns are noted, place a
+                                <em>
+                                    red Health Concern &ndash; Evaluation Requested card
+                                </em>
+                                (Picture 1) behind the regular cage card to flag the cage and check or describe the concern on the card.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If health concerns are noted that are obviously caused by fighting separate animals immediately, preferably remove aggressor if known.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If an animal is found to be in pain, bleeding, or lying unresponsive inform research staff immediately. Reach out to talk to the PI or responsible research technician via phone first. If this is not possible send an email flagged as urgent. If research staff is not responsive within a reasonable time frame depending on the case inform veterinarian via phone.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Document number of animals found sick or dead on room&rsquo;s
+                                <em>
+                                    Daily Room Check Sheet
+                                </em>
+                                .
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Document all sick animal cases in
+                                <em>
+                                    Animal Health and Environmental Concern form
+                                </em>
+                                , stating room number, IACUC protocol number, cage number/location and who has been notified.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                A brief entry in the room log book on the
+                                <em>
+                                    Progress Notes
+                                </em>
+                                sheet is optional. Be brief, but clearly describe the condition; being sure to refrain from diagnostic terminology.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Review the
+                                <em>
+                                    Progress Notes
+                                </em>
+                                for treatment instructions and previous health related entries.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If animals are found to be overcrowded, identify and report cages to research personnel via email.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Each health concern should also be reported via email to the relevant research personnel and Vet Staff.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Emails should be sent before 12pm, if possible. Trying to limit the number of emails to one per day; combining reporting health concerns, animal(s) found dead or overcrowded cages into one email. Note: Emergency/Urgent situations should be reported immediately and separately from non-urgent concerns.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Emails should be sent using the
+                                <em>
+                                    Approved Email Templates
+                                </em>
+                                in CM Form #051:
+                            </p>
+                            <ol type="a">
+                                <li>
+                                    <p>
+                                        Sick animals
+                                    </p>
+                                    <ol type="i">
+                                        <li>
+                                            <p>
+                                                Urgent
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Non-urgent
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>
+                                        Overcrowded
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Dead
+                                    </p>
+                                    
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <strong>
+                            Picture 1
+                    </strong>
+                    <p>
+                        ABNORMAL SIGNS
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Observe the appearance and behavior of each animal. Abnormal signs indicating illness, injury or distress may include:
+                            </p>
+                            <ol type="a">
+                                <li>
+                                    <p>
+                                        Evidence of weight loss, dehydration or obesity
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Changes in hair/fur coat (ruffled coat, excessive grooming, dry skin)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Lacerations, bite, or scratch wounds generally associated with fighting
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Abnormal gait or posture
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Head tilt
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Lethargy or lying unresponsive (i.e. moribund)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Swellings or evidence of tumors or growths
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Diarrhea
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Seizures
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Discharge from orifices (i.e. eyes, nose, mouth, vaginal, rectal)
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Difficulty breathing or audible respiratory sounds
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Rectal (Picture 2) and/or vaginal prolapse
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Overgrown teeth (i.e. malocclusion)&mdash;(Picture 3) below shows (a) normal tooth growth: (b) misaligned and overgrown teeth (i.e. malocclusion) for comparison.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Dome-shaped head (i.e. hydrocephalus)&mdash;(Picture 4) below shows (a) abnormal (i.e. hydrocephaly) and (b) normal for comparison.
+                                    </p>
+                                    <img src="" alt="">
+                                    <storng>
+                                        Picture 2
+                                    </storng>
+                                    <img src="" alt="">
+                                    <storng>
+                                        Picture 3
+                                    </storng>
+                                    <img src="" alt="">
+                                    <storng>
+                                        Picture 4
+                                    </storng>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        FOLLOW-UP ON HEALTH CONCERNS
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                If an animal is found lying unresponsive (i.e. moribund) or in any other emergency condition, every effort will be made to contact research personnel via phone and email. If this is not possible, in a reasonable time or if there is no response from research personnel, the Vet Staff will make the final decision regarding euthanasia to avoid suffering of the animal.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                The research personnel will determine whether a sick animal should be examined by the Vet Staff or euthanized. If the animal will be euthanized &ndash; either by the research staff or by the LAT at request of the research staff &ndash; the
+                            </p>
+                            <p>
+                                red Health Concern &ndash; Evaluation Requested card will be removed from the cage after final disposition of the animal and noted in the Progress Notes of the room log book.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If the research personnel want to keep the animal the
+                                <em>
+                                    red Health Concern &ndash; Evaluation Requested card
+                                </em>
+                                stays in place until examination by the Vet Staff. The Vet Staff will evaluate the animal during regularly scheduled clinical rounds or earlier if warranted. Based on her/his expertise or consultation, they will determine if any further action necessary.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If the Vet Staff is not immediately available, the LAT will communicate with her/him via phone/electronic media and make entries in the health records on behalf of and as directed by the Vet Staff. If the AV or Clinical Veterinarian is required, but are out of town, a backup veterinary agreement is in place and the backup veterinarian will be contacted by the CVT, FM or his/her designee.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If the Vet Staff decides that the animal needs to be euthanized, the research personnel will be informed immediately and the
+                                <em>
+                                    red Health Concern &ndash; Evaluation Requested card
+                                </em>
+                                is kept on the cage until final disposition of the animal. The expectation is that the animal will be euthanized within 24 hours of notification to allow the research staff to collect tissues unless otherwise noted in the room log book by the Vet Staff.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If treatment of an animal is deemed necessary, the Vet Staff will make written recommendations in the health records/
+                                <em>
+                                    Progress Notes
+                                </em>
+                                of the room log book and leaves the
+                                <em>
+                                    red Health Concern &ndash; Evaluation Requested card
+                                </em>
+                                in place until the PI or authorized research personnel approves the intervention. This recommendation will be communicated to the research staff via email. A response is expected within 24 hours.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If the research staff objects to the recommended treatment due to interference with the study outcome, the Vet Staff will discuss with the PI or authorized research personnel treatment alternatives, including euthanasia.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                In case the research staff agrees on the recommended treatment, CM personnel will change the red cage card to
+                                <em>
+                                    Treatment &ndash; Refer to Logbook card
+                                </em>
+                                (Picture 5) and treat the animals as recommended as a service that is included in the per diem costs. All treatments will be notated in the Progress Notes in the room log book. Animals will be regularly reevaluated by the Vet Staff. The Vet Staff will recommend alternative treatment(s) or euthanasia if treatment(s) are not successful after a reasonable treatment period.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If the Vet Staff decides no treatment is necessary, but the condition warrants close monitoring, a
+                                <em>
+                                    red Health Concern &ndash; Monitor card
+                                </em>
+                                (Picture 6) will be placed on the cage. The animal will be regularly reevaluated by the Vet Staff and entries made in the room log book. Animals can also be monitored by the LAT noted and communicated to the Vet Staff as necessary.
+                            </p>
+                            
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>
+                        RECORDKEEPING
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Any health concerns have to be initially noted in the Daily Room Check
+                                <em>
+                                    Sheet
+                                </em>
+                                as the number of animals with health concerns and in the
+                                <em>
+                                    Animal Health and Environmental Concern form
+                                </em>
+                                .
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Each room log book contains health record sheets/
+                                <em>
+                                    Progress Notes
+                                </em>
+                                per PI and IACUC protocol number. Health records will be archived once a year without losing pertinent history for a case or more often if necessary. Archiving will be done by the end of the fiscal year (end of June).
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                CM personnel and research personnel can perform entries in the
+                                <em>
+                                    Progress Notes
+                                </em>
+                                . Entries should be made in a timely manner; to be brief and legible. Any animal with a health concern, if not immediately euthanized, is considered a case. Each case must have a final entry (i.e. disposition) either if the condition is resolved or the animal is euthanized to be considered closed. The LAT responsible for the particular housing area is responsible for the completeness of the health records/
+                                <em>
+                                    Progress Notes
+                                </em>
+                                .
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Treatments must be recorded in the room log book health records/
+                                <em>
+                                    Progress Notes
+                                </em>
+                                each time or for longer term treatments on the
+                                <em>
+                                    Treatment Label
+                                </em>
+                                (Picture 7)
+                                <em>
+                                    ,
+                                </em>
+                                which will be placed by the LAT or Vet Staff, as necessary.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Records are maintained on health information for at least 3 years past the end of a protocol; possibly forever; in a readily accessible place by CM staff (i.e. storage cabinet, box, binder, etc.).
+                            </p>
+                            <ol type="a">
+                                <li>
+                                    <p>
+                                        Temporary storage of records is in the offices of either Building 71 or 35A on the Boca campus or the office in MC-17 on the Jupiter campus.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Permanent, indefinite records are stored in T-5.
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+   
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <td>
+                    <p>
+                        Review Date
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Revision Date
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Revision Number
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Description of Revision
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        01/06/16
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        01/06/16
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        202.3
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Updated regulatory references, added responsibilities, minor
+                    </p>
+                    <p>
+                        procedural changes
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        08/05/16
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        08/05/16
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        202.4
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Update health check time within
+                    </p>
+                    <p>
+                        workday depending on health status level
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        9/19/17
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        9/19/17
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        202.5
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        Update including CVT, revised procedures and pictures.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div> <!-- close container -->
+
+<!-- /com.omniupdate.div -->
+</maincontent>
+<maincontent2>
+<!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+<!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+<h1>The University...at a Glance</h1>
+Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+every student who earns a degree, every researcher who makes a discovery and every community that is
+transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+public university in southeast Florida and the first in America designed for upper division students only.
+Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+</maincontent2>
+</content>
+</document>
+    

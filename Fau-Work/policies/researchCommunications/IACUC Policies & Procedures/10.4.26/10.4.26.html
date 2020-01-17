@@ -1,0 +1,668 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Wildlife Research</title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Wildlife Research" />
+        <meta name="keywords" content="Wildlife Research" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h1,
+                strong,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>Subject:</strong>&nbsp;&nbsp;Wildlife Research
+                            </div>
+                            <div class="col-md-4"><strong>Effective Date:</strong>&nbsp;&nbsp;8/30/2019</div>
+                            <div class="col-md-4"><strong>Policy Number:</strong>&nbsp;&nbsp;10.4.26</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>Supersedes:</strong>&nbsp;&nbsp;8/02/2019, 8/05/2016
+
+
+                            </div>
+                            <div class="col-md-8"><strong>Responsible Authorities:</strong>&nbsp;&nbsp;Vice President,
+                                Research
+                                Institutional Animal Care and Use Committee
+                                Director, Research Integrity
+                                Director, Comparative Medicine
+                            </div>
+                        </div>
+                    </div>
+                    <ol>
+                        <hr />
+                        <li>
+                            <h2>Background</h2>
+                            <p>Florida Atlantic University (FAU) currently has institution-wide animal care standards in
+                                place to ensure that all activities involving animals are conducted in a humane and
+                                ethical manner; that housing and care of animals is appropriate for the species; and
+                                that all persons working with animals are safe and protected (see Division of Research
+                                Policy 10.4.1A). While these standards are intended to cover all animals involved in
+                                research, existing policies and guidelines primarily address animals bred exclusively
+                                for research (i.e. “animal models”). Federal guidelines, including but not limited to
+                                the Guide for the Care and Use of Laboratory Animals (the Guide) and the Animal Welfare
+                                Act (AWA), support not only the humane care and use of animals bred for research, but
+                                also animals used in research, teaching or testing activities which are free-living
+                                within natural setting (i.e. “wildlife”).</p>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Purpose</h2>
+                            <p>To establish a policy that will enhance existing institution-wide animal care standards
+                                by providing improved guidance to Research Personnel and Animal Care Staff to
+                                accommodate the unique and diverse aspects of wildlife research, while ensuring that the
+                                health and welfare of the research animals and personnel are maintained.
+                            </p>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>General Statement</h2>
+                            <ol>
+                                <li>
+                                    <p>The IACUC recognizes and acknowledges the following:</p>
+                                    <ol type="a">
+                                        <li>It is not always possible to predict at the initiation of field studies all
+                                            potential observation or collection opportunities, the number of animals to
+                                            be encountered, the species to be encountered, or the effects of research
+                                            procedures.</li>
+                                        <li>No concise or specific compendium of approved methods for field research
+                                            encompassing all species, settings, and methods is available, practical, or
+                                            even desirable.</li>
+                                        <li>There is considerable variability among taxa of wild vertebrates in terms of
+                                            their basic needs and how they should be handled, and that the PI is often
+                                            the most qualified institutional authority on the biology of the species
+                                            under study, and the techniques appropriate for the conduct of the proposed
+                                            study.</li>
+                                        <li>The number of specimens required for a field investigation will vary
+                                            greatly, depending upon the questions being explored.</li>
+                                        <li>Field studies often require larger samples than laboratory studies because,
+                                            1) field studies have less control over biotic and abiotic conditions that
+                                            produce variation, and 2) a number of specimens that is perceived to be
+                                            large may represent only a small percentage of the actual wild population.
+                                        </li>
+                                        <li>State and federal wildlife agencies review applications for permits for
+                                            their scientific merit and their potential impact on native populations, and
+                                            issue permits that authorize the taking of specified numbers of individuals,
+                                            the taxa and methods allowed, the period of study, and often other
+                                            restrictions designed to minimize the likelihood that an investigation will
+                                            have deleterious effects.</li>
+                                        <li>Pain perception by many species of vertebrate animals may not be uniform
+                                            over the various portions of their bodies, and that broad extrapolation of
+                                            pain perception across taxonomic lines may not be appropriate.</li>
+                                        <li>Field conditions will be variable and are often unpredictable</li>
+                                    </ol>
+                                </li>
+                                <li>Despite these acknowledgements, the FAU IACUC affirms that the respectful use
+                                    of animals, which includes the consideration for the well-being of the animal as
+                                    well as the avoidance/minimization of pain and distress of animals, including
+                                    wildlife, remains an ethical and scientific necessity.
+                                </li>
+                            </ol>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Definitions</h2>
+                            <ol>
+                                <li><strong><u>Field or Wildlife Research</u></strong></li>
+                                <li><strong><u>Field or Wildlife Study</u></strong></li>
+                                <li><strong><u>WildD Animal, Wildlife, </u></strong>for the purposes of this policy,
+                                    refers to animals living in a natural habitat and not within the possession or
+                                    control of humans, and includes
+                                    both native and introduced species.</li>
+                            </ol>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Policy</h2>
+                            <ol>
+                                <li>
+                                    <u>Permit Requirements:</u>
+                                    <ol type="a">
+                                        <li>The PI must secure all relevant local, State, Federal and international
+                                            permits required to work on wildlife species in the chosen field location
+                                            prior to the initiation of the study.</li>
+                                        <li>The PI should inform themselves and their research team of the permitting
+                                            requirements and initiate, where possible, the application process well
+                                            ahead of proposed study start dates.</li>
+                                        <li>Signed copies of all permits and licenses must be furnished to the IACUC
+                                            upon receipt. IACUC protocols may be submitted for review prior to final
+                                            permit being issued to the PI; however, IACUC protocols will not receive
+                                            final approval without a signed copy of the relevant permit on file.</li>
+                                        <li>Protected species and locations, including reserves and national parks,
+                                            typically require more permits, which often entail detailed review and thus
+                                            can take several months to be approved.</li>
+                                        <li>International studies have a unique set of requirements that may require
+                                            liaising with multiple departments within FAU as well as the US State
+                                            Department. It is the PI’s responsibility to determine the appropriate
+                                            requirements for International Studies.</li>
+                                        <li>The Import or export of live, dead or parts of wildlife species are
+                                            regulated under CITES and other Conventions, The US Fish and Wildlife
+                                            Service, and US Customs and will require relevant permits and documentation.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <u>Training and Licensing requirements – FAU</u>
+                                    <ol>
+                                        <li>Training policies for wildlife researchers must be consistent with FAU
+                                            policies on training of personnel for animal studies <a
+                                                href="http://www.fau.edu/research/docs/policies/research- integrity/p22_researcher_training.pdf">(http://www.fau.edu/research/docs/policies/research-
+                                                integrity/p22_researcher_training.pdf)</a>.</li>
+                                        <li>
+                                            <p>The PI must ensure that all personnel are fully current with all training
+                                                requirements that qualify them to conduct the proposed research. This
+                                                involves compliance with all relevant Environmental Health and Safety
+                                                and IACUC training. Other requirements may include, but are not limited
+                                                to</p>
+                                            <ol type="5">
+                                                <li>Scientific diving qualifications</li>
+                                                <li>Aircraft safety and evacuation training</li>
+                                                <li>Catching, restraint, sampling, tagging and release of wildlife
+                                                    species</li>
+                                                <li>Transport of wildlife species <a
+                                                        href="http://www.fau.edu/research/docs/policies/research-integrity/Transport_Policy_Final.pdf">http://www.fau.edu/research/docs/policies/research-integrity/Transport_Policy_Final.pdf</a>
+                                                </li>
+                                                <li>The PI must ensure that all proposed work that requires approval of
+                                                    a
+                                                    daily schedule of activities, including float and flight plans, have
+                                                    the necessary plans filed ahead of time</li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <u>Euthanasia</u>
+                                            <ol type="a">
+                                                <li>Euthanasia of wildlife in the field can raise unique and challenging
+                                                    issues. The investigator should consult the Report of the American
+                                                    Veterinary Medicine Association (AVMA) Panel of Euthanasia, which
+                                                    includes considerations and techniques for euthanasia of wildlife.
+                                                    <a
+                                                        href="https://www.avma.org/KB/Policies/Pages/Euthanasia -Guidelines.aspx">https://www.avma.org/KB/Policies/Pages/Euthanasia
+                                                        -Guidelines.aspx</a></li>
+                                                <li>Methods of euthanasia must be consistent with generally recognized
+                                                    methods, for example, those recommended by the American Society of
+                                                    Mammologists, American Society of Ichthyologists and Herpetologists,
+                                                    American Fisheries Society, American Institute of Fisheries Research
+                                                    Biologists, Herpetologists’ League, Society for the Study of
+                                                    Amphibians and Reptiles, Ornithological Council and the most recent
+                                                    AVMA Guidelines on Euthanasia.</li>
+                                                <li>Policies for euthanasia of wildlife will be consistent with those
+                                                    specified in FAU policy on Euthanasia methods: <a
+                                                        href="http://www.fau.edu/research/docs/policies/research- integrity/FAU_IACUC_Policy_10_4_11_Euthanasia_Final.pdf">(http://www.fau.edu/research/docs/policies/research-
+                                                        integrity/FAU_IACUC_Policy_10_4_11_Euthanasia_Final.pdf)</a>.
+                                                </li>
+                                                <li>Training of appropriate methods of euthanasia based on taxon is the
+                                                    responsibility of the PI. The training must be documented
+                                                    appropriately by the PI as described in IACUC policy 10.4.22 <a
+                                                        href="">(http://www.fau.edu/research/docs/policies/research-
+                                                        integrity/p22_researcher_training.pdf)</a>.</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <u>Reporting Requirements</u>
+                                    <ol type="a">
+                                        <li>The PI must report the use of all wild animals, and the number and
+                                            variety of taxa used to Research Integrity at an interval appropriate to the
+                                            study, but not less than twice per year. Differences from the original
+                                            approved protocol in either taxon or numbers should be clearly noted in
+                                            these reports.</li>
+                                        <li>Mortality resulting from anything other than as described in the original
+                                            approved protocol should be reported no more than 7 days from the date of
+                                            the incident, or as soon as practical for cases in which 7 day reporting is
+                                            impossible due to remoteness of study site.</li>
+                                        <li>Any injury to research personnel as a result of an encounter with a wild
+                                            animal while in the course of conducting wildlife research, requiring
+                                            medical attention by either a colleague in the field or a licensed medical
+                                            provider at any location, no matter how minor the injury is perceived to be,
+                                            should be reported to FAU’s Environmental Health and Safety office as soon
+                                            as practical, but not more than 2 days following the PI’s return to campus.
+                                            After reporting, EH&S will notify the IACUC of any reported animal related
+                                            injuries.</li>
+                                        <li>Any injury to research personnel while in the course of conducting wildlife
+                                            research but not involving an encounter with a wild animal should be
+                                            reported to FAU’s Environmental Health and Safety office according to their
+                                            guidelines and policies.</li>
+                                        <li>The aforementioned reporting policies are in addition to the reporting
+                                            policies of any other department, government agency, etc. and it is the
+                                            responsibility of the PI to know what these other reporting obligations may
+                                            be.</li>
+                                    </ol>
+                                </li>
+                                <li></li>
+
+                            </ol>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Accountability</h2>
+                            <ol>
+                                <li>
+                                    <strong>The Principal Investigator (PI) will be responsible for:</strong>
+                                    <ol type="a">
+
+                                        <li>Obtaining the necessary permits for the research described in the protocol
+                                            from the appropriate agencies and submitting copies of applicable permits to
+                                            the RI Office as supporting documentation with their IACUC protocol</li>
+                                        <li>Assuring that procedures are performed as described in the corresponding
+                                            IACUC protocol and if necessary submitting an amendment to the protocol and
+                                            awaiting approval before new method(s) is(are) introduced</li>
+                                        <li>Assuring that personnel complete IACUC required training per FAU IACUC
+                                            policy 10.4.22 <a
+                                                href="http://www.fau.edu/research/docs/policies/research- integrity/p22_researcher_training.pdf">(http://www.fau.edu/research/docs/policies/research-
+                                                integrity/p22_researcher_training.pdf)</a>, and providing personnel with
+                                            species appropriate training for field research procedures</li>
+                                        <li>Following the procedures set forth in this policy in regards to wildlife
+                                            research</li>
+                                        <li>Reporting to EH&S any injury to research personnel involving wildlife
+                                            animals no matter how minor the injury</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>The IACUC will be responsible for:</strong>
+                                    <ol type="a">
+
+                                        <li>Reviewing and approving, requiring modifications (to secure approval), or
+                                            withholding approval of IACUC protocols and/or amendments including addition
+                                            of
+                                            personnel</li>
+                                        <li>Providing continued guidance for active wildlife protocols</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>The Research Integrity office will be responsible for:</strong>
+                                    <ol type="a">
+                                        <li>Administrative support of the IACUC members to facilitate their regulatory
+                                            function</li>
+                                        <li>Maintaining policy and assure regular review and update as necessary by the
+                                            IACUC</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>The Office of Comparative Medicine (CM) and Attending Veterinarian (AV) will
+                                        be responsible for:</strong>
+                                    <ol type="a">
+                                        <li>Providing consultation to the PI and to the IACUC regarding specific
+                                            procedures impacting the health and welfare of the animal(s), especially as
+                                            it relates to anesthesia/analgesia, aseptic techniques of sampling and
+                                            surgical procedures and use of antimicrobials.</li>
+                                        <li>Contributing to the review of wildlife protocols and to the determination of
+                                            specific requirements for training of personnel</li>
+                                        <li>Contributing to review of procedures for transporting animals onto any FAU
+                                            campus, and for procedures for monitoring the health and well- being of
+                                            these animals</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Procedures</h2>
+                            <ol>
+                                <li>
+                                    <strong>Representative Member:</strong>
+                                    <p>IACUC membership should include one or more
+                                        biologists qualified to provide the IACUC with an understanding of the nature
+                                        and impact of the proposed field investigation, the housing and care of the
+                                        species to be studied, and any possible risks associated with handling or
+                                        housing the species involved</p>
+                                </li>
+                                <li>
+                                    <strong>PI Assurance:</strong>
+                                    <p>The PI must assure the IACUC in their wild life application that their field
+                                        study and laboratory use of wild animals will be in accordance with one or more
+                                        of the following, as applicable:</p>
+                                    <ol>
+                                        <li>Public Health Service (PHS) policy, Animal Welfare Act, The Guide for the
+                                            Care and Use of Laboratory Animals, DEA regulations and IACUC Principles &
+                                            Procedures</li>
+                                        <li>The Guidelines of the American Society of Mammologists for the Use of Wild
+                                            Mammals in Research <a
+                                                href="http://www.mammalsociety.org/uploads/Sikes%20et%20al%202011.pdf">(http://www.mammalsociety.org/uploads/Sikes%20et%20al%202011.pdf)</a>
+                                        </li>
+                                        <li>Guidelines for the Use of Fishes in Research <a
+                                                href="http://fisheries.org/docs/policy_useoffishes.pdf">(http://fisheries.org/docs/policy_useoffishes.pdf)</a>
+                                        </li>
+                                        <li>Guidelines for Use of Live Amphibians and Reptiles in Field and Laboratory
+                                            Research <a
+                                                href="http://www.asih.org/sites/default/files/documents/resources/guidelinesherpsresearch2004.pdf">http://www.asih.org/sites/default/files/documents/resources/guidelinesherpsresearch2004.pdf</a>
+                                        </li>
+                                        <li>Guidelines to the Use of Wild Birds in Research <a
+                                                href="http://www.nmnh.si.edu/BIRDNET/documents/guidlines/Guidelines_August2010.pdf">http://www.nmnh.si.edu/BIRDNET/documents/guidlines/Guidelines_August2010.pdf</a>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>Expertise and Responsibility:</strong>
+                                    <p>The PI and associated research staff should be familiar with the animals to be
+                                        studied and their response to disturbance, sensitivity to capture and restraint,
+                                        and requirements for captive maintenance to the extent that these factors are
+                                        known or applicable to the study. The PI and associated staff should have
+                                        adequate experience, training, and knowledge regarding the housing, feeding, and
+                                        care requirements of the animals to be studied, to the extent that these factors
+                                        are known or applicable. If animals are to be held at field sites, the living
+                                        conditions should be appropriate for the involved animals, and contribute to
+                                        their health and well-being. In each of these instances it is ultimately the
+                                        responsibility of the PI to direct these field activities.</p>
+                                </li>
+                                <li>
+                                    <strong>CaptureandRestraint:</strong>
+                                    <p>The objectives of many field studies mandate that individual animals be captured
+                                        one or
+                                        more times. In these instances, capture techniques that have minimal impact on
+                                        the animal and which are environmentally benevolent should be used whenever
+                                        possible. In addition, the potential for return to the natural environment
+                                        should be incorporated into the sampling design whenever feasible.<br />
+                                        Capture techniques that are generally considered to have more than a minimal
+                                        impact, and which may therefore require additional scientific justification for
+                                        use, include:</p>
+                                    <ol>
+                                        <li>fish: hand capture, gill netting, electrofishing, the use of ichthyocides,
+                                            and the use of longlines, hooks or other fishing gear or spears</li>
+                                        <li>amphibians and reptiles: hand capture, trapping, and netting</li>
+                                        <li>birds: hand capture, trapping, and netting</li>
+                                        <li>mammals: hand capture, trapping, netting, and capture darts which
+                                            deliver an immobilizing drug</li>
+                                    </ol>
+                                    <p>Capture devices such as nets and traps should be checked frequently to prevent
+                                        animal injuries or mortality including those of accidentally captured species.
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong>Marking:</strong>
+                                    <p>TheIACUCacknowledgesthatthemarkingofwildanimalsisabasic method of many field
+                                        studies, which provides a way of determining the movements, abundance, and
+                                        population dynamics of wild animals. PIs should carefully consider the nature
+                                        and duration of restraint required by the marking technique, the amount of
+                                        tissue affected, whether distress is momentary or prolonged, whether the animal
+                                        after marking will be at greater than normal risk, whether the animal’s
+                                        desirability as a mate is reduced, and whether the risk of infection or abscess
+                                        formation is minimal. Acceptable marking techniques generally include:</p>
+                                    <ol>
+                                        <li>fish: fin-clipping, freeze branding, electro-cauterization, tagging, or
+                                            radioisotopes</li>
+                                        <li>amphibians and reptiles: scale clipping, banding, tagging, shell marking,
+                                            tattooing, electro cauterization, branding, or radioisotopes</li>
+                                        <li>birds: banding, dyes, collars, tagging</li>
+                                        <li>mammals: tagging, banding, tattooing, spot-shaving, radioisotopes, or
+                                            freeze branding</li>
+                                    </ol>
+                                    <p>The PI should consider the potential for pain and discomfort associated with each
+                                        of these techniques, and whether they should be preceded by a general or local
+                                        anesthetic, and/or followed by a topical antiseptic.</p>
+                                </li>
+                                <li>
+                                    <strong>Tissue Sampling:</strong>
+                                    <p>Methods used for sampling tissues or specimens from wild animals should be
+                                        designed to obtain the maximal amount of scientific data, with the least amount
+                                        of animal handling, restraint, and distress, involving a minimum number of
+                                        animals. Methods that cause more than slight or momentary pain or discomfort
+                                        require the use of appropriate anesthetics and/or analgesics. Aseptic sampling
+                                        techniques and surgical procedures should be utilized. PIs should consider in
+                                        consultation with a veterinarian whether antimicrobial drugs should be
+                                        administered following sampling or surgical procedures. The applicant PI is
+                                        referred to IACUC Principles and Procedures <a
+                                            href="http://www.fau.edu/research/docs/policies/research- integrity/FAU%20IACUC%20Policy%20On%20Surgery%2010%204%206_Final. pdf">http://www.fau.edu/research/docs/policies/research-
+                                            integrity/FAU%20IACUC%20Policy%20On%20Surgery%2010%204%206_Final. pdf</a>
+                                        regarding appropriate aseptic surgical techniques.</p>
+                                </li>
+                                <li>
+                                    <strong>Experimental Procedures That Cause More Than Momentary or Slight Pain or
+                                        Distress Without Relief (i.e. USDA Category D or E):</strong>
+                                    <p>Whenever research situations arise in which the PI feels that administering
+                                        sedation, analgesia or anesthesia to relieve pain or distress that is more than
+                                        slight or momentary will interfere with the integrity of the research, or will
+                                        reduce chances of survival in the wild due to increased risk of predation or
+                                        other factors, scientific justification should be provided to and approved by
+                                        the IACUC. Regulatory reasons for omission of anesthesia/analgesia like
+                                        withdrawal times not being able to observe should be listed as well.</p>
+                                </li>
+                                <li>
+                                    <strong>Transport:</strong>
+                                    <p>Transport of wild animals in any manner or for any purpose will comply with the
+                                        existing FAU Transport Policy <a
+                                            href="http://www.fau.edu/research/docs/policies/research- integrity/Transport_Policy_Final.pdf">http://www.fau.edu/research/docs/policies/research-
+                                            integrity/Transport_Policy_Final.pdf</a></p>
+                                </li>
+                                <li>
+                                    <strong>Field Staff Safety:</strong>
+                                    <p>The PI should ensure that the design of the field study does not compromise the
+                                        health and safety of the staff working in the field. In addition, staff working
+                                        in the field should consult with their physician to determine whether they
+                                        should receive tetanus or other immunizations and have record of those
+                                        immunizations, and be enrolled in FAU’s Occupational Health Program. Those
+                                        working with carnivores or bats should also consult with their physician to
+                                        determine whether they should receive rabies or other immunizations and have
+                                        record of those immunizations.</p>
+                                </li>
+                                <li>
+                                    <strong>Holding or Housing of Wild-Caught Animals:</strong>
+                                    <p>Maintenance of wild animals in their natural setting should incorporate, as much
+                                        as possible, those aspects of the natural habitat deemed important to the
+                                        survival and well-being of the animals such as natural light, ventilation,
+                                        temperature, and humidity, unless these are factors under investigation.
+                                        Adequacy of maintenance should be judged by monitoring factors such as
+                                        appearance, activity level, general behavior, rate of growth, change in body
+                                        weight, breeding success, and rate of survival. Nutritionally balanced diets
+                                        should be provided, or natural foods should be duplicated as closely as
+                                        possible.<br /><br />
+                                        If the scientific aims of a study require wild-caught animals to be moved from
+                                        their place of capture or collection, they may only be moved to an inspected and
+                                        approved CM or PI managed FAU facility, or an approved non-FAU facility that is
+                                        specifically designed and managed for animal care and/or research. In all cases,
+                                        they should be maintained under conditions that comply with either the Guide or
+                                        one of the accepted taxon-specific guides (see section C), unless the purpose of
+                                        the study requires the simulation of the natural setting. In instances where the
+                                        study requires the simulation of the natural setting, the design of enclosures
+                                        and methods of care should incorporate, as much as possible, those aspects of
+                                        the natural habitat deemed important to the survival and well-being of the
+                                        animals. PIs in collaboration with a veterinarian should consider whether newly
+                                        captured animals that are brought into the laboratory should be quarantined from
+                                        resident animals by a method appropriate to the taxon and the laboratory
+                                        environment. Policies for relocating animals onto any FAU campus will be
+                                        consistent with existing FAU policies regarding the housing of animals in either
+                                        Comparative Medicine or PI managed facilities, including policies regarding the
+                                        use of satellite facilities (http://www.fau.edu/research/docs/policies/research-
+                                        integrity/IACUC_POLICY_10_4_4_Satellite_Facilities.pdf).
+                                    </p>
+                                </li>
+                                <li>
+                                    <strong>Release of Wild-Caught Animals:</strong>
+                                    <p>Whenever practical and ecologically appropriate, as soon as possible after
+                                        capture or upon completion of the study, wild-caught animals should be released
+                                        at the site of the original capture, provided that:</p>
+                                    <ol>
+                                        <li>their ability to survive has not been impaired</li>
+                                        <li>they can be expected to function normally</li>
+                                        <li>environmental and habitat conditions at the time of release are conducive
+                                            to their survival</li>
+                                        <li>their release is not likely to spread pathogens to a naïve population</li>
+                                        <li>no laws or regulations prohibit their release</li>
+                                        <li>their release is not detrimental to the well-being of the existing native
+                                            animals</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>Preserved Specimens:</strong>
+                                    <p>The collection of live animals and their preparation as museum specimens is
+                                        necessary for research and teaching activities in systematic zoology. However,
+                                        each animal collected should serve as a source of information on as many levels
+                                        as practical (e.g., behavior, morphology, genetics, etc.) to assure the maximum
+                                        utility of each animal, and to minimize instances of duplicate collecting.</p>
+                                    <p><strong>Note:</strong> Formalin fixation of dead specimens is acceptable, however
+                                        euthanasia of un-anesthetized specimens by immersion in a formalin solution is
+                                        unacceptable.</p>
+                                </li>
+                                <li>
+                                    <strong>Shipping and Receiving of Biologics:</strong>
+                                    <p>The shipping or receiving of animal specimens, wholly or as tissue samples,
+                                        should be conducted in accordance with federal safety and importation guidelines
+                                        and regulations. The PI should act in accordance with the United States
+                                        Department of Agriculture, Animal and Plant Health Inspection Service
+                                        regulations regarding the limits on importation of animals or biologics that may
+                                        have been exposed to an exotic livestock or poultry disease agent, and the
+                                        limits on the importation of plants and other vegetable matter. The PI should
+                                        act in accordance with the Public Health Service Foreign Quarantine Regulations
+                                        (42 CFR 71.54) which govern the importation and transfer of etiologic agents and
+                                        vectors of human disease.</p>
+                                    <p><strong>Note: </strong>The movement of non-infectious materials such as
+                                        formalin-fixed tissues, sterile cell cultures, and other preserved tissues or
+                                        materials where no evidence or indication exists that they contain an infectious
+                                        agent of animal or public health significance are not governed by these
+                                        regulations.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Policy Renewal Date</h2>
+                            <p>8/30/2022</p>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>References</h2>
+                            <ol>
+                                <li>Public Health Service (PHS) policy
+                                    (https://grants.nih.gov/grants/olaw/references/phspol.htm)</li>
+                                <li>Animal Welfare Act
+                                    (https://www.aphis.usda.gov/animal_welfare/downloads/Animal%20Care%20Blu
+                                    e%20Book%20-%202013%20-%20FINAL.pdf)</li>
+                                <li>The Guide for the Care and Use of Laboratory Animals
+                                    (https://grants.nih.gov/grants/olaw/Guide-for-the-Care-and-use-of-laboratory-
+                                    animals.pdf)</li>
+                                <li>IACUC Principles & Procedures (http://www.fau.edu/research/docs/policies/research-
+                                    integrity/FAU%20IACUC%20Policy%20On%20Surgery%2010%204%206_Final. pdf)</li>
+                                <li>The Guidelines of the American Society of Mammologists for the Use of Wild Mammals
+                                    in Research (http://www.mammalsociety.org/uploads/Sikes%20et%20al%202011.pdf)</li>
+                                <li>Guidelines for Use of Live Amphibians and Reptiles in Field and Laboratory Research
+                                    (http://www.asih.org/sites/default/files/documents/resources/guidelinesherpsrese
+                                    arch2004.pdf)</li>
+                                <li>Guidelines to the Use of Wild Birds in Research
+                                    (http://www.nmnh.si.edu/BIRDNET/documents/guidlines/Guidelines_August2010.
+                                    pdf)</li>
+                                <li>NOAA-NMFS Policies and Best Practices for Marine Mammal Stranding
+                                    Response, Rehabilitation, and Release
+                                    (https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-
+                                    mammal-protection-act-policies-guidance-and-regulations)</li>
+                                <li> Florida Fish & Wildlife Conservation Commission Marine Turtle Conservation Handbook
+                                    (https://myfwc.com/media/3133/fwc-mtconservationhandbook.pdf)</li>
+
+                            </ol>
+                        </li>
+                    </ol>
+
+                    <hr />
+                    <p>POLICY APPROVAL</p>
+
+                    <mark>Executed signature pages are available in the Initiating Authority Office(s)</mark>
+
+                </div> <!-- close container -->
+
+                <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h1>The University...at a Glance</h1>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

@@ -1,0 +1,430 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Receiving and Storage of Rodent Food and Bedding
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Receiving and Storage of Rodent Food and Bedding" />
+        <meta name="keywords" content="Receiving and Storage of Rodent Food and Bedding" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine personnel involved in receiving food and
+                                bedding for all rodent facilities.
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp;Facilities Manager</div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp; To outline the proper procedures
+                                for receiving food and bedding.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All vivaria and research labs
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <h2>References</h2>
+                <ol>
+                    <li>
+                        <p>SOP900: Care and Use of Animal Transport Vehicle(s)</p>
+                    </li>
+                    <li>
+                        <p>Guide for the Care and Use of Laboratory Animals. National Research Council; National Academy
+                            Press,
+                            Washington, D.C., 2011</p>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <h2>Responsibility</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Animal Care Technician(s)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Document all activities as outlined below in Record Keeping.</p>
+                                    </li>
+                                    <li>
+                                        <p>Inform Facility Manager and Administrative Specialist immediately about any
+                                            discrepancies
+                                            upon delivery.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Facility Manager</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel performing
+                                            this function.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Training Coordinator</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>General</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Eating, drinking, chewing gum, and applying cosmetics is not permitted within the
+                                    facility.</p>
+                            </li>
+                            <li>
+                                <p>Appropriate PPE has to be worn and universal precautions followed when working with
+                                    rodents.</p>
+                            </li>
+                            <li>
+                                <p>Food and bedding bags are heavy and require caution and proper handling techniques.
+                                </p>
+                            </li>
+                            <li>
+                                <p>In the event of an injury, notify Facility Manager immediately and complete injury
+                                    report.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Preparation</h2>
+                        <ol>
+                            <li>
+                                <p>On a weekly to bi-weekly basis, technicians will provide the FM with their food and
+                                    bedding order
+                                    (Tuesdays for Lab Supply and Thursdays for Envigo)</p>
+                            </li>
+                            <li>
+                                <p>Rodent food and bedding ordered from Lab Supply is typically delivered on Thursdays
+                                    or Fridays.
+                                    Envigo is typically delivered on Mondays.</p>
+                            </li>
+                            <li>
+                                <p>The Facility Manager will provide the technicians with a list of expected items prior
+                                    to arrival.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Procedure</h2>
+                        <ol type="a">
+                            <li>
+                                <p>The vendor delivery person will call the laboratory mobile phone (the senior lab
+                                    tech&rsquo;s
+                                    subsidized phone for Jupiter) upon arrival, and the technician will bring a clean
+                                    cart(s) and a
+                                    bottle of disinfectant outside to meet the delivery van.</p>
+                            </li>
+                            <li>
+                                <p>Spray the cart with disinfectant prior to the van driver placing the bags on it.</p>
+                            </li>
+                            <li>
+                                <p>Check all bags for any damages or contamination and check the shipping label to make
+                                    sure it is the
+                                    correct delivery.</p>
+                            </li>
+                            <li>
+                                <p>Spray each bag down with disinfectant, as they are placed on top of one another.</p>
+                            </li>
+                            <li>
+                                <p>Once done loading the bags onto the carts, the driver will present the delivery
+                                    confirmation for the
+                                    order. Verify that the quantity and type of food and bedding received is what is
+                                    listed on the order
+                                    form. Sign and retain packing slip from the vendor.</p>
+                            </li>
+                            <li>
+                                <p>Transport the food and bedding to the dirty hallway of the vivarium; spray the bags
+                                    with
+                                    disinfectant. Leave the cart for 15 min or longer depending on the contact time of
+                                    the disinfectant
+                                    used.</p>
+                            </li>
+                            <li>
+                                <p>Once the disinfectant time has been reached, transport the cart to the food and
+                                    bedding room, and
+                                    unload the cart onto the shelf .</p>
+                            </li>
+                            <li>
+                                <p>Organize the bags of bedding according to the milling date. The newer ones should go
+                                    on the bottom of
+                                    the stack and the older ones go on top.</p>
+                            </li>
+                            <li>
+                                <p>Locate the milling date on the food bags and count forward 6 months from that date to
+                                    calculate the
+                                    expiration date.</p>
+                            </li>
+                            <li>
+                                <p>Write the expiration date as well as the food type on each bag with a permanent
+                                    marker, in large
+                                    print, so that it is easily localized and legible.</p>
+                            </li>
+                            <li>
+                                <p>Organize and place the food bags on the storage shelf according to the type of food
+                                    that it is,
+                                    making sure they are stacked in order by what expires first (top), to what will
+                                    expire last
+                                    (bottom).</p>
+                            </li>
+                            <li>
+                                <p>Inform the Facility Manager via email that the food and bedding order has arrived,
+                                    and save the
+                                    packing slip.</p>
+                            </li>
+                            <li>
+                                <h2>Note: When food and bedding is transported between buildings, it&rsquo;s done via
+                                    the Animal
+                                    Transport Vehicle. The Animal Transport Vehicle will be sanitized before and after
+                                    transport.</h2>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Storage and Use of Food and Bedding</h2>
+                        <ol type="a">
+                            <li>
+                                <p>In general, food will be stored for up to 4 weeks. During hurricane season, food may
+                                    be stored up to
+                                    3 months.</p>
+                            </li>
+                            <li>
+                                <p>The <em>Guide </em>requires storage of feed at temperature not exceeding 70&ordm;F
+                                    and at humidity
+                                    not exceeding 50% to avoid feed deterioration and preserve nutritional values.
+                                    Ideally, these
+                                    environmental parameters should be observed.</p>
+                            </li>
+                            <li>
+                                <p>An approved IACUC exemption to <em>The Guide&rsquo;s </em>recommended upper
+                                    temperature and humidity
+                                    levels in the storage room allows temperature to be maximum 74 degrees Fahrenheit
+                                    and 70% humidity.
+                                    Inform the FM if these levels are exceeded.</p>
+                            </li>
+                            <li>
+                                <p>When distributing food into airtight containers, check that food is free of any
+                                    discoloration,
+                                    moldiness, wetness, stickiness, etc.</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>If that standard is not met, set the bag aside for the FM, mark it &ldquo;DO
+                                            NOT USE&rdquo;
+                                            with permanent marker, and inform the FM.</p>
+                                    </li>
+                                    <li>
+                                        <p>The FM will document and report any issues to the company of origin, check
+                                            the storage
+                                            conditions and/or investigate into any other reason for spoilage of feed.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>All food must be stored in sealed containers. Sometimes food containers become warped
+                                    in the cage
+                                    washer or autoclave. Discard any warped containers and inform the FM who may need to
+                                    order more.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Record Keeping</h2>
+                        <ol type="a">
+                            <li>
+                                <p>The technician will save the packing slip for pick-up by the FM or deliver the
+                                    packing slip to room
+                                    220 where the document(s)will be filed.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>12/5/17</p>
+                            </td>
+                            <td>
+                                <p>12/5/17</p>
+                            </td>
+                            <td>
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>Added info on Lab Supply, added Jupiter info, removed food names, added Reference
+                                    section, added
+                                    storage and use</p>
+                                <p>section</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

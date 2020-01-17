@@ -1,0 +1,641 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Edstrom Watchdog General Procedure
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Edstrom Watchdog General Procedure" />
+        <meta name="keywords" content="Edstrom Watchdog General Procedure" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine personnel
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp;Facility Manager (FM)
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp; To outline the general
+                                procedures of the Edstrom Watchdog System monitoring environmental
+                                conditions like temperature, humidity, differential pressure as well as controlling and
+                                monitoring
+                                light</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All Vivaria
+                                laboratories
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <ol>
+                    <li>
+                        <h2>Responsibilities</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Lab Animal Technician</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Facility Manager</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel depending on
+                                            function/job
+                                            description and assurance that Training Checklist is signed</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Training Coordinator</p>
+                                <ol>
+                                    <li type="i">
+                                        <p>Adhere to and ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel depending on
+                                            function/job
+                                            description and assurance that Training Checklist is signed</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Director/Veterinarian</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedure as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel and necessary
+                                            resources are
+                                            available.</p>
+                                        <p>Date Last Reviewed/Revised SOP 109 Edstrom Watchdog General Procedures</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Changing Room Properties</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Log into V5 Central from the main Edstrom computer.</p>
+                            </li>
+                            <li>
+                                <p>Click on the Rooms tab.</p>
+                            </li>
+                            <li>
+                                <p>Select the Room desired.</p>
+                            </li>
+                            <li>
+                                <p>Right clicking on any field opens up these settings which can now be modified.</p>
+                            </li>
+                            <li>
+                                <p>Right clicking on the room itself allows the user to change several special settings.
+                                    Set
+                                    Active/Inactive means that the room can be set to a state that in which it will not
+                                    be monitored and
+                                    no alarms will be sent out, or returned to normal. The room can also be set to Clean
+                                    Time to allow
+                                    temporary deviations in parameters without alarms being sent out. The Room&rsquo;s
+                                    User List can
+                                    also be modified from here. Lastly the lights in the room can be easily toggled
+                                    on/off.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Checking for and Acknowledging Alarms in the Edstrom System</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Log into V5 Central from the main Edstrom computer or Watchdog Web from an external
+                                    computer.</p>
+                            </li>
+                            <li>
+                                <p>On the left side of V5 central is a tab labeled alarms, click this.</p>
+                            </li>
+                            <li>
+                                <p>Listed here are the current alarms for the Edstrom system. They maybe be temperature,
+                                    humidity, air
+                                    flow or light alarms. They are categorized by location, time started, priority and
+                                    the specific
+                                    message.</p>
+                            </li>
+                            <li>
+                                <p>Select an alarm you would like to acknowledge.</p>
+                            </li>
+                            <li>
+                                <p>Below is an acknowledge duration. Select the time desired for the alarm to be
+                                    acknowledged.</p>
+                            </li>
+                            <li>
+                                <p>Make any noted if relevant.</p>
+                            </li>
+                            <li>
+                                <p>Click acknowledge.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Creating a New Template for Room Settings</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Log into V5 Central from the main Edstrom computer.</p>
+                            </li>
+                            <li>
+                                <p>Click on the Actions menu on the top tab.</p>
+                            </li>
+                            <li>
+                                <p>Click New Template and select the appropriate type of template.</p>
+                            </li>
+                            <li>
+                                <p>Type a name for the new template and click OK.</p>
+                            </li>
+                            <li>
+                                <p>Drag a room or several to the existing template. This will set the parameters for the
+                                    room based off
+                                    of the first room dragged into it. To modify the now set parameters, double click on
+                                    one and a
+                                    window will open with the settings to be changed.</p>
+                            </li>
+                            <li>
+                                <p>Change the parameters as needed and click OK to set them.</p>
+                            </li>
+                            <li>
+                                <p>There are several premade environmental templates that come with the Edstrom system.
+                                    Rodents being
+                                    the primary template used at this facility.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Creating a New User Account</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Log into V5 Central from the main Edstrom computer.</p>
+                            </li>
+                            <li>
+                                <p>Click on the Actions menu at the top.</p>
+                            </li>
+                            <li>
+                                <p>Click Add User.</p>
+                            </li>
+                            <li>
+                                <p>Enter relevant information into the boxes and click Next when done. A pin is required
+                                    for resetting
+                                    passwords.</p>
+                            </li>
+                            <li>
+                                <p>Select specific rooms to grant access to certain areas or All to grant access to all
+                                    rooms. Click
+                                    Next when done.</p>
+                            </li>
+                            <li>
+                                <p>Set the user&rsquo;s access level and have them enter a Login name and password.
+                                    Login names must be
+                                    between 5 and 15 characters. Passwords must all be between 5 and 15 characters and
+                                    contain at least
+                                    one number and one letter.</p>
+                                <p>Date Last Reviewed/Revised SOP 109 Edstrom Watchdog General Procedures</p>
+                                <p>Administrator access level has access to all parts of the Watchdog system and sets
+                                    the accessibility
+                                    of all the other user levels as needed.</p>
+                            </li>
+                            <li>
+                                <p>Click Next to continue.</p>
+                            </li>
+                            <li>
+                                <p>Enter the contact information of the new user and set when the user will receive
+                                    alarm notifications.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Click Next and add a photo if appropriate.</p>
+                            </li>
+                            <li>
+                                <p>Click Finish when done.</p>
+                            </li>
+                            <li>
+                                <p>Edstrom Monitoring System</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Checking Alarm Notifications</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Start by logging onto the Edstrom designated computer. Login is v5user and Password
+                                    is eiversion5.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Click on v5central.</p>
+                            </li>
+                            <li>
+                                <p>Enter Login and Password.</p>
+                            </li>
+                            <li>
+                                <p>Click on Alarms.</p>
+                            </li>
+                            <li>
+                                <p>Acknowledge any alarms present, adding notes if any relevant information is
+                                    available.</p>
+                            </li>
+                            <li>
+                                <p>Notify Vet/Manager of any alarms that require attention.</p>
+                            </li>
+                            <li>
+                                <p>Close program by clicking on BYE when done.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Generating a Report from the Edstrom System</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Open Report Writer on the main Edstrom computer</p>
+                            </li>
+                            <li>
+                                <p>Open the Historical folder.</p>
+                            </li>
+                            <li>
+                                <p>Open the Environmental folder.</p>
+                            </li>
+                            <li>
+                                <p>Click on the desired parameter set/graphing style required. The daily graph and
+                                    High/Low/Ave contains
+                                    all the different environmental parameters except lighting and are graphed
+                                    separately. Combo graphs
+                                    these parameters together. The Lighting Graph is just for the light parameters and
+                                    graphs them as a
+                                    daily bar graph.</p>
+                            </li>
+                            <li>
+                                <p>One a parameter set/graph style is chosen, select the date range and rooms, and
+                                    parameter/s if
+                                    appropriate. Click Redraw. Based on the amount of data chosen this may take several
+                                    minutes to
+                                    appear.</p>
+                            </li>
+                            <li>
+                                <p>The options to save the graph or print it are at the bottom if needed.</p>
+                            </li>
+                            <li>
+                                <p>Click close when done.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Retrieving Archived Data for Generating Reports from the Edstrom System</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Open Report Writer on the main Edstrom computer</p>
+                            </li>
+                            <li>
+                                <p>Click File.</p>
+                            </li>
+                            <li>
+                                <p>Click Open.</p>
+                            </li>
+                            <li>
+                                <p>Double click the D drive.</p>
+                            </li>
+                            <li>
+                                <p>Double click the EwsV5 Archive Folder.</p>
+                            </li>
+                            <li>
+                                <p>Click the Folder of the appropriate date range.</p>
+                            </li>
+                            <li>
+                                <p>With the Folder highlighted click OK.</p>
+                            </li>
+                            <li>
+                                <p>Access the data as you normally would.</p>
+                            </li>
+                            <li>
+                                <p>The settings will return to the original non-archived data set when closed.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Changing a Light Module</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Determine that Light Module (LM) is malfunctioning. This may be done by receiving
+                                    prolonged
+                                    communication lost or light alarm e-mail notifications.</p>
+                                <p>Date Last Reviewed/Revised SOP 109 Edstrom Watchdog General Procedures</p>
+                            </li>
+                            <li>
+                                <p>Locate spare Light Module. If one cannot be found contact Edstrom Industries at
+                                    1-800-558-5913 and
+                                    ask to talk to someone in Tech Support about receiving a new module.</p>
+                            </li>
+                            <li>
+                                <p>Go to the specified area with the malfunctioning Light Module. The Light Module is
+                                    usually located in
+                                    the ceiling. A ladder and a Philips head screw driver are required.</p>
+                            </li>
+                            <li>
+                                <p>Locate the box containing the specific Light Module, usually above the area in
+                                    question. The boxes
+                                    are labeled as to which room or cube that they belong.</p>
+                            </li>
+                            <li>
+                                <p>Remove the front plate of the box by loosening the screws.</p>
+                            </li>
+                            <li>
+                                <p>Unscrew the inside plate holding the modules in place.</p>
+                            </li>
+                            <li>
+                                <p>Replace the Light Module by unplugging the old one and plugging the new one in. Make
+                                    sure the lights
+                                    have lit up on the new module to assure that is correctly plugged in.</p>
+                            </li>
+                            <li>
+                                <p>Put the two plates back into place.</p>
+                            </li>
+                            <li>
+                                <p>Attached to the side of the new module there is a small label with a tear off that
+                                    has the Neuron ID
+                                    number. Remove the bottom half and go to the main Edstrom computer.</p>
+                            </li>
+                            <li>
+                                <p>Log on to the Edstrom computer and log into V5 Central.</p>
+                            </li>
+                            <li>
+                                <p>Click on the Tools tab.</p>
+                            </li>
+                            <li>
+                                <p>Click Replace Remote Device</p>
+                            </li>
+                            <li>
+                                <p>A box will pop up. Select the location of the Light Module that is being replaced.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Enter the Neuron ID from the tab that was taken from the new module.</p>
+                            </li>
+                            <li>
+                                <p>Click Replace.</p>
+                            </li>
+                            <li>
+                                <p>Allow a minute or two for the replacement to take effect.</p>
+                            </li>
+                            <li>
+                                <p>Check alarms to see whether any relating to the module in question have cleared or
+                                    monitor as needed
+                                    to verify.</p>
+                            </li>
+                            <li>
+                                <p>If the issue has not resolved or any new errors occur, consult Edstrom tech support
+                                    as listed above.
+                                    A relay may need to be replaced and certified electrician will need to be called</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Changing a Sensor Module</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Determine that a Sensor Module (SM4) is malfunctioning. This may be done by receiving
+                                    prolonged
+                                    communication lost e-mail notifications, or by continued discrepancies between
+                                    facilities
+                                    measurement of temperature or humidity and the Edstrom system&rsquo;s.</p>
+                            </li>
+                            <li>
+                                <p>Locate spare Sensor Module. If one cannot be found contact Edstrom Industries at
+                                    1-800-558-5913 and
+                                    ask to talk to someone in Tech Support about receiving a new module.</p>
+                            </li>
+                            <li>
+                                <p>Go to the specified area with the malfunctioning Sensor Module and remove said
+                                    module. A small hex
+                                    key is required to unscrew the module from the metal plate attached to the wall.
+                                    After removing the
+                                    two screws, unplug the module from the connection in the wall.</p>
+                            </li>
+                            <li>
+                                <p>Replace the old Sensor Module with the new Sensor Module in reverse order of the
+                                    previous step.</p>
+                            </li>
+                            <li>
+                                <p>Attached to the side of the new module there is a small label with a tear off that
+                                    has the Neuron ID
+                                    number. Remove the bottom half and go to the main Edstrom computer.</p>
+                                <p>Date Last Reviewed/Revised SOP 109 Edstrom Watchdog General Procedures</p>
+                            </li>
+                            <li>
+                                <p>Log on to the Edstrom computer and log into V5 Central.</p>
+                            </li>
+                            <li>
+                                <p>Click on the Tools tab.</p>
+                            </li>
+                            <li>
+                                <p>Click Replace Remote Device</p>
+                            </li>
+                            <li>
+                                <p>A box will pop up. Select the location of the Sensor Module that is being replaced.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Enter the Neuron ID from the tab that was taken from the new module.</p>
+                            </li>
+                            <li>
+                                <p>Click Replace.</p>
+                            </li>
+                            <li>
+                                <p>Allow a minute or two for the replacement to take effect.</p>
+                            </li>
+                            <li>
+                                <p>Check alarms to see whether any relating to the module in question have cleared or
+                                    monitor throughout
+                                    the day to see if the temperature/humidity variations have resolved.</p>
+                            </li>
+                            <li>
+                                <p>If the issue has not resolved or any new errors occur, consult Edstrom tech support
+                                    as listed above.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Record Keeping</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Log any issues on the <em>Health and Environment Check Sheet </em>and notify
+                                    supervisor.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <hr/>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

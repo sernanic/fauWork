@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type" alt="Please type an appropriate style.">generic</parameter>
+    </config>
+    <properties> 
+    <!-- com.omniupdate.properties -->
+    <title>Notices from the VPR</title>
+    <parameter name="badge" type="radio" group="Everyone" prompt="Site Name" alt="Do you want to display the site name?">
+        <option value="true" selected="false">Yes</option>
+        <option value="false" selected="true">No</option>
+    </parameter>
+    <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation" alt="Do you want to display the top/horizontal navigation?">
+        <option value="true" selected="true">Yes</option>
+        <option value="false" selected="false">No</option>
+    </parameter>
+    <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel" alt="Do you want to display a carousel or banner?">
+        <option value="true" selected="false">Yes</option>
+        <option value="false" selected="true">No</option>
+    </parameter>
+    <parameter name="layout" type="radio" group="Everyone" prompt="Layout" alt="Which column layout do you want to display?">
+        <option value="1" selected="false">Full Page Width No Navigation</option>
+        <option value="2a" selected="true">Left Navigation with Content Column</option>
+        <option value="2b" selected="false">Right Navigation with Content Column</option>
+        <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+        <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+    </parameter>
+    <!-- /com.omniupdate.properties --> 
+    </properties>
+    <metadata> 
+        <!-- com.omniupdate.properties -->
+        <meta name="Description" content="Division of Research Staff Directory" />
+        <meta name="Keywords" content="Division of Research Staff Directory" />
+        <!-- /com.omniupdate.properties --> 
+    </metadata>
+    <content>
+        <maincontent> 
+            <!-- com.omniupdate.div label="content" group="Everyone" button="707" break="break" --><!-- ouc:editor wysiwyg="yes" csspath="/_resources/editor/fau-today.css" cssmenu="/_resources/editor/fau-today.txt" width="1020" div="#OUPreview"/ -->
+            <style>
+                button {
+                   border: none;
+                   background-color: transparent;
+                }
+            </style>
+
+            
+            <div class="container-fluid">
+                    <script>
+                        function myFunction(divName) {
+                            var printContents = document.getElementById(divName).innerHTML;
+                            var originalContents = document.body.innerHTML;
+                            document.body.innerHTML = printContents;
+                            window.print();
+                            document.body.innerHTML = originalContents;
+                        }
+                        function Redirect() {
+                            window.location.href = "http://www.fau.edu/research/latest-vpr-notices/latest-vpr-notices.php",30000;
+                        }
+                    </script>
+                <div class="row">
+                   <div> <br></br> <br></br> </div>
+                        <div id="context">
+                                <img class="img-responsive" style="width: 100%;" title="Technology Development main art" src="http://www.fau.edu/research/images/vpr_notices/DOR-Banner.png" alt="Notices from the VPR" /> <br />
+                                
+                            <p>
+                                <i>
+                                    <strong>
+                                            The Office of the Vice President for Research issues notices to the FAU community to provide faculty and staff the latest updates on regulatory or policy changes and/or issues related to research at FAU that may impact their work. This page is updated when new notices go out. 
+                                            Please discuss with your dean or associate dean for research any topics you feel may need the attention of the VPR.
+                                    </strong>
+                                </i>
+                            </p>
+                            <hr/>
+                        </div>
+                        <div id="VPRNotice">
+                            
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalOne" style = "background-color:#F5F5F5; color:black;border-color:white;">
+                                    Human Research Protections Program – AAHRPP Accreditation
+                            </button>
+                            <br/>
+                            <br style="line-height: 1px;padding-top: -2px;"/>
+                            <p style="color: red">Date: July 27, 2019</p>
+						  
+						  <div id="memoInfo">
+                                <p>
+                                    Florida Atlantic University (FAU) has a long history of successful collaboration with foreign research organizations and
+                                    supports and encourages international research, collaboration, and scholarship, which contribute to the mission ...
+                                </p>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalOne" style = "background-color:#F5F5F5; color:black;border-color:white;">
+                                    more
+                                </button>
+                          </div>
+						
+							<div class="modal fade" id="modalOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <!-- Beginning of content the will be printed -->
+                                        <div id="printSection">
+                                                <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Foreign Threats</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="Redirect()">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <!-- Beginning Of PDF Header -->
+                                                    <div class="row">
+                                                        <div class="col-md-6" style="padding-left: 50px;">
+                                                            <img  style="height: 100px; widows: 100px; padding-top: 20px;padding-left: -40px;" src="http://www.fau.edu/research/images/vpr_notices/DOR_Logo_TM.png" alt=" fau logo"/>
+                                                        </div>
+                                                        <div class="col-md-6 ml-auto" style="text-align: right; padding-right: 50px;">
+                                                            <p style="font-size: 15px;">
+                                                                    Division of Research <br/>
+                                                                    Office of the Vice President<br/>
+                                                                    777 Glades Road<br/>
+                                                                    AD-10, Room 392<br/>
+                                                                    Boca Raton, FL 33431<br/>
+                                                                    tel: 561.297.0268<br/>
+                                                                    www.fau.edu/research/
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-12 ml-auto" style="text-align: right; padding-right: 50px;">
+                                                            <p style="font-size: 15px; text-align: left; padding-left: 40px;">
+                                                                To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAU Research Community <br/>
+                                                                <br/>	
+                                                                From:&nbsp;&nbsp;&nbsp;&nbsp;Dr. Daniel Flynn, Vice President for Research<br/>
+                                                                <br/>
+                                                                Re:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Foreign Threats<br/>
+                                                                <br/>
+                                                                Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;July 27, 2019<br/>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Of PDF Header -->
+                                                    <div class="modal-body" id ="modalBody">
+                                                        <hr/>
+                                                        <p>
+                                                            Florida Atlantic University (FAU) has a long history of successful collaboration with foreign research organizations and
+                                                            supports and encourages international research, collaboration, and scholarship, which contribute to the mission of the
+                                                            University.<br/><br/>
+                                                            In recent months, the National Institutes of Health (NIH) and other U.S. federal agencies, (NSF, DOD, and DOE) that
+                                                            support university research have demonstrated concern over foreign influence and have issued guidance to universities to
+                                                            ensure transparency on financial support received from all foreign entities.<br/><br/>
+                                                            The first line of defense is full and accurate reporting of all foreign relationships by U.S. university researchers to
+                                                            their institution. This involves mandatory full disclosure of other financial support, when requested in proposal
+                                                            submission must include any financial support received by the investigator from a foreign entity outside the US. This
+                                                            disclosure includes support/funding received through contracts and grants through FAU or consultant, visiting scholar,
+                                                            lecture or similar non-FAU appointment. For faculty on nine-month appointments, this requirement includes applicable
+                                                            funds received from a non-FAU foreign entity for activities over the summer months.<br/><br/>
+                                                            An issue of special concern is participation by U.S. universities in foreign talent programs, such as China’s Thousand
+                                                            Talents Program, which the Pentagon has identified as an effort “to facilitate the legal and illicit transfer of US
+                                                            technology, intellectual property and know-how” to China.<br/><br/>
+                                                            The Division of Research is establishing a Task Force (or committee) to focus on foreign influence/threat, review
+                                                            current policies and procedures to ensure compliance and develop an implementation plan for FAU. Members of this
+                                                            committee will represent different interest groups across the university such as Provost’s office, OIT, HR and including
+                                                            faculty researchers. The DOR is in the process of creating a webpage that will provide pertinent information and the
+                                                            federal agencies notices. DOR will also be scheduling Town Hall meetings to further distribute information and guidance
+                                                            related to this essential topic.<br/><br/>
+                                                            All federal agencies are taking this issue very seriously. The best advice at this point is to be sure to disclose any
+                                                            and all activities that involve a foreign entity. Thank you for giving your full attention to the critically important
+                                                            issue of preventing foreign exploitation of U.S. research discoveries. Stay tuned for additional resources and
+                                                            information.
+                                                            </p>
+                                                    </div>
+                                        </div>
+                                        <!-- End of print content -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="Redirect()">Close</button>
+                                            <button onclick="myFunction('printSection')">Print this page</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <br/>   
+                    <!-- Beginning of Message -->
+                    <div id="VPRNotice">
+                            
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal2" style = "background-color:#F5F5F5; color:black;border-color:white;">
+                                    Human Research Protections Program – AAHRPP Accreditation
+                            </button>
+                            <br/>
+                            <br style="line-height: 1px;padding-top: -2px;"/>
+                            <p >Date: June 5, 2019</p>
+						  
+						  <div id="memoInfo">
+                                <p>
+                                    Florida Atlantic University promotes the highest code of conduct for research involving human subjects to
+									adequately protect the rights and welfare of human subjects participating in that research. The Vice President
+									for Research is Florida Atlantic University’s Presidential designee and ...
+                                </p>
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal2" style = "background-color:#F5F5F5; color:black;border-color:white;">
+                                    more
+                                </button>
+                          </div>
+						
+							<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog  modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <!-- Beginning of content the will be printed -->
+                                        <div id="printSection">
+                                                <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Human Research Protections Program – AAHRPP Accreditation</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="Redirect()">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <!-- Beginning Of PDF Header -->
+                                                    <div class="row">
+                                                        <div class="col-md-6" style="padding-left: 50px;">
+                                                            <img  style="height: 100px; widows: 100px; padding-top: 20px;padding-left: -40px;" src="http://www.fau.edu/research/images/vpr_notices/DOR_Logo_TM.png" alt=" fau logo"/>
+                                                        </div>
+                                                        <div class="col-md-6 ml-auto" style="text-align: right; padding-right: 50px;">
+                                                            <p style="font-size: 15px;">
+                                                                    Division of Research <br/>
+                                                                    Office of the Vice President<br/>
+                                                                    777 Glades Road<br/>
+                                                                    AD-10, Room 392<br/>
+                                                                    Boca Raton, FL 33431<br/>
+                                                                    tel: 561.297.0268<br/>
+                                                                    www.fau.edu/research/
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-12 ml-auto" style="text-align: right; padding-right: 50px;">
+                                                            <p style="font-size: 15px; text-align: left; padding-left: 40px;">
+                                                                To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAU Research Community <br/>
+                                                                <br/>	
+                                                                From:&nbsp;&nbsp;&nbsp;&nbsp;Dr. Daniel Flynn, Vice President for Research<br/>
+                                                                <br/>
+                                                                Re:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division of Research, Human Research Protections Program – AAHRPP Accreditation<br/>
+                                                                <br/>
+                                                                Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June 5, 2019<br/>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Of PDF Header -->
+                                                    <div class="modal-body" id ="modalBody">
+                                                        <hr/>
+                                                        <p>
+                                                                Florida Atlantic University promotes the highest code of conduct for research involving human subjects to
+                                                                adequately protect the rights and welfare of human subjects participating in that research. The Vice President
+                                                                for Research is Florida Atlantic University’s Presidential designee and the registered Institutional Official with
+                                                                the respective federal oversight regulatory agencies. <br/>
+                                                                <br/>
+                                                                As you know, the FAU Division of Research (DoR) facilitates research involving human subjects through its
+                                                                Institutional Review Board (IRB), a federally mandated committee which has oversight of all policies,
+                                                                procedures and practices relating to institutional review and oversight of research protocols involving human
+                                                                subjects. http://www.fau.edu/research/research-integrity/irb-policies-and-procedures.php <br/>
+                                                                <br/>
+                                                                FAU’s Division of Research is consistently working on enhancing the human research protection program
+                                                                (HRPP) through quality improvement initiatives designed to facilitate research, ensure regulatory compliance
+                                                                while minimizing administrative burdens, and strengthen protections for research participants. This
+                                                                memorandum is to inform you that FAU is seeking accreditation from the Association for the Accreditation of
+                                                                Human Research Protections Programs (AAHRPP), a highly respected, independent, non-profit accrediting
+                                                                body. AAHRPP accreditation will assure research participants, researchers, sponsors, government regulators
+                                                                and the general public of the quality of FAU’s research involving human subjects. This will not only increase
+                                                                the esteem for FAU’s research among its peer institutions but will also increase FAU’s ability to obtain
+                                                                research funding. Accreditation is a voluntary, peer driven, educationally based model that recognizes high
+                                                                quality HRPPs of research institutions in the areas of organization, IRB, researcher compliance and research
+                                                                personnel administrative oversight. This effort will enable FAU to achieve the highest standard of
+                                                                accreditation with a comprehensive set of professional and ethical standards and practices that signify the
+                                                                commitment and quality of FAU’s human research protections program and the commitment of FAU’s
+                                                                researchers and administration to that program. <br/>
+                                                                <br/>
+                                                                The DoR will be working with researchers and the Colleges as it endeavors to obtain AAHRPP accreditation. As
+                                                                a reminder, before researchers submit research protocols to the DoR, it is required that the researcher’s
+                                                                college or unit review and approve the following elements of each research protocol: scientific merit,
+                                                                methodology, project personnel, feasibility and resources (equipment and infrastructure), recognizing that
+                                                                other matters may arise requiring college or unit approval depending on the research proposal. I look forward
+                                                                to your joining the DoR in this effort to obtain AAHRPP accreditation.
+                                                        </p>
+                                                    
+                                                    </div>
+                                        </div>
+                                        <!-- End of print content -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="Redirect()">Close</button>
+                                            <button onclick="myFunction('printSection')">Print this page</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <br/>   
+                </div>
+                <!-- New Message -->
+				<div id="VPRNotice">
+                            
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal2" style = "background-color:#F5F5F5; color:black;border-color:white;">
+                                    Division of Research responsibility and authority regarding matters of research misconduct
+                                </button> <br/>
+                                <br/>
+                                <p>Date: May 21, 2019 </p>
+
+                            <div id="memoInfo">
+                                    <p>
+                                        This memorandum serves as a reminder to the FAU research community that the Division of
+                                        Research (DoR) reviews all matters related to the conduct of University research. Allegations of
+                                        research misconduct ...
+                                    </p>
+                                        
+                                    
+                                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Modal2" style = "background-color:#F5F5F5; color:black;border-color:white;">
+                                            more
+                                    </button>
+                            </div>
+					
+					<hr class="separator"/>
+					<div class="col-lg-12 pagetop" style="valign: top;">
+                        Division of Research general email: <a href="mailto:fau.research@fau.edu"><strong>fau.research@fau.edu</strong></a><br />
+                        <br /> 
+                        <br />
+                    </div>
+					
+							
+						  <div class="modal fade bd-example-modal-xl" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document" >
+                            <div class="modal-content">
+                               <div id="printSection2">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Division of Research responsibility and authority regarding matters of research misconduct </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="Redirect()">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+								   
+                                            <!-- begining of PDF Header -->
+                                            <div class="row">
+                                                <div class="col-md-6" style="padding-left: 50px;">
+                                                    <img  style="height: 100px; widows: 100px; padding-top: 20px;" src="http://www.fau.edu/research/images/vpr_notices/DOR_Logo_TM.png" alt=" fau logo"/>
+                                                </div>
+                                                <div class="col-md-6 ml-auto" style="text-align: right; padding-right: 50px;">
+                                                    <p style="font-size: 15px;">
+                                                            Division of Research <br/>
+                                                            Office of the Vice President<br/>
+                                                            777 Glades Road<br/>
+                                                            AD-10, Room 392<br/>
+                                                            Boca Raton, FL 33431<br/>
+                                                            tel: 561.297.0268<br/>
+                                                            www.fau.edu/research/
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-12 ml-auto" style="text-align: right; padding-right: 50px;">
+                                                    <p style="font-size: 15px; text-align: left; padding-left: 40px;">
+                                                        To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAU Research Community<br/>
+														<br/>
+                                                        From:&nbsp;&nbsp;&nbsp;&nbsp;Dr. Daniel Flynn, Vice President for Research<br/>
+														<br/>
+                                                        Re:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Division of Research, Human Research Protections Program – AAHRPP Accreditation<br/>
+														<br/>
+                                                        Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 21, 2019 <br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!-- End of PDF header -->
+                                            <div class="modal-body">
+                                                <hr/>
+                                                <p>
+                                                    This memorandum serves as a reminder to the FAU research community that the Division of
+                                                    Research (DoR) reviews all matters related to the conduct of University research. Allegations of
+                                                    research misconduct (fabrication, falsification and plagiarism) are managed by a prescriptive
+                                                    regulatory process that involves ad-hoc faculty committee peer review of the allegation(s). It is
+                                                    the DoR’s charge to manage all such assessments, inquiries and investigations in accordance with
+                                                    state and federal laws, regulations, and DoR Policy 10.1.1 <br/>
+                                                    <br/>
+                                                    The Vice President for Research is Florida Atlantic University’s Presidential designee and the
+                                                    registered Institutional Official and Research Integrity Officer with the respective federal
+                                                    regulatory agencies. Should faculty, staff or students have concerns related to the conduct of
+                                                    research, such concerns should be brought to the attention of the DoR.<br/>
+                                                    <br/>
+                                                    The DoR has primary responsibility for managing the review of potential research misconduct, but
+                                                    it discharges its responsibilities in coordination with other units of the University. For example, the
+                                                    Provost is FAU’s designated Deciding Official who decides, in consultation with the Vice President
+                                                    for Research, whether allegations of misconduct warrant an investigation and what actions are
+                                                    appropriate upon a finding of misconduct. Additionally, before researchers may submit research
+                                                    proposals to the DoR, it is required that the researcher’s college or unit review and approve the
+                                                    following elements of any proposal: scientific merit, methodology, project personnel, feasibility
+                                                    and resources (equipment and infrastructure) and other required necessities to successfully and
+                                                    safely execute proposed research studies. Such review and approval prior to submission of
+                                                    proposals should help minimize the potential for research misconduct.<br/>
+                                                    <br/>
+                                                    This coordination of its activities also places limits on the DoR’s institutional roles. For example,
+                                                    the DoR does not have purview of matters related to academic impropriety or student discipline, or
+                                                    to supervisory and personnel matters (except those relating to employees of the Division of
+                                                    Research). The DoR is available to assist other units of the University in addressing such matters if
+                                                    warranted, but it does not have primary responsibility in such instances except to the extent that
+                                                    potential research misconduct is identified.
+                                                </p>
+                                            
+                                            </div>
+                               </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="Redirect()">Close</button>
+                                    <button onclick="myFunction('printSection2')" >Print this page</button>
+                                </div>
+                                <hr/>
+                            </div>
+                            </div>
+                        </div>
+						<hr/>
+                        <br/>
+					</div>
+            </div>
+        </div>
+        </div>
+            <!-- /com.omniupdate.div --> 
+        </maincontent>
+    </content>
+</document>

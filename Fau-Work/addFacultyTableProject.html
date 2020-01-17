@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Faculty: Infrastructure Systems</title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="I-SENSE: Infrastructure Systems" />
+        <meta name="keywords" content="I-SENSE: Infrastructure Systems" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <style>
+                < !-- #faculty {
+                    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+
+                #faculty td,
+                #faculty th {
+                    font-size: 1em;
+                    border: 1px solid #dcdcdc;
+                    padding: 3px 7px 2px 7px;
+                }
+
+                #faculty th {
+                    font-size: 1.1em;
+                    text-align: left;
+                    padding-top: 5px;
+                    padding-bottom: 4px;
+                    background-color: #A7C942;
+                    color: #ffffff;
+                }
+
+                #faculty tr.alt td {
+                    color: #000000;
+                    background-color: #EAF2D3;
+                }
+
+                -->
+            </style>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 pagetop" style="valign: top;">
+                        <center>
+                            <h3 class="divname" style="font-size: 120%;">I-SENSE | Institute for Sensing and Embedded
+                                Network Systems Engineering</h3>
+                        </center>
+                        <h1>Infrastructure Systems Faculty</h1>
+                        <div class="space5px">&nbsp;</div>
+                        <center>
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span
+                                                style="font-size: x-large;"><strong>Valentine Aalo,
+                                                    Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966614}}" alt="Valentine Aalo" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering and Computer
+                                            Science<br /> CEECS<br /> Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.3485<br /> <a
+                                                href="{{d:1316272}}" target="_blank"><span style="color: blue;">Faculty
+                                                    Website</span></a><br /> <a href="mailto:aalo@fau.edu"><span
+                                                    style="color: blue;">aalo@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise:</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span style="font-size: x-large;"><strong>Bassem
+                                                    Alhalabi, Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966653}}" alt="Bassem Alhalabi" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering &amp; Computer
+                                            Science<br /> CEECS<br /> Associate Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.239.1849<br /> <a
+                                                href="{{d:1316275}}" target="_blank"><span style="color: blue;">Faculty
+                                                    Website</span></a><br /> <a href="mailto:alhalabi@fau.edu"><span
+                                                    style="color: blue;">alhalabi@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Embedded Systems</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span
+                                                style="font-size: x-large;"><strong>Gabriel Alsenas</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966629}}" alt="Gabriel Alsenas" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Division of Research<br />
+                                            SNMREC<br /> Program Manager</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.0954<br /> <a
+                                                href="http://www.researchgate.net/profile/Gabriel_Alsenas"
+                                                target="_blank"><span style="color: blue;">Faculty
+                                                    Website</span></a><br /> <a href="mailto:galsenas@fau.edu"><span
+                                                    style="color: blue;">galsenas@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Ocean Energy</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span
+                                                style="font-size: x-large;"><strong>Madasamy Arockiasamy,
+                                                    Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966654}}" alt="Madasamy Arockiasamy" width="150"
+                                                height="150" /></td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering &amp; Computer
+                                            Science<br /> Civil, Env. and Geomatics Engineering<br /> Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.3434<br /> <a
+                                                href="{{d:1316278}}" target="_blank"><span style="color: blue;">Faculty
+                                                    Website</span></a><br /> <a href="mailto:arockias@fau.edu"><span
+                                                    style="color: blue;">arockias@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Constructed Infrastructure
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span style="font-size: x-large;"><strong>Ionut
+                                                    Cardei, Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966644}}" alt="Ionut Cardei" width="150" height="150" /></td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering &amp; Computer
+                                            Science<br /> CEECS<br /> Associate Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.302.4237<br /> <a
+                                                href="http://www.cse.fau.edu/~icardei/index.html" target="_blank"><span
+                                                    style="color: blue;">Faculty Website</span></a><br /> <a
+                                                href="mailto:icardei@cse.fau.edu"><span
+                                                    style="color: blue;">icardei@cse.fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Wireless Networking; System
+                                            Design</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span
+                                                style="font-size: x-large;"><strong>Mihaela Cardei,
+                                                    Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966655}}" alt="Mihaela Cardei" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering &amp; Computer
+                                            Science<br /> CEECS<br /> Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.3459<br /> <a
+                                                href="http://www.cse.fau.edu/~mihaela/index.html" target="_blank"><span
+                                                    style="color: blue;">Faculty Website</span></a><br /> <a
+                                                href="mailto:mcardei@fau.edu"><span
+                                                    style="color: blue;">mcardei@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Wireless Networking,
+                                            Wireless Sensor Networks, Combinatorial Optimization in Wireless Networks,
+                                            Network Protocols and Algorithm Design</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span
+                                                style="font-size: x-large;"><strong>Eduardo Fernandez,
+                                                    Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966667}}" alt="Eduardo Fernandez" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering and Computer
+                                            Science<br /> CEECS<br /> Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.3466<br /> <a
+                                                href="http://faculty.eng.fau.edu/fernande/" target="_blank"><span
+                                                    style="color: blue;">Faculty Website</span></a><br /> <a
+                                                href="mailto:ed@cse.fau.edu"><span
+                                                    style="color: blue;">ed@cse.fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Computer Security</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span
+                                                style="font-size: x-large;"><strong>Mohammad Ilyas,
+                                                    Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966676}}" alt="Mohammad Ilyas" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering &amp; Computer
+                                            Science<br /> College of Engineering &amp; Computer Science<br /> Dean and
+                                            Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.3426<br /> <a
+                                                href="{{d:1316308}}" target="_blank"><span style="color: blue;">Faculty
+                                                    Website</span></a><br /> <a href="mailto:gseits@fau.edu"><span
+                                                    style="color: blue;">gseits@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Sensors</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span
+                                                style="font-size: x-large;"><strong>Evangelos Kaisar,
+                                                    Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966677}}" alt="Evangelos Kaisar" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering and Computer
+                                            Science<br /> Civil Engineering<br /> Associate Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.4084<br /> <a
+                                                href="{{f:6820055}}" target="_blank"><span style="color: blue;">Faculty
+                                                    Website</span></a><br /> <a href="mailto:ekaisar@fau.edu"><span
+                                                    style="color: blue;">ekaisar@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Transportation</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span style="font-size: x-large;"><strong>Koray
+                                                    Karabina, Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966680}}" alt="Koray Karabina" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Science<br /> Mathematical
+                                            Sciences<br /> Assistant Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.0809<br /> <a
+                                                href="http://math.fau.edu/~kkarabina/" target="_blank"><span
+                                                    style="color: blue;">Faculty Website</span></a><br /> <a
+                                                href="mailto:kkarabina@fau.edu"><span
+                                                    style="color: blue;">kkarabina@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Cryptology</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span style="font-size: x-large;"><strong>Taghi
+                                                    Khoshgoftaar, Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966616}}" alt="Taghi Khoshgoftaar" width="150"
+                                                height="150" /></td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering &amp; Computer
+                                            Science<br /> CEECS/Eng&amp;CS<br /> Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.3994<br /> <a
+                                                href="http://www.cse.fau.edu/~taghi/" target="_blank"><span
+                                                    style="color: blue;">Faculty Website</span></a><br /> <a
+                                                href="mailto:khoshgof@fau.edu"><span
+                                                    style="color: blue;">khoshgof@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Data Mining and Machine
+                                            Learning</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span style="font-size: x-large;"><strong>Hassan
+                                                    Mahfuz, Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966620}}" alt="Hassan Mahfuz" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering and Computer
+                                            Science<br /> Ocean &amp; Mechanical Engineering<br /> Associate Dean for
+                                            Research and Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.3483<br /> <a
+                                                href="{{d:1316313}}" target="_blank"><span style="color: blue;">Faculty
+                                                    Website</span></a><br /> <a href="mailto:hmahfuz@fau.edu"><span
+                                                    style="color: blue;">hmahfuz@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Nanomaterials, Structures
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span
+                                                style="font-size: x-large;"><strong>Mehrdad Nojoumian,
+                                                    Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="/images/47 Mehrdad Nojoumian.jpg" alt="Mehrdad Nojoumian"
+                                                width="150" height="150" /></td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering &amp; Computer
+                                            Science<br /> CEECS<br /> Assistant Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561-297-3411<br /> <a
+                                                href="http://faculty.eng.fau.edu/nojoumian/" target="_blank"><span
+                                                    style="color: blue;">Faculty Website</span></a><br /> <a
+                                                href="mailto:mnojoumian@fau.edu"><span
+                                                    style="color: blue;">mnojoumian@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Security &amp; Privacy</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span style="font-size: x-large;"><strong>Zvi
+                                                    Roth, Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966666}}" alt="Zvi Roth" width="150" height="150" /></td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering and Computer
+                                            Science<br /> CEECS</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.3471<br /> <a
+                                                href="http://faculty.eng.fau.edu/rothz/" target="_blank"><span
+                                                    style="color: blue;">Faculty Website</span></a><br /> <a
+                                                href="mailto:rothz@fau.edu"><span
+                                                    style="color: blue;">rothz@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Control</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span style="font-size: x-large;"><strong>Khaled
+                                                    Sobhan, Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966668}}" alt="Khaled Sobhan" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering &amp; Computer
+                                            Science<br /> Civil Engineering<br /> Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.3473<br /> <a
+                                                href="{{d:1316336}}" target="_blank"><span style="color: blue;">Faculty
+                                                    Website</span></a><br /> <a href="mailto:ksobhan@fau.edu"><span
+                                                    style="color: blue;">ksobhan@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Geotechnical/Infrastructure
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span style="font-size: x-large;"><strong>Ramesh
+                                                    Teegavarapu, Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966670}}" alt="Ramesh Teegavarapu" width="150"
+                                                height="150" /></td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering &amp; Computer
+                                            Science<br /> CEGE<br /> Associate Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.504.7502<br /> <a
+                                                href="http://faculty.eng.fau.edu/ramesh/" target="_blank"><span
+                                                    style="color: blue;">Faculty Website</span></a><br /> <a
+                                                href="mailto:rteegava@fau.edu"><span
+                                                    style="color: blue;">rteegava@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Data Minings, Sensor Network
+                                            Optimization, Radar Data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span
+                                                style="font-size: x-large;"><strong>Tsung-chow Su,
+                                                    Eng.Sc.D</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966669}}" alt="Tsung-chow Su" width="150" height="150" />
+                                        </td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering and Computer
+                                            Science<br /> Ocean and Mechanical Engineering<br /> Professor and Graduate
+                                            Advisor</td>
+                                        <td width="460" valign="top" bgcolor="white">561.297.3869<br /> <a
+                                                href="{{d:1316339}}" target="_blank"><span style="color: blue;">Faculty
+                                                    Website</span></a><br /> <a href="mailto:su@fau.edu"><span
+                                                    style="color: blue;">su@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Fluid Mechanics,
+                                            Fluid/Structure Interaction</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table id="faculty" style="width: 1075px;" cellspacing="0" cellpadding="10">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white"><span style="font-size: x-large;"><strong>Yan
+                                                    Yong, Ph.D.</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="155" align="center" valign="top" bgcolor="white"><img
+                                                src="{{f:12966622}}" alt="Yan Yong" width="150" height="150" /></td>
+                                        <td width="460" valign="top" bgcolor="white">Engineering and Computer
+                                            Science<br /> CEGE<br /> Department Interim Chair and Professor</td>
+                                        <td width="460" valign="top" bgcolor="white">PHONE<br /> <a href="{{d:1316348}}"
+                                                target="_blank"><span style="color: blue;">Faculty
+                                                    Website</span></a><br /> <a href="mailto:yongy@fau.edu"><span
+                                                    style="color: blue;">yongy@fau.edu</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" bgcolor="white">Research Expertise: Structures</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                    </div>
+                </div>
+            </div><!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h1>The University...at a Glance</h1>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

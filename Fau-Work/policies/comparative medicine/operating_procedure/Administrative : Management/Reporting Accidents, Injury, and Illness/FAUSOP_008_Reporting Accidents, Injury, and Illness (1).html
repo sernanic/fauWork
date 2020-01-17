@@ -1,0 +1,402 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Reporting Accidents, Injuries, and Illnesses
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Reporting Accidents, Injuries, and Illnesses" />
+        <meta name="keywords" content="Reporting Accidents, Injuries, and Illnesses" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all Comparative Medicine personnel.
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp;Facilities Manager</div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp; To outline the proper procedures for reporting all work-related accidents,
+                                injuries, or
+                                illnesses.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All vivaria and research labs
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                
+                <ol>
+                    <li>
+                        <h2>Responsibility</h2>
+                        <ol type="a">
+                            <li>
+                                <p>All Comparative Medicine Employees and Volunteers</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Conduct yourself in a safe manner and be cognizant of surroundings at all
+                                            times.</p>
+                                    </li>
+                                    <li>
+                                        <p>Wear eye protection when working with chemicals that may splatter, drip,
+                                            and/or whilst
+                                            pouring.</p>
+                                    </li>
+                                    <li>
+                                        <p>Use proper restraint on animals to avoid bites and scratches.</p>
+                                    </li>
+                                    <li>
+                                        <p>Use caution when lifting, bending, stretching, pulling, and/or pushing.</p>
+                                    </li>
+                                    <li>
+                                        <p>Report all work-related injuries or illnesses to supervisor immediately.</p>
+                                    </li>
+                                    <li>
+                                        <p>Fill out required paperwork as outlined below.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Supervisors</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Report all injuries/illnesses to AmeriSys, Environmental Health and Service
+                                            (EH&amp;S), and
+                                            Human Resources (HR) as outlined below.</p>
+                                        <p>Date Last Reviewed/Revised: 10/28/2016 SOP 008 Reporting Injuries</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>General</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Eating, drinking, chewing gum, and applying cosmetics is not permitted within the
+                                    facility.</p>
+                            </li>
+                            <li>
+                                <p>Appropriate PPE has to be worn and universal precautions followed when working with
+                                    rodents and
+                                    chemicals.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Procedure</h2>
+                        <ol type="a">
+                            <li>
+                                <p>If there is a medical emergency, dial 911. Once the injured party is safe, the
+                                    supervisor will
+                                    contact AmeriSys.</p>
+                            </li>
+                            <li>
+                                <p>All non-emergency work-related injuries or illnesses should be reported to your
+                                    supervisor
+                                    immediately.</p>
+                            </li>
+                            <li>
+                                <p>Prior to the injured individual seeking medical attention and even if medical
+                                    attention is not
+                                    pursued, the supervisor will report the incident to AmeriSys 1800- 455-2079 (see
+                                    section d).</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>If possible the employee is to be present for the call so the
+                                            employee&rsquo;s injuries may
+                                            be triaged and the appropriate medical care is provided.</p>
+                                    </li>
+                                    <li>
+                                        <p>Failure to obtain treatment from an AmeriSys participating provider will
+                                            jeopardize the
+                                            employee's workers' compensation benefits.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>The location code (0204) will need to be provided to AmeriSys along with the
+                                    following information:
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p>Employee Name</p>
+                                    </li>
+                                    <li>
+                                        <p>Employee Social Security Number</p>
+                                    </li>
+                                    <li>
+                                        <p>Date of Incident (Injury or Illness)</p>
+                                    </li>
+                                    <li>
+                                        <p>Time of Incident (Injury or Illness)</p>
+                                    </li>
+                                    <li>
+                                        <p>Employee Home Address</p>
+                                    </li>
+                                    <li>
+                                        <p>Employee Home Phone Number</p>
+                                    </li>
+                                    <li>
+                                        <p>Employee Class Title</p>
+                                    </li>
+                                    <li>
+                                        <p>Employee Date of Birth</p>
+                                    </li>
+                                    <li>
+                                        <p>Employee Sex (Male or Female)</p>
+                                    </li>
+                                    <li>
+                                        <p>Description of Accident</p>
+                                    </li>
+                                    <li>
+                                        <p>Cause of Accident</p>
+                                    </li>
+                                    <li>
+                                        <p>Part of Body Affected</p>
+                                    </li>
+                                    <li>
+                                        <p>Name and Address of Agency or University (Primary Address)</p>
+                                    </li>
+                                    <li>
+                                        <p>Date that Incident was Reported by Employee</p>
+                                    </li>
+                                    <li>
+                                        <p>Employee Date of Employment</p>
+                                    </li>
+                                    <li>
+                                        <p>Employee Salary</p>
+                                    </li>
+                                    <li>
+                                        <p>Employee Work Address and Phone Number</p>
+                                    </li>
+                                    <li>
+                                        <p>Employee Supervisor</p>
+                                    </li>
+                                    <li>
+                                        <p>Supervisor Phone Number</p>
+                                    </li>
+                                    <li>
+                                        <p>Place of Accident (Street, City, Zip)</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>If medical attention is not sought, the First Report of Injury Report form<a
+                                        href="http://www.fau.edu/hr/files/FirstReportOfInjuryForm-NonMedical.pdf"
+                                        target="_blank">
+                                        https://www.fau.edu/hr/files/FirstReportOfInjuryForm-NonMedical.pdf</a> needs to
+                                    be filled out
+                                    and sent to HR.</p>
+                            </li>
+                            <li>
+                                <p>Questions regarding work place injuries and Workers&rsquo; Compensation may be
+                                    directed to the
+                                    Department of Human Resources, Employee Relations, tel: 561- 297-0319, fax:
+                                    561-297-4220 or visit
+                                </p>
+                                
+                            </li>
+                            <li>
+                                <p><em>The Supervisor&rsquo;s Injury/Illness Analysis and Prevention Report</em>,
+                                    located on the
+                                    EH&amp;S website http://www.fau.edu/facilities/ehs/info/Supervisor-Injury-Illness-
+                                    Report.pdf needs
+                                    to be completed within 24 hours of notification of the incident. Send the completed
+                                    and signed
+                                    report to EH&amp;S (hand carry or fax to 297-2210).</p>
+                            </li>
+                            <li>
+                                <p>The injured employee may be reimbursed for mileage to and from doctor&rsquo;s
+                                    appointments. The
+                                    report can be found at <a
+                                        href="http://www.fau.edu/hr/files/MileageReimbursement.pdf"
+                                        target="_blank">http://www.fau.edu/hr/files/MileageReimbursement.pdf</a></p>
+                            </li>
+                            <li>
+                                <p>The injured employee needs to send a work status to their supervisor and the Human
+                                    Resources
+                                    Department, Worker's Compensation Coordinator, IS-4, Room 229, after every visit to
+                                    the doctor.
+                                    Without the work status form, the injured employee will be required to use his/her
+                                    own leave to
+                                    cover the time out.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Record Keeping</h2>
+                        <ol>
+                            <li>
+                                <p>File a copy of all aforementioned paperwork in employee&rsquo;s file.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <hr/>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

@@ -1,0 +1,471 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Processing Biological Indicators
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Processing Biological Indicators" />
+        <meta name="keywords" content="Processing Biological Indicators" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine personnel
+                                
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp; Certified Veterinary
+                                Technician
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp;To outline the procedures for
+                                autoclaving for processing biological indicator Bacillus stearothermophilus or B.
+                                subtilis used in determining autoclave effectiveness.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All Vivaria
+                                laboratories
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <h2>References:</h2>
+                <ol>
+                    <li>
+                        <p>The Biosafety in Microbiological and Biomedical Laboratories, 5th Edition</p>
+                    </li>
+                    <li>
+                        <p>SOP110: Autoclave Effectiveness</p>
+                    </li>
+                    <li>
+                        <p>SOP119: Incubator Use and Maintenance for Biological Indicators</p>
+                    </li>
+                    <li>
+                        <p>BI sample product sheet(s) and/or Safety Data Sheet for each type of BI</p>
+                    </li>
+                    <li>
+                        <p>BI incubator product sheet(s)</p>
+                    </li>
+                    <li>
+                        <p>Autoclave Log Sheet (CM#045)</p>
+                    </li>
+                    <li>
+                        <p>Biological Indicator Log Sheet (CM#059)</p>
+                    </li>
+                    <li>
+                        <p>Health and Environment Check Sheet (CM#008)</p>
+                    </li>
+                </ol>
+                <hr/>
+                <ol>
+                    <li>
+                        <h2>Responsibilities</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Laboratory Animal Technician (LAT)/Autoclave Operator</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Perform only procedures for tasks which have been trained.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Certified Veterinary Technician (CVT)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Provide appropriate training including hands-on sessions to autoclave
+                                            operator, document
+                                            training and verify competency including knowledge of safety requirements.
+                                        </p>
+                                        <p>May 28, 2017 SOP 111 Biological Indicators</p>
+                                    </li>
+                                    <li>
+                                        <p>Collect biological indicator (BI) sample, complete incubation process and
+                                            recordkeeping using
+                                            the procedures described in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Oversee Quality Assurance Program including testing of autoclave
+                                            effectiveness. Review
+                                            Autoclave log sheets at least monthly for accuracy and collection of
+                                            temperature strips</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Facility Manager (FM)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel depending on
+                                            function/job
+                                            description and assurance that Training record is signed.</p>
+                                    </li>
+                                    <li>
+                                        <p>Correct equipment problems or staff training leading to non-compliance.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Training Coordinator</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Schedule training at frequency to maintain competency to SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to personnel.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Director/Attending Veterinarian (AV)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedure as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel and necessary
+                                            resources are
+                                            available.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Safety</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Caution should be used when pressing the inner glass tube of the biological indicator
+                                    tube. The inner
+                                    tube is a fragile glass and is intended to be broken with light pressure; however,
+                                    excessive
+                                    pressure can cause the outer tube to break as well. When the outer tube is broken,
+                                    bacteria and
+                                    glass are potential sources of contamination or injury.</p>
+                            </li>
+                            <li>
+                                <p>Personnel should always wear PPE relevant to this task: lab coat, gloves and eye
+                                    protection.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>General Information</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Steam sterilization (autoclaving) is one of the most effective methods for
+                                    decontaminating
+                                    biohazardous or quarantined materials. Live culture BI are considered the
+                                    &ldquo;gold
+                                    standard&rdquo; or most effective method for verification of autoclave performance.
+                                </p>
+                            </li>
+                            <li>
+                                <p>BIs are spores of <em>Bacillus stearothermophilus </em>(and <em>B. subtilis </em>in
+                                    some products)
+                                    and must be incubated after autoclave processing @ 56-60oC according to incubator
+                                    operating
+                                    instructions.</p>
+                            </li>
+                            <li>
+                                <p>Review <em>SOP119: Incubator Use and Maintenance for Biological Indicators</em></p>
+                                <p>before operating steam incubator.</p>
+                            </li>
+                            <li>
+                                <p>The following items need to be available at all times:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Autoclave log sheet</p>
+                                    </li>
+                                    <li>
+                                        <p>Autoclave log book</p>
+                                    </li>
+                                    <li>
+                                        <p>BI equipment &ndash; incubator to meet BI product specifications</p>
+                                    </li>
+                                    <li>
+                                        <p>BI test product &ndash; purchased to meet processing time and bacterial count
+                                            levels</p>
+                                    </li>
+                                    <li>
+                                        <p>PPE: Autoclave gloves and eye protection.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Procedures</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Operator verify autoclave occurred for a minimum of 30 minutes unless validation data
+                                    demonstrates
+                                    that less time is sufficient (or more time is required) for decontamination.</p>
+                            </li>
+                            <li>
+                                <p>Add task to monthly equipment duties for each set of autoclave parameters used.</p>
+                            </li>
+                            <li>
+                                <p>Follow <em>SOP110: Autoclave Effectiveness </em>to produce a BI for incubation.</p>
+                            </li>
+                            <li>
+                                <p>Collect a cooled and labeled BI from autoclave.</p>
+                            </li>
+                            <li>
+                                <p>Check labeling date and time of autoclave start cycle to make sure steam did not
+                                    impact the labeling
+                                    on the ampule. If so, re-label with date and time of autoclave start before
+                                    delivering the sample
+                                    for processing. This information will be placed in BI records. See recordkeeping
+                                    (Section 6) below.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Deliver sample to the appropriate location (lab or procedure room depending on
+                                    facility) for
+                                    processing.</p>
+                            </li>
+                            <li>
+                                <p>Once in the lab were the incubator is located, gently press on the tube to break the
+                                    inner glass
+                                    ampule of the BI which has been in an autoclave cycle and place in incubator.</p>
+                            </li>
+                            <li>
+                                <p>Gently press on the tube of a second ampule which has not been inside an autoclave,
+                                    to be processed
+                                    as a control, label with date and "control" and place in incubator as well.</p>
+                            </li>
+                            <li>
+                                <p>Turn incubator switch to &ldquo;on&rdquo;. Follow the manufacturer&rsquo;s
+                                    instructions for operation
+                                    of the incubator.</p>
+                            </li>
+                            <li>
+                                <p>Allow the BI to process the required amount of time (1 hr, 3 hrs, 24-48 hrs) for the
+                                    selected BI
+                                    product.</p>
+                            </li>
+                            <li>
+                                <p>Collect the sample from the incubator at the end of the processing time.</p>
+                            </li>
+                            <li>
+                                <p>Review colors of both the control and the autoclaved ampule(s). See the product
+                                    manual for the
+                                    appropriate colors for the control sample and the autoclaved sample.</p>
+                            </li>
+                            <li>
+                                <p>Record BI results on the <em>BI Log sheet</em>.</p>
+                            </li>
+                            <li>
+                                <p>Record outcome on the <em>Autoclave Log sheet </em>at the appropriate vivarium.</p>
+                            </li>
+                            <li>
+                                <p>Notify CVT and FM of failed results of BI incubation failure and re-process
+                                    materials; especially
+                                    before handling contents inside biohazard bags.</p>
+                            </li>
+                            <li>
+                                <p>If outer tube of any BI (autoclaved or non-autoclaved) breaks contain spillage, mark
+                                    area and inform
+                                    all personnel working in the area of potential hazard. Then follow EH&amp;S
+                                    established containment
+                                    and cleanup procedures.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Record Keeping</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Document all validation techniques for decontaminating biohazardous materials and
+                                    sterilizing tools,
+                                    caging and supplies on the Autoclave Log sheet.</p>
+                            </li>
+                            <li>
+                                <p>Log any failed temperature strip or failed BI tests from the autoclave on the
+                                    <em>Health and
+                                        Environment Check Sheet </em>and notify CVT and FM.</p>
+                            </li>
+                            <li>
+                                <p>Records should be reviewed regularly by the CVT, the FM and possibly at least
+                                    semi-annually by the
+                                    IACUC or EH&amp;S personnel.</p>
+                            </li>
+                            <li>
+                                <p>The first six months of the past calendar year can be filed after the first six
+                                    months of the current
+                                    calendar year are completed.</p>
+                            </li>
+                            <li>
+                                <p>Autoclave log sheets for a period of one full year are to remain readily accessible
+                                    for IACUC
+                                    potential inspection; logs more than one year old may be archived. Records older
+                                    than three years
+                                    may be destroyed.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <hr/>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision</p>
+                                <p>Number</p>
+                            </td>
+                            <td>
+                                <p>Description of Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

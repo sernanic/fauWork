@@ -1,0 +1,729 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title> Microbiological Monitoring of Facility Sanitation
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content=" Microbiological Monitoring of Facility Sanitation" />
+        <meta name="keywords" content=" Microbiological Monitoring of Facility Sanitation" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Veterinary Services personnel
+                                </p>
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp; Certified Veterinary
+                                Technician (CVT)
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp;To ensure the microbial
+                                cleanliness and effectiveness of sanitation procedures by monitoring
+                                bacterial levels and types at all CM managed Vivaria</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All Vivaria
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2>References</h2>
+                <ol>
+                    <li>
+                        <p>Guide for the Care and Use of Laboratory Animals. National Research Council; National Academy
+                            Press,
+                            Washington, D.C., 2011</p>
+                    </li>
+                    <li>
+                        <p>Biosafety in Microbiological and Biomedical Laboratories, 5th Edition, CDC/NIH, 2009</p>
+                    </li>
+                    <li>
+                        <p>SOP 114 Microbiological Monitoring Using ATP</p>
+                    </li>
+                    <li>
+                        <p>SOP 115 Microbiological Monitoring Using Microbial Agar</p>
+                    </li>
+                    <li>
+                        <p>SOP 213 Workflow In and Between Vivaria</p>
+                    </li>
+                    <li>
+                        <p>CM#050 Environmental Monitoring Sample Log</p>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <h2>Responsibilities</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Laboratory Animal Technician (LAT)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Perform only procedures for tasks which have been trained.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Certified Veterinary Technician (CVT)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Provide appropriate training including hands-on sessions to personnel helping
+                                            with sampling
+                                            and other monitoring procedures outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Manages the microbiological monitoring program.</p>
+                                    </li>
+                                    <li>
+                                        <p>Reviews results and suggests measures to improve outcome of sanitation
+                                            procedures based on
+                                            test results to the AV or other program veterinarian.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Facility Manager</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate SOP training is provided to particular personnel depending
+                                            on function/job
+                                            description in concert with Training Coordinator.</p>
+                                    </li>
+                                    <li>
+                                        <p>Directs implementation of measures to improve outcome of sanitation
+                                            procedures.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Director/Attending Veterinarian (AV)</p>
+                                <ol>
+                                    <li>
+                                        <p>Adhere to procedure as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel and necessary
+                                            resources are
+                                            available.</p>
+                                    </li>
+                                    <li>
+                                        <p>Oversees environmental monitoring program(s) and reviews all results. Assures
+                                            implementation
+                                            of measures to improve outcome of sanitation procedures.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>General Information</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Quality assurance practices set forth in this SOP will ensure that sanitation and
+                                    sterilization of
+                                    equipment in cage wash, animal housing rooms and procedure rooms in the vivarium
+                                    yield an adequate
+                                    reduction or total absence of surface contamination as appropriate for the
+                                    particular surface/item.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Both microbial growth and organic residues exist as a barrier for effective
+                                    sanitation and
+                                    sterilization and serve as potential mechanism for pathogen transmission.</p>
+                            </li>
+                            <li>
+                                <p>The microbiological monitoring of facility sanitation employs the use of hard surface
+                                    contact slides
+                                    holding a neutralizing microbial agar and an ATP test system at a regular interval
+                                    or whenever
+                                    changes in sanitation processes are made (e.g. changes in disinfectants and cage
+                                    wash chemicals or
+                                    temperatures).</p>
+                            </li>
+                            <li>
+                                <p>Adenosine triphosphate (ATP) is the universal energy molecule found in all animal,
+                                    plant, bacterial,
+                                    yeast, and mold cells. Sanitation effectiveness can be measured by detecting ATP
+                                    (i.e. organic
+                                    matter) with a specific ATP test system like the Neogen AccuPoint. A relative light
+                                    unit (RLU) is
+                                    the measure of light produced from the enzymatic reaction of luciferase when it
+                                    reacts with ATP in a
+                                    sampling swab.</p>
+                            </li>
+                            <li>
+                                <p><u>D/E Neutralizing Microbial Agar</u> neutralizes a broad spectrum of antiseptic and
+                                    disinfectant
+                                    chemicals, which are commonly used in sanitation processes in vivaria. Difco
+                                    HYcheckTM contact
+                                    slides with D/E Neutralizing Agar is used for the isolation of microorganisms from
+                                    environmental
+                                    surfaces.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Procedure</h2>
+                        <ol>
+                            <li>
+                                <p>General:</p>
+                                <ol type="a">
+                                    <li>
+                                        <p>Quarterly testing of hard surfaces will be performed using both ATP and
+                                            Microbial Agar
+                                            testing in all five (5) CM managed centralized vivaria (i.e. 71, 35A, 35B,
+                                            MC17 and MC19).
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>In average, the total number of samples collected will be 138 ATP and 69
+                                            HYcheckTM. See table
+                                            1 for distribution of samples between the different vivaria.</p>
+                                    </li>
+                                    <li>
+                                        <p>All testing media (ATP swabs and Difco HYcheck plates) must be kept
+                                            refrigerated and checked
+                                            for defects and expiration dates before use.</p>
+                                    </li>
+                                    <li>
+                                        <p>Sample sites are areas considered to be of either high risk for transmission
+                                            and overall
+                                            spreading of ubiquitous microbes including potential pathogens or sanitized
+                                        </p>
+                                        <p>June 28, 2017 SOP 113 Microbiological Monitoring of Sanitation Procedures</p>
+                                        <p>surfaces/items supposed to be clean (i.e. expected to have no or a very low
+                                            number of CFUs or
+                                            RLUs). Sample sites include:</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>High traffic areas in housing, procedure, cage wash rooms and
+                                                    hallways such as door
+                                                    handles, floors and bench/counter tops in procedure rooms.</p>
+                                            </li>
+                                            <li>
+                                                <p>Difficult to clean areas such as irregular surfaces, O-rings,
+                                                    pockets, groves and
+                                                    corners.</p>
+                                            </li>
+                                            <li>
+                                                <p>Areas with the potential to create specific health threats to animals
+                                                    such is cage
+                                                    changing station or biosafety cabinet work surfaces and surgical
+                                                    equipment/tables.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Sanitized equipment before returning it into the circulation such as
+                                                    primary
+                                                    enclosures, cage components and environmental enrichment devices.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Equipment and room surfaces must be cool and dry prior to testing. This is
+                                            especially
+                                            important for ATP swabs.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Sampling procedures:</p>
+                                <ol type="a">
+                                    <li>
+                                        <p>Following either SOP 114 for ATP and/or SOP 115 for Microbial Agar, arrange
+                                            for the
+                                            environmental monitoring of the vivaria by obtaining the appropriate
+                                            amount/number of test
+                                            material including HYcheck slides and ATP swabs. Assure that sufficient
+                                            material is
+                                            available to finish the sampling process within a one to two day window for
+                                            all five
+                                            vivaria.</p>
+                                    </li>
+                                    <li>
+                                        <p>Identify areas to sample, prepare records and label sample containers.</p>
+                                    </li>
+                                    <li>
+                                        <p>Gown up with the facility specific PPE and change gloves between different
+                                            rooms or whenever
+                                            soiled.</p>
+                                    </li>
+                                    <li>
+                                        <p>Start sampling in the cleanest areas (e.g. clean cagewash and surgical suite)
+                                            and follow the
+                                            workflow based on health status of animals and associated room/facility
+                                            classifications (See
+                                            FAU SOP 213).</p>
+                                    </li>
+                                    <li>
+                                        <p>Sample cagewash room when it is operating. Samples of sanitized items should
+                                            be taken
+                                            immediately after removed from the washer and have had time to dry.</p>
+                                    </li>
+                                    <li>
+                                        <p>Sample a variety of sanitized items in the cage wash area and sample points
+                                            in animal holding
+                                            rooms, procedure rooms, storage rooms, surgical suites, and cage wash rooms.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Rotate types of sanitized items and sample point in rooms each quarter.</p>
+                                    </li>
+                                    <li>
+                                        <p>Collect samples from multiple sites on each surface or item.</p>
+                                    </li>
+                                    <li>
+                                        <p>Read ATP samples immediately after collection and complete associated ATP
+                                            sampling record
+                                            (CM#050).</p>
+                                    </li>
+                                    <li>
+                                        <p>Store collected samples in refrigerator until shipping to a commercial
+                                            testing laboratory
+                                            according to manufacturer&rsquo;s specifications (See FAUSOP 115).</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Sample Points:</p>
+                                <ol type="a">
+                                    <li>
+                                        <p>Animal Rooms/Hallways</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>Room walls and floor surfaces</p>
+                                            </li>
+                                            <li>
+                                                <p>Bio Safety Hood interior and exterior surfaces</p>
+                                            </li>
+                                            <li>
+                                                <p>Outside of animal cages</p>
+                                            </li>
+                                            <li>
+                                                <p>Rack surfaces</p>
+                                            </li>
+                                            <li>
+                                                <p>Sink interior and exterior</p>
+                                            </li>
+                                            <li>
+                                                <p>Overhead cabinets</p>
+                                            </li>
+                                            <li>
+                                                <p>Carts, food bins, and trays</p>
+                                            </li>
+                                            <li>
+                                                <p>Mop buckets, trash container lids and carts</p>
+                                                <p>June 28, 2017 SOP 113 Microbiological Monitoring of Sanitation
+                                                    Procedures</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Procedure Rooms</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>Room walls and floor surfaces</p>
+                                            </li>
+                                            <li>
+                                                <p>Surfaces which animals come into contact</p>
+                                            </li>
+                                            <li>
+                                                <p>Bench tops, counter tops, and desk tops</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Cage Wash Room (Samples to be taken from clean and dirty side)</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>Room walls and floor surfaces</p>
+                                            </li>
+                                            <li>
+                                                <p>Floor at exit of interconnecting change room\</p>
+                                            </li>
+                                            <li>
+                                                <p>Cage wash racks (dirty and clean surfaces)</p>
+                                            </li>
+                                            <li>
+                                                <p>Floor and wall surfaces from random cage types</p>
+                                            </li>
+                                            <li>
+                                                <p>Enrichment devices</p>
+                                            </li>
+                                            <li>
+                                                <p>Feeders, cages, sippers, and water bottles/bowls</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Test Result Evaluation</p>
+                                <ol type="a">
+                                    <li>
+                                        <p>ATP results will be compared and eventually classified as <em>Pass</em>,
+                                            <em>Marginal</em>,
+                                            and <em>Fail </em>according to ranges established based on prior testing as
+                                            well as on type
+                                            of surface or item sampled.</p>
+                                    </li>
+                                    <li>
+                                        <p>Once all test results have been received the CVT will prepare reports for the
+                                            review by the
+                                            veterinarian.</p>
+                                    </li>
+                                    <li>
+                                        <p>Test results will be discussed by the AV, the CVT and FM depending on results
+                                            and a strategy
+                                            developed for resolution of <em>Fail </em>ATP results and unacceptable
+                                            HYcheck results.
+                                            Further investigations might be initiated to find the reason for
+                                            unacceptable test results.
+                                            The FM is responsible for implementation of remedial actions in regards to
+                                            sanitation. The
+                                            veterinary staff is responsible for communicating concerns to research
+                                            personnel, if
+                                            necessary.</p>
+                                    </li>
+                                    <li>
+                                        <p>Resolution of unacceptable results can include but are not limited to</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>Retesting of particular surfaces/items</p>
+                                            </li>
+                                            <li>
+                                                <p>Training of CM personnel regarding sanitation procedures</p>
+                                            </li>
+                                            <li>
+                                                <p>Adjustment of sanitation frequency/intervals</p>
+                                            </li>
+                                            <li>
+                                                <p>Changes in detergents/disinfectants</p>
+                                            </li>
+                                            <li>
+                                                <p>Improvement of the cage washer function</p>
+                                            </li>
+                                            <li>
+                                                <p>Communication of proper procedures to research personnel</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Number and type of remedial actions will be decided on a case by case basis.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Record Keeping</h2>
+                        <ol type="a">
+                            <li>
+                                <p>The <em>Quarterly EMP Sampling Preparation sheet </em>will be prepared in advance for
+                                    guidance during
+                                    the sampling procedures including the number of samples to be collected per
+                                    facility, specific
+                                    sample site(s) within the particular vivarium, and the description of the sampled
+                                    surface/item.</p>
+                            </li>
+                            <li>
+                                <p>The <em>Quarterly ATP Sampling Sheet </em>will be prepared with number of sample,
+                                    sample site, name
+                                    of vivarium, and description of sampled surface/item. The columns pertaining to the
+                                    URL measured,
+                                    initials of the sampling person, and date and time of sampling will be completed
+                                    during active
+                                    sampling and kept as &ldquo;raw data&rdquo;.</p>
+                            </li>
+                            <li>
+                                <p>The HYcheck Sampling Report found inside the box of HYcheck slides will be prepared
+                                    in advance in
+                                    regards to facility being tested, room number, and contact person at this facility.
+                                    The specific
+                                    surface/item sampled, name of person taking samples and date and time of sampling
+                                    will be completed
+                                    during active sampling. This</p>
+                                <p>June 28, 2017 SOP 113 Microbiological Monitoring of Sanitation Procedures</p>
+                                <p>report will be copied, the original sent with the samples to the commercial
+                                    laboratory for testing
+                                    and the copy kept as &ldquo;raw data&rdquo;.</p>
+                            </li>
+                            <li>
+                                <p>Final data will include the Microbiological Monitoring Log reporting the results by
+                                    the commercial
+                                    laboratory and a test result summary report printed from the Neogen AccuPoint ATP
+                                    testing system.
+                                </p>
+                            </li>
+                            <li>
+                                <p>All quarterly EMP records will be filed in a systematic manner as hard copies and in
+                                    electronic
+                                    format if applicable on the CM shared drive.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <p>Table 1: Quantities for ATP &amp; HYcheck Assigned by Building at Quarterly Sampling</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Building</p>
+                            </td>
+                            <td>
+                                <p>35A</p>
+                            </td>
+                            <td>
+                                <p>35B</p>
+                            </td>
+                            <td>
+                                <p>71</p>
+                            </td>
+                            <td>
+                                <p>MC17</p>
+                            </td>
+                            <td>
+                                <p>MC19</p>
+                            </td>
+                            <td>
+                                <p>Totals</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p># of Rooms</p>
+                            </td>
+                            <td>
+                                <p>13</p>
+                            </td>
+                            <td>
+                                <p>9</p>
+                            </td>
+                            <td>
+                                <p>15</p>
+                            </td>
+                            <td>
+                                <p>17</p>
+                            </td>
+                            <td>
+                                <p>11</p>
+                            </td>
+                            <td>
+                                <p>65</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>ATP Qtr</p>
+                            </td>
+                            <td>
+                                <p>27</p>
+                            </td>
+                            <td>
+                                <p>16</p>
+                            </td>
+                            <td>
+                                <p>31</p>
+                            </td>
+                            <td>
+                                <p>38</p>
+                            </td>
+                            <td>
+                                <p>22</p>
+                            </td>
+                            <td>
+                                <p>131</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>HYcheck Qtr</p>
+                            </td>
+                            <td>
+                                <p>14</p>
+                            </td>
+                            <td>
+                                <p>9</p>
+                            </td>
+                            <td>
+                                <p>16</p>
+                            </td>
+                            <td>
+                                <p>18</p>
+                            </td>
+                            <td>
+                                <p>11</p>
+                            </td>
+                            <td>
+                                <p>68</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>8/9/17</p>
+                            </td>
+                            <td>
+                                <p>8/9/17</p>
+                            </td>
+                            <td>
+                                <p>113.2</p>
+                            </td>
+                            <td>
+                                <p>Updated general procedures and quantities in Table 1; changed verbiage;</p>
+                                <p>changed formatting</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

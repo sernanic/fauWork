@@ -1,0 +1,611 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title> Aquatic Salamander Husbandry and Care
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content=" Aquatic Salamander Husbandry and Care" />
+        <meta name="keywords" content=" Aquatic Salamander Husbandry and Care" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine (CM) personnel responsible for the
+                                husbandry of the aquatic salamanders.
+                                
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp; Facility Manager
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp;To outline the general husbandry
+                                for aquatic salamanders.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;Vivaria
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <h2>References</h2>
+                <ol>
+                    <li>
+                        <p>Guide for the Care and Use of Laboratory Animals. National Research Council; National Academy
+                            Press,
+                            Washington, D.C., 2011</p>
+                    </li>
+                    <li>
+                        <p>Public Health Service Policy on Humane Care and Use of Laboratory Animals. OLAW (NIH) 2015
+                        </p>
+                    </li>
+                </ol>
+                <hr/>
+                <ol type="A">
+                    <li>
+                        <h2>RESPONSIBILITIES</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Attending Veterinarian (AV) and Director</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Directs CM personnel regarding personal protective equipment.</p>
+                                    </li>
+                                    <li>
+                                        <p>Assures that CM personnel is appropriately trained and adhere to procedures
+                                            as outlined in
+                                            this SOP.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Training Coordinator/Administrative Assistant</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Assures that CM personnel is appropriately trained and adhere to procedures
+                                            as outlined in
+                                            this SOP.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Facilities Manager (FM)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Assures that responsible Animal Care Technicians are appropriately trained
+                                            and implement
+                                            procedures as delineated in this SOP.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Laboratory Animal Technician (LAT)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP or as directed by Facility
+                                            Manager and/or AV.
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <p>Document all activities as outlined below in section Recordkeeping.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>GENERAL</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Handling:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Always wear gloves and wash your hands thoroughly after handling the
+                                            salamanders or tanks.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>In the event of a bite or scratch, wash the wound thoroughly, and dress the
+                                            wound with the
+                                            first aid kit, seek medical attention if necessary, and alert supervisor.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Handle the salamanders carefully using a net with small, soft mesh.</p>
+                                    </li>
+                                    <li>
+                                        <p>Each tank will have an identification card with the following information:
+                                            Tank Number,
+                                            Principal Investigator, IACUC Protocol Number, Date of Arrival, Species,
+                                            Approximate Size or
+                                            Age at arrival, and Source of Animals.</p>
+                                    </li>
+                                    <li>
+                                        <p>All housing materials are impermeable, easily sanitized, and able to
+                                            withstand multiple
+                                            washings.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Cleaning</p>
+                                <ol type="i">
+                                    <li>
+                                        <h2>NOTE: do not use any detergents or soaps in or around the salamander tanks.
+                                        </h2>
+                                    </li>
+                                    <li>
+                                        <p>Approved disinfectants for the aquatic rooms are: 10% bleach solution, 3%
+                                            peroxide solution,
+                                            or 1:50 chlorhexidine solution. All disinfectants must be rinsed thoroughly
+                                            prior to contact
+                                            with the salamanders or salamander tanks. Bleach solution must be mixed
+                                            daily (the
+                                            shelf-life of diluted bleach is 24 hours).</p>
+                                    </li>
+                                    <li>
+                                        <p>Sani-plex solution can be used <u><strong>only</strong></u> to mop the floor
+                                            but not on any
+                                            items that will come in contact with the tanks or the salamanders.</p>
+                                    </li>
+                                    <li>
+                                        <p>All designated nets, brushes, etc. will be soaked in an appropriate
+                                            disinfectant (such as
+                                            Netsoak) and rinsed thoroughly prior to use.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Environment monitored by handheld thermometer and FAU Facilities</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Room temperature is kept between 60-68 degrees Fahrenheit. The absolute max
+                                            is 72 degrees.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Humidity should be 30-70%</p>
+                                    </li>
+                                    <li>
+                                        <p>Lighting: the room lights are on a 12:12 light cycle.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Tanks</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>One conventional rat cage with lid (filled with 3.5 gallons of water) can
+                                            hold up to 4
+                                            medium-sized salamanders.</p>
+                                    </li>
+                                    <li>
+                                        <p>No substrate is necessary, but aquarium &ndash;grade sand can be used. Do not
+                                            use pebbles or
+                                            rocks.</p>
+                                    </li>
+                                    <li>
+                                        <p>Tap water will be used for the tanks. The water will need sit in the housing
+                                            room for 24
+                                            hours before use to release the chlorine and to adjust to the appropriate
+                                            temperature.</p>
+                                    </li>
+                                    <li>
+                                        <p>Keep several gallons of extra water in the room for water changes and to
+                                            increase tank water
+                                            levels when there has been evaporation.</p>
+
+                                    </li>
+                                    <li>
+                                        <p>Add 1 teaspoon of aquarium salt to each tank at the initial set up.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>PROCEDURE</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Daily Checks</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Health Checks</p>
+                                        <ol>
+                                            <li>
+                                                <p>Animals will be checked daily by CM personnel prior to 10am. Any
+                                                    exceptions must be
+                                                    approved by AV or FM.</p>
+                                            </li>
+                                            <li>
+                                                <p>All animals will be checked for injuries or illness. All illnesses
+                                                    and injuries need
+                                                    to be reported to the Principal Investigator (PI), appropriate lab
+                                                    personnel, the
+                                                    AV, the FM, and CM animal care staff.</p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>Common health issues to look out for</p>
+                                                        <ol type="i">
+                                                            <li>
+                                                                <p>&ldquo;wasting disease&rdquo; (reduction of tail fins
+                                                                    and gills)</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Peeling skin on head and back</p>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Environment</p>
+                                        <ol>
+                                            <li>
+                                                <p>Check the room temperature. It should be between 60 and 68
+                                                    Fahrenheit. Alert
+                                                    supervisor if the temperature is out of range.</p>
+                                            </li>
+                                            <li>
+                                                <p>Inspect the tank water. Remove any debris with designated net. If the
+                                                    water has
+                                                    dropped below the water line, add dechlorinated water to the tank.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>If the water is discolored, smelly, or parameters are out of range
+                                                    then conduct a
+                                                    water change.</p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>Full changes every 10-14 days or</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>10-20% change once a week or every two weeks as needed</p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>Inspect the filters. If there is a detritus build-up or the water
+                                                    flow appears
+                                                    restricted, unplug the filter, remove it, clean the media and place
+                                                    the filter back
+                                                    in the tank. <strong>NOTE: do not let the filter pump run
+                                                        dry</strong></p>
+                                                <ol>
+                                                    <li>
+                                                        <p>Feeding</p>
+                                                        <ol type="i">
+                                                            <li>
+                                                                <p>Pull mealworms out of the refrigerator 24 hours prior
+                                                                    to feeding</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Salamanders will be fed live mealworms or frozen
+                                                                    bloodworms two times
+                                                                    per week. Offer the worms directly to the
+                                                                    salamanders with forceps
+                                                                    or tweezers.</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Mealworm care</p>
+                                                                        <ol type="a">
+                                                                            <li>
+                                                                                <p>Mealworms can be kept in a large
+                                                                                    plastic container,
+                                                                                    with air holes in the top. You
+                                                                                    should cover the
+                                                                                    mealworms with a thick layer of
+                                                                                    mealworm bedding
+                                                                                    from the vendor to provide bedding
+                                                                                    and a food
+                                                                                    source.</p>
+                                                                            </li>
+                                                                            <li>
+                                                                                <p>Upon arrival place them in a
+                                                                                    refrigerator, set at
+                                                                                    45F, until ready for use. When you
+                                                                                    are ready to use
+                                                                                    them, remove the desired amount and
+                                                                                    leave at room
+                                                                                    temperature until they become
+                                                                                    active, roughly 24
+                                                                                    hours before feeding to your animal.
+                                                                                </p>
+
+                                                                            </li>
+                                                                            <li>
+                                                                                <p>If you plan to keep the mealworms for
+                                                                                    longer than two
+                                                                                    weeks, remove them from the
+                                                                                    refrigerator, and let
+                                                                                    them become active. Once they become
+                                                                                    active, place a
+                                                                                    slice of potato on the top of the
+                                                                                    bedding to provide
+                                                                                    moisture, and let them sit for
+                                                                                    twenty-four hours.
+                                                                                    Then, place them back in the
+                                                                                    refrigerator.</p>
+                                                                            </li>
+                                                                        </ol>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                <p>If a salamander won&rsquo;t eat, note it in the
+                                                                    Progress Notes, and
+                                                                    alert the AV if the same salamander goes without
+                                                                    eating for two
+                                                                    feedings.</p>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <p>Environmental Enrichment</p>
+                                                        <ol type="i">
+                                                            <li>
+                                                                <p>Feeding live worms</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>PVC pipes can be provided for hiding, but
+                                                                    they&rsquo;re not
+                                                                    necessary.</p>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <p>Water Testing</p>
+                                                        <ol type="i">
+                                                            <li>
+                                                                <p>During the initial tank set-up, testing will be done
+                                                                    daily until
+                                                                    it&rsquo;s confirmed the results are stable.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Once stable, Water (kit) Testing should be performed
+                                                                    early in the
+                                                                    week to leave time for adjustments.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>See the water testing kit for parameters (similar to
+                                                                    fish). If the
+                                                                    parameters become too high, conduct a partial
+                                                                    (10-20%) water change.
+                                                                </p>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <p>Sanitation</p>
+                                                        <ol type="i">
+                                                            <li>
+                                                                <p>Daily</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Keep all room surfaces clear of debris and
+                                                                            fingerprints</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Keep room stocked with gloves, paper towels,
+                                                                            Wypalls, hand
+                                                                            soap, and hand sanitizer for general use</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Squeegee any water on the floor down the
+                                                                            drain.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Scoop tank of any debris.</p>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                <p>Weekly or more often:</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Mop floors</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Sanitize all counters, sinks, shelves, door
+                                                                            handles, etc.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Empty trash.</p>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                <p>Between Animal Orders:</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>All tanks and PVC tubes need to be rinsed
+                                                                            off, scrubbed,
+                                                                            rinsed, then soaked with nets in 10% bleach
+                                                                            for at least
+                                                                            three hours. All items need to be rinsed
+                                                                            three times prior
+                                                                            to any contact (direct or indirect) with the
+                                                                            salamanders.
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>All filter media needs to be replaced and the
+                                                                            filter housing
+                                                                            wiped with 10% bleach.</p>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>RECORDKEEPING</h2>
+                        <ol>
+                            <li type="a">
+                                <p>Complete daily check sheet and sign the task calendar.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <hr/>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

@@ -1,0 +1,792 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Rodent Health Monitoring and Reporting
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Rodent Health Monitoring and Reporting" />
+        <meta name="keywords" content="Rodent Health Monitoring and Reporting" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine personnel involved in the daily animal monitoring and veterinary
+                                care program.
+
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp;Attending Veterinarian
+                                (CVT)
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp; To describe the procedures
+                                involved in the daily health monitoring and care of aquatic turtles (freshwater or
+                                brackish water) housed in facilities operated and/or overseen by Comparative Medicine.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;Vivarium 35A, Sanson Turtle Lab
+                                laboratories
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <h2>
+                    References
+                </h2>
+                <ol>
+                    <li>
+                        <p>
+                            Guide for the Care and Use of Laboratory Animals. National Research Council; National
+                            Academy Press, Washington, D.C., 2011
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Public Health Service Policy on Humane Care and Use of Laboratory Animals. OLAW (NIH) 2015
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            AVMA Guidelines for the Euthanasia of Animals, American Veterinary Medical Association, 2013
+                            Edition
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Laboratory Animal Medicine. JG Fox, LC Anderson, G Otto, KR Pritchett- Corning and MT Whary,
+                            Academic Press, 3rd Edition, San Diego, CA, 2015
+                        </p>
+                    </li>
+                </ol>
+                <ol type="I">
+                    <li>
+                        <h2>
+                            Responsibilities
+                        </h2>
+                        <ol type="A">
+                            <li>
+                                <p>
+                                    Animal Care Technician (ACT)
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Adhere to procedures as outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Document all activities as outlined below in Recordkeeping.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Inform PI and/or Director immediately about any emergency and within the
+                                            time limit specified in this SOP about any abnormal findings.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Training Coordinator/Coordinator, Administrative Services (CAS)
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Train CM staff on this SOP regularly but at least once a year. Newly hired
+                                            personnel will be trained during the initial training period as outlined in
+                                            SOP 001, Training New Lab Animal Technicians.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Train CM staff on appropriate procedures necessary to perform health
+                                            evaluations and treatments as prescribed by the veterinarian.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Communicates with vendor in case turtles arrived in unacceptable health
+                                            conditions or not to the specifications indicated in the animal order.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Facilities Manager (FM)
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Oversees receipt of animals into regular or quarantine housing, initial
+                                            health evaluation, care/husbandry procedures, possible treatments,
+                                            collection of test samples, shipping to commercial laboratory and in- house
+                                            testing as directed by AV and outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Inform AV immediately about any equivocal or positive results of diagnostic
+                                            tests and abnormal findings and/or observations.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Assures that responsible Animal Care Technicians are appropriately trained
+                                            and implement procedures as delineated in this SOP.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Veterinarian/Director
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Adhere to procedures as outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Ensure procedures are followed as outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Ensure appropriate training is provided to particular personnel performing
+                                            this function.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Maintain direct and frequent communication with ACT and research staff;
+                                            visit each facility at least once a week and more often if necessary.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Evaluate animals, diagnose, prescribe increased monitoring and/or treatment
+                                            as necessary. Provide consultation to research staff in regards to treatment
+                                            or euthanasia.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Review all health records and test results if applicable regularly.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>
+                            Safety
+                        </h2>
+                        <p>
+                            GENERAL:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Eating, drinking, chewing gum, and applying cosmetics is not permitted within the
+                                    facility.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Appropriate PPE has to be worn and universal precautions followed when working with
+                                    reptiles to avoid transmission of zoonotic diseases such as
+                                    <em>
+                                        Salmonella
+                                    </em>
+                                    .
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Wash hands after handling animals and specimen for examination.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Turtles are capable of inflicting scratches and bites. Use caution and proper
+                                    handling and restraint techniques.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    In the event of a bite or a scratch, notify Supervisor immediately and complete
+                                    injury report.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>
+                            Procedure
+                        </h2>
+                        <ol type="A">
+                            <li>
+                                <p>
+                                    GENERAL
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Health monitoring is an important part of an animal care and use program.
+                                            All animals will be monitored by Comparative Medicine at least once daily if
+                                            housed in a CM centralized facility or once weekly if housed in a satellite
+                                            facility maintained by the PI from the day of arrival until final
+                                            disposition.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Vendors of aquatic animals such as Red Eared Sliders (
+                                            <em>
+                                                Trachemys scripta
+                                            </em>
+                                            ) are evaluated by the AV prior to first shipment of turtles. Shipping
+                                            health reports will be filed and web health reports will be screened if
+                                            applicable.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If permits are required for procurement of species such as FWS permit for
+                                            invasive species they will be filed along with other official documents.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If turtles are not commercially available such as Terrapins, the respective
+                                            PI is responsible for acquiring appropriate permits before any turtles are
+                                            wild caught.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Newly arrived animals are housed separately in a tank different from the
+                                            resident turtles for 4 weeks or longer if directed by the veterinarian.
+                                            Those turtles will be handled after the husbandry/handling of resident
+                                            turtles has been finished.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Arrival of animals requires that the shipping crate be sprayed with approved
+                                            disinfectant prior to entry into the building. Each animal is examined for
+                                            any abnormal signs while transferring from the shipping crate to the
+                                            permanent cage. Any abnormalities found at this time need to be reported to
+                                            the relevant research staff, the veterinarian and the Coordinator,
+                                            Administrative Services.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Any health concerns will be communicated with the research staff. Even if a
+                                            senior person in the research lab is authorized to make decisions regarding
+                                            animals the Principle Investigator will be copied on any email sent to the
+                                            research lab so that she/he is aware of the particular situation.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    DAILY HEALTH MONITORING
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Every day, visually inspect each tank of animals for signs of illness,
+                                            injury or distress starting with resident turtles first followed by
+                                            observation of newly arrived animals. Animal health checks must be completed
+                                            by 10AM except for animals in quarantine unless approved by the AV or FM for
+                                            special occasions like holidays.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If animals need to be handled resident turtles have to be serviced first.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If health concerns are noted, make a brief entry in the room log book on the
+                                            relevant health record sheet. Note the unique animal identification. Be
+                                            succinct and describe the condition. Refrain from diagnostic terminology.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If an animal is found to be in pain, bleeding, or being unresponsive inform
+                                            research staff immediately. Reach out to talk to the PI or responsible
+                                            research technician via phone first. If this is not possible send an email
+                                            flagged as urgent. If research staff is not responsive within a reasonable
+                                            time frame depending on the case inform veterinarian via phone.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Document number of animals found sick or dead on room&rsquo;s
+                                            <em>
+                                                Daily Room Check Sheet
+                                            </em>
+                                            .
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Document sick animal case in
+                                            <em>
+                                                Animal Health and Environmental Concern form
+                                            </em>
+                                            , stating room number, animal identification, IACUC protocol number, tank
+                                            number/location and who has been notified.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Review the
+                                            <em>
+                                                Progress Notes
+                                            </em>
+                                            for treatment instructions and previous health related entries.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Each health concern has to be reported via email to the relevant research
+                                            personnel and veterinarian. Emails need to be sent once a day (if
+                                            applicable) when all health concerns are likely to be known. Include
+                                            information regarding health concerns and animal(s) found dead. Note:
+                                            Emergency situations have to be reported separate and immediately.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    ABNORMAL SIGNS
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Turtles undergo ecdysis, i.e. regular shedding of skin, as any other
+                                            reptile. The turtle&rsquo;s shell can look cloudy before shedding scutes or
+                                            layers of shell. Turtles usually don&rsquo;t shed in one piece like snakes
+                                            but rather in bits and pieces. This is a normal process and must be
+                                            distinguished from abnormal health conditions concerning the skin/shell of
+                                            turtles.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Observe the appearance and behavior of animals. Abnormal signs may include:
+                                        </p>
+                                        <ol type="a">
+                                            <li>
+                                                <p>
+                                                    Changes in appetite, anorexia, evidence of weight loss
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Pitting or rough areas of the shells, picture 1
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Changes in color of shells (carapace and plastron), picture 2
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Lethargy, unresponsiveness to external stimuli, oblivious to
+                                                    surroundings
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Reluctance to move, hiding
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Increased aggression with manual manipulation
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Swellings or evidence of tumors or growths
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Swollen and/or shut eye(s), picture 3
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Diarrhea
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Discharge from orifices (i.e. eyes, nose, mouth, cloaca)
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Difficulty breathing or audible respiratory sounds
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Head extended away from body
+                                                </p>
+                                            </li>
+                                            <p>
+                                                <img src="" alt="">
+                                                Picture 1
+                                            </p>
+                                            <p>
+                                                <img src="" alt="">
+                                                Picture 2
+                                            </p>
+                                            <p>
+                                                <img src="" alt="">
+                                                Picture 3
+                                            </p>
+
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    FOLLOW UP ON HEALTH CONCERNS
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            If an animal is found moribund or in any other emergency condition, any
+                                            effort will be made to contact research personnel. If this is not possible
+                                            in a reasonable time, the veterinarian will make the final decision
+                                            regarding euthanasia to avoid suffering of the animal.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            The research personnel will determine whether a sick animal should be
+                                            examined by the veterinarian or euthanized.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If the research personnel want to keep the animal, the veterinarian will
+                                            evaluate the animal during regularly scheduled clinical rounds or earlier if
+                                            warranted. The veterinarian based on her/his expertise will determine any
+                                            further action necessary.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If the veterinarian is not available on time, the care staff will
+                                            communicate with her/him via phone/electronic media and make entries in the
+                                            health records on behalf of and as directed by the veterinarian. If the
+                                            responsible veterinarian is out of town a backup veterinary agreement is in
+                                            place and the backup veterinarian will be contacted by the Facilities
+                                            Manager or his/her designee.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If the veterinarian decides that the animal needs to be euthanized, the
+                                            research personnel will be informed. The expectation is that the animal will
+                                            be euthanized within 24 hours of notification to allow the research staff to
+                                            collect tissues unless otherwise noted in the room log book by the
+                                            veterinarian.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If treatment of an animal is deemed necessary the veterinarian will make
+                                            written recommendations in the health records of the room log book. This
+                                        </p>
+                                        <p>
+                                            recommendation will be communicated to the research staff. A response is
+                                            expected within 24 hours.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If the research staff objects to the recommended treatment due to
+                                            interference with the study outcome the veterinarian will discuss with the
+                                            Principle Investigator or authorized research personnel other possibilities
+                                            including euthanasia.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            In case the research staff agrees on the recommended treatment Comparative
+                                            Medicine personnel will treat animals housed in a CM centralized facility
+                                            while research personnel is responsible for the treatment of animals housed
+                                            in the satellite facility. Animals will be regularly reevaluated by the
+                                            veterinarian. The veterinarian will recommend euthanasia if treatment(s) are
+                                            not successful after a reasonable treatment period.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If the veterinarian decides no treatment is necessary but the condition
+                                            warrants close monitoring, this will be noted in the progress notes. Animal
+                                            care technicians and research personnel are expected to enter observations
+                                            in the progress notes at an interval as directed by the veterinarian and
+                                            based on the severity of the condition. The animal will be regularly
+                                            reevaluated by the veterinarian and entries made in the room log book.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    RECORDKEEPING
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Any health concerns have to be noted in the
+                                            <em>
+                                                Daily Room Check Sheet
+                                            </em>
+                                            as the number of animals with health concerns and in the
+                                            <em>
+                                                Animal Health and Environmental Concern form
+                                            </em>
+                                            while in a CM centralized vivarium.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Each room log book contains
+                                            <em>
+                                                Progress Notes
+                                            </em>
+                                            per PI and IACUC protocol number.
+                                            <em>
+                                                Progress Notes
+                                            </em>
+                                            will be archived once the relevant protocol expires or more often if
+                                            necessary. This will be done by the party responsible for daily health
+                                            monitoring and/or treatments.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Comparative Medicine personnel and research personnel can perform entries in
+                                            the
+                                            <em>
+                                                Progress Notes
+                                            </em>
+                                            . Entries have to be made timely, succinct and legible. Any animal with a
+                                            health concern if not immediately euthanized is considered a case. Each case
+                                            has to have a final entry either if the condition is resolved or the animal
+                                            is euthanized to be considered closed. Animal care technicians or research
+                                            personnel responsible for the particular housing area are responsible for
+                                            the completeness of the health records.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Treatments have to be recorded on the
+                                            <em>
+                                                Treatment label
+                                            </em>
+                                            (picture 4)
+                                            <em>
+                                                ,
+                                            </em>
+                                            which will be placed as necessary by the technician responsible for
+                                            treatment. The person treating the animal will enter the date of treatment
+                                            and initial in the AM and/or PM column as appropriate.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Records are maintained on health information for at least 3 years past the
+                                            end of a protocol or essentially forever.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Temporary storage of CM records is in the office of building 35A and
+                                            permanent indefinite records are stored in T-5.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Records of satellite facilities have to be stored at the location identified
+                                            by the particular research lab.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    Review Date
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Revision Date
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Revision
+                                </p>
+                                <p>
+                                    Number
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Description of Revision
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h1>The University...at a Glance</h1>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

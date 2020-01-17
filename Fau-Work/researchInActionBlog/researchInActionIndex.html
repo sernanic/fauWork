@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+<config>
+	<filename>index</filename>
+	<parameter name="pagetype" type="text" group="Admins" prompt="Page Type" alt="Please select the layout type you would like to use.">generic</parameter>
+
+</config>
+	<properties>
+		<!-- com.omniupdate.properties -->
+		<title>Research In Action Blog</title>
+<parameter name="badge" type="radio" group="Everyone" prompt="Site Name" alt="Do you want to display the site name?">
+<option value="true" selected="false">Yes</option>
+<option value="false" selected="true">No</option>
+</parameter>		
+<parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation" alt="Do you want to display the top/horizontal navigation?">
+<option value="true" selected="true">Yes</option>
+<option value="false" selected="false">No</option>
+</parameter>
+		<parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel" alt="Do you want to display a carousel or banner?">
+<option value="true" selected="false">Yes</option>
+<option value="false" selected="true">No</option>
+</parameter>
+<parameter name="layout" type="radio" group="Everyone" prompt="Layout" alt="Which column layout do you want to display?">
+<option value="1" selected="true">Full Page Width No Navigation</option>
+<option value="2a" selected="false">Left Navigation with Content Column</option>
+<option value="2b" selected="false">Right Navigation with Content Column</option>
+<option value="3" selected="false">Left and Right Navigation with Content Column</option>
+<option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+</parameter>
+		
+		
+		<!-- /com.omniupdate.properties -->
+	</properties>
+	<metadata>
+		<!-- com.omniupdate.properties -->
+		<meta name="description" content="Boca Raton Public Library Research In Action Series Speaker Blog" />
+		<meta name="keywords" content="FAU Research In Action, FAU research in excellence fund, Boca Raton Public Library Lecture Series, Lecture Series, Speaker Blog" />
+		<!-- /com.omniupdate.properties -->
+	</metadata>
+	<content>
+		<maincontent>
+			<!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+			<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+			
+			<style>
+				html {
+					scroll-behavior: smooth;
+				}
+				h1, h2, h3, h4, p, a li {
+					font-family: 'Nunito', sans-serif; /* google fonts approximation of Avenir */
+				}
+				.sm-header {
+					font-size: 1.14em;
+                }
+                
+                .mobileHide { display: inline; } 
+
+			  /* Smartphone Portrait and Landscape */ 
+			  @media only screen 
+				and (min-device-width : 320px) 
+				and (max-device-width : 480px){ 
+				 .mobileHide { display: none;}
+              }
+              .mobileShow {display: none;} 
+
+            /* Smartphone Portrait and Landscape */ 
+            @media only screen 
+                and (min-device-width : 320px) 
+                and (max-device-width : 480px){ 
+                .mobileShow {display: inline;}
+            }
+			</style>
+    <div class="container-fluid">
+		
+		<div class="row">   
+            
+            <div class="col-lg-9 pagetop" style="valign: top;">
+                <a name="top"></a>
+                <h3 class="divname">Research In Action</h3>
+                <h1 class="rshead">2019 Speaker Blog</h1>
+				<br /><br />
+            </div>
+            <div class="col-md-3" style="position: sticky;">
+                <div class="mobileHide">
+                        <ul style="list-style-type: none;position: fixed;">
+                            <li style="margin: 10px 0"><a href="#energyHumanities" style="color: #737373">Energy and the Humanities</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#whatWeDontKnow" style="color: #737373">Science: What we <strong><em>Don’t</em></strong> Know</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#SoYouWannaBeAnEntrepreneur" style="color: #737373">So You Wanna be an Entrepreneur?</a></li>
+							<hr style="border: 2px solid #00447C"/>
+							<li style="margin: 10px 0"><a href="#SarajediniBlog" style="color: #737373">The Formation &amp; Evolution of Our Galaxy</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#relationshipBetweenPlants" style="color: #737373">The Relationship Between Plants and People</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                         </ul>
+                </div>
+                    
+                <div class="mobileShow">
+                        <ul style="list-style-type: none;">
+                            <li style="margin: 10px 0"><a href="#energyHumanities" style="color: #737373">Energy and the Humanities</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#whatWeDontKnow" style="color: #737373">Science: What we <strong><em>Don’t</em></strong> Know</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#SoYouWannaBeAnEntrepreneur" style="color: #737373">So You Wanna be an Entrepreneur?</a></li>
+							<hr style="border: 2px solid #00447C"/>
+							<li style="margin: 10px 0"><a href="#SarajediniBlog" style="color: #737373">The Formation &amp; Evolution of Our Galaxy</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                            <li style="margin: 10px 0"><a href="#relationshipBetweenPlants" style="color: #737373">The Relationship Between Plants and People</a></li>
+                            <hr style="border: 2px solid #00447C"/>
+                         </ul>
+                </div>     
+                </div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<img src="http://www.fau.edu/research/research-in-action/images/ata-sarajedini.jpg" alt="photo research in Action"/>
+			</div>
+			<div class="col-md-7">
+				<a name="SarajediniBlog">
+					<h3>The Formation &amp; Evolution of Our Galaxy</h3>
+				</a>
+				<p>By Ata Sarajedini, Ph.D.</p>
+				<p>
+					As I entered the room where my talk was to be presented, I saw several members of the audience whom I had seen at
+					previous events where I had given talks. I was especially gratified to see Panos Giannakos, Arthur and Geri Lutzker, Jim
+					Lifland, Edward Williams, John Martins, Stuart Cohen, Yvette Senser, Mike DeDonno, and Kari Oeltjen. <br/>
+					
+					I began my talk by presenting a basic introduction of the scientific method in a similar way as I have done in every
+					episode of the "Ask a Scientist" radio show / podcast series available from the FAU College of Science web site
+					(http://www.science.fau.edu/scientist.php). Knowing what science is and how the methods of science work is critical to
+					understanding and thinking critically about scientific results. <br/>
+					
+					I spoke for 50 or so minutes about the formation and evolution of our galaxy – the Milky Way – beginning with how stars
+					form and evolve and concluding with how our sun will end its life and in turn the Earth. There were a variety of
+					questions from the audience with the most thought-provoking being about philosophy and not about science necessarily. <br/>
+					
+					Astronomy frequently concerns itself with addressing questions related to the origins of things in the same way
+					philosophy does. However, unlike philosophy, a hallmark of science is the presence of data (a.k.a. observations) and
+					explanations (a.k.a. theories) that attempt to explain the data. I tried to make the point to the audience that science
+					concerns itself with the natural world in which events tend to be repeatable while philosophy is sometimes applied to
+					the supernatural world where events are not necessarily repeatable. It's hard to do science on events that are not
+					repeatable. <br/>
+					
+					I very much enjoyed my interactions with the audience during the question and answer period so much so that I did not
+					want to put an end to it. Until next time ...
+
+				</p>
+			</div>
+		</div>
+		<div class="row">
+            <div class="col-md-12"><hr /></div>
+        </div>
+		<div class="row" id = "RhysWilliams">
+            <div class="col-md-2">
+                <img src="http://www.fau.edu/research/research-in-action/images/Rhys-Williams.jpg" alt="Photo Research in Action Rhys Williams" />
+            </div>
+            <div class="col-md-7">
+                <a name="SoYouWannaBeAnEntrepreneur">
+                    <h3>So You Wanna be an Entrepreneur?</h3>
+                </a>
+                <p>By Rhys L. Williams, JD, MBA</p>
+                <p>
+                    What an absolute privilege and honor to be asked to speak on the topic of entrepreneurship to a highly engaged,
+                    inquisitive and serious-minded group of attendees. Given the audience’s high degree of receptiveness, we covered a lot
+                    of ground, including:
+                </p>
+                <ul>
+                    <li><p>Why the question of entrepreneurship, and who is best-suited or positioned for success, is relevant presently?</p> </li>
+                    <li><p>When we use the term entrepreneur, what exactly do we mean, and what are variations on the generally understood definition?</p></li>
+                    <li><p>What are the categories of risk that entrepreneurs need to explore, quantify/qualify (wherever possible) and attempt to mitigate (always)?</p> </li>
+                    <li><p>What are archetypes, understood profiles and various classes of entrepreneurs?</p> </li>
+                    <li><p>How hard is it for entrepreneurs to succeed in launching and growing their ventures; what is the percentage of failure/success; what are the most common reasons for new business failure?</p> </li>
+                    <li><p>What qualities do successful entrepreneurs possess? Are successful entrepreneurs born, or can they be developed/trained?</p> </li>
+                    <li><p>Is it ever too old to become a successful entrepreneur? Are there prominent examples of entrepreneurial success that was earned late in a person’s life?</p> </li>
+                    <li><p>How can a member of the regional community engage with FAU, its team and its programs in the field of entrepreneurship?</p> </li>
+                </ul>
+                <p>
+                    If this list of topics we covered has piqued your curiosity, I encourage you to click here to view the full deck of presentation slides. <br/>
+                    We had ample time for questions and answers, which afforded us the opportunity to explore several other topics, including:
+                </p>
+                <ul style="font: Nunito">
+                    <li><p>Business model: Despite the common adage that “services don’t scale,” would a platform technology that allows business customers to deliver an entire program of services to their own clients potentially be scalable?</p> </li>
+                    <li><p>Intellectual property: What are the general rules governing ownership of intellectual property for FAU’s various internal stakeholders and outside partners?</p> </li>
+                    <li><p>If a person feels that they have good entrepreneurial instincts, exceptional work ethic and a strong competitive
+                        drive, but has not yet found the right idea, concept or unmet need in the marketplace around which to launch a
+                        business venture, are there resources at FAU to help them find a raw technology or a worthwhile business concept to
+                        start?</p> 
+                    </li>
+                    <li><p>For someone who is interested in taking that first step on the path to becoming an entrepreneur, what resources are available through FAU? </p>  </li>
+                </ul>
+                <p>
+                    If you are interested in learning the answers we covered during the final portion of the presentation, I invite you to reach out to me at 
+                </p>
+                <a href = "mailto: WilliamsR@fau.edu.">WilliamsR@fau.edu.</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><hr /></div>
+        </div>
+		<div class="row" id="staceybalkan">
+			<div class="col-md-2">
+				<img src="/research/research-in-action/images/stacey-balkan.jpg" alt="Photo Research in Action Blog - Stacey Balkan, Ph.D." />
+			</div>
+			<div class="col-md-7">
+				<a name = "energyHumanities"><h3>Energy and the Humanities</h3></a> 
+				<p>By Stacey Balkan, Ph.D. </p>
+				<p>As an advocate for alternative energy, and a professor of environmental humanities, little is more important to me than knowing that what I do in the classroom matters beyond the campus. This is especially true here in South Florida where I am reminded daily of the potential impacts of climate change, and the urgent need to engage the community in thinking about ways to alter our behavior. The Research in Action series at the Boca Raton Public Library gave me the opportunity to do just this!   </p>
+				<p>My talk, titled “The Stories We Tell About Climate Change and Energy,” focused on the ways in which popular representations of energy and climate change shape public perception. I began by asking how visions of environmental apocalypse, for example, like we see in the film <em>The Day After Tomorrow</em>, skew our sense of our collective future. We then considered images of disaster that were both more scientifically feasible and a lot closer to home, such as hurricanes like Michael (2018) and Irma (2017). Audience members were eager to discuss the relationship — if there is one — between <em><strong>increased</strong></em> cyclonic activity, global warming and energy use. (Short answer: there is!)    </p>
+				<p>Our discussion moved between the local and the global as we explored images of energy beyond the gas tank. We looked at examples of petroculture, including a poem by Nigerian writer and activist Ken Saro-Wiwa, titled “Ogoni! Ogoni!” This haunting work recounts the destructive role of petroleum extraction in the Niger Delta. Audience members recoiled at lyrics like “luckless lungs,” which referred to children; and one quickly said she would post this poem on her refrigerator as a  daily reminder of the “hidden costs” of automobile culture. Her promise reminded me of the critical role of community engagement, especially in the context of environmental justice.   </p>
+				<p>We ultimately turned to the history of energy use and its relationship to global development, and I asked: When did the so-called Anthropocene (or “age of Man”) begin? And, why does that matter? We quickly agreed on 1492 (the “age of discovery”) rather than 1784 (James Watt’s steam engine patent and the “industrial revolution”), because it is clear that current crises stem as much from dominant worldviews as from fossil fuels. </p>
+				<p>The day ended with a rich discussion about how we might imagine different ways of inhabiting the planet. At this point, one audience member asked: “How can you still be so optimistic?” I answered: “I’m a teacher, I have to be.” </p>
+                <a href="#top" class="mobileShow">back to top</a>
+			
+            </div>
+            
+		</div>
+		<div class="row" >
+			<div class="col-md-12"><hr /></div>
+		</div>
+		
+		<div class="row" id="mariafadiman">
+			<div class="col-md-2">
+				<img src="/research/research-in-action/images/maria-fadiman.jpg" alt="Photo Research in Action Blog - Maria Fadiman, Ph.D." />
+			</div>
+			
+			<div class="col-md-7">
+				<a name="relationshipBetweenPlants"><h3>The Relationship Between Plants and People</h3></a> 
+				<p>By Maria Fadiman, Ph.D. </p>
+				<p>What a joy to speak to the audience at the FAU Research in Action talk at the Boca Raton Public Library. The energy in the room was contagious, and that helped bring the talk alive. As people laughed, gasped and peered intently, I knew I was talking to a particularly engaged audience.  </p>
+				<p>The questions and comments that followed the talk helped me think of my work in a more local way, as people identified issues here in Florida, as well as ways they work in the community. These thoughts ranged from protected areas and the Everglades, to home gardens and landscaping.   </p>
+				<p>The group was inquisitive with their questions and helped me look at my own work from new angles, and the role I, as the researcher, play in learning about people and lands far away from me. Overall, the sense of interest and commitment to community and the environment in the room filled us all that day. </p>
+                <a href="#top" class="mobileShow">back to top</a>
+			
+			</div>
+		</div>
+   		<div class="row" >
+			<div class="col-md-12"><hr /></div>
+		</div>
+		
+		<div class="row" id="rindyanderson">
+			<div class="col-md-2">
+				<img src="/research/research-in-action/images/rindy-anderson.jpg" alt="Photo Research in Action Blog - Rindy Anderson" />
+			</div>
+			
+			<div class="col-md-7">
+				<a name="whatWeDontKnow"><h3>Science: What we <strong><em>Don’t</em></strong> Know</h3></a> 
+				<p>By Rindy Anderson, Ph.D. </p>
+				<p>I love sharing my research with the public. It is one of the most rewarding aspects of my job, mostly because of the questions from the audience. I am almost always asked a question that stumps me, and a question that I have never thought about before. My talk at the Research in Action lecture series at the Boca Raton Public Library, was no exception. </p>
+				<p>My talk focused on the fascinating ways animals communicate information with each other, and why animals are usually honest. During the lecture I spoke about the differences between animal communication and human language. I explained that scientists regard human language as truly unique and described the features of language that set our system of vocal communication apart from other animals.  </p>
+				<p>One audience member asked: You said that human language is special because language can communicate information in ways that other animals can’t. But, how do you know that they can’t? We are biased by our own communication system. How can we ever really know what animals are communicating to each other if we don’t speak their language?  </p>
+				<p>Wow, what a question. I struggled a bit. I explained that scientific study is so valuable because it allows us to test ideas about how the world works. We know what we know due to careful observation, hypothesis testing and synthesis of available knowledge. We know about the differences between human language and animal communication due to decades of research by dedicated scientists. By the end of my answer, however, I had to concede that I couldn’t know for sure that no other animal on Earth has language.  </p>
+				<p>And, this raised an issue that is critical to the scientific process but is often difficult to explain. Through the process of scientific study, we gain new information and update our thinking about what we know. But perhaps, more importantly, science allows us to update our thinking about what we <strong><em>don’t</em></strong> know. I aim to keep this thought in mind for the future, whenever I speak about my research, or science in general.  </p>
+                <a href="#top" class="mobileShow">back to top</a>
+			
+			</div>
+		</div>
+                
+ 
+		
+	</div> <!-- close container -->
+		
+		<!-- /com.omniupdate.div -->
+		</maincontent>
+		<maincontent2>
+			<!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" --><!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ --><h1>The University...at a Glance</h1>
+Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with every student who earns a degree, every researcher who makes a discovery and every community that is transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first public university in southeast Florida and the first in America designed for upper division students only. Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+		</maincontent2>
+	</content>
+</document>
+
+

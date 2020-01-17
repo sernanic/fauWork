@@ -1,0 +1,507 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Development and Implementation of Environmental
+            Monitoring Programs
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Development and Implementation of Environmental
+        Monitoring Programs" />
+        <meta name="keywords" content="Development and Implementation of Environmental
+        Monitoring Programs" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Veterinary Services personnel
+                                </p>
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp; Attending Veterinarian (AV)
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp;To outline the procedures for
+                                developing and implementing an environmental monitoring
+                                program in a specific area such as centralized vivarium or satellite facility</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All Vivaria and Satellite
+                                Facilities
+                                laboratories
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2>References</h2>
+                <ol>
+                    <li>
+                        <p>Guide for the Care and Use of Laboratory Animals. National Research Council; National Academy
+                            Press,
+                            Washington, D.C., 2011</p>
+                    </li>
+                    <li>
+                        <p>Biosafety in Microbiological and Biomedical Laboratories, 5th Edition, CDC/NIH, 2009</p>
+                    </li>
+                    <li>
+                        <p>FB Engley and BP Dey. A Universal Neutralizing Medium for Antimicrobial Chemicals.
+                            Proceedings of the 56th
+                            Mid-Year Meeting of the Chemical Specialties Manufacturing Association (CSMA). 1970</p>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <h2>Responsibilities</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Laboratory Animal Technician</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Perform only procedures for tasks which have been trained.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Certified Veterinary Technician (CVT)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Provide appropriate training including hands-on sessions to personnel helping
+                                            with procedures
+                                            necessary in developing and implementing an environmental monitoring
+                                            program.</p>
+                                    </li>
+                                    <li>
+                                        <p>Oversee under the guidance of the AV environmental monitoring program(s) once
+                                            established and
+                                            implemented.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Facility Manager/Trainer Coordinator</p>
+                                <ol>
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+
+                                    </li>
+                                    <li>
+                                        <p>Ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate SOP training is provided to particular personnel depending
+                                            on function/job
+                                            description.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Director/Attending Veterinarian (AV)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedure as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Oversee development and implementation of environmental monitoring
+                                            program(s).</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel and necessary
+                                            resources are
+                                            available.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>General Information</h2>
+                        <ol>
+                            <li>
+                                <p>All animal housing rooms, procedure rooms and equipment that comes in contact with
+                                    the research
+                                    animals will benefit from the development of an environmental monitoring program
+                                    (EMP). This
+                                    pertains to both Comparative Medicine (CM) centrally managed vivaria and Principal
+                                    Investigator (PI)
+                                    managed satellite facilities.</p>
+                            </li>
+                            <li>
+                                <p>The EMP is designed to</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Unify and standardize sanitation methods</p>
+                                    </li>
+                                    <li>
+                                        <p>Provide a well-defined monitoring program that clearly establishes
+                                            performance expectations
+                                            for staff</p>
+                                    </li>
+                                    <li>
+                                        <p>Provide a scientific process, and data needed, to determine the staff and/or
+                                            the equipment
+                                            (e.g. cage washers) ability to efficiently and effectively sanitize all
+                                            areas and equipment
+                                            in an animal research facility</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Varying methods of cleaning and sanitation can make it very challenging to evaluate
+                                </p>
+                                <p>the efficacy of the sanitation process, and is usually due to lack of standard
+                                    operating procedures,
+                                    training, and methods.</p>
+                            </li>
+                            <li>
+                                <p>To accomplish these goals, the following is necessary for implementation in order to
+                                    have a basis for
+                                    informed decision making:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Monitoring equipment</p>
+                                    </li>
+                                    <li>
+                                        <p>Standardized evaluation methods</p>
+                                    </li>
+                                    <li>
+                                        <p>Testing areas established for base line data</p>
+                                    </li>
+                                    <li>
+                                        <p>Monitoring performed within all facilities on a regular basis based on
+                                            general best practice
+                                            knowledge and scientific publications. The frequency of testing might be
+                                            later adjusted with
+                                            accruing experience.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Procedure</h2>
+                        <ol>
+
+                            <li>
+                                <h2>Recommended Monitoring Methods</h2>
+                                <ol type="a">
+                                    <li>
+                                        <p>Adenosine triphosphate (ATP) is a sanitation monitoring system that measures
+                                            relative
+                                            light units (RLU). The Neogen AccuPoint Advanced ATP Monitoring System is
+                                            available and
+                                            used in FAU research animal facilities.</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>ATP is the energy source in all living cells and remains in place
+                                                    after organic
+                                                    material is exposed to a surface. Through measurement of residual
+                                                    ATP the amount
+                                                    of organic matter (i.e. dirt) or bio-load that remains on a surface
+                                                    can be
+                                                    determined. This remaining bio-load is biological and contains the
+                                                    potential for
+                                                    microbiological contaminants such as pathogenic bacteria, mold, and
+                                                    yeast. It is
+                                                    an indicator for the effectiveness of cleaning.</p>
+
+                                            </li>
+                                            <li>
+                                                <p>ATP measurement with the Neogen AccuPoint is selected due to ease of
+                                                    use, timely
+                                                    response and custom programming features. Individualized facility
+                                                    monitoring
+                                                    templates can/will be programmed into separate AccuPoint monitoring
+                                                    devices and
+                                                    data can/will be uploaded upon completion of sampling for each
+                                                    template. This
+                                                    feature ensures repeatable and consistent testing within each
+                                                    facility site.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>D/E Neutralizing Microbial Agar is used for the isolation of microorganisms
+                                            from
+                                            sanitized environmental surfaces.</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>It was developed by Dey and Engley to neutralize the inhibitory
+                                                    effect of
+                                                    carryover of a broad spectrum of disinfectants and preservative
+                                                    antimicrobial
+                                                    chemicals. D/E neutralizing media neutralize higher concentrations
+                                                    of residual
+                                                    antimicrobials when compare with other standard neutralizing
+                                                    formulations, which
+                                                    is critical to avoid false negative results.</p>
+                                            </li>
+                                            <li>
+                                                <p>D/E Neutralizing Microbial Agar contains media that measures colony
+                                                    forming units
+                                                    (CFU), which allows for the determination of CFU per ml on the
+                                                    sample. This
+                                                    provides an indication of the microbiological load and the degree of
+                                                    contamination found on surfaces and equipment.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h2>EMP Implementation Steps</h2>
+                                <ol type="a">
+                                    <li>
+                                        <p>Overall Microbial and ATP test plans including sample site are agreed upon
+                                            and clearly
+                                            outlined in agreement with the responsible person for the particular area.
+                                            This is done
+                                            with the goal of the implementation process in mind, which is</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>Standardization of the cleaning techniques and</p>
+                                            </li>
+                                            <li>
+                                                <p>Assessment and standardizing levels of sanitation within each
+                                                    facility/area by
+                                                    use of ATP and CFU sampling results for the implementation of
+                                                    standard operating
+                                                    procedures.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Baseline Microbial &amp; ATP testing/sampling is performed in pre-established
+                                            areas in
+                                            the animal facility such as caging/housing equipment, work/room surfaces,
+                                            doors and
+                                            floors. The beginning selection criteria are based on</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>Traffic patterns that include hallways and animal room entry orders
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Commonly used or touched surfaces such as hood surfaces and door
+                                                    handles and
+                                                    high-risk areas of cross contamination such as procedure areas.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>These baseline data will be reviewed with the responsible person for the
+                                            particular area,
+                                            and any &ldquo;hot spots&rdquo; will be recommended as a targeted priority
+                                            for future
+                                            sampling.</p>
+                                    </li>
+                                    <li>
+                                        <p>Acceptable microbial &amp; ATP levels will be established based on the
+                                            facilities
+                                            specific pathogen free status designation, traffic pattern and equipment
+                                            usage.</p>
+                                    </li>
+                                    <li>
+                                        <p>Standard Operating Procedures (SOPs) will be developed that will define:</p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>Chemical concentrations of detergents and disinfectants used</p>
+                                            </li>
+                                            <li>
+                                                <p>Cleaning and disinfection frequency</p>
+                                            </li>
+                                            <li>
+                                                <p>Specific methods used to accomplish these acceptable microbial counts
+                                                    and ATP
+                                                    reading for targeted "hot spots", as well as, regular scheduled
+                                                    cleaning.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Once SOPs have been written and approved SOP training sessions will ensue and
+                                            eventually
+                                            proficiency of personnel performing cleaning/disinfection as well as
+                                            sampling procedures
+                                            certified.</p>
+
+                                    </li>
+                                    <li>
+                                        <p>Evaluation of the EMP will be done 12 months after initiation. The
+                                            expectation is that
+                                            after completion of the first year of the EMP microbial counts and ATP
+                                            reading have been
+                                            reduced to acceptable levels.</p>
+                                    </li>
+                                </ol>
+                            </li>
+
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Record Keeping</h2>
+                        <ol>
+                            <li>
+                                <p>All steps of the EMP development and implementation will be documented.</p>
+                            </li>
+                            <li>
+                                <p>Hand written as well as printed results including test results from samples sent to
+                                    commercial
+                                    laboratories is kept in a specific folder including raw data.</p>
+                            </li>
+                            <li>
+                                <p>Steps implemented to improve microbial counts and ATP readings will be described.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

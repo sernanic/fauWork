@@ -1,0 +1,489 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Animal Transport</title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Animal Transport" />
+        <meta name="keywords" content="Animal Transport" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link hr/ef="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link hr/ef="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h1,
+                strong,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>Subject:</strong>&nbsp;&nbsp;Animal Transport
+                            </div>
+                            <div class="col-md-4"><strong>Effective Date:</strong>&nbsp;&nbsp;6/07/2019</div>
+                            <div class="col-md-4"><strong>Policy Number:</strong>&nbsp;&nbsp;10.4.10</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>Supersedes:</strong>&nbsp;&nbsp;6/24/2016
+
+
+                            </div>
+                            <div class="col-md-8"><strong>Responsible Authorities:</strong>&nbsp;&nbsp;Vice President,
+                                Research
+                                Institutional Animal Care and Use Committee
+                                Director, Research Integrity
+                                Director, Comparative Medicine
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ol>
+                    <hr />
+                    <li>
+                        <h2>Background</h2>
+                        <p>Transporting animals can be stressful and can increase the potential for disease transmission
+                            or injury. The Guide for Care and Use of Laboratory Animals states that transportation
+                            “should be planned to minimize transit time and the risk of zoonosis, protect against
+                            environmental extremes, avoid overcrowding, provide food and water when indicated, and
+                            protect against physical trauma.” The AWAR (§2.38, f) addresses the transit of animals as
+                            part of adequate “handling”, which implies that the IACUC must consider transportation of
+                            animals. Furthermore, the PHS Policy includes vehicles for transports of animals in its
+                            definition of an animal facility.</p>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>Purpose</h2>
+                        <p>To establish a policy that will provide guidance to Research Personnel and Animal Care Staff
+                            in regards to transport of animals, in order to support high standards for quality of
+                            research, animal health and welfare.</p>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>General Statement</h2>
+                        <p>Animals will be transported in a manner that prevents injury, discourages observation by the
+                            public, and protects the environment of the animal holding system.
+                        </p>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>Definitions</h2>
+                        <ol type="A">
+                            <li><strong>Transport</strong> is the transfer of animals between rooms in the same
+                                facility,between
+                                buildings on the same campus, between buildings of different campuses, between
+                                different natural field settings, a commercial wildlife animal supplier and the
+                                experimental site, or between natural field settings and campus buildings. Buildings
+                                can house vivaria or research laboratories approved to be used with live
+                                animals.</li>
+                            <li><strong>Biosecurity</strong> encompasses all measures developed and implemented to
+                                detect, prevent, contain, and eradicate adventitious infections. To exclude those
+                                infections, research animals are maintained behind sanitized and disinfected room- to
+                                cage-level barriers provided with filtered air and sanitized supplies and equipment as
+                                appropriate
+                                for the species protected.</li>
+                            <li><strong>Conventional Animal Housing Area,</strong> for the sake of this policy,is
+                                defined as any
+                                animal facility/room/cubicle where animals can leave and return. Although many of the
+                                management practices including security access are shared with the ones of the modified
+                                barrier housing area the biosecurity level is lower meaning that the risk of introducing
+                                an excluded microbial agent is higher.</li>
+                            <li><strong>Modified Barrier Housing Area,</strong> for the sake of this policy,is defined
+                                as any animal facility/room/cubicle where animals can only leave the facility for
+                                terminal procedures and never be returned to this area. This provides higher biosecurity
+                                and therefore lower risk for introducing any excluded microbial agent.</li>
+                        </ol>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>Policy</h2>
+                        <ol type="A">
+                            <li>
+                                <p>Transport is usually stressful for animals both laboratory and wild life species
+                                    alike.Asa
+                                    result, transporting animals any distance is discouraged if options to diminish such
+                                    transport are available.</p>
+                            </li>
+                            <li>
+                                <p>Comparative Medicine (CM) managed facilities are classified as either conventional or
+                                    modified barrier (biosecurity levels). The purpose of these classifications is to
+                                    provide different levels of control over infectious disease exclusion, stressors
+                                    unrelated to research activities, and research project security.</p>
+                            </li>
+                            <li>
+                                <p>Animals housed inconventional facilities or rooms may not bemoved in to modified
+                                    barrier facilities. Animals already housed in modified barrier facilities should
+                                    only leave the modified barrier for terminal procedures, or if experimental
+                                    procedures cannot be accomplished in the modified barrier facility. Animals that
+                                    exit barrier facilities for any reason may not return to barrier facilities/rooms
+                                    thereafter. Exceptions for special experimental requirements may be granted, however
+                                    specific justification must be approved by the IACUC and the Director, (CM) and
+                                    particular safeguards implemented.</p>
+                            </li>
+                            <li>
+                                <p>It is the responsibility of research as well as animal care staff to know and abide
+                                    by the proper sequence of entry into rooms and cubicles with differing biosecurity
+                                    levels. A list of centralized facilities, rooms and cubicles associated with
+                                    corresponding classification can be found at
+                                    http://www.fau.edu/research/comparative- medicine/animal-health-surveillance.php. In
+                                    addition, room entrance doors are appropriately labeled.</p>
+                            </li>
+                            <li>
+                                <p>Transport involving CM managed facilities are approved by the Director, CM based on
+                                    health status of facility, room(s), and/or animal(s), experimental status of animal
+                                    (e.g. chronically instrumented, post-operative period) and available space/housing
+                                    conditions. In circumstances where a requested transport is not approved, the
+                                    Director, CM will work with the research team to accomplish the goals of the study
+                                    in a location that is appropriate for the study, and to which transport can be
+                                    approved.</p>
+                            </li>
+                            <li>
+                                <p>Transport of animals housed in CM managed facilities should be performed by CM staff
+                                    unless otherwise described and approved in the relevant IACUC protocol.</p>
+                            </li>
+                            <li>
+                                <p>Transport of animals between PI managed facilities does not require coordination
+                                    through CM, however general transport rules still apply. In addition, any transport
+                                    of animals housed in PI managed facilities must be addressed in the IACUC protocol
+                                    and/or research lab specific SOP(s) that are approved by the IACUC.</p>
+                            </li>
+                            <li>
+                                <p>Cages and other appropriate containers used for transport of terrestrial,
+                                    semi-aquatic and aquatic animals should:</p>
+                                <ol type="a">
+                                    <li>limit exposure to allergens, waste products, or odors</li>
+                                    <li>provide sufficiently oxygenated air or water</li>
+                                    <li>avoid leakage</li>
+                                    <li>protect from direct sun and disruptive weather conditions such as heat, cold,
+                                        rain, wind, etc.</li>
+                                    <li>safeguard against physical harm and</li>
+                                    <li>protect from public view if applicable.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Sufficient Personnel Protective Equipment (PPE) must be worn to assure health and
+                                    well-being of personnel, and must match the PPE requirements of the most stringent
+                                    facility being accessed.</p>
+                            </li>
+                            <li>
+                                <p>If animals used in BSL 2 studies need to be transported Department of Transportation
+                                    (DOT) regulations have to be followed and the transport container labeled
+                                    accordingly. Environmental Health & Safety (EH&S) must to be contacted with any
+                                    related questions.</p>
+                            </li>
+                            <li>
+                                <p>Transport of animals using private vehicles, departmentally owned vehicles or golf
+                                    carts must be described in an approved IACUC protocol and inspected by the IACUC
+                                    during semi-annual inspections. Animals may NOT be transported by bicycle,
+                                    motorbike, for hire transportation, ride-share transportation, or public
+                                    transportation, including FAU operated public transportation.</p>
+                            </li>
+                            <li>
+                                <p>Pedestrian transport by hand carry or cart between facilities on the same FAU campus
+                                    is allowed, however the manner of transport and the precise route to be taken must
+                                    be planned in advance in order to insure the best possible route in regards to
+                                    distance, safety, and security.</p>
+                            </li>
+                            <li>
+                                <p>Vivarium caging cannot be removed from the animal facility unless specifically
+                                    authorized by CM; CM provides non-standard caging for on-campus animal transport.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Returned transport cages must be sanitized before reuse either by use of the
+                                    facility’s
+                                    cage washer, or by a method of sanitation described in the IACUC protocol or in
+                                    research lab specific SOP(s).</p>
+                            </li>
+                            <li>
+                                <p>Live animals should not remain outside of approved housing facilities for more than
+                                    12
+                                    hours unless specifically approved in the IACUC protocol. Animals kept outside an
+                                    approved housing facility for more than one (1) hour, access to food and water has
+                                    to be provided unless restriction has been stipulated and approved in the protocol.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>Accountability</h2>
+                        <ul>
+                            <strong>The Principal Investigator (PI) will be responsible for:</strong>
+                            <li>Assuring that all research personnel understand and follow this policy.</li>
+                            <li>Communicating with CM staff in a timely manner regarding any transpo</li>
+                            <li>Assuring safe transport of animals as described in the IACUC protocol and/or lab
+                                specific SOP(s) and approved by the IACUC and Director, CM.</li>
+                            <strong>The IACUC will be responsible for:</strong>
+                            <li>Reviewing IACUC protocols and/or amendments requesting transport of animals by research
+                                staff, and rendering a decision to either approve, require modification(s) in order to
+                                secure approval, or withhold approval.</li>
+                            <li>Reviewing and approving research lab specific SOP(s) in regards to animal transport.
+                            </li>
+                            <li>Inspecting departmental- or private-owned vehicles and golf carts intended for animal
+                                transport.</li>
+                            <strong>The Research Integrity office will be responsible for:</strong>
+                            <li>Administrative support of the IACUC members to facilitate their regulatory function.
+                            </li>
+                            <li>Maintaining policy and assure regular review and update as necessary by the
+                                IACUC.</li>
+                            <li>Communicating with the research lab and scheduling inspection of transport
+                                vehicles and/or golf carts.</li>
+                            <li>Scheduling regular review of research lab specific SOP(s) by the IACUC.</li>
+                            <strong>The Office of Comparative Medicine (CM) will be responsible for:</strong>
+                            <li>Transporting animals within an animal facility and between buildings/campuses as per PI
+                                request following this policy and CM internal SOP(s).</li>
+                            <li>Providing guidance to PIs in regards to appropriate transport of animals.</li>
+                            <li>A CM veterinarian reviewing protocols and research lab specific SOPs relating to
+                                transport of animals. Reviewing requests for and approving removal and return of
+                                research animals to vivaria if appropriate.</li>
+                        </ul>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>Procedures</h2>
+                        <ol>
+                            <li>
+                                <p>Transport of animals housed in centralized vivaria should be transported by CM staff
+                                    unless specifically approved in the IACUC protocol. It has to be requested through
+                                    the CM database (VSATS) in as much as possible in advance, but no less than 24 hours
+                                    prior to the anticipated need of the animals. Allow extra time if the transport will
+                                    have to occur during a holiday week or on a Monday. CM personnel has to follow
+                                    relevant SOP(s) endorsed by the IACUC.</p>
+                            </li>
+                            <li>
+                                <p>Procedures for transport of animals in PI managed satellite facilities or
+                                    self-transportby research laboratories have to be followed as described in the
+                                    respective IACUC protocol, approved research lab specific SOP and/or this policy.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Options for caging during transport differs between species and has to meet the needs
+                                    of the animals whether they are terrestrial, semi-aquatic or aquatic species.
+                                    Transportation includes either pedestrian transport or transport in departmentally-
+                                    or privately-owned vehicles/golf carts approved by the IACUC.</p>
+                            </li>
+                            <li>
+                                <p>Hand-carry or cart-transport (pedestrian transport) across campus:</p>
+                                <ol type="a">
+                                    <li>
+                                        <p>While normal space requirements (The Guide; Table 3.2; Pg. 57) are desirable
+                                            at all times, short-term pedestrian transport may be performed with non-
+                                            standard caging systems (e.g. ‘shopping bags,’ ‘chicken buckets’).</p>
+                                    </li>
+                                    <li>
+                                        <p>Do not remove vivarium caging from the vivarium unless needed for housing in
+                                            the research lab and has been arranged with CM staff; CM provides non-
+                                            standard caging for on-campus animal transport.</p>
+                                    </li>
+                                    <li>
+                                        <p>Non-standard containers for rodents:</p>
+                                        <ol type="i">
+                                            <li>Small containers (e.g. ‘chow-mein’ boxes) should carry no more than one
+                                                or two mice or should not be used for animals of larger species. For
+                                                short distances (e.g. across the street)</li>
+                                            <li>Medium containers (e.g. ‘chicken buckets’) should carry no more than
+                                                five mice or one rat. Mice must be socially compatible (i.e. from the
+                                                same cage). Use of non-standard caging is for transport only. It is not
+                                                intended for keeping animals for more than a short period of time.</li>
+                                            <li>Larger containers (e.g. commercial transport cages) will abide by the
+                                                space requirements noted in The Guide.</li>
+                                            <li>Any container used to transport rodents should be either covered by blue
+                                                paper or a clean sheet available in the vivarium or placed in ‘shopping
+                                                bags’ as a secondary means of protection. The number of containers that
+                                                can fit into each shopping bag depends on the size of the bag. The
+                                                container should be solid, leak proof container, and have openings to
+                                                allow air exchange.</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Non-standard containers for aquatic species:</p>
+                                        <ol type="i">
+                                            <li>Use oxygenated water with an oxygen cap in a sealed bag.</li>
+                                            <li>A source of additional oxygen might be necessary depending on the length
+                                                of transport and density of animals in the container.</li>
+                                            <li>Seal the first bag inside of a Styrofoam (or similar) container for
+                                                transport. This protects the fish from sunlight, viewing, and rapid
+                                                environmental changes, which can injure the animals.</li>
+                                            <li>Use ice packs in the secondary container if necessary.</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Animals must be secure during transport and protected from the environment
+                                            (e.g. sunlight, car lights, or visual observation) by use of opaque bags or
+                                            boxes,
+                                            opaque fabric or other opaque covering.</p>
+                                    </li>
+                                    <li>
+                                        <p>Transport caging must not be left unattended in a hallway or out-of-doors.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>The use of a ‘bungee-cord’ or secure rubber bands is recommended. DO NOT
+                                            use tape on a polycarbonate housing cage.</p>
+                                    </li>
+                                    <li>
+                                        <p>While use of a cart may be permitted if approved by the IACUC, it is
+                                            discouraged since vibrations of the wheels are readily transferred to the
+                                            animal cages. This increases animal stress significantly and may also
+                                            critically affect research results. Hand carrying bags containing animal
+                                            cages is the best choice for their health and comfort.
+                                            NOTE: Non-standard transport caging must not be used for housing, regardless
+                                            of whether food and water is provided.</p>
+                                    </li>
+                                    <li>
+                                        <p>If a cage or container spills feed, bedding, water or animals during
+                                            transport,
+                                            the individual responsible will secure the animals, clean the area as best
+                                            as possible, and then continue to their destination. A report of the spill,
+                                            and or loss of any animal, must be provided to the IACUC and CM. Use of a
+                                            shopping bag or tank as a secondary container can reduce the risk of this
+                                            type of adverse event.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                               <p>Transportation in an approved departmentally- or privately-owned vehicle: Transportation in
+                                non-CM vehicles must have prior approval by the IACUC. Contact the IACUC at
+                                resesarchintegrity@fau.edu to arrange an inspection time and date. Requirements for
+                                approval:</p>
+                                <ol type="a">
+                                    <li>The transportation activity is listed on the protocol or an amendment to the protocol.</li>
+                                    <li>Adequate heating / cooling is available to maintain general animal comfort.</li>
+                                    <li>Protection from direct sun.</li>
+                                    <li>Protection from public view.</li>
+                                    <li>Method to contain waste (e.g. plastic sheet under the cage, container around
+                                            animal cage, etc.)</li>
+                                    <li>Method to discourage allergens from contaminating the vehicle, since allergens
+                                            may impact future human riders (container around animal cage, etc.)</li>
+                                    <li>Method to secure the cage inside of the vehicle (e.g. bungee cords)</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>Policy Renewal Date</h2>
+                        <p>6/07/2022</p>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>References</h2>
+                        <ol>
+                            <li>Castelhano-Carlos MJ, Baumans V. The impact of light, noise, cage cleaning and in- house transport on welfare and stress of laboratory rats. 2009. Laboratory Animals; 43:311-327.</li>
+                            <li>The Guide for the Care & Use of Laboratory Animals; 8th Edition. NRC</li>
+                            <li>Guidelines for the Use of Fishes in Research, American Fisheries Society, 2014</li>
+                            <li>2016 Guidelines of the American Society of Mammalogists for the Use of Wild
+                                    Mammals in Research and Education</li>
+                            <li>Guidelines for Use of Live Amphibians and Reptiles in Field Research, ASIH, 2001</li>
+                            <li>Guidelines to the Use of Wild Birds in Research, 3rd edition, 2010</li>
+                        </ol>
+                    </li>
+                </ol>
+                <hr/>
+                <p>POLICY APPROVAL</p>
+
+                <mark>Executed signature pages are available in the Initiating Authority Office(s)</mark>
+
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+    </maincontent>
+    <maincontent2>
+        <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+        <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+        <h1>The University...at a Glance</h1>
+        Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+        every student who earns a degree, every researcher who makes a discovery and every community that is
+        transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+        University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+        new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+        public university in southeast Florida and the first in America designed for upper division students only.
+        Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+        more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+        in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+        more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+        engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+    </maincontent2>
+</content>
+</document>

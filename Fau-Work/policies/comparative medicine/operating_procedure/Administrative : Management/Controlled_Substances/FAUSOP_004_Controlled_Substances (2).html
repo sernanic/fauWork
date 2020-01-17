@@ -1,0 +1,631 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Controlled Substances
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Controlled Substances" />
+        <meta name="keywords" content="Controlled Substances" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine personnel
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp;Attending Veterinarian</div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp; To outline appropriate
+                                procedures for procurement, storage, distribution, Administration,
+                                recordkeeping and disposal of controlled substances.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All vivaria and research labs
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <ol>
+                    <li>
+                        <h2>Responsibilities</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Lab Animal Technician</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Adhere to recordkeeping requirements as outlined in this SOP.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Facility Manager</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel depending on
+                                            function/job
+                                            description and assurance that Training Checklist is signed</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Training Coordinator/Administrative Assistant</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to and ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel depending on
+                                            function/job
+                                            description and assurance that Training Checklist is signed</p>
+                                    </li>
+                                    <li>
+                                        <p>Order and receive controlled substances, maintains the <em>Controlled
+                                                Substance Master
+                                                Log</em>, disperses to research personnel, and collects the completed
+                                            <em>Controlled
+                                                Substance Usage Log</em>.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Director/Veterinarian</p>
+                                <p>January 15, 2019 SOP 004 Controlled Substances</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Acquires institutional licenses for the Boca Raton and the Jupiter campuses.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Initiates Memorandum(s) of Understanding with other veterinarians who will
+                                            support parts of
+                                            the FAU Animal Care and Use Program such as wildlife/fields studies or
+                                            Marine Mammal Rescue.
+                                            Working with the legal office at the Division of Research and the
+                                            veterinarian(s) to execute
+                                            the appropriate MOU(s).</p>
+                                    </li>
+                                    <li>
+                                        <p>Conducts biennial inventories and administers the final closeout/disposal of
+                                            all controlled
+                                            substances under the institutional licenses.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel and necessary
+                                            resources are
+                                            available.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>General</h2>
+                        <ol type="a">
+                            <li>
+                                <p>The University&rsquo;s procedures regarding procurement, distribution, use, disposal
+                                    and record
+                                    keeping, of controlled substances and other prescription drugs are regulated by the
+                                    Drug Enforcement
+                                    Administration (DEA) and are guided by the regulations detailed in 21 CFR 1300
+                                    and/or relevant
+                                    Florida Regulations.</p>
+                            </li>
+                            <li>
+                                <p>The University holds and recognizes institutional DEA registrations for basic and
+                                    preclinical
+                                    research protocols for <strong>schedule II-V </strong>with either the AV and/or
+                                    Director,
+                                    Comparative Medicine as the institutional licensee (i.e. for Boca Raton and Jupiter
+                                    campuses), the
+                                    CM Clinical Veterinarian as the institutional licensee for the HBOI campus.
+                                    Applications for DEA
+                                    licenses have to be submitted every three (3) years.</p>
+                            </li>
+                            <li>
+                                <p>Consultants to the sea turtle program or the Marine Mammal Rescue program are
+                                    responsible for their
+                                    own DEA licenses when prescribing controlled substances (see MOU&rsquo;s) and not
+                                    covered by this
+                                    SOP.</p>
+                            </li>
+                            <li>
+                                <p>The veterinarian holding the DEA license(s) supervises responsible CM staff members
+                                    in the handling
+                                    and use of controlled substances, regularly reviews paperwork and conducts biennial
+                                    inventories.</p>
+                            </li>
+                            <li>
+                                <p>Controlled substances <strong>schedules II through V </strong>including drugs
+                                    procured through the
+                                    National Institute on Drug Abuse (NIDA) Drug Supply Program must be purchased
+                                    through Comparative
+                                    Medicine as set forth in the IACUC Policy 10.4.17. except for animals that are
+                                    covered by MOUs with
+                                    outside veterinarians.</p>
+                            </li>
+                            <li>
+                                <strong>DEA schedule I </strong>controlled substances are the responsibility of the research
+                                    investigator including
+                                    acquiring the DEA license and overseeing procurement, storage, disposal and
+                                    recordkeeping.
+                            </li>
+                            <li>
+                                <p>Any faculty or staff member requesting and using any controlled substance acquired
+                                    through the
+                                    institutional licensures must be registered with Comparative Medicine c/o the CM
+                                    employee
+                                    responsible for ordering drugs using a <em>Certification of Research Personnel Using
+                                        Controlled
+                                        Substances </em>form. Every two years as part of a program- wide biennial
+                                    inventory of
+                                    controlled substances, all personnel possessing or using controlled substance in
+                                    research must
+                                    re-certify.</p>
+                            </li>
+                            <li>
+                                <p>Comparative Medicine maintains appropriate records of procurement, distribution,
+                                    usage and disposal.
+                                </p>
+                                <p>January 15, 2019 SOP 004 Controlled Substances</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Procedures</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Procedures for Receiving and Dispersing Controlled Substances</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>A copy of the relevant DEA license is provided to the distributor as
+                                            requested.</p>
+                                    </li>
+                                    <li>
+                                        <p>Controlled substances are ordered to be shipped to the location where those
+                                            compounds will be
+                                            used.</p>
+                                    </li>
+                                    <li>
+                                        <p>Request for controlled substances by research staff are made through the
+                                            VSATS ordering
+                                            system.</p>
+                                    </li>
+                                    <li>
+                                        <p><a href="http://www.drugabuse.gov/ordering-guidelines-" target="_blank">If
+                                                drugs will be
+                                                procured through the NIDA Drug Supply Program the PI will need to
+                                                complete the Request
+                                                Package as required and specified on the NIDA website. Ordering
+                                                Guidelines for Research
+                                                Chemicals and Controlled substances can be found at
+                                                ht</a>tps://www.drugabuse.gov/ordering-guidelines-
+                                            research-chemicals-controlled-substances. Comparative Medicine staff will
+                                            complete the DEA
+                                            Order Forms 222 &amp;223 per the order request of the PI and communicate
+                                            these and the
+                                            Request Package with NIDA.</p>
+                                    </li>
+                                    <li>
+                                        <p>When controlled substances arrive, they are checked and approved by the
+                                            responsible person of
+                                            the particular area. This includes comparing received number of
+                                            containers/drug with the
+                                            attached invoice and integrity of all containers. If controlled substance
+                                            containers are
+                                            broken, spilled or damaged the controlled substance must be disposed of (if
+                                            recoverable) and
+                                            accounted for according to DEA requirements. At a minimum, take a picture of
+                                            the affected
+                                            container and inform the responsible veterinarian immediately who will
+                                            follow DEA
+                                            requirements including paperwork.</p>
+                                    </li>
+                                    <li>
+                                        <p>The received controlled substances are assigned a unique identifying code
+                                            that corresponds to
+                                            that substance&rsquo;s schedule number, the drug lot number, and a
+                                            consecutive vial
+                                            inventory number. This unique identifying code has to be found/written
+                                            directly on the drug
+                                            vial with a sharpie while in addition the consecutive vial number only
+                                            should be written on
+                                            the outer container/carton if applicable.</p>
+                                    </li>
+                                    <li>
+                                        <p>The controlled substance is then entered on the <em>Controlled Substance
+                                                Master Log,
+                                            </em>listing:</p>
+                                        <ol>
+                                            <li>
+                                                <p>The unique substance identification number</p>
+                                            </li>
+                                            <li>
+                                                <p>Substance name</p>
+                                            </li>
+                                            <li>
+                                                <p>Source/vendor</p>
+                                            </li>
+                                            <li>
+                                                <p>Date of receipt</p>
+                                            </li>
+                                            <li>
+                                                <p>Amount received</p>
+                                            </li>
+                                            <li>
+                                                <p>Received by.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Each substance has its own <em>Controlled Substance Master Log, </em>which
+                                            all are kept in a
+                                            large binder at the specific location.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <u>Procedures for Research Staff Requesting Controlled Substances</u>
+                                <ol type="i">
+                                    <li>
+                                        <p>Faculty have to complete the <em>Certification of Research Personnel Using
+                                                Controlled
+                                                Substances </em>form every two years coinciding with the controlled
+                                            substances inventory
+                                            performed at each of the DEA registration cites. A separate spread sheet
+                                            (<em>Certification
+                                                Verification </em>form) will be kept to assure that each research lab
+                                            requesting the use
+                                            of controlled substances is current.</p>
+                                        <p>January 15, 2019 SOP 004 Controlled Substances</p>
+                                    </li>
+                                    <li>
+                                        <p>Request for controlled substances has to be submitted in writing through the
+                                            VSATS ordering
+                                            system allowing enough time to order the compounds, especially if it is a
+                                            drug not regularly
+                                            ordered.</p>
+                                    </li>
+                                    <li>
+                                        <p>Prior to filling the order, the responsible CM staff member:</p>
+                                        <ol>
+                                            <li>
+                                                <p>Ensures the PI&rsquo;s <em>Certification of Research Personnel Using
+                                                        Controlled
+                                                        Substances </em>is current and that the certification form
+                                                    adequately describes
+                                                    the personnel requesting and using the controlled substance, and the
+                                                    location where
+                                                    the substances will be stored.</p>
+                                            </li>
+                                            <li>
+                                                <p>Reviews the IACUC protocol referenced on the order form to determine
+                                                    that the ordered
+                                                    drug is listed and approved.</p>
+                                            </li>
+                                            <li>
+                                                <p>Reviews the inventory to assure all prior dispersals have been
+                                                    accounted for.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>A controlled substance may be dispensed only when all the above requirements
+                                            have been met.
+                                            The PI will be notified when their order is available for pick up.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <u>Procedures for Dispensing Controlled Substances</u>
+                                <ol type="i">
+                                    <li>
+                                        <p>A controlled substance is dispensed by locating its unique identification
+                                            number in the
+                                            <em>Controlled Substance Master Log. </em>The following information will be
+                                            added:</p>
+                                        <ol type="1">
+                                            <li>
+                                                <p>Date of dispersal</p>
+                                            </li>
+                                            <li>
+                                                <p>Dispensed to (PI name)</p>
+                                            </li>
+                                            <li>
+                                                <p>Individual dispensed to and initials</p>
+                                            </li>
+                                            <li>
+                                                <p>Expiration date of the dispensed drug (Mo/Yr)</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>A <em>Controlled Substance Usage Log </em>is completed and issued with every
+                                            controlled
+                                            substance. It includes the following information:</p>
+                                        <ol>
+                                            <li>
+                                                <p>Drug name</p>
+                                            </li>
+                                            <li>
+                                                <p>Unique identification number (i.e. Bottle #)</p>
+                                            </li>
+                                            <li>
+                                                <p>Expiration date of the drug</p>
+                                            </li>
+                                            <li>
+                                                <p>Date Issued</p>
+                                            </li>
+                                            <li>
+                                                <p>PI receiving the drug (name and phone number)</p>
+                                            </li>
+                                            <li>
+                                                <p>Authorized custodian (name)</p>
+                                            </li>
+                                            <li>
+                                                <p>Building/room of secure storage</p>
+                                            </li>
+                                            <li>
+                                                <p>Signature of PI and date of log returned</p>
+                                            </li>
+                                            <li>
+                                                <p>Amount received in ml</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>When both the <em>Controlled Substance Master Log </em>and <em>Controlled
+                                                Substance Usage Log
+                                            </em>have been filled out and the latter issued, the person receiving the
+                                            drugs has
+                                            initialed in the <em>Controlled Substance Master Log</em>, the drug(s) may
+                                            be dispensed.
+                                            Additional support documents such as <em>Guidelines for Use of Buprenex in
+                                                Rodents
+                                            </em>might be provided at this time.</p>
+                                    </li>
+                                    <li>
+                                        <p>Additional controlled substances cannot be dispensed until the status of the
+                                            previously
+                                            dispensed substance has been clarified.</p>
+                                        <p>January 15, 2019 SOP 004 Controlled Substances</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <u>Procedures for Conducting the Closeout of Controlled Substances</u>
+                                <ol type="i">
+                                    <li>
+                                        <p>The PI completes the <em>Controlled Substance Usage Log, </em>signs it, and
+                                            returns it
+                                            together with the vial (empty, partially empty or unused) to the responsible
+                                            CM staff member
+                                            to close out its use.</p>
+                                    </li>
+                                    <li>
+                                        <p>The responsible CM staff member enters the date the <em>Controlled Substance
+                                                Usage Log
+                                            </em>is received on the top of the form as well as in the <em>Controlled
+                                                Substance Master
+                                                Log </em>sheet to close out its dispensation.</p>
+                                    </li>
+                                    <li>
+                                        <p>The <em>Controlled Substance Master Logs </em>are filed numerically and by
+                                            drug name.</p>
+                                    </li>
+                                    <li>
+                                        <p>Empty vials are discarded after checking correct unique identification number
+                                            and emptiness
+                                            per EH&amp;S recommendations.</p>
+                                    </li>
+                                    <li>
+                                        <p>Vials that still contain a controlled substance are stored at the lowest
+                                            shelf of the drug
+                                            cabinet, which is labeled for expired or returned drugs only until lawfully
+                                            disposed by the
+                                            veterinarian.</p>
+                                    </li>
+                                    <li>
+                                        <p>The veterinarian communicates with the applicable Florida DEA office
+                                            regarding the
+                                            appropriate method for destruction of controlled substances, follows this
+                                            guidance and
+                                            completes associated DEA forms.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Procedures for Recordkeeping</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Licensures are kept within a binder together with master logs at each relevant
+                                    location, i.e. Boca
+                                    Raton, Jupiter and HBOI as applicable.</p>
+                            </li>
+                            <li>
+                                <p>Invoices, the <em>Controlled Substance Master Logs </em>for each controlled
+                                    substance, the
+                                    Certification Verification form, the <em>Certification of Research Personnel Using
+                                        Controlled
+                                        Substances, </em>the <em>DEA Biennial Controlled Substance Inventory </em>form
+                                    and completed DEA
+                                    form 41 are kept in one binder.</p>
+                            </li>
+                            <li>
+                                <p>Completed <em>Controlled Substance Usage Logs </em>organized numerically by drug are
+                                    kept in another
+                                    binder.</p>
+                            </li>
+                            <li>
+                                <p>Documents are archived every 2 years coinciding with the biennial inventory of the
+                                    controlled
+                                    substances as applicable.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <hr/>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>01/15/19</p>
+                            </td>
+                            <td>
+                                <p>01/15/19</p>
+                            </td>
+                            <td>
+                                <p>2</p>
+                            </td>
+                            <td>
+                                <p>Included NIDA order option, updated information on</p>
+                                <p>controlled substance usage log</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h1>The University...at a Glance</h1>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

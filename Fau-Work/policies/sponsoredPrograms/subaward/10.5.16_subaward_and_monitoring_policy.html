@@ -1,0 +1,764 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Principal Investigator Eligibility for Proposal Submissions and Compliance Protocols</title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Account Set-up for Projects Involving Human and Animal Subjects" />
+        <meta name="keywords" content="Account Set-up for Projects Involving Human and Animal Subjects" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9 pagetop" style="valign: top;">
+                        <h1 class="rshead" text-align="center" color="#CC0600">Subaward and Monitoring Policy</h1>
+                        <br /><br />
+                    </div>
+                </div>
+
+                <!-- Info box -->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>Subject:</strong>&nbsp;&nbsp;Subaward and Monitoring Policy
+                            </div>
+                            <div class="col-md-4"><strong>Effective Date:</strong>&nbsp;&nbsp;2/21//2017</div>
+                            <div class="col-md-4"><strong>Policy Number:</strong>&nbsp;&nbsp;10.5.16</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>Supersedes:</strong>&nbsp;&nbsp;11/21/13,
+                                01/25/13,02/18/11,9/16/09</div>
+                                <div class="col-md-8"><strong>Responsible Authorities:</strong>&nbsp;&nbsp;Vice
+                                    President for Research, Director, Research Accounting, Director, Sponsored Programs
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+                    <ol type="I">
+                        <li>
+                            <u>
+                                <h2>Background</h2>
+                            </u>
+                            <p>Florida Atlantic University is required by 2 CFR Part 200- Uniform Administrative
+                                Requirements, Cost
+                                Principles, and Audit Requirements for Federal Awards (Uniform Guidance) to issue,
+                                evaluate
+                                and monitor
+                                subawards and the activities of subrecipients to ensure compliance with applicable
+                                Federal
+                                regulations.
+                            </p>
+                        </li>
+						<hr/>
+                        <li>
+                            <u>
+                                <h2>Purpose</h2>
+                            </u>
+                            <p>The purpose of the policy is to establish subaward and monitoring procedures for both
+                                Federal
+                                and Non-Federal
+                                awards in order to provide guidance and to ensure compliance with university policies,
+                                state
+                                regulations and
+                                Uniform Guidance that include:</p>
+                            <ul>
+                                <li>
+                                    <p>2 CFR Part 200.205 Federal awarding agency review of risk posed by applicants</p>
+                                </li>
+                                <li>
+                                    <p>2 CFR Part 200.207 Specific Conditions</p>
+                                </li>
+                                <li>
+                                    <p>2 CFR Part 200.331 Requirements for pass-through entities</p>
+                                </li>
+                                <li>
+                                    <p>2 CFR Part 200.338 Remedies for Non-Compliance</p>
+                                </li>
+                                <li>
+                                    <p>2 CFR Part 200.501 Audit requirements</p>
+                                </li>
+                                <li>
+                                    <p>2 CFR Part 200.521 Management decision</p>
+                                </li>
+                            </ul>
+                        </li>
+						<hr/>
+                        <li>
+                            <u>
+                                <h2>General Statement</h2>
+                            </u>
+                            <p>
+                                Research Accounting and Sponsored Programs is available to answer questions and provide
+                                assistance regarding the
+                                requirements of the Subaward and Monitoring Policy.
+                            </p>
+                        </li>
+						<hr/>
+                        <li>
+                            <u>
+                                <h2>Policy</h2>
+                            </u>
+                            <ol type="A">
+                                <li>
+                                    <p>Determining a Subrecipient:</p> <br /> <br />
+                                    <p>The Principal Investigator (Pl) is the expert in determining whether a
+                                        subrecipient
+                                        is necessary for
+                                        the performance of a project. Subawarded work is generally conducted at another
+                                        institution or
+                                        company and usually has a budget for salary/fringe benefits, supplies, etc. The
+                                        sponsor
+                                        requirements/terms and conditions are passed down to the subrecipient via
+                                        written
+                                        agreements and
+                                        compliance must be monitored budget for salary/fringe benefits, supplies, etc.
+                                        The
+                                        sponsor
+                                        requirements/terms and conditions are passed down to
+                                        the subrecipient via written agreements and compliance must be monitored.
+                                        Determining if the service
+                                        provided is from a consultant, vendor or subrecipient:
+                                    </p>
+                                </li>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Category</th>
+                                            <th scope="col">Consultant</th>
+                                            <th scope="col">Vendor</th>
+                                            <th scope="col">Subrecipient</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Type of work</td>
+                                            <td>A company or an individual that provides advice, expertise, consulting,
+                                                training or related professional services
+                                                for specified matters (work for hire)</td>
+                                            <td>Performs services or provides goods (no discretionary judgment) such as
+                                                lab
+                                                testing that is a part of regular
+                                                business operations and are available to many different purchasers or
+                                                customers</td>
+                                            <td>
+                                                Completes programmatic work within the research objectives of the prime
+                                                award; retains programmatic control and
+                                                discretion over how the work is carried out and makes independent
+                                                decisions
+                                                regarding how to implement the requested
+                                                activities. Is responsible for compliance with Federal program
+                                                requirements.
+                                                <br />
+
+                                                Publications may be created or co- authored.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>F&amp;A (Indirect Costs)</td>
+                                            <td>F&amp;A costs apply to entire amount</td>
+                                            <td>F&amp;A costs apply to entire amount</td>
+                                            <td>F&amp;A costs apply only to the first $25,000 of each subaward on
+                                                federal
+                                                awards</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Principal Investigator</td>
+                                            <td>Person conducting the work is identified, but has no programmatic
+                                                decision
+                                                making</td>
+                                            <td>Person conducting the work is not necessarily identified</td>
+                                            <td>Investigator is identified and is responsible for programmatic decision
+                                                making</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Compliance</td>
+                                            <td><strong>N/A</strong> </td>
+                                            <td><strong>N/A</strong></td>
+                                            <td>Responsible for adhering to applicable program compliance requirements
+                                                i.e.,
+                                                federal regulations, agency regulations, etc.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Technology Transfer</td>
+                                            <td>Title to all inventions and discoveries made by Consultant resulting
+                                                from
+                                                the work performed resides with FAU</td>
+                                            <td>No potential for patentable or copyrightable technology to be created
+                                            </td>
+                                            <td>Potential for patentable or copyrightable technology to be created
+                                                through
+                                                the project; entity has the right to protect technology</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Publications</td>
+                                            <td><strong>N/A</strong></td>
+                                            <td><strong>N/A</strong></td>
+                                            <td>Responsible for adhering to applicable program compliance requirements
+                                                i.e.,
+                                                federal regulations, agency regulations, etc.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Technology Transfer</td>
+                                            <td>Title to all inventions and discoveries made by Consultant resulting
+                                                from
+                                                the work performed resides with FAU</td>
+                                            <td>No potential for patentable or copyrightable technology to be created
+                                            </td>
+                                            <td>Potential for patentable or copyrightable technology to be created
+                                                through
+                                                the project; entity has the right to protect technology</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Publications</td>
+                                            <td><strong>N/A</strong></td>
+                                            <td><strong>N/A</strong></td>
+                                            <td>Publication of results are expected; investigator to author or co-author
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cost Sharing</td>
+                                            <td><strong>N/A</strong></td>
+                                            <td><strong>N/A</strong></td>
+                                            <td>May be providing cost sharing or matching funds</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Agreement Type</td>
+                                            <td>Fixed <br /> (Daily or hourly rate)</td>
+                                            <td>Fixed</td>
+                                            <td>Cost Reimbursable (typically)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Restrictions</td>
+                                            <td>*FAU employees "cannot" be a consultant. <br />
+                                                *Federal funds "cannot" be used to pay for federal consultants.</td>
+                                            <td><strong>N/A</strong></td>
+                                            <td>Refer to sponsor terms and conditions of the award document, agreement,
+                                                contract, etc.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Documents</td>
+                                            <td><strong>N/A</strong></td>
+                                            <td><strong>N/A</strong></td>
+                                            <td><u>Proposal Stage (LOI, Scope of Work, Detailed Budget, F&amp;A rate
+                                                    agreement
+                                                    (if federal})</u> <br />Awarded Stage
+                                                (Subaward Application, Pl Verification, Risk Assessment)
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <li>
+                                    Subrecipient Eligibility and Approval: ,<br />
+                                    <p>
+                                        funding type. The Subaward Application Form includes the proposal, contact
+                                        information, financial profile including audit report or financial statements,
+                                        F&amp;A
+                                        rate agreement (if federally funded}, Scope of Work (SOW}, and detailed budget.
+                                        <br />
+                                        To reduce the administrative burden on entities, if a subrecipient has already
+                                        submitted their financial profile
+                                        information and audit report within the last 12 months, this information is not
+                                        required. Additionally, institutions who
+                                        have completed the on-line entity profiles through the FOP Expanded
+                                        Clearinghouse
+                                        are not required to submit their
+                                        financial profile information. The subrecipient is only required to submit the
+                                        proposal, contact information, Scope of
+                                        Work and detailed budget for these cases.
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            <p>
+                                                The Pl reviews the Subaward Application and verifies that the documents
+                                                submitted meet the project requirements and
+                                                the budget submitted is allowable, allocable, reasonable and appropriate
+                                                for
+                                                the work to be performed. The Pl
+                                                completes the Subaward Verification form and submits to Sponsored
+                                                Programs.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Upon receiving both the Subaward Application Form and Subaward
+                                                Verification
+                                                Form, Sponsored Programs will determine:
+
+                                            </p>
+                                            <ol type="a">
+                                                <li>
+                                                    If the organization is excluded from receiving federal funds by
+                                                    reviewing the System for Award Management (SAM). If the
+                                                    subrecipient has active exclusions or is delinquent on federal debt.
+                                                    If
+                                                    they are excluded or have active exclusions or
+                                                    delinquent on federal debt, they are not permitted to receive
+                                                    federal
+                                                    funds.
+                                                </li>
+                                                <li>
+                                                    If the organization is sanctioned by reviewing the Office of Foreign
+                                                    Assets Control (OFAC} Sanctions List. If
+                                                    organization is listed, they are not permitted to receive federal
+                                                    funds.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Sponsored Programs will evaluate the subrecipient's level of risk and
+                                                assess
+                                                a risk level of low, medium or high.
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>Low-the subrecipient is another educational institution that
+                                                        consistently has good audit reports with no potential
+                                                        audit findings
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        Medium -the subrecipient has previous audit findings or failed
+                                                        to
+                                                        submit timely programmatic reports
+
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        High -lack of documented internal controls, no previous
+                                                        experience
+                                                        with subrecipient, foreign institution, no audited
+                                                        financial reports, financial reports submitted are not in
+                                                        English
+                                                        (foreign language}, subaward is more than 75% of the
+                                                        prime award. (Note: A high risk requires additional approval
+                                                        from
+                                                        General Counsel}
+
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Sponsored Programs will inform the Pl if approval is denied or if the
+                                                risk
+                                                level assessed is high.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Sponsored Programs will review the Subaward Application questions
+                                                regarding
+                                                research subjects, EH&amp;S safeguards, export
+                                                controls and conflict of interest and obtain appropriate approvals, if
+                                                needed.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Sponsored Programs will negotiate and draft the subaward agreement with
+                                                the
+                                                subrecipient using FAU's applicable subaward
+                                                template.
+
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Once executed, Sponsored Programs will forward copies of all subaward
+                                                documents including the executed subaward to the
+                                                Pl, department administrator and Research Accounting. Research
+                                                Accounting
+                                                will initiate a Supplier Contract
+                                                (Requisition).
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>Monitoring Subawards <u><strong>(Federal and Federal Flow-Through
+                                                Only):</strong></u>
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            <p>
+                                                The Principal Investigator is responsible for the following monitoring
+                                                areas:
+                                            </p>
+                                            <ol>
+                                                <li>
+                                                    Establish and maintain channels of communication with the
+                                                    subrecipient.
+                                                </li>
+                                                <li>
+                                                    Perform on-site visits, if applicable. These visits could be
+                                                    conducted
+                                                    to
+                                                    evaluate compliance with the scientific objective of the project.
+
+                                                </li>
+                                                <li>
+                                                    Review and approve invoices to ensure that expenses are:
+                                                    <ul>
+                                                        <li>
+                                                            Submitted in a timely manner
+                                                        </li>
+                                                        <li>Allocable and reasonable (refer to the Criteria for the
+                                                            Allowability of Costs on Federal Awards)</li>
+                                                        <li>Incurred within the period of performance</li>
+                                                        <li>Aligned with technical progress</li>
+                                                        <li>Cost-sharing is appropriately reflected, if applicable</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    Review financial and programmatic reports to ensure that performance
+                                                    goals are achieved; and identify any problems in
+                                                    carrying out the project. In some cases, subaward terms may require
+                                                    specified deliverables in addition to or in lieu of
+                                                    technical reports.
+
+                                                </li>
+                                                <li>
+                                                    Follow up and ensure that the subrecipient takes timely and
+                                                    appropriate
+                                                    action on all deficiencies detected through
+                                                    on-site reviews, if applicable.
+                                                </li>
+                                                <li>
+                                                    The Pl is required to complete an Annual Subaward Verification Form
+                                                    issued by Research Accounting; typically, 12 months after the start
+                                                    date.
+                                                    <br />
+                                                    If changes are requested by the subrecipient regarding project end
+                                                    dates, budget amount, or Scope of Work, contact the
+                                                    Office of Sponsored Programs for guidance on whether an amendment
+                                                    should
+                                                    be issued.
+                                                </li>
+                                                <li>
+                                                    Upon the end date of the subaward agreement, the Pl must complete a
+                                                    Closeout Subrecipient Verification Form, to document
+                                                    the Pis confirmation that all requirements were met by the
+                                                    subrecipient;
+                                                    typically, 90 days after the end date.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            Research Accounting will be responsible for the following monitoring areas:
+                                            <ol>
+                                                <li>Review and maintain audit documentation for monitoring efforts on
+                                                    the
+                                                    following types of entities:
+                                                    <ol type="i">
+                                                        <li> <u>Non-Profit:</u>
+                                                            <ul>
+                                                                <li>
+                                                                    Obtain annual audit reports, if applicable.
+                                                                </li>
+                                                                <li>
+                                                                    Review annual audit reports and document findings,
+                                                                    if
+                                                                    any, using a subaward monitoring form.
+                                                                </li>
+                                                                <li>
+                                                                    Any material finding related to the project will be
+                                                                    referred to General Counsel and Sponsored Programs.
+
+                                                                </li>
+                                                                <li>
+                                                                    Research Accounting will determine whether the
+                                                                    subrecipient carrying out the project may need to be
+                                                                    monitored more rigorously.
+                                                                </li>
+                                                                <li>
+                                                                    Research Accounting will notify the Principal
+                                                                    Investigator and Sponsored Programs if additional
+                                                                    monitoring will be required.
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <u>For-Profit:</u>
+                                                        <li>
+                                                            Obtain annually audited financial statements, if applicable.
+                                                            Note: For-Profit entities are not required to disclose
+                                                            financial statements.
+                                                        </li>
+                                                        <li>
+                                                            Review financial statements and refer any concerns to
+                                                            General
+                                                            Counsel and Sponsored Programs.
+
+                                                        </li>
+                                                        <li>
+                                                            Research Accounting will determine whether the subrecipient
+                                                            carrying out the project may need to be monitored more
+                                                            rigorously.
+
+                                                        </li>
+                                                        <li>
+                                                            If the subaward amount is in excess of $500,000, a
+                                                            discretionary
+                                                            audit may be performed sometime during the life of the
+                                                            subaward agreement. Although these audits are generally
+                                                            infrequent, they are considered an acceptable monitoring
+                                                            practice under federal regulations; the University's
+                                                            subawards
+                                                            contain a "right-to-audit" clause.
+                                                        </li>
+                                                        <li>
+                                                            Audit documents requested could include, but are not limited
+                                                            to:
+                                                            payroll certifications or timecards, copies of
+                                                            expenditure receipts and/or invoices as well as travel
+                                                            charges
+                                                            and cost share documentation, if applicable.
+                                                        </li>
+                                                </li>
+														
+                                                <li>
+                                                    <u>Foreign:</u>
+                                                    <ul>
+                                                        <li>
+                                                            Foreign subawards are associated with increased risk, which
+                                                            may
+                                                            require a greater degree of review, evaluation and
+                                                            attention therefore; pre-award or discretionary audits may
+                                                            be
+                                                            required.
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                        </li>
+												
+                                        <li>
+                                            <p>
+                                                Research Accounting will assist the Pl in monitoring the activities of
+                                                the
+                                                subrecipient which include:
+                                            </p>
+                                            <ol>
+                                                <li>
+                                                    Issue and maintain the Subrecipient Verification Forms for the
+                                                    Annual
+                                                    review and closeout.
+                                                </li>
+                                                <li>
+                                                    Review financial reports required by the pass-through entity.
+
+                                                </li>
+                                                <li>
+                                                    Follow-up and ensure subrecipients take timely and appropriate
+                                                    action on
+                                                    all deficiencies detected through audits.
+                                                </li>
+                                                <li>
+                                                    Issue a management decision for audit findings, if applicable.
+                                                </li>
+                                                <li>
+                                                    Discretionary audits of subawards are considered acceptable
+                                                    monitoring
+                                                    practices under federal regulations; the
+                                                    University's subaward agreements contain a "right­to-audit" clause.
+                                                    Audits could be performed, but are generally
+                                                    infrequent.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+								
+                        <li>
+                            <p>
+                                Non-compliance of subrecipients: <br /><br />
+                                Failure of a subrecipient to provide requested documentation or to address any concerns
+                                'may' require FAU to take the following action:
+                            </p>
+                            <ol>
+                                <li>
+                                    Temporarily suspend or withhold cash payments pending correction of the deficiency
+                                    by
+                                    the subrecipient.
+                                </li>
+                                <li>
+                                    Disallow all or part of the cost of the activity or action not in compliance.
+                                </li>
+                                <li>
+                                    Wholly or partly suspend or terminate the subaward.
+                                </li>
+                                <li>
+                                    Initiate suspension or debarment proceedings
+                                </li>
+                                <li>
+                                    Withhold further Federal awards for the project or program.
+                                </li>
+                                <li>
+                                    Take other remedies that may be legally available.
+                                </li>
+                            </ol>
+
+                        </li>
+                    </ol>
+                    </li>
+						<hr/>
+                    <li>
+                        <u>Definitions</u>
+                        <p>
+                            <u>Pass-Through Entity (PTE)</u> means a non-federal entity that provides a subaward to a
+                            subrecipient to carry out part of a
+                            federal program. The pass-through entity assumes responsibility for negotiation, issuance,
+                            oversight, and management of
+                            a subaward. <br /><br />
+                            <u>Subaward</u> means an award provided by a pass-through entity to a subrecipient for the
+                            subrecipient to carry out part of a
+                            Federal award received by the pass-through entity.<br /><br />
+                            <u>Subrecipient</u> means a non-Federal entity that receives a subaward from a pass-through
+                            entity to carry out part of
+                            a Federal program; but does not include an individual that is a beneficiary of such program.
+                            A
+                            subrecipient may also be
+                            a recipient of other Federal awards directly from a Federal awarding agency.
+                        </p>
+                    </li>
+						<hr/>
+                    <li>
+                        <u>Accountability</u>
+                        <p>The Principal Investigator, Grant Manager, Research Accounting and Sponsored Programs are
+                            responsible for issuing subawards and subrecipient monitoring. Refer to the Subaward and
+                            Monitoring Guidance Grid fora summarized listing of subaward and monitoring
+                            responsibilities.
+                        </p>
+                    </li>
+						<hr/>
+                    <li>
+                        <u>Annual Review of Procedures Manual</u>
+                        <p>The Subaward and Monitoring Policy will be reviewed as necessary.</p>
+                    </li>
+                    </ol>
+                    <mark>Executed signature pages are available in the Initiating Authority Office(s)</mark>
+
+
+                </div> <!-- close container -->
+
+                <!-- /com.omniupdate.div -->
+
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h1>The University...at a Glance</h1>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every
+            student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new
+            revolution in education in America."<br /><br />With those words, FAU opened its doors as the first public
+            university in southeast Florida and the first in America designed for upper division students only. Since
+            day one,
+            FAU has pushed the bounds of higher education. Now, 50 years later, the University serves more than 30,000
+            freshmen,
+            transfers and graduate students at sites throughout its six-county service region in southeast
+            Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from more than 170
+            degree
+            programs, faculty researchers utilize more than 40 research centers and the community engages hundreds of
+            cultural
+            and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

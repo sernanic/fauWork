@@ -1,0 +1,280 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Body Condition Scoring (BCS) Guide
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description"
+            content="Body Condition Scoring (BCS) Guide" />
+        <meta name="keywords"
+            content="Body Condition Scoring (BCS) Guide" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h1,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+                .col-md-3 img{
+                    width: 120px;
+                    height: auto;
+                    align-content: center;
+                }
+            </style>
+            <div class="container-fluid">
+
+                <h1 style="padding-bottom: 40px;line-height:50px;text-align: center">Body Condition Scoring (BCS) Guide</h1>
+
+                <p style="text-align: center">Taken from M. Ullman-Cullere and C. Foltz</p>
+                <p style="text-align: center">Laboratory Animal Science, 1999</p>
+                <!-- Mouse -->
+                <hr/>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="http://www.fau.edu/research/policiesProject2019/images/Screen%20Shot%202019-08-29%20at%201.09.34%20PM.png" alt=""/>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>BC 1</h3>
+                        <strong>Mouse is emaciated</strong>
+                        <ul>
+                            <li>Skeletal structure extremely prominent; little or no flesh cover.</li>
+                            <li>Vertebrae distinctly segmented.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="http://www.fau.edu/research/policiesProject2019/images/Screen%20Shot%202019-08-29%20at%201.09.41%20PM.png" alt=""/>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>BC 2</h3>
+                        <strong>Mouse is under conditioned</strong>
+                        <ul>
+                            <li>Segmentation of vertebral collumn evident.</li>
+                            <li>Dorsal pelvic bones are readily palpable.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="http://www.fau.edu/research/policiesProject2019/images/Screen%20Shot%202019-08-29%20at%201.09.46%20PM.png" alt=""/>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>BC 3</h3>
+                        <strong>Mouse is well conditioned.</strong>
+                        <ul>
+                            <li>Veterbrae and dorsal pelvis not prominent;palpable with slight pressure.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="http://www.fau.edu/research/policiesProject2019/images/Screen%20Shot%202019-08-29%20at%201.09.52%20PM.png" alt=""/>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>BC 4</h3>
+                        <strong>Mouse is overconditioned</strong>
+                        <ul>
+                            <li>Spine is a continuous column.</li>
+                            <li>Vertebrae palpable only with firm pressure.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="http://www.fau.edu/research/policiesProject2019/images/Screen%20Shot%202019-08-29%20at%201.09.57%20PM.png" alt=""/>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>BC 5</h3>
+                        <strong>Mouse is obese</strong>
+                        <ul>
+                            <li>Mouse is smooth and bulky.</li>
+                            <li>Bone structure disappears under flesh and subcutaneous fat.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr/>
+                <!-- Rat -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="http://www.fau.edu/research/policiesProject2019/images/Screen%20Shot%202019-08-29%20at%201.10.07%20PM.png" alt=""/>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>BC 1</h3>
+                        <strong>Rat is emaciated</strong>
+                        <ul>
+                            <li>Segmentation of vertebral column prominent is not visible.</li>
+                            <li>Little or no flesh cover over dorsal pelvis. Pins prominent if not visible.</li>
+                            <li>Segmentation of caudal Vertebrae prominent.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="http://www.fau.edu/research/policiesProject2019/images/Screen%20Shot%202019-08-29%20at%201.10.13%20PM.png" alt=""/>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>BC 2</h3>
+                        <strong>Rat is under conditioned</strong>
+                        <ul>
+                            <li>Segmentation of vertebral column prominent.</li>
+                            <li>Thin flesh cover over dorsal pelvis, little subcutaneous fat. Pins easily palpable.</li>
+                            <li>Thin flesh cover over caudal Vertebrae, segmentation palpable with slight pressure.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="http://www.fau.edu/research/policiesProject2019/images/Screen%20Shot%202019-08-29%20at%201.10.23%20PM.png" alt=""/>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>BC 3</h3>
+                        <strong>Rat is well-conditioned</strong>
+                        <ul>
+                            <li>Segmentation of vertebral column easily palpable.</li>
+                            <li>Moderate subcutaneous fat store over pelvis.Pins easily palpable with slight pressure. </li>
+                            <li>Moderate fat store around tail base, caudal vertebrae may be palpable but not segmented.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="http://www.fau.edu/research/policiesProject2019/images/Screen%20Shot%202019-08-29%20at%201.10.29%20PM.png" alt=""/>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>BC 4</h3>
+                        <strong>Rat is overconditioned</strong>
+                        <ul>
+                            <li>Segmentation of vertebral column palpable with slight pressure.</li>
+                            <li>Thick subcutaneous fat store over dorsal pelvis. Pins palpable with firm pressure.</li>
+                            <li>Thick fat store over tail base, caudal vertebrae not palpable.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="http://www.fau.edu/research/policiesProject2019/images/Screen%20Shot%202019-08-29%20at%201.10.45%20PM.png" alt=""/>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>BC 5</h3>
+                        <strong>Rat is obese</strong>
+                        <ul>
+                            <li>Segmentation of vertebral column palpable with firm pressure,may be a continuous column.</li>
+                            <li>hick subcutaneous fat store over dorsal pelvis. Pins not palpable with firm pressure.</li>
+                            <li>Thick fat store over tail base, caudal vertebrae not palpable.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h1>The University...at a Glance</h1>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

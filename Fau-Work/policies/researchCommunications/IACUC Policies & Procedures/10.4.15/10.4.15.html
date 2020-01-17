@@ -1,0 +1,567 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Number Tracking and Disposition
+                of Animals including Transfer, Reuse, Death and Reporting of Adverse Events</title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Number Tracking and Disposition
+        of Animals including Transfer, Reuse, Death and Reporting of Adverse Events" />
+        <meta name="keywords" content="Number Tracking and Disposition
+        of Animals including Transfer, Reuse, Death and Reporting of Adverse Events" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h1,
+                strong,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>Subject:</strong>&nbsp;&nbsp;Number Tracking and Disposition
+                                of Animals including Transfer, Reuse, Death and Reporting of Adverse Events
+                            </div>
+                            <div class="col-md-4"><strong>Effective Date:</strong>&nbsp;&nbsp;6/30/2017</div>
+                            <div class="col-md-4"><strong>Policy Number:</strong>&nbsp;&nbsp;10.4.15</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>Supersedes:</strong>&nbsp;&nbsp;N/A
+
+
+                            </div>
+                            <div class="col-md-8"><strong>Responsible Authorities:</strong>&nbsp;&nbsp;Vice President,
+                                Research
+                                Institutional Animal Care and Use Committee
+                                Director, Research Integrity
+                                Director, Comparative Medicine
+                            </div>
+                        </div>
+                    </div>
+                    <ol type="I">
+                        <li>
+                            <h2>Background</h2>
+                            <p>Both the Animal Welfare Act Regulations (AWAR &sect;2.31, e, 1 + 2) and the Public Health
+                                Service Policy (PHS section IV, D, 1, b; Guide p.25) require that IACUC protocols
+                                specify and include a rationale for the number of animals proposed to be used while
+                                limiting to the appropriate quantity necessary to obtain valid results. This implicates
+                                that institutions are required to establish mechanisms to monitor and document the
+                                number of animals collected, acquired or produced and used in approved activities. The
+                                Office of Laboratory Animal Welfare (OLAW) provides further guidance on what constitutes
+                                an animal at which developmental stage. The Animal Welfare Act Regulations (AWAR
+                                &sect;2.31, d, 1, x) and the Guide for the Care and Use of Laboratory Animals (8th
+                                edition, pg. 5) discuss and discourage animal reuse as a reduction strategy as well as
+                                specify requirements for approval on a case by case basis.</p>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Purpose</h2>
+                            <p>All research, testing, and teaching activities performed with vertebrate animals must be
+                                approved by the IACUC and the numbers of animals used in these activities will be
+                                accounted. This policy describes which animals require counting, the process of tracking
+                                animal numbers, transfer of animals between protocols, reporting of adverse events, and
+                                unanticipated deaths.</p>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>General Statement</h2>
+                            <p>Institutions are required to approve the use of vertebrate animals. Tracking the numbers
+                                of animals is essential to assure only approved numbers have been used. The reasons for
+                                identifying and tracking animal numbers are to a) fulfill federal obligations for
+                                reporting animal use and assuring compliance with IACUC-approved activities and b) to
+                                validate statistical significance and justify the experimental groups of animals in a
+                                study, i.e. the</p>
+                            <p>IACUC protocol. Realizing that precise accounting of animals is not always required nor
+                                practical, it is reasonable to expect a valid estimation of animal numbers taking into
+                                account unforeseen technical challenges or animal related complications such as
+                                unexpected disease, death, or adverse events leading to early termination of
+                                experiments.</p>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Definitions</h2>
+                            <p><strong>Embryos/Fetuses </strong> are defined as the period from implantation to birth in
+                                mammals or egg
+                                to hatching in egg laying species such as in most reptiles, amphibians, fish, and all
+                                birds. Neonates/pre-weanlings/fledglings are young animals that require parental
+                                protection and nursing.</p>
+                            <p><strong>Adult animals</strong> are defined as</p>
+                            <ol type="a">
+                                <li>
+                                    <p>Animals that are mature or</p>
+                                </li>
+                                <li>
+                                    <p>Have aged beyond the common weaning date specific for the species or</p>
+                                </li>
+                                <li>
+                                    <p>Are old enough to be able to reproduce or</p>
+                                </li>
+                                <li>
+                                    <p>Offspring of egg-laying vertebrates after hatching, including larval forms of
+                                        amphibians and fish.</p>
+                                    <p><strong>Transfer</strong> of animals can occur between protocols of the same PI,
+                                        between
+                                        protocols of different PIs or between housing locations while staying on the
+                                        same protocol.</p>
+                                    <p>Adverse events for the purpose of this policy are defined as unexpected side
+                                        effect(s) to a study compound, experimental procedure, or new animal model (e.g.
+                                        new genetically modified strain) that leads to injury or illness, unrelieved
+                                        pain or distress, or death of an animal enrolled in a research study.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <hr />
+                        <li>
+                            <p>Policy</p>
+                            <ol type="A">
+                                <li>
+                                    <p>The PI must provide an adequate justification for the requested number of animals
+                                        before approval is granted by the IACUC for the use of animals in a proposed
+                                        research, testing, or teaching project.</p>
+                                </li>
+                                <li>
+                                    <p>It may be difficult to forecast animal requirements accurately for the 3 year
+                                        lifetime of an IACUC protocol since results and their impact on subsequent
+                                        research direction cannot typically be predicted. Therefore, requested numbers
+                                        of animals in an IACUC protocols should account for unforeseen technical
+                                        challenges, experimental error, expected disease/death typical for the species
+                                        and/or study incompatibility of individual animals. Requests for an additional
+                                        10% of animals over the statistically justified experimental total is commonly
+                                        accepted by the IAUC, especially when invasive procedures or trapping/catching
+                                        of wildlife species are involved.</p>
+                                </li>
+                                <li>
+                                    <p>High risk procedures/models may have higher associated death rates than
+                                        uncomplicated procedures, which should be taken into account. The rationale for
+                                        extra animals will be considered on a case by case basis in the context of
+                                        protocol review.</p>
+                                </li>
+                                <li>
+                                    <p>If it becomes apparent at any time during a study that additional animals will be
+                                        needed, the IACUC protocol must be amended before more than the approved number
+                                        of animals can be utilized. The IACUC expects a logical explanation of why
+                                        previous estimations were incorrect and why more animals are needed.</p>
+                                </li>
+                                <li>
+                                    <p>The IACUC must ensure that animal numbers are tracked and accounted against the
+                                        approved number in the IACUC protocol. Research personnel is responsible for
+                                        tracking and reporting the numbers of animals used to the staff in Comparative
+                                        Medicine or Research Integrity.</p>
+                                </li>
+                                <li>
+                                    <p>PIs responsible for satellite facilities and PIs performing field studies will be
+                                        prompted regularly to report animal numbers used during the course of their
+                                        research. If a PI</p>
+                                    <p>does not respond to the initial and follow up emails, the IACUC will be notified.
+                                        The IACUC will initiate appropriate actions including protocol suspension if
+                                        necessary.</p>
+                                </li>
+                                <li>
+                                    <p>For purposes of annual reporting of species to the USDA or other regulatory and
+                                        accreditation agencies, animals are to be counted only once and in the most
+                                        painful or distressful category (i.e. USDA pain categories B, C, D, E).</p>
+                                </li>
+                                <li>
+                                    <p>All live born vertebrate animals are to be counted as animals at any age
+                                        independent of origin such as either being procured through a commercial vendor,
+                                        produced within FAU animal facilities&rsquo; breeding colonies, caught in the
+                                        wild and then housed in captivity or involved in field studies.</p>
+                                </li>
+                                <li>
+                                    <p>Embryos and fetuses are not counted but the breeder animals needed to produce
+                                        those need to be tallied against approved animal numbers. PIs need to describe
+                                        the number of embryos/fetuses and breeder animals needed in a study based on
+                                        commonly expected reproductive data of the species in the relevant IACUC
+                                        protocol.</p>
+                                </li>
+                                <li>
+                                    <p>Larval forms of amphibians and fish are covered by the PHS Policy and need to be
+                                        counted as soon as they hatch. OLAW states as an example that zebrafish larvae
+                                        typically hatch 3 days post-fertilization.</p>
+                                </li>
+                                <li>
+                                    <p>Although avian and other egg-laying vertebrate species develop backbones prior to
+                                        hatching, the interpretation of the regulation by OLAW is such that the PHS
+                                        Policy does not apply to those before hatching. PIs, however, are expected to
+                                        inform the IACUC about the use of eggs (e.g. of chicken, turtle) in their
+                                        research and a plan for their disposition including care or euthanasia if they
+                                        hatch unexpectedly. PIs must complete the egg use form if not already included
+                                        in another IACUC protocol.</p>
+                                </li>
+                                <li>
+                                    <p>Wildlife species involved in field research that go beyond detached observation
+                                        with the potential or real possibility to alter or influence the study animals
+                                        and their environment must be counted. Federal regulation dictates that
+                                        approximate numbers are addressed in the IACUC protocol.</p>
+                                </li>
+                                <li>
+                                    <p>Reuse of animals as a strategy for reduction of animal numbers is strongly
+                                        discouraged by the IACUC, especially if invasive or other potentially
+                                        painful/distressful procedures are involved. Any request for reuse of animals
+                                        will be carefully reviewed by the IACUC on a case by case basis to determine the
+                                        impact on the animal and to preserve the animal&rsquo;s well-being.</p>
+                                </li>
+                                <li>
+                                    <p>Transfers of animals must be approved by the IACUC to assure that the total
+                                        number of animals used and the species of animal are appropriate in terms of the
+                                        approved protocol and that multiple, unrelated major survival surgical
+                                        procedures are prevented.</p>
+                                </li>
+                                <li>
+                                    <p>The PI must state in the transfer request whether the animal is still
+                                        experimentally na&iuml;ve. Rodent breeder animals and their offspring that have
+                                        undergone tissue collection for genotyping only as per IACUC Policy 10.4.8 are
+                                        still considered experimentally na&iuml;ve for the purpose of this policy.</p>
+                                </li>
+                                <li>
+                                    <p>The Attending Veterinarian or her designee are authorized by the IACUC to review
+                                        requests for transfer of animals.</p>
+                                </li>
+                                <li>
+                                    <p>Any adverse events including unexpected deaths must be reported to the IACUC in
+                                        enough detail for the IACUC members to understand the circumstances. The IACUC
+                                        will determine whether further investigation will be necessary and what kind of
+                                        action must be implemented going forward to avoid the same or similar adverse
+                                        events. This will be communicated to the PI in writing.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Accountability</h2>
+                            <p>The Principal Investigator (PI) will be responsible for:</p>
+                            <ul>
+                                <li>
+                                    <p>Assuring requested animal numbers and associated justifications are described in
+                                        detail in the IACUC protocol.</p>
+                                </li>
+                                <li>
+                                    <p>Amending the protocol if additional animal numbers will be required.</p>
+                                </li>
+                                <li>
+                                    <p>Keeping track of animal numbers by IACUC protocol and pain category.</p>
+                                </li>
+                                <li>
+                                    <p>Reporting unexpected adverse events including deaths of animals to the IACUC.</p>
+                                </li>
+                                <li>
+                                    <p>Completing transfer requests via VSATS if animals need to be moved between
+                                        protocols and/or PIs.</p>
+
+                                </li>
+                                <p>The IACUC will be responsible for:</p>
+                                <li>
+                                    <p>Reviewing and approving, requiring modifications to secure approval of original
+                                        IACUC protocols as well as amendments including proper animal number
+                                        justification.</p>
+                                </li>
+                                <li>
+                                    <p>Overseeing animal number tracking and accounting toward proposed/approved animal
+                                        numbers per IACUC protocol.</p>
+                                </li>
+                                <li>
+                                    <p>Set forth policy on reuse of animals and transfer procedures.</p>
+                                </li>
+                                <li>
+                                    <p>Reviewing and approving actions related to reported adverse events including
+                                        unexpected death(s) of animals.</p>
+
+                                </li>
+                                <p>The Research Integrity office will be responsible for:</p>
+                                <li>
+                                    <p>Administrative support of the IACUC members to facilitate their regulatory
+                                        function.</p>
+                                </li>
+                                <li>
+                                    <p>Maintaining policy and assure regular review and update as necessary by the
+                                        IACUC.</p>
+
+                                </li>
+                                <p>The Attending Veterinarian/Comparative Medicine (CM) will be responsible for:</p>
+                                <li>
+                                    <p>Tracking animal numbers of animals housed within CM managed centralized
+                                        facilities and providing PIs with regular updates as to the numbers used.</p>
+                                </li>
+                                <li>
+                                    <p>Performing transfers of animals physically between different vivaria or rooms
+                                        within the same vivarium as well as within the animal tracking database,
+                                        crediting and debiting animal numbers as appropriate.</p>
+                                </li>
+                                <li>
+                                    <p>Reviewing appropriateness of transfer of an animal that is not experimentally
+                                        na&iuml;ve.</p>
+                                </li>
+                                <li>
+                                    <p>Supporting research personnel in investigating adverse events and unexpected
+                                        mortality.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Procedures</h2>
+                            <ol type="A">
+                                <li>
+                                    <p>Numbers of any vertebrate animal procured through a commercial vendor will be
+                                        entered into the CM database (VSATS) as soon as the animals are received at a CM
+                                        managed vivarium.</p>
+                                </li>
+                                <li>
+                                    <p>If additional animals are shipped by the vendor the PI will be informed to decide
+                                        whether to keep the animal(s) exceeding the ordered number. If kept by the PI
+                                        the additional animal(s) will be counted against the approved number of the
+                                        protocol. If the PI decides not to keep the additional animal(s), CM will make
+                                        every effort to find another appropriate use such as the training protocol.</p>
+                                </li>
+                                <li>
+                                    <p>Animals imported from another institution, deemed a non-approved vendor, will be
+                                        received into quarantine at which time they will be counted against the
+                                        importing PI&rsquo;s protocol via VSATS.</p>
+                                </li>
+                                <li>
+                                    <p>Animals produced at CM managed vivaria will be entered into VSATS at the time of
+                                        weaning and debited against a numeric ceiling approved by the IACUC including
+                                        both those designated for use in research and those that will not be used due to
+                                        inappropriate genotype, sex or other specified parameters.</p>
+                                </li>
+                                <li>
+                                    <p>Pre-weanling animals used in a research study must be reported to CM to enter it
+                                        in the database (VSATS) and counted against the protocol.</p>
+                                </li>
+                                <li>
+                                    <p>Twice a year all PIs responsible for species solely housed in satellite
+                                        facilities and PIs performing field studies will receive an email from
+                                        Comparative Medicine asking PIs to report animal numbers. PIs are expected to
+                                        report the following separated by species and IACUC Protocol for the time period
+                                        indicated:</p>
+                                    <ol>
+                                        <li>
+                                            <p>Number of animals used including larval and pre-weanling animals</p>
+                                        </li>
+                                        <li>
+                                            <p>Number of animals injured and subsequently euthanized</p>
+                                        </li>
+                                        <li>
+                                            <p>Number of animals that died</p>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>In large-scale tank production systems, where fish are propagated, used for
+                                        research in larval form, held for subsequent research projects with adults or
+                                        used in production aquaculture research the large number of animals might make
+                                        it impractical to be counted precisely. In those cases an estimation of the
+                                        number of fish is sufficient to be reported.</p>
+                                </li>
+                                <li>
+                                    <p>If animals are carryovers from an old protocol they will be counted again in the
+                                        new/renewal protocol. PIs need to account for this while justifying the animal
+                                        numbers in the new protocol.</p>
+                                </li>
+                                <li>
+                                    <p>Movement of animals within animal housing rooms is discouraged. <strong>Transfer
+                                        </strong>of animals must be requested and approved by the IACUC.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Transfer of animals housed in CM managed centralized vivaria must be
+                                                requested via VSATS using the <em>Animal Transfer Form. Any
+                                                </em>previous experiments performed on animals must be described.</p>
+                                        </li>
+                                        <li>
+                                            <p>If animals are experimentally na&iuml;ve, the originating protocol will
+                                                be credited while the new protocol will be debited the number of animals
+                                                transferred. Note: The remaining number of animals on an IACUC protocol
+                                                will be reported to the PI on the invoice at each billing cycle.</p>
+                                        </li>
+                                        <li>
+                                            <p>If animals already have undergone experimental procedures the Attending
+                                                Veterinarian or designee will decide whether a transfer between
+                                                protocols is appropriate depending on approved procedures and numbers in
+                                                the relevant protocol and the impact on the animal(s)&rsquo; well-being.
+                                                The veterinarian might bring the request to the attention of the IACUC
+                                                for final decision at any time, especially if multiple survival
+                                                surgeries are involved or the level of pain/distress would be elevated.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>If the request is a transfer between rooms/facilities of CM managed
+                                                vivaria, the health status of animals at both locations in addition to
+                                                the impact of the transfer on animal well-being will be reviewed by the
+                                                AV or her designee before a final decision.</p>
+                                        </li>
+                                        <li>
+                                            <p>Transfer of animals housed in satellite facilities must be requested via
+                                                VSATS using the Animal Transfer Form &ndash; Satellite Facilities. The
+                                                process of approval is the same as described above for CM managed
+                                                centralized facilities except for crediting or debiting animal numbers
+                                                on associated protocol(s) since animal numbers will be accounted for
+                                                during the regular request to report animal numbers.</p>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>All animals housed in captivity must be observed at least once a day and
+                                        veterinary staff must be consulted if any health concerns arise.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Any animals found dead have to be noted on the daily room check sheet for
+                                                both CM managed centralized vivaria and PI managed satellite facilities.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>The AV or her designee will check daily room check sheets regularly to
+                                                spot any abnormal mortality rates for the particular species housed or
+                                                animal model used.</p>
+                                        </li>
+                                        <li>
+                                            <p>PIs are expected to report health problems, unusual mortality and/or
+                                                adverse events to the AV and the IACUC.</p>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>For wildlife research protocols, mortality resulting from anything other than a
+                                        planned euthanasia as described in the original approved protocol should be
+                                        reported as soon as practical, but not more than 7 days from the date of the
+                                        incident.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>Policy Renewal Date </h2>
+                            <p>6/30/2020</p>
+                        </li>
+                        <hr />
+                        <li>
+                            <h2>References</h2>
+                            <ol>
+                                <li>
+                                    <p>PHS Policy on Humane Care and Use of Laboratory Animals, NIH, 2015</p>
+                                </li>
+                                <li>
+                                    <p>Animal Welfare Regulations, 9 CFR Ch. 1, 2 and 3</p>
+                                </li>
+                                <li>
+                                    <p>Guide for the Care and Use of Laboratory Animals, 8th ed</p>
+                                </li>
+                                <li>
+                                    <p>OLAW website: https://grants.nih.gov/grants/olaw/olaw.htm</p>
+                                </li>
+                                <li>
+                                    <p>Silverman, J. Collaborative Studies and Animal Reuse. Lab Animal (2008).
+                                        37(2):61-63.</p>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <hr />
+                    <p>POLICY APPROVAL</p>
+    
+                    <mark>Executed signature pages are available in the Initiating Authority Office(s)</mark>
+    
+                </div> <!-- close container -->
+    
+                <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h1>The University...at a Glance</h1>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+    </document>

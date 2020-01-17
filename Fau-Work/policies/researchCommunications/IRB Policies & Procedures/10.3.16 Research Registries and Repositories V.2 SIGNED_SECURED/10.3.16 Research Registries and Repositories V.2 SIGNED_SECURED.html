@@ -1,0 +1,874 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>International Research</title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="International Research" />
+        <meta name="keywords" content="International Research" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h1,
+                strong,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+                <h1 style="text-align:center;line-height:50px;padding-bottom:40px;">Research Registries & Repositories</h1>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>Subject:</strong>&nbsp;&nbsp;Research Registries & Repositories</div>
+                            <div class="col-md-4"><strong>Effective Date:</strong>&nbsp;&nbsp;January 30, 2018</div>
+                            <div class="col-md-4"><strong>Policy Number:</strong>&nbsp;&nbsp;10.3.16</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>Supersedes:</strong>&nbsp;&nbsp;10.3.16 Version 1
+                                </div>
+                            <div class="col-md-8"><strong>Responsible Authorities:</strong>&nbsp;&nbsp;Vice President,
+                                Research
+                                Institutional Review Board
+                                Associate/Assistant Vice President, Research Integrity</div>
+                        </div>
+                    </div>
+                </div>
+<ol type="I">
+    <li>
+        <u>Background</u>
+        <p>Research registries and repositories are used to <strong>collect</strong>, <strong>maintain</strong>, and
+            <strong>distribute </strong>data and/or human biological specimens (blood, tissues, cells, DNA, etc.) for
+            some future research purpose. While some registries and repositories are created and maintained explicitly
+            for research purposes, others can be for non-research purposes (such as medical care, education, normal
+            operations) but may be accessed for future research.</p>
+        <p>The purpose of establishing a formal research registry/repository is to give the investigator the authority
+            and responsibility for distributing data and/or specimens from a registry or repository and to ensure that
+            future uses are designed in a manner that protects the rights of research participants, supports scientific
+            inquiry, and complies with Federal regulations. (45 CFR 46; 45 CFR 160-164; 21 CFR 50, 56, 812)</p>
+    </li>
+    <li>
+        <u>Purpose</u>
+        <p>The purpose of this policy is to outline IRB procedures for establishing, maintaining, and closing a research
+            registry or repository at Florida Atlantic University (FAU).</p>
+    </li>
+    <li>
+        <u>General Statement</u>
+        <ul>
+            <li>
+                <p>This policy applies to human subjects research registries and repositories established by
+                    investigators for collecting, maintaining, and distributing <strong>data and/or specimens
+                    </strong><em>for research purposes</em>.</p>
+            </li>
+            <li>
+                <p>This policy <strong>does not apply </strong>to data or/and specimens that are collected and stored as
+                    part of routine clinical care or hospital procedures (for example, blood banks, pathology, disease
+                    surveillance, or quality assurance) <em>unless the primary intent is for future research.</em></p>
+            </li>
+            <li>
+                <p>This policy applies to clinical research AND non-medical/non-clinical research maintained in
+                    non-clinical settings for research use. (e.g., from social/behavioral studies)</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <u>Policy</u>
+        <ol type="A">
+            <li>
+                <p>All research registries and repositories at FAU require review and approval by the IRB.</p>
+            </li>
+            <li>
+                <p>The collection, maintenance and distribution of data or specimens (see definition of
+                    &ldquo;specimens&rdquo; below) becomes a research registry or repository when there is a specific
+                    intention for the data or/and specimens to be maintained for future research and/<strong>or
+                    </strong>shared with other investigators.</p>
+                <p>NOTE: The prospective collection and storage of data or specimens <u>for defined</u><u>research
+                        purposes</u> (including holding samples to "batch" them for assays), as part of a single
+                    IRB-approved protocol <strong>is not </strong>considered a &ldquo;registry&rdquo; or a
+                    &ldquo;repository.&rdquo;</p>
+            </li>
+            <li>
+                <p>If the PI has no explicit plan to destroy the data or/and specimens when an original research project
+                    ends, the investigator may maintain the data or specimens under continued IRB approval for uses that
+                    were approved in the original protocol. Once a use is desired <em>beyond the primary research goals
+                        of the original protocol</em>, the PI must: 1) establish an IRB-approved research registry or
+                    repository; 2) de-identify the data set for any future research uses with notification to the IRB
+                    that this has occurred, OR 3) submit data or specimens into an existing IRB approved registry or
+                    repository AND 4) close the original research project.</p>
+            </li>
+            <li>
+                <p>Investigators wishing to use database information or biospecimens for research that differs in any
+                    way from what is described in the IRB-approved protocol and applicable consent document(s)
+                    <u><strong>MUST</strong></u> submit a new registry/repository protocol to the IRB following the
+                    directives of this policy or amend the original protocol in a manner to account for the new use.</p>
+            </li>
+            <li>
+                <p>For the purposes of this policy, a registry refers to the use of data and a repository refers to the
+                    use of biological specimens and research materials. (See definitions below).</p>
+            </li>
+        </ol>
+        <u>Definitions</u>
+        <p><strong>Anonymized Data or Biospecimens:</strong> Data or biological material that never had a code or other identifier
+            assigned to it. There are no means to trace the data or samples back to an individual. FAU and some
+            international standards consider IP addresses to be identifiable even though the address is linked to the
+            computer and not specifically to the individual.</p>
+        <p><strong>Coded:</strong> This term refers to specimens or data whose identifying information (such as name or social security
+            number) has been replaced with a number, letter, symbol, or combination of these elements. Often there is a
+            mechanism or &ldquo;key&rdquo; to decipher the code. Deciphering the code would enable someone to link the
+            data or specimen or dataset to identifying information which could reveal the donor of the data or specimen
+        </p>
+        <p><strong>Confidential Data: </strong>information disclosed with the expectation that it will not be divulged without
+            permission to others in ways inconsistent with the understanding of the original disclosure.</p>
+        <p><strong>Data Usage Agreement:</strong> An agreement that details the conditions for receipt and future use of data and/or
+            specimens from a registry or repository.</p>
+        <p><strong>De-identified Data or Biospecimens &ndash;</strong> Data or biological material that has had all identifiers
+            associated with human subjects removed in a manner that there is no reasonable basis to believe that
+            information within the data or associated with the biological material that can be used to identify an
+            individual. Investigator/research team cannot readily ascertain the identity of the individual, but the data
+            was collected with identifiers.</p>
+        <p><strong>Gatekeeper:</strong> A person(s) who has primary control of data and/or specimens and maintains the
+            registry/repository. This person may be delegated by the Principal Investigator; however the PI retains
+            ultimate responsibility for the oversight of the registry/repository.</p>
+        <p><strong>Honest broker:</strong> An honest broker is an individual, entity or system, dedicated to collect and provide
+            de-identified information/samples to the research team. In most cases, the honest broker individual/systems
+            are outsiders, set up to obtain and provide clinical/medical records, data and specimens to researchers.
+        </p>
+        <p><strong>Identifiable private information:</strong> is private information for which the identity of the subject is or may
+            readily be ascertained by the investigator or associated with the information.</p>
+        <p>Material Transfer Agreement: An agreement between FAU and another institution that allows one institution to
+            share materials with another (e.g. tissues, etc.). This agreement protects the investigator and institution
+            by notifying the recipient regarding materials that are patented and any limits on the use of samples and
+            associated information.</p>
+        <p><strong>Private information:</strong> Includes information about behavior that occurs in a context in which an individual can
+            reasonably expect that no observation or recording is taking place, and information that has been provided
+            for specific purposes by an individual and</p>
+        <p>that the individual can reasonably expect will not be made public (e.g., a medical record).</p>
+        <p><strong>Protected Health Information (PHI): </strong>Individually identifiable health information collected from an
+            individual that is: 1) Transmitted by electronic media 2) Maintained in electronic media; or 3) transmitted
+            or maintained in any other form or medium by a HIPAA Covered Component. PHI encompasses information that
+            identifies an individual or might reasonably be used to identify an individual and relates to the
+            individual&rsquo;s past, present or future physical or mental health or condition of an individual; the
+            provision of health care to the individual; or the past, present or future payment of heath care to an
+            individual.</p>
+        <p><strong>Personal Identification Information (PII)</strong> <a
+                href="http://www.fau.edu/research/research-integrity/research-data/rd-guidelines-" target="_blank">: As
+                defined by Florida Statute 817.568(1) (f), under which fraudulent use is prohibited, PII means any name
+                or number that may be used, alone or in conjunction with other information, to identify a specific
+                individual. For reference on examples of PII, see FAU Research Data Security guideline available at
+            </a>http://www.fau.edu/research/research-integrity/research-data/rd-guidelines-
+            definitions.php#collapseEight</p>
+        <p><strong>Recruitment Registry:</strong> Lists of persons along with limited personal and, when applicable, medical
+            information. The primary intent and use of these lists is to provide investigators with pools of contact
+            information of potential study volunteers.</p>
+        <p><strong>Registry: </strong><em>In general</em>, a registry is a collection of information elements or
+            databases containing names, contact information, and personal records (medical, educational, attitudinal,
+            survey answers, etc.). A data registry is a tool used to compile a set of individual subject/patient data
+            that will be used <u>in the future</u> for analysis purposes. The organizers of the data registry receive
+            information from multiple sources, maintain the information over time, control access to and use of the
+            information by multiple individuals and/or for future multiple projects. IRB approval is required in advance
+            of every time a registry is to be used for a new research purpose.</p>
+        <p><strong>Repository: </strong>A research repository provides a way for researchers to store human biological
+            specimens (for example, blood, urine, tissue specimens obtained from biopsies, and tissues or organs removed
+            during surgery) or materials (pictures, videos, audio recordings, etc.) and related information for
+            <u>future research studies</u>. IRB approval is required every time a repository is planned to be used for a
+            new research purpose.</p>
+        <p><strong>Research Database:</strong> A database is a collection of information elements (i.e. data) arranged for ease and
+            speed of search and retrieval. The difference between a registry and a research database is based on the
+            intent of use. A registry is intended to be used in future research, with a different scope of work and
+            objectives. A research database, however, is used for one study and cannot be used to answer different
+            research questions or research aims. Most databases are now maintained electronically, but the term can also
+            be applied to paper record systems.</p>
+        <p><strong>Examples of databases include the following:</strong> a set of observations (i.e., data) resulting from a research
+            study<strong>, </strong>an electronic file containing patients' records<strong>, </strong>a collection of
+            diagnosis, treatment, and follow-up information for a hospital's oncology patients.</p>
+        <p><strong>Research Material:</strong> Tangible products obtained from the activities conducted in a research study. Research
+            material can be human biospecimens, photos, videos, test documentation, or, research participant hard copy
+            of the research records, among others.</p>
+        <p><strong>Specimens:</strong> For purposes of this policy, specimens are human biological materials that range from subcellular
+            structures and cell products such as DNA, to cells, tissue (e.g., blood, bone, muscle, connective tissue and
+            skin), organs (e.g., liver, bladder, heart, kidney, placenta), secretions, and waste (e.g., hair or nail
+            clippings, urine, feces, sweat, etc.).</p>
+        <p><strong>Submittal Agreement:</strong> An agreement that attests that data/specimens collected were obtained with written
+            informed consent of the subjects utilizing an informed consent document approved by the local IRB or under
+            an IRB approved waiver of informed consent.</p>
+        <p><strong>NOTE:</strong> Written, or in writing, for purposes of this policy, refers to writing on a tangible medium (e.g.,
+            paper) or in an electronic format</p>
+    </li>
+    <li>
+        <u>Accountability</u>
+        <strong>The Principal Investigator (PI) is responsible for:</strong>
+        <ul>
+            <li>
+                <p>Submitting the appropriate IRB protocol for his/her recruitment registry, data registry or
+                    repository; developing standard operating procedures (SOPs) for maintenance of the
+                    registry/repository; appointing a gatekeeper for the registry/repository; and ensuring the proper
+                    disposition of the registry/repository upon completion of the protocol aims.</p>
+            </li>
+            <li>
+                <p>Coordinating with Environmental Health and Safety and related units, as appropriate, regarding
+                    appropriate storage, maintenance, dissemination and destruction of specimens.</p>
+            </li>
+            <li>
+                <p>Coordinating with information technology <strong>(IT) </strong>representative(s) to develop a data
+                    management plan (DMP) in the format of a document that outlines the detailed procedures to collect,
+                    store, access, transmit, share, preserve and destroy the data during and after a research project.
+                </p>
+            </li>
+            <li>
+                <p>Reviewing the FAU Division of Research - Data Security Guideline available at<a
+                        href="http://www.fau.edu/research/research-integrity/research-data/rd-guidelines-home.php"
+                        target="_blank">
+                        http://www.fau.edu/research/research-integrity/research-data/rd-guidelines-home.php</a></p>
+                <p>The Institutional Review Board will be responsible for:</p>
+            </li>
+            <li>
+                <p>Reviewing and approving any request to create, or request data from, a registry or repository in
+                    accordance with this policy.</p>
+                <p>The Research Integrity office will be responsible for:</p>
+            </li>
+            <li>
+                <p>Advising researchers on the appropriate submission process for establishing, maintaining, and closing
+                    a data/specimen registry/repository.</p>
+            </li>
+            <li>
+                <p>Coordinating with related FAU compliance units as needed.</p>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <u>Procedures</u>
+        <strong><u>Creating a New Research Registry or Repository</u></strong>
+        <ol>
+            <li>
+                <p>Submit the IRB protocol via IRBNet.</p>
+                <ol type="a">
+                    <li>
+                        <p>Use the protocol format for Recruitment Registries, Data Registry &amp; Repositories and
+                            attach all requested information.</p>
+                    </li>
+                    <li>
+                        <p>Include either a registry or repository consent OR a request for waiver of consent by the
+                            IRB. (see &ldquo;Quick Guide&rdquo; below)</p>
+                        <p>NOTE ABOUT CONSENT: Federal regulations (45 CFR 46.116) require researchers to describe the
+                            nature and purposes of the research as well as both reasonably foreseeable and unforeseeable
+                            risk of participation.</p>
+                        <p>Accordingly, informed consent for a registry or repository must be as clear as possible about
+                            the range and types of future uses envisioned without being vague and open-ended.
+                            Researchers should be sensitive to the concerns of special populations, issues surrounding
+                            genetic research, and issues surrounding long-term storage of data on sensitive behaviors
+                            that could cause stigma or affect the reputation, employability, or legal status of a
+                            research participant.</p>
+                    </li>
+                    <li>
+                        <p>If data or specimens are to be collected by or received from a &ldquo;covered entity&rdquo;
+                            under HIPPA regulations, include the HIPAA authorization form that will be signed by
+                            participants for the storage and future research use of their data or specimens, OR submit
+                            the Waiver of HIPAA authorization request form. <u>Note:</u> Only certain FAU components are
+                            covered by HIPAA requirements; check with Research Integrity or see <u>Guidance on HIPAA and
+                                Research</u> if you are unsure.</p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p>The IRB will review the registry or repository protocol to ensure it adequately specifies the
+                    conditions under which data and tissues may be accepted into the registry or repository. The IRB
+                    will request standard operational procedures to guarantee the data or specimens will be securely
+                    stored, and shared to protect the privacy of subjects, maintain the confidentiality of the data, and
+                    preserve the integrity of specimens. Once these and other standard review concerns are addressed,
+                    approval will be issued.</p>
+            </li>
+            <li>
+                <p>The protocol, should describe how individually identifiable data will be maintained separately from
+                    the main database. If any identifiable data must be maintained (e.g. date of birth, date of
+                    services, etc.) with the data set, the PI should provide a justification for doing so. This
+                    information should be included in the consent form, and a data management plan submitted with the
+                    protocol.</p>
+            </li>
+            <li>
+                <p>The protocol should describe the intended duration for maintaining a link between individually
+                    identifiable data, the research data set and the process for destroying the link.</p>
+            </li>
+            <li>
+                <p>For protocols intending to use data for future research under a registry and repository consent, the
+                    IRB would review the appropriateness of the process proposed for obtaining the consent, and ensure
+                    that the required elements were appropriately included. Additionally, the IRB must determine that
+                    consent is appropriately documented.</p>
+            </li>
+            <li>
+                <p>The IRB will also review the inclusion in the protocol of a procedure or strategy (i.e.: participants
+                    log) to record the information of participants who consented or not to participate in the original
+                    study and to use their data for future research.</p>
+            </li>
+        </ol>
+        <strong>Converting a research database to a registry:</strong>
+        <p>Investigators may desire to use the data/specimens collected under a previously IRB approved study for
+            different or future research purposes. Conversion of a research database to a registry or repository should
+            consider the confidentiality, autonomy and benefit of the subjects who originally provided the data and/or
+            specimens.</p>
+        <p>Obtaining informed consent for research use of information or specimens beyond the original intention of the
+            research or from non-research databases and repositories is usually challenging. Because future research use
+            or a project with a different scope of work was not anticipated at the time of collection, future research
+            consent may not have been obtained.</p>
+        <p>Where it is possible to do so, IRBs&rsquo; may require researchers to obtain informed consent for future
+            research of subjects involving information or specimens contained in a previous study or non-research
+            databases or repositories.</p>
+        <p>The IRB protocol should include the list of variables that will be in the data registry. A copy of the print
+            screen of the database, listing all variables should be attached to the protocol. If identifiable data is
+            included in the list of variables, the protocol should cover how this data will be maintained separately
+            from the main research data base. If any identifiable data must be maintained, the PI should provide a valid
+            justification and data management plan.</p>
+        <p>If the PI cannot obtain consent of the participants for different reasons other than inconvenience or time
+            restrictions &ndash; the PI must de-identify the data AND a waiver of consent should be submitted to the IRB
+            describing the following processes:</p>
+        <ul>
+            <li>
+                <p>Detailed process for coding the data.</p>
+            </li>
+            <li>
+                <p>Include an honest broker to conduct the process of de-identification.</p>
+            </li>
+            <li>
+                <p>Codes linking subjects to data: The protocol submitted to the IRB should cover who, if anyone, will
+                    retain the key to the code linking subjects to identifiers.</p>
+            </li>
+            <li>
+                <p>Explain the process to destroy the original research data set.</p>
+            </li>
+        </ul>
+        <p>If the research data set that will be converted to a registry or repository originated from a study approved
+            by the IRB as a minimal risk study, the PI can apply for waiver of consent if:</p>
+        <ol type="a">
+            <li>
+                <p>The waiver of consent will not adversely affect subject&rsquo;s rights and welfare,</p>
+            </li>
+            <li>
+                <p>The research could not be practicably be carried out without the waiver, AND</p>
+            </li>
+            <li>
+                <p>Where appropriate, the subjects will be provided with additional pertinent information after
+                    participation.</p>
+            </li>
+        </ol>
+        <p>If researchers want to convert contact information data from a non-research dataset to a recruitment
+            data set, the owner of the original data set (i.e. private practice office) should require
+            permission from potential subjects before releasing contact information to researchers for
+            recruitment purposes.</p>
+        <p><a href="http://www.fau.edu/research/docs/policies/research-integrity/10.3.7_Disclosure_and_Use_of_PHI_in_Research.pdf"
+                target="_blank">Under the HIPAA privacy rule, protected health information (PHI, i.e.
+                identifiable health information) in non-research databases and repositories held at FAU and is
+                affiliates covered entities may not be used or disclosed for research except as allowed in FAU
+                HIPAA policy </a><a
+                href="http://www.fau.edu/research/docs/policies/research-integrity/10.3.7_Disclosure_and_Use_of_PHI_in_Research.pdf"
+                target="_blank">10.3.7 Disclosure and Use of Protected Health Information (PHI) in Research.</a>
+        </p>
+        <strong>Maintaining a Research Registry/Repository</strong>
+        <ol>
+            <li>
+                <p>The registry/repository must be maintained according to the protocol and SOPs submitted to
+                    and approved by the IRB. As with all IRB protocols, any amendment to a registry or
+                    repository protocol must be approved by the IRB before it is implemented.</p>
+            </li>
+            <li>
+                <p>If the PI of a FAU registry or repository receives a request from an investigator to
+                    <strong>distribute </strong>identifiable or de-identified data/specimens from an existing
+                    research registry/repository, he/she must obtain a copy of that investigator&rsquo;s IRB
+                    approval (if applicable) and confirmation that the investigator will comply with the
+                    registry/repository&rsquo;s terms of usage. Note: If applicable, the recipient-investigator
+                    may be asked to sign any type of agreement such as a Data Use Agreement or Material Transfer
+                    Agreement, such agreements must be routed for review through Sponsored Programs and may
+                    require consult with the Technology Development Office and /or Deputy General Counsel. See
+                    Data Use Agreement Guideline available at: <a
+                        href="https://www.fau.edu/research/sponsored-programs/files/FAU%20DUA%20Guidance%2002-10-2017.pdf"
+                        target="_blank">https://www.fau.edu/research/sponsored-programs/files/FAU%20DUA%20Guidance%2002-10-
+                        2017.pdf</a></p>
+            </li>
+            <li>
+                <p>At each continuing review, the PI of a FAU research registry or repository will be required
+                    to provide a summary report to the IRB of all collections, distributions, and/or destruction
+                    of data/specimens from the registry/repository.</p>
+            </li>
+            <li>
+                <p>When a PI no longer wishes to operate the registry or repository for future research, or if
+                    the data/specimens are being transferred to another registry/repository, he/she should
+                    submit a request for closure to the IRB. The closure request must include the disposition of
+                    the data and specimens, including details on the secure transfer, donation and/or
+                    destruction of data/specimens. Any inactive registry/repository should be responsibly closed
+                    after 5 years. If a PI wishes to transfer the repository to another PI, a request for amendment should be submitted with the credentials of the new PI and endorsement of the College
+                    Departmental Chair or Dean.(Note: PIs are advised to consult their IT representatives regarding the secure
+                    management of all data/specimens.)</p>
+            </li>
+        </ol>
+        <strong><u>Contributing to a Non-FAU Research Registry/Repository</u></strong>
+        <p>If an FAU investigator wishes to contribute data/specimens to a registry or repository outside of FAU, the
+            IRB must review, at a minimum, the IRB protocol used to collect the data/specimens, the consent process and
+            the submittal agreement (see definition above).</p>
+        <p>This allows the IRB to confirm that the data/specimens are authorized to be shared and used beyond the intent
+            of the original research protocol. <u>Note:</u> Not all submissions to a research repository meet the
+            federal definition of being engaged in human subject research. Contact the IRB office for further
+            clarification.</p>
+        <strong><u>Requesting Data/Specimens from a Research Registry/Repository</u></strong>
+        <p>When an FAU investigator wishes to request coded or identifiable data from an established registry or
+            repository inside or outside FAU, he/she should submit a request to the IRB either via a new protocol
+            application or as an amendment to an existing study. The FAU IRB must review, at a minimum, the protocol,
+            data collection tools, the usage agreement, data management plan, consent process (and any applicable a
+            waiver), and obtain the IRB approval number of the registry/repository from which the request is being made.
+        </p>
+        <p>If the investigator wishes to request <em>anonymous </em>(and some coded) data, he/she may submit a request
+            to the IRB for Determination of Non-Human Subjects Research using Form 6 and the Assessment tool 4 -
+            Certificate of de-identification.</p>
+        <p>Note: Certain registries or repositories may require the recipient to obtain a more stringent IRB review,
+            even if the data appears to be de-identified. For example, if the repository contains data on sensitive or
+            criminal behavior, the gatekeeper of the repository may request expedited or convened IRB review because the
+            likelihood of the data causing harm in the event of a breach is significant to participants, even if the
+            likelihood of the breach occurring is rare.</p>
+        <p><a href="http://www.fau.edu/research/sponsored-programs/review-" target="_blank">A Material Transfer
+                Agreement (MTA) should be established between the institutions transferring/receiving the
+                data/specimens. MTAs are contractual agreements used for the transfer or exchange of research materials
+                both biological and non-biological to/from the university. All MTAs should be reviewed and approved by
+                the Sponsored Programs Office and signed by both the PI and FAU&rsquo;s authorizing official prior to
+                transferring the materials. More information about MTA is available at </a><a
+                href="http://www.fau.edu/research/sponsored-programs/review-of-transfer-"
+                target="_blank">http://www.fau.edu/research/sponsored-programs/review-
+                of-transfer-agreements.php</a>http://www.fau.edu/research/sponsored-programs/review-of-transfer-
+            agreements.php</p>
+        <h1>Quick Guide on IRB Review Type for Registries or Repositories</h1>
+        <ol>
+            <li>
+                <h3>Data/Specimens Obtained prospectively ONLY For Research (not part of normal operations or clinical
+                    care)*</h3>
+                <table calss="table table-bordered" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                            </td>
+                            <th colspan="4" >
+                                <p>Type of IRB Review and Consent</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">
+                                <p>Status of Participant/Donor Identity</p>
+                            </th>
+                            <th colspan="2" >
+                                <p>Genetic Studies</p>
+                            </th>
+                            <th colspan="2" >
+                                <p>Non-genetic Studies</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <p>Type of IRB Review</p>
+                            </th>
+                            <th>
+                                <p>Consent Needed</p>
+                            </th>
+                            <th>
+                                <p>Type of IRB Review</p>
+                            </th>
+                            <th>
+                                <p>Consent Needed</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p>Anonymized (if re-identifiable)</p>
+                            </td>
+                            <td>
+                                <p>Full Board or</p>
+                                <p>Expedited</p>
+                            </td>
+                            <td>
+                                <p>Yes</p>
+                            </td>
+                            <td>
+                                <p>Full Board or</p>
+                                <p>Expedited</p>
+                            </td>
+                            <td>
+                                <p>Yes</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p>Known to Principal Investigator</p>
+                            </td>
+                            <td>
+                                <p>Full Board</p>
+                            </td>
+                            <td>
+                                <p>Yes</p>
+                            </td>
+                            <td>
+                                <p>Full Board or</p>
+                                <p>Expedited</p>
+                            </td>
+                            <td>
+                                <p>Yes</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p>Known to 3rd Party (such as the honest broker or gatekeeper)</p>
+                            </td>
+                            <td>
+                                <p>Full Board</p>
+                            </td>
+                            <td>
+                                <p>Yes</p>
+                            </td>
+                            <td>
+                                <p>Full Board or Expedited</p>
+                            </td>
+                            <td>
+                                <p>No - Apply</p>
+                                <p>for waiver of consent</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>*For example, additional blood draw or biopsy.</h4>
+            </li>
+            <li>
+                <h3>Specimens Obtained <u>PROSPECTIVELY for a bank repository</u></h3>
+                <h3>Specimens Left Over from Clinical Procedures and Would Normally Be Discarded*</h3>
+                <table cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                            </td>
+                            <td colspan="4" >
+                                <p>Type of IRB Review and Consent</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <p>Status of Participant/Donor Identity</p>
+                            </td>
+                            <td colspan="2" >
+                                <p>Genetic Studies</p>
+                            </td>
+                            <td colspan="2" >
+                                <p>Non-genetic Studies</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Type of IRB</p>
+                                <p>Review</p>
+                            </td>
+                            <td>
+                                <p>Consent</p>
+                                <p>Process</p>
+                            </td>
+                            <td>
+                                <p>Type of IRB</p>
+                                <p>Review</p>
+                            </td>
+                            <td>
+                                <p>Consent Process</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p>Anonymous</p>
+                            </td>
+                            <td>
+                                <p>Not Human</p>
+                                <p>Research</p>
+                            </td>
+                            <td>
+                                <p>None</p>
+                            </td>
+                            <td>
+                                <p>Not Human</p>
+                                <p>Research</p>
+                            </td>
+                            <td>
+                                <p>None</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p>Known to Principal Investigator</p>
+                            </td>
+                            <td>
+                                <p>Full Board</p>
+                            </td>
+                            <td>
+                                <p>Yes</p>
+                            </td>
+                            <td>
+                                <p>Full Board or Expedited</p>
+                            </td>
+                            <td>
+                                <p>Yes or Waiver of Consent + additional</p>
+                                <p>documents</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p>Known to a 3rd Party (such as the honest broker or gatekeeper)</p>
+                            </td>
+                            <td>
+                                <p>Full Board</p>
+                            </td>
+                            <td>
+                                <p>Yes</p>
+                            </td>
+                            <td>
+                                <p>Full Board or Expedited</p>
+                            </td>
+                            <td>
+                                <p>Waiver</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <p>Known to Principal Investigator intended</p>
+                                <p>to use for secondary analyses</p>
+                            </td>
+                            <td>
+                                <p>Full Board</p>
+                            </td>
+                            <td>
+                                <p>Yes</p>
+                            </td>
+                            <td>
+                                <p>Limited IRB</p>
+                                <p>Review</p>
+                            </td>
+                            <td>
+                                <p>Registry/</p>
+                                <p>Repository Consent</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>*For example, excess blood from routine blood draw or leftover biopsy material.</h4>
+             
+            </li>
+            <li>
+                <h3>Data/Specimens Obtained RETROSPECTIVELY &ndash; Conversion of a data set to a registry or repository
+                    Data/Specimens Were Previously Collected for Either Clinical or Research Purposes*</h3>
+                    <table cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                </td>
+                                <th colspan="4" >
+                                    <p>Type of IRB Review and Consent</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th rowspan="2">
+                                    <p>Status of Participant/Donor Identity</p>
+                                </th>
+                                <th colspan="2" >
+                                    <p>Genetic Studies</p>
+                                </th>
+                                <th colspan="2" >
+                                    <p>Non-genetic Studies</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>Type of IRB Review</p>
+                                </th>
+                                <th>
+                                    <p>Consent Needed</p>
+                                </th>
+                                <th>
+                                    <p>Type of IRB Review</p>
+                                </th>
+                                <th>
+                                    <p>Consent Needed</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <p>Anonymous</p>
+                                </td>
+                                <td>
+                                    <p>Not Human</p>
+                                    <p>Research</p>
+                                </td>
+                                <td>
+                                    <p>N/A</p>
+                                </td>
+                                <td>
+                                    <p>Not Human</p>
+                                    <p>Research</p>
+                                </td>
+                                <td>
+                                    <p>N/A</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <p>Known to Principal Investigator</p>
+                                </td>
+                                <td>
+                                    <p>Full Board</p>
+                                </td>
+                                <td>
+                                    <p>Yes</p>
+                                </td>
+                                <td>
+                                    <p>Full Board, Expedited, or</p>
+                                    <p>Exempt</p>
+                                </td>
+                                <td>
+                                    <p>Yes or Waiver (depends on how</p>
+                                    <p>data are recorded)</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <p>Known to a 3rd party (such as the honest</p>
+                                    <p>broker or repository gatekeeper)</p>
+                                </td>
+                                <td>
+                                    <p>Expedited</p>
+                                </td>
+                                <td>
+                                    <p>Waiver</p>
+                                </td>
+                                <td>
+                                    <p>Exempt</p>
+                                </td>
+                                <td>
+                                    <p>Waiver</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </li>
+        </ol>
+        <h4>*ALL specimens needed for the study are already stored, for example, in a laboratory or registry/repository.
+        </h4>
+    </li>
+    <hr/>
+    <li>
+        <u>Guidance Renewal Date </u>
+        <p>N/A</p>
+    </li>
+    <hr/>
+    <li>
+        <p>References</p>
+        <p><a href="http://www.hhs.gov/ohrp/policy/cdebiol.html)" target="_blank">OHRP Guidance on Research Involving Coded
+            Private Information or Biological Specimens (hpp://www.hhs.gov/ohrp/policy/cdebiol.html)</a></p>
+    <p>Response of the Department of Health and Human Services to NBAC&rsquo;s Report <u>Research Involving</u><u>Human
+            Biological Materials: Ethical Issues and Policy Guidance</u><a href="http://aspe.hhs.gov/sp/hbm/hbm.pdf)"
+            target="_blank"> (http://aspe.hhs.gov/sp/hbm/hbm.pdf)</a></p>
+    </li>
+</ol>
+
+<p>POLICY APPROVAL</p>
+                <mark>Executed signature pages are available in the Initiating Authority Office(s)</mark>
+
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h1>The University...at a Glance</h1>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

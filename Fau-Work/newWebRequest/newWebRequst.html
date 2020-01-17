@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Research In Action Series</title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Boca Raton Public Library Research In Action Series" />
+        <meta name="keywords"
+            content="FAU Research In Action, FAU research in excellence fund, Boca Raton Public Library Lecture Series, Lecture Series" />
+        <!-- /com.omniupdate.properties -->
+
+
+
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+
+            <style>
+                h1,
+                h2,
+                h3,
+                h4,
+                p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                .blue-box {
+                    background-color: #063b69;
+                    color: #fff;
+                    padding: 1em;
+                    border-bottom: 1px solid #c3c7cc;
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                .blue-box a {
+                    color: #fff;
+                }
+
+                
+
+                
+                .gray-box {
+                    background-color: #c3c7cc;
+                    color: #063b69;
+                    font-family: 'Nunito', sans-serif;
+                }
+
+                .gray-box h1,
+                h2,
+                h3 {
+                    color: #063b69;
+                }
+
+                .gray-box img {
+                    max-height: 100px;
+                    margin: 8px;
+                }
+
+                .gray-box .event-date {
+                    text-align: center;
+                    height: 100%;
+                }
+
+                .sm-header {
+                    font-size: 1.14em;
+                }
+
+                .blue-box img.blog-icon {
+                    max-height: 60px;
+                }
+                
+                .row [class*="col-"]{
+                    margin-bottom: -99999px;
+                    padding-bottom: 99999px;
+                }
+
+                .row{
+                   overflow: hidden; 
+                }
+            </style>
+            
+            <div class="container">
+
+                <div class="row">
+                    <header class="col-md-12 gray-box text-center">
+                        <h3>Florida Atlantic University and Boca Raton Public Library present:</h3>
+                        <h1 style="text-shadow: -2px 2px #fff;font-weight:bold;font-size:3.5em">RESEARCH IN ACTION
+                            SERIES</h1>
+                        <h2 style="color:#b81f39;margin:1em 0 .5em 0;font-weight:bold;">2019 Featured Speakers</h2>
+                        <p>Enroll online at <a href="https://www.myboca.us/957/Library" title="Boca Library"
+                                target="_blank" style="color:#fff;text-transform:lowercase">bocalibrary.org</a></p>
+                    </header>
+                </div>
+
+
+                <div class="row">
+                     <!--Left Blue Box  -->
+                    <div class="col-md-6 blue-box">
+                        <h4 class="text-left" style="display: inline;">Your voice. Our research.
+                            <br />We want to hear from you! Write us at <a href="mailto:fau.research@fau.edu" title="Email FAU Research"
+                                style="color:#fff;">fau.research@fau.edu</a>
+                        </h4>
+                        <h4>
+                            <a style="color:#fff;" href="https://fauf.fau.edu/giveagift/?BBFund=1108&amp;BBHideOtherFunds=1"
+                            target="_blank">Donate: FAU excellence in research fund</a>
+                        </h4>
+                    </div>
+                
+                    <!-- Right Blue Box -->
+                    <div class="col-md-6 blue-box">
+                            <h4>Select Thursdays at the Boca Raton Public Library,<br />located at 400 NW 2nd Ave, Boca
+                                Raton, FL 33432
+                                <br /><br />
+                            </h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 event-date" style="text-align: center;">
+                        <!-- Date -->
+                        <h3>Feb. 21</h3>
+                    </div>
+                    <!-- Name of Author -->
+                    <div class="col-md-2" >
+                        <p class="sm-header" style="text-align: center;margin-top: 1em;">Ania Knapinska, Ph.D.</p>
+                    </div>
+                    <!-- Blog Title -->
+                    <div class="col-md-6">
+                        <p class="sm-header" style="text-align: center;margin-top: 1em;">
+                            Bringing Better Treatments Out of the Lab
+                        </p>
+                    </div>
+                    <!-- Blog Icon/Link -->
+                    <div class="col-md-2">
+                        <div style="text-align:center;">
+                            <a href="http://www.fau.edu/research/research-in-action/blog/index.php#mariafadiman" style="color: black;">
+                                <img src="http://www.fau.edu/research/webProject/blog-icon.png" class="blog-icon"
+                                    alt="Read the blog - The Relationship Between Plants and People" style="width:120;height:120;margin-top: .5em;" />
+                                <br />Read the Blog</a>
+                        </div>
+                    </div>
+                    <hr/>
+                </div>
+             
+                <div class="row">
+                    <div class="col-md-2 event-date" style="text-align: center;">
+                        <!-- Date -->
+                        <h3>Feb. 21</h3>
+                    </div>
+                    <!-- Name of Author -->
+                    <div class="col-md-2" >
+                        <p class="sm-header" style="text-align: center;margin-top: 1em;">Ania Knapinska, Ph.D.</p>
+                    </div>
+                    <!-- Blog Title -->
+                    <div class="col-md-6">
+                        <p class="sm-header" style="text-align: center;margin-top: 1em;">
+                            Bringing Better Treatments Out of the Lab
+                        </p>
+                    </div>
+                    <!-- Blog Icon/Link -->
+                    <div class="col-md-2">
+                        <div style="text-align:center;">
+                            <a href="http://www.fau.edu/research/research-in-action/blog/index.php#mariafadiman" style="color: black;">
+                                <img src="http://www.fau.edu/research/webProject/blog-icon.png" class="blog-icon"
+                                    alt="Read the blog - The Relationship Between Plants and People" style="width:120;height:120;margin-top: .5em;" />
+                                <br />Read the Blog</a>
+                        </div>
+                    </div>
+                    <hr/>  
+                </div>
+                 
+
+
+                <div class="row">
+                    <div class="col-md-12 blue-box text-center">
+                        <p class="text-left">Enroll online at <a href="https://www.myboca.us/957/Library"
+                                title="Boca Public Library" target="_blank" style="color:#fff;">bocalibrary.org</a></p>
+                        <p class="text-left">We want to hear from you! Write us at <a href="mailto:fau.research@fau.edu"
+                                title="Email FAU Research" style="color:#fff;">fau.research@fau.edu</a>
+                            &nbsp;&nbsp;|&nbsp;&nbsp;<a style="text-transform:initial;color:#fff;"
+                                href="/research/research-in-action/files/Research%20In%20Action%20Series%20Agenda%20Book_MM_PR_forprint.pdf"
+                                target="_blank">Download the brochure</a>
+                            &nbsp;&nbsp;|&nbsp;&nbsp;<a
+                                href="https://fauf.fau.edu/giveagift/?BBFund=1108&amp;BBHideOtherFunds=1"
+                                Title="Donate: FAU excellence in research fund" style="color:#fff;"
+                                target="_blank">Donate: FAU excellence in research fund</a></p>
+                    </div>
+                </div>
+
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h1>The University...at a Glance</h1>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

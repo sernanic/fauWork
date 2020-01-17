@@ -1,0 +1,807 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Autoclave Procedures
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Autoclave Procedures" />
+        <meta name="keywords" content="Autoclave Procedures" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine personnel
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp;Certified Veterinary Technician
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp; To outline the procedures for
+                                autoclaving infectious items or items requiring sterilization
+                                prior to use.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All Vivaria
+                                laboratories
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2>References:</h2>
+                <ol>
+                    <li>
+                        <p>Product guide from temperature strip (or card) product and BI</p>
+                    </li>
+                    <li>
+                        <p>Biosafety in Microbiological and Biomedical Laboratories, 5th Edition, CDC, National
+                            Institutes of Health,
+                            Sept 2009, pg. 35 and 36</p>
+                    </li>
+                    <li>
+                        <p>Occupational Health and Safety in the Care and Use of Research Animals, National Research
+                            Council, National
+                            Academy Press, 1997, Pressure Vessels, pgs 36, 44-50.</p>
+                    </li>
+                    <li>
+                        <p>SOP 110 Autoclave Effectiveness</p>
+                    </li>
+                    <li>
+                        <p>SOP 111 Biological Indicator Processing</p>
+                    </li>
+                    <li>
+                        <p>SOP 904 Autoclave Operation and Care</p>
+                    </li>
+                    <li>
+                        <p>CM Form #059 Biological Indicator Log Sheet</p>
+                    </li>
+                    <li>
+                        <p>CM Form #045 Autoclave Log</p>
+                    </li>
+                </ol>
+                <hr/>
+                <ol>
+                    <li>
+                        <h2>Responsibilities</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Laboratory Animal Technician/Autoclave Operator</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Perform only procedures for tasks which have been trained.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Certified Veterinary Technician (CVT)</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+
+                                    </li>
+                                    <li>
+                                        <p>Provide appropriate training including hands-on sessions to autoclave
+                                            operator,
+                                            document training and verify competency including knowledge of safety
+                                            requirements.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Oversee Quality Assurance Program including testing of autoclave
+                                            effectiveness.
+                                            Review Autoclave log sheets at least monthly for accuracy and collection of
+                                            temperature strips</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Facility Manager/Trainer Coordinator</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel depending on
+                                            function/job description and assurance that Training record is signed.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Director/Veterinarian</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedure as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel and necessary
+                                            resources are available.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Safety</h2>
+                        <ol>
+                            <li>
+                                <p>Live steam, hot water or hot materials can cause serious burns. Best practice to
+                                    avoid burns
+                                    is to allow autoclaved items to return to room temperature.</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>When autoclaving water, strive to autoclave this item at the end of the day
+                                            so that
+                                            the contents have overnight to cool.</p>
+                                    </li>
+                                    <li>
+                                        <p>To avoid steam exposure, keep a safe arms-length distance from the opening of
+                                            the
+                                            autoclave chamber.</p>
+                                    </li>
+                                    <li>
+                                        <p>To avoid material handling burns, personal protective equipment (PPE) must be
+                                            worn
+                                            when unloading autoclaved items.</p>
+                                    </li>
+                                    <li>
+                                        <p>Autoclave gloves must be used when handling hot items, and care must be taken
+                                            to
+                                            avoid burns when removing items from the autoclave. Inspect gloves prior to
+                                            use for
+                                            damage such as holes or rips in glove seams.</p>
+                                    </li>
+                                    <li>
+                                        <p>Autoclave sleeves are extensions of gloves and should also be used if
+                                            personnel are
+                                            required to reach into a hot chamber. The glove extensions provide
+                                            protection to
+                                            skin higher in the arm.</p>
+                                    </li>
+                                    <li>
+                                        <p>Replace worn or damaged PPE.</p>
+                                    </li>
+                                    <li>
+                                        <p>Heat resistant aprons and water resistant shoe (or boot) covers must be worn
+                                            when
+                                            handling hot water.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Upon starting the autoclave, hang a WARNING HOT MATERIALS sign on the autoclave door
+                                    so that
+                                    personnel in the area know the equipment is hot.</p>
+                            </li>
+                            <li>
+                                <p>Upon removing items from a chamber on an autoclave cart or other storage area for hot
+                                    materials, place a WARNNING HOT MATERIALS on top of the hot items.</p>
+                            </li>
+                            <li>
+                                <p>In the event of an emergency, seek medical help immediately. In the event of any
+                                    injury
+                                    (steam or heat exposure or burn) contact your supervisor. Refer to <em>SOP 008
+                                        Reporting
+                                        Accidents, Injury and Illness</em>.</p>
+                            </li>
+                            <li>
+                                <p>If steam escapes the machine while the autoclave is running, turn the autoclave off
+                                    at the
+                                    panel, if accessible without danger of steam exposure, or the main power box if the
+                                    panel is
+                                    inaccessible due to steam emission and contact your supervisor immediately. DO NOT
+                                    OPEN THE
+                                    AUTOCLAVE DOOR.</p>
+
+                            </li>
+                            <li>
+                                <strong>Note: Do not seal containers too tightly or they may explode.</strong>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>General Information</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Autoclaves use high pressure and high temperature steam to kill microorganisms.
+                                    Sterilization
+                                    is a function of time, temperature and saturated steam. All three components are
+                                    critical
+                                    for a successful outcome.</p>
+                            </li>
+                            <li>
+                                <p>To achieve sterilization, the autoclave load must be saturated with steam. Air
+                                    pockets or
+                                    insufficient steam supply will prevent effective sterilization.</p>
+                            </li>
+                            <li>
+                                <p>Solid materials must be packed loosely. There must be ample room between the bags,
+                                    trays and
+                                    other containers so as to not impede steam circulation.</p>
+                            </li>
+                            <li>
+                                <p>Autoclave or sterilization indicators are test tools used to verify the sterility of
+                                    autoclaved materials or water. They come as Biological Indicator (BI) or chemical
+                                    indicators. Chemical Indicators are available as temperature strips or temperature
+                                    tape. See
+                                    <em>SOP 110 Autoclave Effectiveness </em>for more information.</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Autoclave Indicators have different purposes. Therefore, it is important to
+                                            pay
+                                            attention to which type of indicator has to be used.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Ensure that materials being autoclaved are heat/pressure resistant including glass
+                                    and
+                                    plastics. Never autoclave:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Oils, waxes, flammable materials such as alcohols, formalin, acetic acid</p>
+                                    </li>
+                                    <li>
+                                        <p>Radioactive materials</p>
+                                    </li>
+                                    <li>
+                                        <p>Sharps prior to disposal in a sharps disposal container</p>
+                                    </li>
+                                    <li>
+                                        <p>Dried bleach and bleach-associated materials due to fire or explosion risk
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Pathological waste like carcasses or tissues since those must be incinerated
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Preparation for autoclaving infectious and selected toxin containing items</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Supplies needed:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Biohazard bags (Use only <u>approved</u> biohazard bags)</p>
+                                    </li>
+                                    <li>
+                                        <p>Permanent marker</p>
+                                    </li>
+                                    <li>
+                                        <p>Biological Indicators (BI)</p>
+                                    </li>
+                                    <li>
+                                        <p>Chemical Indicators; i.e. steam sterilization strips and temperature tape</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Biohazard bags should not be overfilled; fill halfway to &frac34; of the way.</p>
+                            </li>
+                            <li>
+                                <p>Add a &frac12; cup of water to a container (cage, flask, bottle(s), etc.) inside the
+                                    biohazard bag prior to sealing to aid in the generation of steam during the
+                                    autoclave
+                                    process. For safety purposes, do not pour water directly into the bottom of the
+                                    biohazard
+                                    bag. Do not add water if there is a chance that biohazardous material may splash out
+                                    of the
+                                    container.</p>
+                            </li>
+                            <li>
+                                <p>Inside each biohazard bag, add:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>(1) steam sterilization strip</p>
+                                    </li>
+                                    <li>
+                                        <p>(1) biological indicator</p>
+                                        <ol>
+                                            <li>
+                                                <p>To be added once a month</p>
+                                            </li>
+                                            <li>
+                                                <p>Will be in a pack for easy handling</p>
+                                            </li>
+                                            <li>
+                                                <p>Label pack with:</p>
+                                                <ol>
+                                                    <li>
+                                                        <p>Date</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Autoclave location (i.e. building)</p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>Label bag and/or temperature tape with &ldquo;BI&rdquo; to indicate
+                                                    BI added
+                                                    to load</p>
+
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Do not seal containers such as large bottles of water tightly or they may explode.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Gooseneck (twist the top of the bag in a circular motion and fold over to create a
+                                    bend or
+                                    &ldquo;gooseneck&rdquo;) the biohazard bag, but not tightly.</p>
+                            </li>
+                            <li>
+                                <p>Wrap temperature tape around the neck of the red biohazard bag and write the date on
+                                    the tape
+                                    in permanent marker. The biohazard bagged items are now ready to be autoclaved.</p>
+                            </li>
+                            <li>
+                                <p>Place the items to be autoclaved in the chamber as described in <em>SOP 110</em>.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+
+                    <li>
+                        <h2>Preparation for autoclaving items requiring sterilization prior to use
+                        </h2>
+                        <ol type="a">
+                            <li>
+                                <p>Supplies needed</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Surgical drape or autoclave pouch</p>
+                                    </li>
+                                    <li>
+                                        <p>Permanent marker</p>
+                                    </li>
+                                    <li>
+                                        <p>Scissors</p>
+                                    </li>
+                                    <li>
+                                        <p>Chemical Indicators; i.e. steam sterilization strips and
+                                            temperature tape</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h2>Safety reminder &ndash; when preparing items for autoclaving, do
+                                    not
+                                    seal containers too tightly or they may explode.</h2>
+                            </li>
+                            <li>
+                                <p>Water bottles are filled about &frac34;, loosely capped, and
+                                    placed
+                                    inside an empty rat cage or in a bottle rack.</p>
+                            </li>
+                            <li>
+                                <p>Cages are filled with bedding and set up with a nestlet, food
+                                    hopper,
+                                    lid, and cage card holder.</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>To each load of cages, add/use:</p>
+                                        <ol>
+                                            <li>
+                                                <p>Temperature tape to lids</p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>On each individual cage or a stack of
+                                                            cages</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>On two places at the front and back of
+                                                            the cage
+                                                            top to securely tape it shut.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Avoid using excessive amounts of
+                                                            temperature tape
+                                                            on caging as this creates a sticky
+                                                            residue which
+                                                            is difficult to remove.</p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>(1) Steam sterilization strip</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Surgical tools (e.g. scissors, needle drivers) need to be opened
+                                    fully
+                                    and placed inside an autoclave pouch or if situated in a
+                                    surgical tool
+                                    box draped with surgical drape.</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>To each pack/box, add:</p>
+                                        <ol>
+                                            <li>
+                                                <p>Use temperature tape on the outside for closing,
+                                                    with a
+                                                    permanent marker write:</p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>Date of autoclaving</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Operator initials</p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>(1) Steam sterilization strip</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Place the items to be autoclaved in the chamber as described in
+                                    <em>SOP
+                                        110</em>.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>General Autoclave Procedures</h2>
+                        <ol type="a">
+                            <li>
+                                <p>See <em>SOP 904 Autoclave Operation and Care </em>for operation
+                                    instructions.</p>
+                            </li>
+                            <li>
+                                <p>Process bottles on a liquid cycle at 121&ordm;C for 30 minutes.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Process non-liquid items on a dry cycle at 121&ordm;C for 30
+                                    minutes.</p>
+
+                            </li>
+                            <li>
+                                <p>Process items containing toxins (non-heat stable) following
+                                    recommendations by EH&amp;S based on Pathogen Safety Data Sheet
+                                    (e.g.
+                                    Pertussis Toxin 121&ordm;C for 60 minutes).</p>
+                            </li>
+                            <li>
+                                <p>Check the print-out from the recorder to see if time and
+                                    temperature were
+                                    attained and if not re-autoclave the load, if necessary in
+                                    another
+                                    autoclave.</p>
+                            </li>
+                            <li>
+                                <p>Collect and/or record sterilization indicators (i.e. temperature
+                                    tape,
+                                    steam sterilization strip, biological indicator) during
+                                    unloading as
+                                    described in <em>SOP 110.</em></p>
+                            </li>
+                            <li>
+                                <p>If the chemical indicator(s) (i.e. temperature tape, steam
+                                    sterilization
+                                    strip) did not change color<strong>, the entire load will be
+                                        removed,
+                                        repackaged with new indicator(s), and
+                                        re-sterilized</strong>.</p>
+                            </li>
+                            <li>
+                                <p>Alert a supervisor to investigate malfunction.</p>
+                            </li>
+                            <li>
+                                <p>Any package that is excessively wet, torn, or damaged in any way
+                                    should
+                                    be</p>
+                                <h2>removed, repackaged with new indicator(s), and re-sterilized.
+                                </h2>
+                            </li>
+                            <li>
+                                <p>See <em>SOP 111 Biological Indicator Processing</em>.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>Record Keeping</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Record each autoclave run on the <em>Autoclave Log
+                                    </em>notating<em>:</em></p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Date</p>
+                                    </li>
+                                    <li>
+                                        <p>Operator initials</p>
+                                    </li>
+                                    <li>
+                                        <p>Type of load run (i.e. Quarantine, BSL2, Lab Supplies,
+                                            Surgery
+                                            Packs, Sterile Caging/Water, Quality Assurance,
+                                            etc)<em>.</em>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>PSI programmed</p>
+                                    </li>
+                                    <li>
+                                        <p>Temp programmed</p>
+                                    </li>
+                                    <li>
+                                        <p>Time programmed</p>
+                                    </li>
+                                    <li>
+                                        <p>PI/Protocol</p>
+                                    </li>
+                                    <li>
+                                        <p>Temperature tape results</p>
+                                    </li>
+                                    <li>
+                                        <p>Steam sterilization strip results</p>
+                                    </li>
+                                    <li>
+                                        <p>If BI added to load</p>
+                                    </li>
+                                    <li>
+                                        <p>Any comments, BI results (after processing BI according
+                                            to
+                                            <em>SOP 111</em>) or corrective actions taken</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>The person opening the bag or container labeled &ldquo;BI&rdquo;
+                                    is
+                                    responsible for looking for and returning the pack from inside
+                                    the bag
+                                    to the CVT for processing.</p>
+                            </li>
+                            <li>
+                                <p>CVT to record all results from the BI live culture vial in both
+                                    the
+                                    <em>Biological Indicator Log Sheet &amp; Autoclave Log</em>.</p>
+                            </li>
+                            <li>
+                                <p>Log any failed temperature tape, steam sterilization strips or
+                                    failed BI
+                                    tests from the autoclave on the building&rsquo;s <em>Health and
+                                        Environment Check Sheet </em>and notify supervisor.</p>
+                            </li>
+                            <li>
+                                <p>Autoclave log sheets:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Are to remain readily accessible for potential IACUC
+                                            inspections
+                                            for a period of one full year.</p>
+                                    </li>
+                                    <li>
+                                        <p>The first six months of the past calendar year can be
+                                            filed after
+                                            the first six months of the current calendar year are
+                                            completed.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>More than one year old may be archived.</p>
+                                    </li>
+                                    <li>
+                                        <p>Older than three years may be destroyed.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+
+
+
+
+                </ol>
+                <hr/>
+
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>04/20/17</p>
+                            </td>
+                            <td>
+                                <p>04/20/17</p>
+                            </td>
+                            <td>
+                                <p>104.2</p>
+                            </td>
+                            <td>
+                                <p>Including CVT responsibilities, adding to safety and recordkeeping section, new
+                                    section
+                                    &ldquo;general information&rdquo;, removing detailed information regarding autoclave
+                                </p>
+                                <p>indicators (new SOP)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2/1/18</p>
+                            </td>
+                            <td>
+                                <p>2/12/18</p>
+                            </td>
+                            <td>
+                                <p>104.3</p>
+                            </td>
+                            <td>
+                                <p>Added References, update Preparation for Autoclaving &amp;</p>
+                                <p>update Record Keeping</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2/26/18</p>
+                            </td>
+                            <td>
+                                <p>2/26/18</p>
+                            </td>
+                            <td>
+                                <p>104.4</p>
+                            </td>
+                            <td>
+                                <p>Add procedures for destroying</p>
+                                <p>relevant toxins used in animals</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

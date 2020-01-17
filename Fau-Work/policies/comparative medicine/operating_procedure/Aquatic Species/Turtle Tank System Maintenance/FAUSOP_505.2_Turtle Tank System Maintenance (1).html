@@ -1,0 +1,816 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title> Aquatic Turtle System Maintenance/Sanitization
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content=" Aquatic Turtle System Maintenance/Sanitization" />
+        <meta name="keywords" content=" Aquatic Turtle System Maintenance/Sanitization" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all Comparative Medicine (CM) personnel responsible
+                                for the
+                                maintenance of the turtle tanks in room 110.
+                                
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp; Facility Manager
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp;To outline the general in-house maintenance for the turtle tanks.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;35A, room 110.
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <h2>
+                    References
+                </h2>
+                <ol>
+                    <li>
+                        <p>
+                            Guide for the Care and Use of Laboratory Animals. National Research Council; National
+                            Academy Press,
+                            Washington, D.C., 2011
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Public Health Service Policy on Humane Care and Use of Laboratory Animals. OLAW (NIH) 2015
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Laboratory Animal Medicine. JG Fox, LC Anderson, G Otto, KR Pritchett-Corning and MT Whary,
+                            Academic Press,
+                            3rd Edition, San Diego, CA, 2015
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Red-Eared Sliders. Katrina Smith, TFH Publications, Inc, Neptune City, NJ, 2011
+                        </p>
+                    </li>
+                </ol>
+                <hr/>
+                <ol type="I">
+                    <li>
+                        <h2>
+                            RESPONSIBILITIES
+                        </h2>
+                        <ol type="A">
+                            <li>
+                                <p>
+                                    Attending Veterinarian (AV) and Director
+                                </p>
+                                
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Directs CM personnel regarding personal protective equipment.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Assures that CM personnel is appropriately trained and adhere to procedures
+                                            as outlined in
+                                            this SOP.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Training Coordinator/Administrative Assistant
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Assures that CM personnel is appropriately trained and adhere to procedures
+                                            as outlined in
+                                            this SOP.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Facilities Manager (FM)
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Assures that responsible Animal Care Technicians are appropriately trained
+                                            and implement
+                                            procedures as delineated in this SOP.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Animal Care Technician (ACT)
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Adhere to procedures as outlined in this SOP or as directed by Facility
+                                            Manager and/or AV.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Document all activities as outlined below in section Recordkeeping.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>
+                            GENERAL
+                        </h2>
+                        <ol>
+                            <li>
+                                <strong>
+                                    NOTE: do not use any detergents or chemicals to clean anything that will come in
+                                    contact with the
+                                    tanks or turtles except: 10% bleach (mixed daily), 3% peroxide, or 1:50 diluted
+                                    chlorhexidine.
+                                    Always rinse thoroughly!
+                                </strong>
+                            </li>
+                            <li>
+                                <p>
+                                    Rinse any nets and/or brushes thoroughly prior to use. Use nets and brushes
+                                    designated for turtle
+                                    use only. After use, place all nets and brushes into disinfectant (Netsoak).
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr/>
+                    <li>
+                        <h2>
+                            PROCEDURE
+                        </h2>
+                        <ol>
+                            <li>
+                                <p>
+                                    Daily
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Inspect the tank water. Water depth should be at least two times the width
+                                            of the largest
+                                            turtle&rsquo;s carapace, and the level will be marked with a non-toxic
+                                            marking on the inside
+                                            of the tank. Add dechlorinated water if needed. Remove any floating debris
+                                            with designated
+                                            net. If there is any build up on the tank sides or bottom, scrub with the
+                                            designated tank
+                                            brush. If there is debris at the bottom of the tank, use the siphon to suck
+                                            it out into the
+                                            sink or scoop it out with the designated net.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If the water is discolored or smelly, see section
+                                            <em>
+                                                B.2.i How to Clean Your Filter
+                                            </em>
+                                        </p>
+                                        <p>
+                                            below on how to remove filter and replace the carbon in the filter.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Inspect the filter. If there is a detritus build-up or the water flow
+                                            appears restricted,
+                                            see section
+                                            <em>
+                                                B.2.i How to Clean Your Filter
+                                            </em>
+                                            below on how to remove and clean the filter.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            Note: Turn lights off prior to moving them into the vertical position to
+                                            avoid damaging your
+                                            eyes. Inspect the lights. Wipe as needed and report any bulb issues.
+                                        </strong>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Inspect the pump for normal operation.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Check the system for leaks.
+                                        </p>
+                                        
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Inspect enrichment devices for sharp edges, and remove any hazards.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Check water temperature. It should be 72-78 degrees Fahrenheit. If the
+                                            temperature is too
+                                            low or high, compare it to the air temperature via the Edstrom Watchdog
+                                            system and alert a
+                                            supervisor.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If any issues are found, mark it in the health/environment check sheet and
+                                            alert the FM and
+                                            AV.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Weekly or more often
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            If any of the enrichment materials appear dirty or grimy, rinse them off.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Clean the filter
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    HOW TO CLEAN YOUR FILTER
+                                                </p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>
+                                                            See diagram below
+                                                        </p>
+                                                        <p>
+                                                            <img
+                                                                src="http://www.fau.edu/research/images/policiesProject2019/Image_002.jpg" />
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Stop the pump to stop the water flow to the Nu-Clear Filter.
+                                                            Shut off any
+                                                            valves.
+                                                        </p>
+                                                        <p>
+                                                            
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Drain water as need from the filter and plumbing by placing
+                                                            a bucket under
+                                                            the
+                                                            <em>
+                                                                Drain Valve (8)
+                                                            </em>
+                                                            at the bottom of the front of the filter. Open the
+                                                            <em>
+                                                                Vent Knob (7)
+                                                            </em>
+                                                            and the valve on the
+                                                            <em>
+                                                                Drain Valve (8)
+                                                            </em>
+                                                            and allow the water to drain out of the plumbing as well as
+                                                            several inches
+                                                            below the top of the filter body.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Remove the
+                                                            <em>
+                                                                Stainless Steel Clamp Ring (4)
+                                                            </em>
+                                                            by turning the
+                                                            <em>
+                                                                Clamp Knob
+                                                            </em>
+                                                        </p>
+                                                        <p>
+                                                            (9) until the Clamp Ring Latch releases from the T-Bolt
+                                                            (10). If the
+                                                            Stainless Steel Clamp Ring (4) has not released, then insert
+                                                            a blade screw
+                                                            driver under the U-segment of the Clamp Ring Latch and twist
+                                                            to loosen the
+                                                            Ring.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Pull firmly (straight up) on the
+                                                            <em>
+                                                                Vent Knob (7)
+                                                            </em>
+                                                            to remove the
+                                                            <em>
+                                                                Filter Lid (3)
+                                                            </em>
+                                                            .
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Remove the
+                                                            <em>
+                                                                Cartridge (5)
+                                                            </em>
+                                                            .
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Remove the
+                                                            <em>
+                                                                Premium Activated Carbon (6)
+                                                            </em>
+                                                            from center of cartridge. Replace the
+                                                            <em>
+                                                                Premium Activated Carbon (6)
+                                                            </em>
+                                                            if needed (monthly).
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Rinse the
+                                                            <em>
+                                                                Cartridge (5)
+                                                            </em>
+                                                            according to water parameters
+                                                            <em>
+                                                                .
+                                                            </em>
+                                                            If parameters are off, rinse the cartridge using a strong
+                                                            stream of tap
+                                                            water directed between pleats. If parameters are within the
+                                                            guidelines, fill
+                                                            a 5 gallon bucket with the current tank water, submerge
+                                                            cartridge 5 times to
+                                                            rinse in order to maintain the biofilter.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Replace the
+                                                            <em>
+                                                                Cartridge (5)
+                                                            </em>
+                                                            in the Nu-Clear Filter and press down firmly to seat it over
+                                                            the bottom
+                                                            pilot.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Replace the
+                                                            <em>
+                                                                Premium Activated Carbon (6)
+                                                            </em>
+                                                            in the center of the
+                                                        </p>
+                                                        <p>
+                                                            Cartridge (5).
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Make sure the
+                                                            <em>
+                                                                O-Ring (2)
+                                                            </em>
+                                                            is seated evenly in the groove in the
+                                                        </p>
+                                                        <p>
+                                                            Housing (1) and then re-install the Filter Lid (3).
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Reinstall the
+                                                            <em>
+                                                                Stainless Steel Clamp Ring (4)
+                                                            </em>
+                                                            around the
+                                                            <em>
+                                                                Filter Lid (3)
+                                                            </em>
+                                                            . Engage the
+                                                            <em>
+                                                                T-Bolt (10)
+                                                            </em>
+                                                            in the Clamp Ring Latch and tighten with the
+                                                            <em>
+                                                                Clamp Knob (9)
+                                                            </em>
+                                                            .
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            Open any in/out valves and start pump so water flows thru
+                                                            the Nu- Clear
+                                                            Filter while using the
+                                                            <em>
+                                                                Vent Knob (7)
+                                                            </em>
+                                                            to purge any air trapped under the lid (
+                                                            <em>
+                                                                then re-tighten
+                                                            </em>
+                                                            ).
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Monthly or more often
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Clean pump.
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Remove pump from system
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Remove filter and rinse the debris off with plain tap water.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Remove impeller housing cover
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Remove impeller and magnet, inspect for damage, and rinse with plain
+                                                    tap water.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Rinse out impeller housing with plain tap water and reassemble pump.
+                                                    Reinstall the
+                                                    pump in the system.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Biannually or more often
+                                </p>
+                                
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Replace the UVB light bulbs and update the &ldquo;Date Replaced&rdquo; label
+                                            on the
+                                            corresponding bulb.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Oil the pump
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Disconnect from power
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Lubricate the motor&rsquo;s sleeve bearings 2-3 drops of SAE 20
+                                                    weight non-
+                                                    detergent oil, oil holes located on top of each motor
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Dissolve any lime with Lime Off and rinse thoroughly.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Reconnect power
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    When a tank is emptied of occupants
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Start by draining the entire tank. Remove and rinse
+                                            <em>
+                                                Cartridge (5)
+                                            </em>
+                                            by using a strong stream of tap water directed between pleats Replace
+                                            filter.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Premium Activated Carbon (6) filter and any additional media will not be
+                                            reused for new
+                                            arrivals. After removing Cartridge (5), dispose of old Premium Activated
+                                            Carbon (6) filter
+                                            and replace.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Drain and scrub tank and enrichment thoroughly with designated brush.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Rinse tank and enrichment devices
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Refill tank with a 10% bleach solution, making sure the enrichment devices
+                                            are fully
+                                            submerged. Turn on pump to cycle bleach water through the system.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Drain after 24 hours and rinse tank and enrichment devices.
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    After the tank of bleach water is drained, refill halfway with fresh
+                                                    water and run
+                                                    pump for 10 minutes. Repeat 2 more times.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If a new shipment of animals is expected, refill tank with fresh water and
+                                            treat with
+                                            dechlorinator. Replace the charcoal filter and any biofilter media. Run the
+                                            system for 24-48
+                                            hours prior to animal arrival.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            If a new shipment is not expected, keep the tank drained and cover the tank
+                                            with a clean
+                                            tarp.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <hr/>
+                <ol type="I">
+                    <li>
+                        <h2>
+                            RECORDKEEPING
+                        </h2>
+                        <ol type="A">
+                            <li>
+                                <p>
+                                    Complete daily check sheet and sign the task calendar.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    If any discrepancies are found, note them in the
+                                    <em>
+                                        Animal Health and Environment Concerns
+                                    </em>
+                                    binder and alert the FM and AV.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    Review Date
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Revision Date
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Revision Number
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Description of Revision
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    8/4/16
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    8/4/16
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Clarified the cleaning
+                                </p>
+                                <p>
+                                    process
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

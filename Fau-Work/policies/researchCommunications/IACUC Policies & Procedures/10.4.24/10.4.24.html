@@ -1,0 +1,508 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Use of Fish in Research</title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Use of Fish in Research" />
+        <meta name="keywords" content="Use of Fish in Research" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h1,
+                strong,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>Subject:</strong>&nbsp;&nbsp;Use of Fish in Research
+                            </div>
+                            <div class="col-md-4"><strong>Effective Date:</strong>&nbsp;&nbsp;8/25/2017</div>
+                            <div class="col-md-4"><strong>Policy Number:</strong>&nbsp;&nbsp;10.4.24</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>Supersedes:</strong>&nbsp;&nbsp;N/A
+
+
+                            </div>
+                            <div class="col-md-8"><strong>Responsible Authorities:</strong>&nbsp;&nbsp;Vice President,
+                                Research
+                                Institutional Animal Care and Use Committee
+                                Director, Research Integrity
+                                Director, Comparative Medicine
+                            </div>
+                        </div>
+                    </div>
+                    <ol type="I">
+                        <li>
+                            <h2>Background</h2>
+                            <p><a
+                                    href="http://www.fau.edu/research/research-integrity/iacuc-policies-and-procedures.php">Florida
+                                    Atlantic University (FAU) currently has institution-wide animal care standards in
+                                    place to ensure that all activities involving animals are conducted in a humane and
+                                    ethical manner; that housing and care of animals is appropriate for the species; and
+                                    that all persons working with animals are safe and protected (</a>Institutional
+                                Policy 10.4.1a). While these standards are intended to cover all animals involved in
+                                research, it is sometimes difficult to identify best practices in the application of
+                                these standards to fish used in research, due to the variety of species involved, the
+                                different types of research conducted, and the unique aspects of fish care and handling.
+                            </p>
+                        </li>
+                        <hr/>
+                        <li>
+                            <h2>Purpose</h2>
+                            <p>To establish a policy that will enhance existing institution-wide animal care standards
+                                by providing improved guidance to Research Personnel and Animal Care Staff to
+                                accommodate the unique and diverse aspects of fish research, while still ensuring that
+                                the health and welfare of the research animals and safety of personnel are maintained.
+                            </p>
+                        </li>
+                        <hr/>
+                        <li>
+                            <h2>Scope</h2>
+                            <p>This policy applies to all fish included on an approved FAU IACUC protocol that are
+                                housed in a Comparative Medicine (CM) or PI managed satellite facility, or in an
+                                approved non-FAU facility. Fish uses covered by this policy include, but are not
+                                necessarily limited to, research involving fish as experimental models, aquaculture
+                                studies, wild caught fish once they are brought into a housing facility, and fish used
+                                for teaching or testing.</p>
+                            <p>Consistent with the Public Health Service&rsquo;s (PHS) definition, and for purposes of
+                                this policy, the term &ldquo;fish&rdquo; includes all stages of development
+                                post-hatching. However,</p>
+                            <p>since many species do not to feel pain or distress during very early life stages, their
+                                numbers may be separated from later stages, and the number can be listed as Column C in
+                                the Pain Category column. The pain and distress categorization of later life stages
+                                should be determined by the investigator based on the specific procedures described in
+                                the protocol. However, procedures performed on fish of any age need to be described in
+                                the IACUC protocol independent of pain category.</p>
+                            <p>For policies regarding field studies of wild fish, including capture, handling, tagging,
+                                transporting, etc<a
+                                    href="http://www.fau.edu/research/research-integrity/iacuc-policies-and-procedures.php">.,
+                                    PI&rsquo;s and their staff should consult FAU&rsquo;s IACUC policies on Wildlife
+                                    Research (</a>Institutional Policy 10.4.26<a
+                                    href="http://www.fau.edu/research/research-integrity/iacuc-policies-and-procedures.php">)
+                                    and Animal Transport (</a>Institutional Policy 10.4.10).</p>
+                        </li>
+                        <hr/>
+                        <li>
+                            <h2>General Statement</h2>
+                            <ol>
+                                <li>
+                                    <p>The IACUC acknowledges that there is considerable variability among taxa of fish
+                                        in terms of their basic needs and how they should be housed and handled, and the
+                                        PI is often the most qualified institutional authority on the biology of the
+                                        species under study, and the techniques appropriate for the conduct of the
+                                        proposed study.</p>
+                                </li>
+                                <li>
+                                    <p>Despite this acknowledgement, the FAU IACUC affirms that the respectful use of
+                                        animals, which includes the consideration for the well-being of the animal as
+                                        well as the avoidance/minimization of pain and distress of animals, including
+                                        fish, remains an ethical and scientific necessity.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <hr/>
+                        <li>
+                            <h2>Policy</h2>
+                            <ol>
+                                <li>
+                                    <p>Primary
+                                            Documents: The primary documents for guidance on the appropriate use of fish
+                                            in research will be Guidelines for the Use of Fishes in Research, American
+                                            Fisheries Society, 2014 (<a href="https://fisheries.org/docs/wp/Guidelines-for-Use-of-Fishes.pdf">AFS Guidelines</a>); the Public Health Service Policy <a
+                                            href="https://grants.nih.gov/grants/olaw/references/phspol.htm#RecordkeepingRequirements">
+                                            (PHS);</a>and the Guide for the Care and Use of Laboratory Animals (<a
+                                            href="https://grants.nih.gov/grants/olaw/guide-for-the-care-and-use-of-laboratory-animals.pdf">The
+                                        Guide).</a></p>
+                                </li>
+                                <li>
+                                    <p>PI Assurance: The PI shall assure the IACUC in their application that their
+                                        handling, housing, and use of fish will be in accordance with the <em>AFS
+                                            Guidelines</em>, the PHS Policy, and <em>the Guide. </em>The PI and
+                                        associated research staff should be familiar with the taxon to be studied and
+                                        their response to disturbance, sensitivity to handling and restraint, and
+                                        requirements for captive maintenance to the extent that these factors are known
+                                        or applicable to the study. The PI and associated staff should have adequate
+                                        experience, training, and knowledge regarding the housing, feeding, and care
+                                        requirements of the taxon to be studied, to the extent that these factors are
+                                        known or applicable. The PI acknowledges that it is ultimately his/her
+                                        responsibility to direct these activities.</p>
+                                </li>
+                                <li>
+                                    <p>Collection of Biological Samples: Blood and other biological samples should be
+                                        collected using sterile or aseptic technique (depending on the procedure), and
+                                        appropriate analgesia/anesthesia should be provided for invasive or prolonged
+                                        sampling procedures.</p>
+                                </li>
+                                <li>
+                                    <p>Surgical Procedures: Surgical procedures should be performed using sterile or
+                                        aseptic technique as appropriate to the procedure (including the use of sterile
+                                        instruments), appropriate analgesia/anesthesia, and atraumatic tissue handling.
+                                        All personnel performing or assisting in surgical procedures should be trained
+                                        in the techniques applied.</p>
+                                </li>
+                                <li>
+                                    <p>Pain and Stress: Whenever possible, the handling of fish, their removal from
+                                        water, or their restraint under conditions that may cause physiological stress
+                                        should be avoided or minimized. Changing environmental conditions under which
+                                        fish are held, especially water temperature, should be performed gradually.
+                                        Utilization of general or local anesthetics may be recommended in cases where
+                                        prolonged restraint or invasive procedures are a necessary part of the research
+                                        protocol.</p>
+                                    <p>Many species of fish do not to feel pain or distress during very early life
+                                        stages, therefore their numbers may be separated from later stages, and the
+                                        number can be listed as Column C in the Pain Category column. The pain and
+                                        distress categorization of later life stages should be determined by the
+                                        investigator in consultation with the Attending Veterinarian (AV) and the IACUC
+                                        based on the specific procedures described in the protocol.</p>
+                                    <p><a
+                                            href="https://grants.nih.gov/grants/olaw/references/phspol.htm#RecordkeepingRequirements">The
+                                            appropriate use of neuromuscular blocking agents for fish should be
+                                            consistent with the </a><a
+                                            href="https://grants.nih.gov/grants/olaw/references/phspol.htm#RecordkeepingRequirements">PHS</a><a
+                                            href="https://grants.nih.gov/grants/olaw/guide-for-the-care-and-use-of-laboratory-animals.pdf">Policy
+                                            and </a>The Guide. The Guide states that, &ldquo;if paralyzing agents are to
+                                        be used, the appropriate amount of anesthetic should first be defined on the
+                                        basis of results of a similar procedure using the anesthetic without a blocking
+                                        agent (NRC 2003, 2008, 2009a).&rdquo; The level of anesthesia should be
+                                        sufficient to induce unconsciousness and analgesia corresponding with the
+                                        painful stimulus, and should be monitored before, during, and after paralysis.
+                                        Methods should include the monitoring of autonomic nervous system changes (e.g.
+                                        heart rate), since paralysis eliminates many signs and reflexes that might
+                                        otherwise be used to measure anesthetic depth.</p>
+                                    <p>Tonic immobility may be used as a form of anesthesia in some scenarios, however
+                                        use of this technique should be limited to immobilization for non- invasive
+                                        procedures in captive research settings. If tonic immobility is used, adequate
+                                        gill irrigation should be maintained to ensure adequate respiration and to
+                                        prevent metabolic acidosis, and all efforts should be made to minimize the
+                                        procedure time necessitating this technique.</p>
+                                </li>
+                                <li>
+                                    <p>Identification: Tagging methodology should include use of general or local
+                                        anesthetics as appropriate to minimize pain and distress, and should aim to
+                                        minimize the possibility of infection at the tagging site.</p>
+                                </li>
+                                <li>
+                                    <p>Animal Numbers: When breeding fish for purposes of maintaining an experimental
+                                        population, or as part of aquaculture studies, the numbers are often too large
+                                        to count accurately without causing stress on the animals and / or interference
+                                        with the study. For early stages, the number of animals used may be</p>
+                                    <p>provided as an estimate. Estimated numbers may also be used after they have
+                                        matured to adults if they are group housed. An exception will be made for
+                                        individuals subjected to pain category D or E, in which case exact number of
+                                        animals involved will be provided.</p>
+                                </li>
+                                <li>
+                                    <p><a
+                                            href="http://www.fau.edu/research/research-integrity/iacuc-policies-and-procedures.php">Transport:
+                                            Fish transport protocols should comply with the IACUC Policy on Animal
+                                            Transport (</a>Institutional Policy 10.4.10) and the <em>AFS
+                                            Guidelines</em>. Adequate recovery time (minimum 72 hours is suggested) in
+                                        the same or similar medium used for transport should be allowed for transported
+                                        fish in order to minimize stress, including allowing for gradual acclimation to
+                                        water parameters such as temperature and pH.</p>
+                                </li>
+                                <li>
+                                    <p>Housing: Vendor supplied or wild-caught fish should be maintained under
+                                        conditions that comply with <em>AFS Guidelines </em>and should incorporate, as
+                                        much as possible, aspects deemed important to the survival and well-being of the
+                                        fish. Considerations include appropriate acclimation, light level and
+                                        photoperiod, water quality, animal stocking density, minimization of noise and
+                                        vibration, and appropriate enrichment, unless these are factors under
+                                        investigation. Nutritionally balanced diets should be provided, or natural foods
+                                        should be duplicated as closely as possible. Adequacy of maintenance should be
+                                        judged by monitoring factors such as animal appearance, activity level, general
+                                        behavior, and rate of survival.</p>
+                                </li>
+                                <li>
+                                    <p>Final Disposition of Fish:</p>
+                                    <ol type="A">
+                                        <li>
+                                            <p>Release of Wild-Caught Animals: Whenever practical and ecologically
+                                                appropriate, as soon as possible after capture or upon completion of the
+                                                study, wild-caught animals should be released at the site of the
+                                                original capture. Release of wild-caught fish should be conducted under
+                                                the provisions that their ability to survive has not been impaired; they
+                                                can be expected to function normally under the environmental and habitat
+                                                conditions at the location and time of release; their release is not
+                                                likely to spread pathogens to a na&iuml;ve population; no laws or
+                                                regulations prohibit their release; their release is in accordance with
+                                                applicable permits; and their release is not detrimental to the
+                                                well-being of the existing native animals.</p>
+                                        </li>
+                                        <li>
+                                            <p>Euthanasia:
+                                                    Methods of euthanasia should be consistent with recommendations
+                                                    found in the American Veterinary Medical Association (<a href="https://www.avma.org/kb/policies/documents/euthanasia.pdf">AVMA</a>)
+                                                Guidelines for the Euthanasia of Animals, 2013 Edition, those described
+                                                in the <em>AFS Guidelines</em>,
+                                                    and those described in the FAU IACUC Policy on Euthanasia Methods
+                                                    (<a
+                                                    href="http://www.fau.edu/research/docs/policies/research-integrity/10.4.11_IACUC_Euthanasia_Final.pdf">Institutional Policy 10.4.11</a>)<em>. </em>Consistent with these
+                                                guidelines, method of euthanasia will differ depending on number of
+                                                animals to be euthanized, size of animal to be euthanized, and whether
+                                                the euthanized animal is intended for consumption by humans or other
+                                                animals (see section 9C, &ldquo;Humane Slaughter&rdquo;, below).
+                                                Disposal of euthanized fish should also conform to AVMA and / or the
+                                                <em>AFS Guidelines </em>recommendations, as well as any other governing
+                                                regulations.</p>
+                                            <p>As specified in the AVMA Guidelines for Euthanasia, rapid chilling via
+                                                immersion in an ice bath is an acceptable euthanasia method for small-
+                                                bodied (3.8 cm long or smaller) tropical and subtropical stenothermic
+                                                finfish, for which the lower lethal temperature range is above 4&deg;C.
+                                                This method may also be acceptable for certain small to medium-sized
+                                                fish as supported by published peer-reviewed scientific data, provided
+                                                secondary euthanasia methods are applied after fish are rendered
+                                                nonresponsive. Rapid chilling is not appropriate in other medium to
+                                                large-bodied finfish unless supported by published peer-reviewed
+                                                scientific data.</p>
+                                            <p>Training
+                                                    of appropriate methods of euthanasia is the responsibility of the
+                                                    PI. The training must be documented appropriately by the PI as
+                                                    described in IACUC policy Researcher Training (<a
+                                                    href="http://www.fau.edu/research/research-integrity/iacuc-policies-and-procedures.php">Institutional
+                                                Policy 10.4.22)</a>.</p>
+                                        </li>
+                                        <li>
+                                            <p>Humane slaughter is distinguishable from euthanasia, and primarily
+                                                describes the killing of animals intended for human consumption for food
+                                                or other uses (<em>e.g. </em>agricultural harvest, commercial or
+                                                recreational fishing). Whenever slaughter of fish intended for human
+                                                consumption is a planned endpoint for fish covered under an FAU IACUC
+                                                protocol, the procedures, animal numbers, training, <em>etc. </em>should
+                                                be described in a separate section, and the methods should be consistent
+                                                with recommendations found in the AVMA Guidelines for the Humane
+                                                Slaughter of Animals, 2016 Edition.</p>
+                                        </li>
+                                        <li>
+                                            <p>Preserved Specimens: The preparation of animals as museum specimens is
+                                                necessary for research and teaching activities in systematic zoology.
+                                                However, each animal collected should serve as a source of information
+                                                on as many levels as practical (<em>e.g</em>. behavior, morphology,
+                                                genetics, <em>etc</em>.) to assure the maximum utility of each animal,
+                                                and to minimize instances of duplicate collecting.</p>
+                                            <p>Note: Formalin fixation of dead specimens is acceptable, however
+                                                euthanasia of un-anesthetized specimens by immersion in a formalin
+                                                solution is unacceptable.</p>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <p>Standard Operating Procedures (SOPs): SOPs should be based on the husbandry and
+                                        care of fish within Comparative Medicine or PI managed facilities and should be
+                                        reviewed by the IACUC. SOPs should outline, at a minimum, methods for observing
+                                        and documenting animal health and well-being, quarantine, housing, environmental
+                                        enrichment, sanitation, filtration, feeding, water quality analysis, personnel
+                                        safety, and recordkeeping. Recommendations and guidance can be found in <a
+                                            href="https://grants.nih.gov/grants/olaw/guide-for-the-care-and-use-of-laboratory-animals.pdf">the
+                                            Guide</a>and<a
+                                            href="https://fisheries.org/docs/wp/Guidelines-for-Use-of-Fishes.pdf">AFS Guidelines.
+                                        </a></p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Accountability</h2>
+                            
+                            <ul>
+                                <storng>The Principal Investigator (PI) will be responsible for:</strong>
+                                <li>
+                                    <p>Assuring that procedures are performed as described in the corresponding IACUC
+                                        protocol and, if necessary, submitting an amendment to the protocol and awaiting
+                                        approval before new method(s) is (are) introduced.</p>
+                                </li>
+                                <li>
+                                    <p>Assuring
+                                            that personnel complete IACUC required training per FAU IACUC policy
+                                            Researcher Training (<a
+                                            href="http://www.fau.edu/research/research-integrity/iacuc-policies-and-procedures.php">Institutional Policy 10.4.22)</a> and providing
+                                        personnel with species appropriate training for all research procedures.</p>
+                                    
+                                </li>
+                                <strong>The IACUC will be responsible for:</strong>
+                                <li>
+                                    <p>Reviewing and approving, requiring modifications (to secure approval), or
+                                        withholding approval of IACUC protocols and/or amendments including addition of
+                                        personnel.</p>
+                                </li>
+                                <li>
+                                    <p>Providing continued guidance for active protocols.</p>
+                                    
+                                </li>
+                                <strong>The Research Integrity office will be responsible for:</strong>
+                                <li>
+                                    <p>Administrative support of the IACUC members to facilitate their regulatory
+                                        function.</p>
+                                </li>
+                                <li>
+                                    <p>Maintaining policy and assure regular review and update as necessary by the
+                                        IACUC.</p>
+                                    
+                                </li>
+                                <strong>The Office of Comparative Medicine (CM) and Attending Veterinarian (AV) will be
+                                        responsible for:</strong>
+                                <li>
+                                    <p>Providing consultation to the PI and to the IACUC regarding specific procedures
+                                        impacting the health and welfare of the animal(s), especially as it relates to
+                                        anesthesia/analgesia, aseptic techniques of sampling and surgical procedures and
+                                        use of antimicrobials.</p>
+                                </li>
+                                <li>
+                                    <p>Contributing to the review of fish protocols and to the determination of specific
+                                        requirements for training of personnel.</p>
+                                </li>
+                                <li>
+                                    <p>Contributing to review of procedures for transporting animals onto any FAU campus
+                                        and for procedures for monitoring the health and well-being of these animals.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Policy Renewal Date </strong>
+                            <p>8/25/2020</p>
+                        </li>
+                        <li>
+                            <strong>References</strong>
+                            <ol>
+                                    <li>
+                                        <p>Office of Laboratory Animal Welfare. 2015. Public Health Service Policy on Humane Care
+                                            and Use of Laboratory Animals.<a
+                                                href="https://grants.nih.gov/grants/olaw/references/phspol.htm#RecordkeepingRequirements">
+                                                https://grants.nih.gov/grants/olaw/references/phspol.htm#RecordkeepingRequirements
+                                            </a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Frequently Asked Questions. PHS Policy on Humane Care and Use of Laboratory Animals.
+                                            2016.</p>
+                                        <p><a
+                                                href="https://grants.nih.gov/grants/olaw/faqs.htm#590">https://grants.nih.gov/grants/olaw/faqs.htm#590</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Guide for the Care and Use of Laboratory Animals, 8th edition, 2011, p.122-123.<a
+                                                href="https://grants.nih.gov/grants/olaw/guide-for-the-care-and-use-of-laboratory-animals.pdf">
+                                                https://grants.nih.gov/grants/olaw/guide-for-the-care-and-use-of-laboratory-animals.pdf </a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Guideline for the Use of Fishes in Research, 2014 <a
+                                                href="https://fisheries.org/docs/wp/Guidelines-for-Use-of-Fishes.pdf">https://fisheries.org/docs/wp/Guidelines-for-Use-of-Fishes.pdf</a>
+                                        </p>
+                                    </li>
+                                </ol>
+                        </li>
+                    </ol>
+                    <hr/>
+                    <p>POLICY APPROVAL</p>
+    
+                    <mark>Executed signature pages are available in the Initiating Authority Office(s)</mark>
+    
+                </div> <!-- close container -->
+    
+                <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h1>The University...at a Glance</h1>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

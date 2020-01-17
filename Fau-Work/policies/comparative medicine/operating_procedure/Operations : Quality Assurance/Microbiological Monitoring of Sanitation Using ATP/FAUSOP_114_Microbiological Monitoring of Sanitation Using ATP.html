@@ -1,0 +1,2194 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title> Microbiological Monitoring Using ATP
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content=" Microbiological Monitoring Using ATP" />
+        <meta name="keywords" content=" Microbiological Monitoring Using ATP" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Veterinary Services personnel
+
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp; Certified Veterinary
+                                Technician (CVT)
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp;To ensure the microbial
+                                cleanliness and effectiveness of sanitation
+                                procedures by monitoring bacterial levels and types at all CM managed Vivaria using
+                                ATP</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All Vivaria
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <ol type="I">
+                    <li>
+                        <h2>
+                            References
+                        </h2>
+                        <ol>
+                            <li>
+                                <p>
+                                    Guide for the Care and Use of Laboratory Animals. National Research Council;
+                                    National Academy Press, Washington, D.C., 2011
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Biosafety in Microbiological and Biomedical Laboratories, 5th Edition, CDC/NIH, 2009
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    SOP 213 Workflow In and Between Vivaria
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    CM#050 Environmental Monitoring Sample Log
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>
+                            Responsibilities
+                        </h2>
+                        <ol>
+                            <li>
+                                <p>
+                                    Laboratory Animal Technician (LAT)
+                                </p>
+                                <ol type="a">
+                                    <li>
+                                        <p>
+                                            Adhere to procedures as outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Perform only procedures for tasks which have been trained.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Certified Veterinary Technician (CVT)
+                                </p>
+                                <ol type="a">
+                                    <li>
+                                        <p>
+                                            Adhere to procedures as outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Provide appropriate training including hands-on sessions to personnel
+                                            helping with sampling and other monitoring procedures outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Manages the Environmental Monitoring Program (EMP).
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Reviews results and suggests measures to improve outcome of sanitation
+                                            procedures based on test results to the AV and FM.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Facility Manager (FM)
+                                </p>
+                                <ol type="a">
+                                    <li>
+                                        <p>
+                                            Adhere to procedures as outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Ensure procedures are followed as outlined in this SOP.
+                                        </p>
+                                        <p>
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Ensure appropriate SOP training is provided to particular personnel
+                                            depending on function/job description in concert with the CVT.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Directs implementation of measures to improve outcome of sanitation
+                                            procedures.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Director/Attending Veterinarian (AV)
+                                </p>
+                                <ol type="a">
+                                    <li>
+                                        <p>
+                                            Adhere to procedure as outlined in this SOP.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Ensure appropriate training is provided to particular personnel and
+                                            necessary resources are available.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Oversees EMP, reviews all results and establishes acceptability limits (i.e.
+                                            pass/marginal/fail parameters). Assures implementation of measures to
+                                            improve outcome of sanitation procedures.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>
+                            General Information
+                        </h2>
+                        <ol>
+                            <li>
+                                <p>
+                                    Quality assurance practices set forth in this SOP and SOP 115 (Microbiological
+                                    Monitoring Using Microbial Agar) will ensure that sanitation and sterilization of
+                                    equipment in cage wash, animal housing rooms and procedure rooms in the vivarium
+                                    yield an adequate reduction or total absence of surface contamination as appropriate
+                                    for the particular surface/item.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Adenosine triphosphate (ATP) is the universal energy molecule found in all animal,
+                                    plant, bacterial, yeast, and mold cells. Sanitation effectiveness can be measured by
+                                    detecting ATP (i.e. organic matter) with a specific ATP test system like the Neogen
+                                    AccuPoint. A relative light unit (RLU) is the measure of light produced from the
+                                    enzymatic reaction of luciferase when it reacts with ATP in a sampling swab.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Quarterly testing of hard surfaces will be performed using both ATP and HYcheckTM
+                                    (see SOP 115) testing in all five (5) CM managed centralized vivaria (i.e. 71, 35A,
+                                    35B, MC17 and MC19).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    On average, the quarterly number of microbiological samples collected will be 131
+                                    ATP and. See Table 1 for quarterly distribution of ATP samples between the different
+                                    vivaria.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <hr />
+                    <li>
+                        <h2>
+                            Procedure
+                        </h2>
+                        <ol>
+                            <li>
+                                <p>
+                                    General
+                                </p>
+                                <ol type="a">
+                                    <li>
+                                        <p>
+                                            Testing will be organized using the Environmental Monitoring Sample Logs and
+                                            the ATP Neogen AccuPoint Data Manager test plans. These logs/plans can be
+                                            edited based on test results and/or the need to improve sanitation
+                                            procedures and will outline sample sites to be collected from each of the
+                                            vivaria at any given time.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            All ATP swabs for quarterly testing:
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Should be ordered with additional media to take into account for
+                                                    controls, defects, errors, etc.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Should be ordered from the commercial vendor to have the same lot
+                                                    number, if possible, to eliminate the need to split
+                                                    buildings/testing sites and/or the need for additional controls.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Must be kept refrigerated and checked for defects and expiration
+                                                    date before use.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Equipment and room surfaces must be cool and dry prior to testing.
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    In keeping with manufacturer&rsquo;s suggestions and consistency of
+                                                    product results, all ATP swabs must be read within 4 hours of sample
+                                                    collection.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Materials Needed
+                                </p>
+
+                                <ol type="a">
+                                    <li>
+                                        <p>
+                                            Sharpie marker
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Pen/pencil
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Environmental Monitoring Sample Log (See CM#50)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            ATP test plan from Neogen AccuPoint Data Manager PC program
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            ATP swabs (quantity dependent on number of sample sites per Environmental
+                                            Monitoring Sample Log)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Test tube holders (quantity dependent on number of ATP swabs needed)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Neogen AccuPoint Reader
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Facility PPE
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Sampling Procedures
+                                </p>
+                                <ol type="a">
+                                    <li>
+                                        <p>
+                                            Review Environmental Monitoring Sample Log and Table 1 to ensure all sample
+                                            sites are included; revise as needed.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Update the test plan in the AccuPoint Data Manager PC program:
+                                            R:\Comparative Medicine\Quality Assurance\ATP.
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Include all sample sites with site descriptions indicated on the
+                                                    Environmental Monitoring Sample Log; revise as needed
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Include pass/marginal/fail parameters per test plan
+                                                </p>
+                                                <p>
+                                                    a. Parameters (i.e. Default Thresholds) are fixed in the program, so
+                                                    need to be changed for each testing site using Table 2
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Upload/sync final test plan into the AccuPoint Reader
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Turn on the AccuPoint Reader using the red power button.
+                                                </p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>
+                                                            If not fully charged, plug in wall outlet using power cord.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    The reader will perform a self-test and initialization routine;
+                                                    green checks should appear.
+                                                </p>
+                                                <ol>
+                                                    <li>
+                                                        <p>
+                                                            If green checks do not appear (i.e. self-test and
+                                                            initialization fails), do not use; have reader
+                                                            serviced/replaced.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    The reader will then self-calibrate.
+                                                </p>
+                                                <ol>
+                                                    <li>
+                                                        <p>
+                                                            If self-calibration fails, do not use; have reader
+                                                            serviced/replaced.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Plug in the PC connector cord into the USB of the PC on one end and
+                                                    the reader on the other end.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    &ldquo;Transmitting&rdquo; icon on reader will appear.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Open the Neogen PC Data Manager: R:\Comparative Medicine\Quality
+                                                    Assurance\Neogen\AP DataManager\APDM.exe.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Then open the corresponding test that you want to use:
+                                                    R:\Comparative Medicine\Quality Assurance\ATP.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Go to &ldquo;Test Plan Manager&rdquo; tab.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Click &ldquo;Test Plan&rdquo; on menu bar.
+                                                </p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>
+                                                            &ldquo;Test Plan Manager&rdquo; window will populate.
+                                                        </p>
+                                                        <p>
+                                                            b.Edit sampling sites as necessary (i.e. add/delete);
+                                                            including building, room #, description and test site.
+                                                        </p>
+                                                        <p>
+                                                            c. Before syncing or exiting program, click &ldquo;Save
+                                                            As&rdquo; to create a new test plan file name (i.e. after a
+                                                            fail and/or sanitation to include select sites only).
+                                                        </p>
+                                                        <p>
+                                                            d.Click &ldquo;Sync to Reader&rdquo; at bottom left corner
+                                                            of window.
+                                                        </p>
+                                                        <p>
+                                                            e. Green progress bar will appear next to &ldquo;Sync to
+                                                            Reader&rdquo; button.
+                                                        </p>
+                                                        <p>
+                                                            f. &ldquo;Test Plan Synced&rdquo; box will appear; click OK.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Close &ldquo;Test Plan Manager&rdquo; window.
+                                                </p>
+                                                <p>
+
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Click &ldquo;CheckList&rdquo; on menu bar.
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    &ldquo;CheckList&rdquo; window will populate.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    All rooms/sites populate on the list to the right unless you click
+                                                    the boxes to the left, then only those sites will appear on the list
+                                                    to the right.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Print the &ldquo;CheckList&rdquo; using the print icon at the top of
+                                                    the window.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Close PC program or leave up until all samples collected and read in
+                                            AccuPoint Reader.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Using the Environmental Monitoring Sample Log and AccuPoint Reader/Data
+                                            Manager test plan, arrange the environmental monitoring of the vivaria by
+                                            campus, building and room; keeping in mind the work flow based on health
+                                            status of animals and associated room/facility classifications (See SOP
+                                            213), and by obtaining the appropriate amount/number of testing material; in
+                                            this case, ATP swabs.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Verify all ATP swabs obtained for each quarterly testing:
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Have the same lot number, if possible, to eliminate the need to
+                                                    split buildings/testing sights and/or the need for additional
+                                                    controls.
+                                                </p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>
+                                                            If ATP swabs do not have the same lot number, record all lot
+                                                            numbers used in the comments section of the Environmental
+                                                            Monitoring Sample Log.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Ensure that sufficient material is available to finish the sampling process
+                                            within a one to two day window for all five vivaria; in this case, ATP
+                                            swabs.
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Using the Environmental Monitoring Sample Log, label ATP swabs with
+                                                    a numerical sequence corresponding to the AccuPoint Reader/Data
+                                                    Manager test plan.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    ATP swabs must acclimatize to room temperature for at least 1 hour
+                                                    before use (out of direct sunlight); per manufacturer&rsquo;s
+                                                    instructions, swabs can remain at room temperature for up to 2 weeks
+                                                    in the original silver pouch (out of direct sunlight).
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Ensure ATP swabs are not expired.
+                                                </p>
+                                                <ol>
+                                                    <li>
+                                                        <p>
+                                                            Discard if expired.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Arrange swabs in order in test tube holders according to the
+                                                    Environmental Monitoring Sample Log and facility/room entry.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            Following facility/room entry procedures, gown up with the
+                                            facility specific PPE.
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Disinfect gloves before each testing site and/or
+                                                    change gloves between different rooms or whenever
+                                                    soiled.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+
+                                    <li>
+                                        <p>
+                                            Start sampling in the cleanest areas (e.g. clean cage wash
+                                            and surgical suite) and follow the workflow based on health
+                                            status of animals and associated room/facility
+                                            classifications (See SOP 213).
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Sample cage wash room when it is operating. Samples
+                                                    of sanitized items should be taken immediately after
+                                                    removed from the washer and have had time to dry.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Sample a variety of sanitized items in the clean
+                                                    cage wash areas and sample points in animal holding
+                                                    rooms, procedure rooms, storage rooms, surgical
+                                                    suites, and soiled cage wash rooms.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Rotate types of sanitized items and sample points in
+                                                    rooms each quarter.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Collect samples from multiple sites on each surface
+                                                    or item.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Collecting and reading samples using ATP swabs and Neogen
+                                            AccuPoint Reader:
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    2 Methods:
+                                                </p>
+                                                <ol type="a">
+                                                    <li>Read as you swab.</li>
+                                                    <li>Accumulate swabs and read in batches; must be read
+                                                            within 4 hours of sample collection.</li>
+                                                </ol>
+                                               
+                                                
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Turn on the AccuPoint Reader using the red power
+                                                    button.
+                                                </p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>
+                                                            If not fully charged, plug in wall outlet
+                                                            using power cord.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    The reader will perform a self-test and
+                                                    initialization routine; green checks should appear.
+                                                </p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>
+                                                            If green checks do not appear or reader
+                                                            stops during initialization routine, check
+                                                            to see if a used swab was left in the
+                                                            sampler compartment.
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                                                            If green checks do not appear (i.e.
+                                                            self-test and initialization fails), do not
+                                                            use; have reader serviced/replaced.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    The reader will then self-calibrate.
+                                                </p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <p>
+                                                            If self-calibration fails, do not use; have
+                                                            reader serviced/replaced.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    If accumulating swabs and reading in batches, the
+                                                    reader can be turned off until swabs are ready to
+                                                    read.
+                                                </p>
+                                                <p>
+                                                    a. Reader will self-test, initialize and
+                                                    self-calibrate again when you turn it back on.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    If reading swabs as samples taken, the user screen
+                                                    will appear.
+                                                </p>
+                                                <p>
+                                                    a.Toggle up and down to choose appropriate user
+                                                    using the black joystick/toggle button; press toggle
+                                                    button in to select.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Test screen display will appear.
+                                                </p>
+                                                <p>
+                                                    a.Toggle side to side or up and down between fields
+                                                    using the black joystick/toggle button.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    If you need to change information in a field.
+                                                </p>
+                                                <ol type="a">
+                                                    <li>Press toggle button in to select field; blue box
+                                                            will turn red.</li>
+                                                    <li>Toggle up and down to the desired
+                                                            information in the field.</li>
+                                                    <li>Press toggle button in to select field; red box
+                                                            will turn blue.</li>
+                                                </ol>
+                                                
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    The number below the time/date, to the left, is the
+                                                    sample site that corresponds to the test plan and
+                                                    Environmental Monitoring Sample Log.
+                                                </p>
+                                                <p>
+                                                    a.Confirm the number on the swab and reader are the
+                                                    correct site before swabbing.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Remove the sampler swab from the housing compartment
+                                                    by grasping and pulling straight out.
+                                                </p>
+                                                <ol>
+                                                    <li>
+                                                        <p>
+                                                            Discard if sampler swab is defective,
+                                                            touched other surface than that being tested
+                                                            or if dropped on the floor.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    With the white pad placed flat on the sample site,
+                                                    apply enough pressure so that the sponge tip is
+                                                    slightly compressed, swab your site in a cross hatch
+                                                    pattern; meaning &ldquo;draw&rdquo; a 4 inch x 4
+                                                    inch square by swabbing in back-and-forth motion,
+                                                    moving through the &ldquo;drawn&rdquo; square and
+                                                    then in the opposite 90 degrees direction by
+                                                    swabbing in an up- and-down motion moving through
+                                                    the &ldquo;drawn&rdquo; square (See Diagram 1).
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Place the sampler swab back into the housing
+                                                    compartment and activate sampler by fully depressing
+                                                    it into the housing compartment; keeping the sampler
+                                                    vertical and ensuring the pad breaks through the
+                                                    aluminum foil at the tip.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Gently mix the sampler for 2 seconds/2 turns;
+                                                    keeping the sampler vertical.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Open the sampler compartment door on the reader by
+                                                    depressing the black button on the left side of the
+                                                    reader.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Place the entire sampler into the reader in this
+                                                    compartment; close the compartment door firmly.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Reading will automatically begin; a progress screen
+                                                    will appear on the test screen display.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Test results measured in RLUs will appear in 15-20
+                                                    seconds:
+                                                </p>
+                                                <p>
+                                                    a. Pass: will display with a green check mark
+                                                    b.Marginal: will display with a yellow question mark
+                                                </p>
+                                               
+                                                <p>
+                                                    c. Fail: will display with a red X
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Once reading complete, open the sampler compartment
+                                                    door on the reader by depressing the black button on
+                                                    the left side of the reader.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Dispose of the used/read sampler swab.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    All ATP swabs must be read within 4 hours of sample
+                                                    collection.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Results will automatically be stored in the Neogen
+                                                    AccuPoint Reader to the associated/uploaded test
+                                                    plan and can be synced/downloaded to the PC Data
+                                                    Manager to be saved digitally.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Download to the PC Data Manager:
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Open the corresponding test plan in the Neogen PC
+                                                    Data Manager that just tested/read from the
+                                                    AccuPoint Reader.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Turn on the AccuPoint Reader using the red power
+                                                    button.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Reader will self-test, initialize and self-calibrate
+                                                    again when you turn it back on.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Plug in the PC connector cord into the USB of the PC
+                                                    on one end and the reader on the other end.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    &ldquo;Transmitting&rdquo; icon on reader will
+                                                    appear.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Screen on PC will populate &ldquo;### New Samples
+                                                    Found&rdquo;; click OK.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Results will then be downloaded from the reader to
+                                                    the PC Data Manager for the specified test plan.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Before printing reports or closing the program,
+                                                    click &ldquo;Save As&rdquo; to create a test plan
+                                                    results file name.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Results can be populated into reports. a.Click on
+                                                    &ldquo;Reports&rdquo; tab.
+                                                </p>
+                                                <p>
+                                                    b.Click on either &ldquo;Details,&rdquo;
+                                                    &ldquo;Summary&rdquo; or &ldquo;Trends&rdquo;
+                                                    button.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Print or save reports to the CM shared drive as
+                                                    needed: R:\Comparative Medicine\Quality Assurance.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+
+
+
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Test Results Evaluation
+                                </p>
+                                <ol type="a">
+                                    <li>
+                                        <p>
+                                            ATP results measured in RLUs will be classified as
+                                            <em>
+                                                Pass
+                                            </em>
+                                            ,
+                                            <em>
+                                                Marginal
+                                            </em>
+                                            , and
+                                            <em>
+                                                Fail
+                                            </em>
+                                            according to ranges established based on prior testing as well as on type of
+                                            surface or item sampled. See Table 2.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Once all test results have been received, the CVT will prepare reports for
+                                            review by the AV and FM.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Test results will be discussed by the AV, CVT and FM. Depending on results,
+                                            a strategy will be developed for resolution of
+                                            <em>
+                                                Fail
+                                            </em>
+                                            ATP results. Further investigations might be initiated to find the reason
+                                            for unacceptable test results. The FM is responsible for implementation of
+                                            remedial actions in regards to sanitation. The veterinary staff is
+                                            responsible for communicating concerns to research personnel, if necessary.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Resolution of unacceptable results can include but are not limited to:
+                                        </p>
+                                        <ol type="i">
+                                            <li>
+                                                <p>
+                                                    Retesting of particular surfaces/items.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Training of CM personnel regarding sanitation procedures.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Adjustment of sanitation frequency/intervals.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Changes in detergents/disinfectants.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Improvement of the cage washer function.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Communication of proper procedures to research personnel.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Number and type of remedial actions will be decided on a case by case basis.
+                                        </p>
+                                        <p>
+
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>
+                                    Record Keeping
+                                </p>
+                                <ol type="a">
+                                    <li>
+                                        <p>
+                                            The Environmental Monitoring Sample Log will be prepared in advance for
+                                            guidance during the sampling procedures including the date of sampling,
+                                            reason for sampling (i.e. quarterly routine), name of person(s) sampling,
+                                            type of sampling (i.e. ATP or Difco HYcheckTM), facility, room number,
+                                            sample site(s) description and sanitation status of the sampled
+                                            surface/item.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            The Reading/Results column pertains to the RLU measured using the AccuPoint
+                                            Reader. Comments can be made as needed (i.e. pass/fail, changes made) and
+                                            kept as &ldquo;raw data&rdquo;.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Final testing data will include the Test Results Summary Report printed from
+                                            the Neogen AccuPoint Data Manager PC program.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            All Environmental Monitoring Sample Logs and ATP AccuPoint Test Results
+                                            Summary Reports will be filed in a systematic manner as hard copies and in
+                                            electronic format (if applicable) on the CM shared drive: R:\Comparative
+                                            Medicine\Quality Assurance\Environmental Monitoring\ATP.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <p>
+                    Table 1
+                </p>
+                <h2>
+                    Quarterly ATP Testing Distribution
+                </h2>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    Qty
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Bldg Rm#
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 400B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 400C
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 406/407A
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 408
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 409
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    41 410
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 412
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 413
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 414
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 415
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 416
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 417
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 418
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    3
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 419
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    71 419A
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 100/100A
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 100B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    3
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 113
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 114
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 107/108
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 109
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 104
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 105
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 106
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 101
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 110
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 111
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    1
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35A 112
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35B 100A
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35B 100B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35B 101B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35B 102B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35B 103B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35B 104B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35B 105B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35B 106B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    1
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    35 TRAN VAN
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 121
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 121C/D
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 121F
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 121G
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122A
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    3
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122C
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122D
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122E
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122F
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122G
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122H
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122J
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122K
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122L
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC17 122M
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 122
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 122A
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 122B
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 122C
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 122D
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 122E
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 122G
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 122H
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 122I
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 122J
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    2
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    MC19 121L
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Diagram 1
+                </p>
+                <p>
+
+                </p>
+                <h2>
+                    Cross Hatch Pattern Used for Swabbing
+                </h2>
+                <p>
+                    <img src="http://www.fau.edu/research/images/policiesProject2019/Image_003.jpg" />
+                </p>
+                <p>
+                    Table 2
+                </p>
+                <h2>
+                    RLU Ranges (Pass, Marginal, and Fail)
+                </h2>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    Test Site
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Pass
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Marginal
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Fail
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Floors
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    0-150
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    151-300
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    &gt;300
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Walls
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    0-25
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    26-50
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    &gt;50
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Doors
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    0-50
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    51-100
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    &gt;100
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Caging/Equipment
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    0-25
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    26-50
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    &gt;50
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>
+                                    Hood/Work Surfaces
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    0-50
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    51-100
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    &gt;100
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table >
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>
+                                    Review Date
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Revision Date
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Revision Number
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    Description of
+                                </p>
+                                <p>
+                                    Revision
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

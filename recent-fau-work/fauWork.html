@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please type an appropriate style.">generic</parameter>
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Design Process</title>
+        <headrefs>Design Process</headrefs>
+
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="false">Full Page Width No Navigation</option>
+            <option value="2a" selected="true">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="Description"
+            content="A website that gives a brief description of the design process in the division of research" />
+        <meta name="Keywords" content="design process" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <style>
+                .main-image {
+                    height: 350px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .intro-text {
+
+                    margin-top: 20px;
+                }
+
+                .noted-list {
+                    /* top, right, bottom, left */
+                    margin: 60px 0px 0px -40px;
+                }
+
+                .standard-step-list {
+                    margin-left: -25px
+                }
+
+                .example-project-table {
+                    margin-top: 20px;
+                }
+                @media only screen and (min-width: 301px) and (max-width: 600px) 
+                {
+                    .main-image{
+                        height: 250px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                    .noted-list {
+                        /* top, right, bottom, left */
+                        margin: 20px 0px 0px -20px;
+                    }
+                }
+            </style>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 pagetop" style="valign: top;">
+                        <h1>Design Process</h1>
+                        <img class="main-image"
+                            src="/research/research-communications/images/news/alvaro-reyes-qWwpHwip31M-unsplash.jpg"
+                            alt="image for Design Process" />
+                        <p class="intro-text">The Division of Research communications team has designers available to work with you on
+                            creating the most effective communications materials to meet your objectives, budget and
+                            schedule. The team also works with the Division of Public Affairs creative services group
+                            and/or external designers, depending on the project.
+                        </p>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p>The DOR communications team handles most routine requests, and will work with other
+                                    designers on a case-by-case basis. Examples of projects include:
+                                </p>
+                                <table class="table table-bordered example-project-table">
+                                    <tr>
+                                        <td>Advertisements</td>
+                                        <td>Banners</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brochures</td>
+                                        <td>Direct mail campaigns</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email communications</td>
+                                        <td>Event materials (programs, invitations, signage, etc.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fliers</td>
+                                        <td>Multi-piece campaign collateral</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Posters</td>
+                                        <td>Web graphics </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="noted-list">
+                                    <li>For routine projects, please submit a work request using the DOR communications
+                                        <a
+                                            href="http://www.fau.edu/research/research-communications/work-requests/index.php" target="_blank">Work
+                                            Request</a> page.
+                                    </li>
+                                    <li>For more complex initiatives, please contact <a
+                                            href="mailto:perezl@fau.edu" target="_blank">Luis F. Perez</a> and/or
+                                        <a href="mailto:cammiclark@fau.edu" target="_blank">Cammi Clark</a> to start the discussion or
+                                        submit a
+                                        <a
+                                            href="http://www.fau.edu/research/research-communications/work-requests/index.php" target="_blank">Work
+                                            Request</a> outlining as much detail as possible.
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <hr />
+                        <h2>Standard Steps to Completing Design and Production </h2>
+                        <ol class="standard-step-list">
+                            <li>Develop and finalize the content (i.e., text, suggested imagery and/or graphics, etc.).
+                                <strong>This is the most important step since content drives the design.</strong>The DOR
+                                communications team will edit all materials to adhere to the <a
+                                    href="http://www.fau.edu/publicaffairs/branding/files/editorial-style-guide.pdf" target="_blank">FAU
+                                    Editorial Standards</a>.</li>
+                            <li>A designer will be assigned the project and, if necessary, he/she will contact you to
+                                discuss the project. </li>
+                            <li>The designer will create the material based on your objectives and provide you a PDF for
+                                review. Once you are satisfied, DOR communications will submit the design for creative
+                                services approval. <strong>All designs with an FAU logo must be approved by creative
+                                    services. Approvals are generally obtained in 2-3 days. </strong></li>
+                            <li>DOR Comm will obtain cost estimates and production schedules (if project will be
+                                printed) from approved vendors. </li>
+                            <li>DOR Comm will submit in Workday the estimate and creative services approval to
+                                purchasing to get a purchase order for print projects. DOR-wide projects are generally
+                                covered using the DOR Comm budget and tag number. For unit-specific projects, we may ask
+                                for a tag number before submitting the PO request. </li>
+                            <li>Upon final approval of the design, DOR Comm will submit the project to the vendor for
+                                production, and keep you apprised of the progress. Printing generally takes 5-20
+                                business days from the date the project is sent to the
+                                vendor to delivery, depending on the project. Most prints jobs are delivered directly to
+                                DOR Comm for quality check. Upon request,
+                                we’ll have the vendors deliver the completed jobs directly to you.
+                            </li>
+                        </ol>
+                        <hr />
+                        <h2>Project Timelines</h2>
+                        <p>The design and approval process generally can last 2-3 weeks after the final content is
+                            submitted. This does not include printing time. Complete project time from request to print
+                            delivery may vary depending on the nature of the project, if all necessary elements are
+                            provided to DOR Comm in a timely manner, and how quickly units review and approval
+                            materials.
+                        </p>
+                        <br/>
+                        <p>Please use these timelines (does not include printing time frames*) to plan your project.</p>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Business Cards/Notecards/Postcards</th>
+                                <td>8 working days</td>
+                            </tr>
+                            <tr>
+                                <th>Trifold Brochures/Event Programs</th>
+                                <td>10-15 working days</td>
+                            </tr>
+                            <tr>
+                                <th>Multiple Page Brochure (up to 12 pages)</th>
+                                <td>15-20 working days</td>
+                            </tr>
+                            <tr>
+                                <th>Posters</th>
+                                <td>10-15 working days</td>
+                            </tr>
+                            <tr>
+                                <th>Pull-Up/Vinyl Banners</th>
+                                <td>10-15 working days</td>
+                            </tr>
+                            <tr>
+                                <th>Reprint (no revisions)</th>
+                                <td>8 working days</td>
+                            </tr>
+                            <tr>
+                                <th>Reprint w/revisions</th>
+                                <td>10-15 working days</td>
+                            </tr>
+                            <tr>
+                                <th>Email Blasts</th>
+                                <td>10-15 working days</td>
+                            </tr>
+                            <tr>
+                                <th>Web Images/Digital Graphics</th>
+                                <td>Three Weeks</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+    </content>
+</document>

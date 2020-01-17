@@ -1,0 +1,467 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title> Sanitizing an Entire Room
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content=" Sanitizing an Entire Room" />
+        <meta name="keywords" content=" Sanitizing an Entire Room" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine personnel involved in sanitizing
+                                procedures.
+                                </p>
+
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp; Facility Manager
+                            </div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp;To outline the procedures for
+                                sanitizing rooms used for animals</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All Vivaria
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <ol>
+                    <li>
+                        <h2>References</h2>
+                        <ol type="a">
+                            <li>
+                                <p>The Guide for the Care and Use of Laboratory Animals pgs 15, 24, 34, 42-44, 72,
+                                    77-78.</p>
+                            </li>
+                            <li>
+                                <p>Safety Data Sheets: MB10, Saniplex, Sanosil Halospray, Rescue</p>
+                            </li>
+                            <li>
+                                <p>SOP 112 Development/Implementation of an EMP</p>
+                            </li>
+                            <li>
+                                <p>SOP 113 Microbiological Monitoring of Sanitation</p>
+                            </li>
+                            <li>
+                                <p>SOP 114 Microbiological Monitoring Using ATP</p>
+                            </li>
+                            <li>
+                                <p>SOP115 Microbiological Monitoring Using Microbial Agar</p>
+                            </li>
+                            <li>
+                                <p>SOP 905: IVC Racks Operation and Care</p>
+                            </li>
+                            <li>
+                                <p>SOP 906: Cage Changing Stations Operation and Care</p>
+                            </li>
+                            <li>
+                                <p>SOP 907: Bedding Disposal Stations Operation and Care</p>
+                            </li>
+                            <li>
+                                <p>SOP908: Biosafety Cabinet Operation and Care</p>
+                            </li>
+                            <li>
+                                <p>SOP909: Foamer Operation and Care</p>
+                            </li>
+                            <li>
+                                <p>SOP910: Fogger Operation and Care</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Responsibilities</h2>
+                        <ol type="a">
+                            <li>
+                                <p>All Comparative Medicine person are to:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP</p>
+                                    </li>
+                                    <li>
+                                        <p>Maintain current training on this SOP.</p>
+                                        <p>Date: 06/29/2018 SOP 120 Sanitizing an Entire Room</p>
+                                    </li>
+                                    <li>
+                                        <p>Participate in the SOP change process as needed.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Laboratory Animal Technicians are to:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Complete sanitation procedures</p>
+                                    </li>
+                                    <li>
+                                        <p>Initial task completion onto the <em>Daily Checklist </em>at the sanitation
+                                            line.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Facility Manager</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to personnel.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Training Coordinator</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to and ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Schedule appropriate training is provided to personnel.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Director/Veterinarian</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedure as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel and necessary
+                                            resources are
+                                            available.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>General</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Reducing bacteria, viruses, parasites, or other pathogens in the vivaria is critical
+                                    to a good
+                                    Biosecurity program. Regular sanitation of animal housing areas reduces risk of
+                                    animal
+                                    contamination. Some high use or high traffic areas may require more frequent
+                                    sanitation. In the
+                                    event of an animal health contamination, additional sanitation may occur.</p>
+                            </li>
+                            <li>
+                                <p>Sanitizing can best be achieved when surfaces are first cleaned of general gross
+                                    debris. Cleaning
+                                    prior to disinfection improves quality assurance testing of sanitized areas.</p>
+                            </li>
+                            <li>
+                                <p>Hand wash or foam walls and doors when room is empty or at least once per year or
+                                    when sanitation
+                                    outcome is insufficient as indicated by ATP and/or microbiological culture results
+                                    exceeding set
+                                    forth limits (see <em>SOPs 102, 112, 113, 114, and 115</em>)</p>
+                            </li>
+                            <li>
+                                <p>Hand wash or foam ceilings, light fixtures and pipes when room is empty or at least
+                                    once per every
+                                    three years (see <em>SOP 102</em>)</p>
+                            </li>
+                            <li>
+                                <p>See SOPs 905, 906, 907, and 908 for equipment guidelines</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Safety</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Personnel must wear standard PPE (scrubs, disposable gown, gloves, laboratory coat,
+                                    and hair bonnet)
+                                    and any additional PPE as described in Safety Data Sheets (SDS).</p>
+                            </li>
+                            <li>
+                                <p>When an area is being sanitized using spray or fogger application of chemicals, a
+                                    sign must be posted
+                                    notifying personnel of chemical use.</p>
+                            </li>
+                            <li>
+                                <p>Chemicals can inflict injury if handled improperly. Use caution and proper handling
+                                    techniques to
+                                    prevent injury. See manufacturer SDS.</p>
+                            </li>
+                            <li>
+                                <p>In the event of an emergency, call 911 or go to the emergency room. Once the injured
+                                    person is safe
+                                    or in the case of a minor injury, notify Facility Manager and complete injury
+                                    report.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Procedure</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Quarantine or Infectious Disease Study Rooms</p>
+                                <p>Date: 06/29/2018 SOP 120 Sanitizing an Entire Room</p>
+                                <ol>
+                                    <li>
+                                        <p>Decontaminate the room with vaporized hydrogen peroxide or chlorine dioxide
+                                            prior to removing
+                                            items from the room.</p>
+                                    </li>
+                                    <li>
+                                        <p>Any sensitive equipment that cannot be fogged will be hand wiped with
+                                            disinfectant and the
+                                            appropriate contact time will be observed.</p>
+                                    </li>
+                                    <li>
+                                        <p>Follow the steps for rooms with regular health status once decontamination is
+                                            achieved.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h2>Rooms with regular health status</h2>
+                                <ol type="i">
+                                    <li>
+                                        <p>Discard all trash/perishables</p>
+                                    </li>
+                                    <li>
+                                        <p>Clean: cleaning removes gross debris by one or more of the following methods.
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                <p>Cage washer: run all cage wash safe items through the cage washer
+                                                    (including floor
+                                                    utensils and trash can)</p>
+                                            </li>
+                                            <li>
+                                                <p>Foaming (includes scrubbing, waiting 15 minutes, rinsing, and
+                                                    vacuuming the floor)
+                                                    See <em>SOP 909</em></p>
+                                            </li>
+                                            <li>
+                                                <p>Hand clean (this is for items/equipment that are not cage wash or
+                                                    foamer safe) using
+                                                    detergent such as sani-plex (includes scrubbing, waiting 15 minutes,
+                                                    and rinsing) or
+                                                    approved disinfectant such as MB-10 or Rescue (does not need to be
+                                                    rinsed, but
+                                                    appropriate contact time must be observed) and debris needs to be
+                                                    physically removed
+                                                    with methods such as a vacuum suction or wiping with a paper towel.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Disinfect: disinfection reduces or eliminates unacceptable concentrations of
+                                            microorganisms
+                                            by one of the following methods:</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fog whenever possible (see <em>SOP 910</em>). Note: fogging requires
+                                                    the entire room
+                                                    as well as any adjacent rooms with one door in between to be empty
+                                                    of animals for
+                                                    the duration (3+ hours). <strong>Do not fog cubicles unless the
+                                                        entire suite is
+                                                        unoccupied.</strong></p>
+                                            </li>
+                                            <li>
+                                                <p>Hand disinfect with Rescue or MB-10. Observe appropriate
+                                                    concentration and contact
+                                                    time per manufacturer&rsquo;s instructions</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>Assess Effectiveness of Sanitation</p>
+                                        <ol>
+                                            <li>
+                                                <p>visually inspect for gross debris</p>
+                                            </li>
+                                            <li>
+                                                <p>conduct ATP and/or microbiologic cultures (see <em>SOPs 112, 113,
+                                                        114, and 115</em>).
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Items washed in hot cage wash cycles should be verified with temp
+                                                    tape.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Record Keeping</h2>
+                        <ol>
+                            <li>
+                                <p>Complete <em>Room Check Sheet</em></p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of</p>
+                                <p>Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>

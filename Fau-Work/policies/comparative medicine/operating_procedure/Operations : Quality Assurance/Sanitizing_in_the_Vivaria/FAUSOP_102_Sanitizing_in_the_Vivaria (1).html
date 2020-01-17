@@ -1,0 +1,596 @@
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document>
+    <config>
+        <filename>index</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
+            alt="Please select the layout type you would like to use.">generic</parameter>
+
+    </config>
+    <properties>
+        <!-- com.omniupdate.properties -->
+        <title>Sanitizing in the Vivaria
+        </title>
+        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
+            alt="Do you want to display the site name?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
+            alt="Do you want to display the top/horizontal navigation?">
+            <option value="true" selected="true">Yes</option>
+            <option value="false" selected="false">No</option>
+        </parameter>
+        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
+            alt="Do you want to display a carousel or banner?">
+            <option value="true" selected="false">Yes</option>
+            <option value="false" selected="true">No</option>
+        </parameter>
+        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
+            alt="Which column layout do you want to display?">
+            <option value="1" selected="true">Full Page Width No Navigation</option>
+            <option value="2a" selected="false">Left Navigation with Content Column</option>
+            <option value="2b" selected="false">Right Navigation with Content Column</option>
+            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+        </parameter>
+
+
+        <!-- /com.omniupdate.properties -->
+    </properties>
+    <metadata>
+        <!-- com.omniupdate.properties -->
+        <meta name="description" content="Sanitizing in the Vivaria" />
+        <meta name="keywords" content="Sanitizing in the Vivaria" />
+        <!-- /com.omniupdate.properties -->
+    </metadata>
+    <content>
+        <maincontent>
+            <!-- com.omniupdate.div  label="content"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet" />
+            <style>
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                h2,
+                h2,
+                h3,
+                h4,
+                a {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    line-height: 26.4px;
+                }
+
+                .sm-header {
+
+                    font-size: 1.14em;
+                }
+
+                #paragraph p {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                    font-size: 15px;
+                    line-height: 21px;
+                    padding-top: 4pt;
+                    padding-left: 28pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                }
+
+                h3 {
+                    color: #323261;
+                }
+
+                li {
+                    font-family: 'Nunito', sans-serif;
+                    /* google fonts approximation of Avenir */
+                }
+
+                strong {
+                    color: #323261;
+
+                }
+            </style>
+            <div class="container-fluid">
+
+
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4"><strong>SCOPE:</strong>&nbsp;&nbsp;This SOP is applicable to all
+                                Comparative Medicine personnel involved in sanitizing
+                                procedures.
+                            </div>
+                            <div class="col-md-4"><strong>SOP OWNER:</strong>&nbsp;&nbsp;Facilities Manager</div>
+                            <div class="col-md-4"><strong>PURPOSE:</strong>&nbsp;&nbsp; To outline the procedures,
+                                schedule and recordkeeping for sanitizing in the vivaria,
+                                laboratory animal transport elevators, transport vehicles and any other area where
+                                laboratory
+                                animals may be housed or held for short term periods.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"><strong>LOCATION:</strong>&nbsp;&nbsp;All vivaria
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <ol>
+                    <li>
+                        <h2>References</h2>
+                        <ol type="a">
+                            <li>
+                                <p>The Guide for the Care and Use of Laboratory Animals pgs 15, 24, 34, 42-44, 72,
+                                    77-78.</p>
+                            </li>
+                            <li>
+                                <p>Safety Data Sheets: MB10, Saniplex, and Bleach</p>
+                            </li>
+                            <li>
+                                <p>SOP112: AccuPoint Use</p>
+                            </li>
+                            <li>
+                                <p>SOP113: Hycheck Use and Processing</p>
+                            </li>
+                            <li>
+                                <p>SOP114: Microbiological Monitoring of Facility Sanitation</p>
+                            </li>
+                            <li>
+                                <p>SOP115: IT Device Sanitation</p>
+                            </li>
+                            <li>
+                                <p>SOP400: Cage Changing Rodents</p>
+                            </li>
+                            <li>
+                                <p>SOP 900: Care and Use of Animal Transport Vehicles</p>
+                            </li>
+                            <li>
+                                <p>SOP 905: IVC Racks Operation and Care</p>
+                            </li>
+                            <li>
+                                <p>SOP 906: Cage Changing Stations Operation and Care</p>
+                            </li>
+                            <li>
+                                <p>SOP 907: Bedding Disposal Stations Operation and Care</p>
+                            </li>
+                            <li>
+                                <p>SOP908: Biosafety Cabinet Operation and Care</p>
+                            </li>
+                            <li>
+                                <p>SOP909: Foamer Operation and Care</p>
+                            </li>
+                            <li>
+                                <p>SOP910: Fogger Operation and Care</p>
+
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Responsibilities</h2>
+                        <ol type="a">
+                            <li>
+                                <p>All Comparative Medicine person are to:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP</p>
+                                    </li>
+                                    <li>
+                                        <p>Maintain current training on this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Participate in the SOP change process as needed.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Laboratory Animal Technicians are to:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Complete sanitation procedures</p>
+                                    </li>
+                                    <li>
+                                        <p>Initial task completion onto the <em>Daily Checklist </em>at the sanitation
+                                            line.</p>
+                                    </li>
+                                    <li>
+                                        <p>Initial task completion on the <em>Comparative Medicine Weekly Calendar
+                                            </em>as required.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Facility Manager</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedures as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to personnel.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Training Coordinator</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to and ensure procedures are followed as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Schedule appropriate training is provided to personnel.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Director/Veterinarian</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Adhere to procedure as outlined in this SOP.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ensure appropriate training is provided to particular personnel and necessary
+                                            resources are
+                                            available.</p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>General</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Reducing bacteria, viruses or other pathogens in the vivaria is critical to a good
+                                    Biosecurity
+                                    program. Regular sanitation of animal housing areas reduces risk of animal
+                                    contamination. Some high
+                                    use or high traffic areas may require more frequent sanitation. In the event of an
+                                    animal health
+                                    contamination, additional sanitation may occur.</p>
+                            </li>
+                            <li>
+                                <p>Sanitizing can best be achieved when surfaces are first cleaned of general gross
+                                    debris. Cleaning
+                                    prior to sanitation improves quality assurance testing of sanitized areas.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Safety</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Appropriate PPE as required for the particular area has to be worn and universal
+                                    precautions followed
+                                    when completing sanitizing tasks.</p>
+                            </li>
+                            <li>
+                                <p>Personnel must wear standard PPE (disposable gown, gloves, laboratory coat, and hair
+                                    bonnet) and any
+                                    additional PPE as described in Safety Data Sheets (SDS).</p>
+                            </li>
+                            <li>
+                                <p>When an area is being sanitized using spray or fogger application of chemicals, a
+                                    sign must be posted
+                                    notifying personnel of chemical use.</p>
+                            </li>
+                            <li>
+                                <p>Chemicals can inflict injury if handled improperly. Use caution and proper handling
+                                    techniques to
+                                    prevent injury. See manufacturer SDS.</p>
+                            </li>
+                            <li>
+                                <p>In the event of a chemical injury or exposure, notify Facility Manager immediately
+                                    and complete
+                                    injury report.</p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Procedure</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Daily tasks will occur at least once per day during weekdays and more often as
+                                    needed.</p>
+
+                                <ol type="i">
+                                    <li>
+                                        <p>Clean smudges, fingerprints and any matter from animal housing room doors,
+                                            windows, and
+                                            walls.</p>
+                                    </li>
+                                    <li>
+                                        <p>Sanitize cage changing station work trays and surface to keep surfaces free
+                                            of stains,
+                                            fingerprints, and any particulate matter.</p>
+                                    </li>
+                                    <li>
+                                        <p>Empty garbage cans as necessary.</p>
+                                    </li>
+                                    <li>
+                                        <p>Sweep up any debris on the floor.</p>
+                                    </li>
+                                    <li>
+                                        <p>Sponge-mop with sanitizing solution and squeegee off all TechTrak mats.</p>
+                                    </li>
+                                    <li>
+                                        <p>Place all scrubs in the laundry basket after each use and wash during the
+                                            week as needed</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Weekly tasks will occur at least once per week and more often as needed.</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Wipe conventional racks down weekly with disinfectant upon regular cage
+                                            changes (see
+                                            <em>SOP400 Cage Changing Rodents</em>).</p>
+                                    </li>
+                                    <li>
+                                        <p>Disassemble and sanitize the work surfaces of the cage changing station after
+                                            regular
+                                            conventional cage changing. Clean cage changing stations in rooms with
+                                            Individually
+                                            Ventilated Caging (IVC) at least once per week.</p>
+                                    </li>
+                                    <li>
+                                        <p>Clean and then sanitize all sinks, doors, backdraft tables, snorkels, and
+                                            other equipment.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Sweep and mop all floors and anti-fatigue mats with approved disinfectant.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Clean dustpans and then wash with approved disinfectant or send through cage
+                                            washer as
+                                            needed.</p>
+                                    </li>
+                                    <li>
+                                        <p>Wipe all surfaces in the surgery suite and procedure rooms with approved
+                                            disinfectant.</p>
+                                    </li>
+                                    <li>
+                                        <p>Wash all reusable lab coats and dispose of all disposable lab coats.</p>
+                                    </li>
+                                    <li>
+                                        <p>Empty all trash cans at least once per week.</p>
+                                    </li>
+                                    <li>
+                                        <p>Check cleanliness of elevators and inform FM if not satisfactory (see also
+                                            item e).</p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Monthly tasks will occur at least once per month and more often as needed.</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Wipe lateral surfaces throughout Vivaria that are prone to gathering dust
+                                            (such as cabinet
+                                            and shelf tops, autowater lines, wall-mounted equipment, wall guard rails,
+                                            etc.)</p>
+                                    </li>
+                                    <li>
+                                        <p>Replace or wash (if applicable) all IVC rack pre-filters. Initial and date
+                                            the hangtag at
+                                            every check.</p>
+                                    </li>
+                                    <li>
+                                        <p>Check all dump station and cage changing station pre-filters. Discard and
+                                            replace if soiled.
+                                            Initial and date the hangtag at every check.</p>
+                                    </li>
+                                    <li>
+                                        <p>Sanitize all trash cans and lids with approved disinfectant or by processing
+                                            them through the
+                                            rack washer. Some plastic trash containers are not suitable for extended
+                                            high heat
+                                            temperatures and may permanently warp.</p>
+                                    </li>
+                                    <li>
+                                        <p>Process stainless steel work trays from cage changing stations through the
+                                            rack washer or
+                                            with approved disinfectant.</p>
+                                    </li>
+                                    <li>
+                                        <p>Sanitize all cleaning utensils (brooms, mops, dustpans, brushes, etc.) with
+                                            an approved
+                                            disinfectant or by running through the cagewasher (if applicable).</p>
+                                    </li>
+                                    <li>
+                                        <p>Empty, clean of debris and process all feed containers through the
+                                            cagewasher.</p>
+                                    </li>
+                                    <li>
+                                        <p>Process anti-fatigue mats through the cagewasher.</p>
+                                    </li>
+                                    <li>
+                                        <p>Sanitize designated areas of the animal transport vehicle (see <em>SOP 900:
+                                                Care and Use of
+                                                Animal Transport Vehicles</em>)</p>
+                                    </li>
+                                    <li>
+                                        <p>Check IVC exhaust plenums every month for excessive dust. IVC racks will be
+                                            sanitized if one
+                                            or more of the following conditions are met:</p>
+                                        <ol>
+                                            <li>
+                                                <p>The AV or FM determine it is necessary.</p>
+                                            </li>
+                                            <li>
+                                                <p>Exhaust plenums are dusty.</p>
+                                            </li>
+                                            <li>
+                                                <p>The colony size is low, and the cages can easily be moved to a shelf
+                                                    while the rack
+                                                    is getting sanitized.</p>
+                                            </li>
+                                            <li>
+                                                <p>A rack is emptied and stored or moved to another room.</p>
+                                            </li>
+                                            <li>
+                                                <p>An empty rack in storage is getting put back into circulation.</p>
+                                            </li>
+                                            <li>
+                                                <p>See SOP 905 for more detailed information</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Irregular Cleaning or Sanitizing tasks are:</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Polish stainless steel surfaces as needed (check with labs who are doing
+                                            behavioral testing
+                                            prior to polishing).</p>
+                                    </li>
+                                    <li>
+                                        <p>Change disinfectant spray bottles as required by the manufacturer (e.g.
+                                            Clidox every 14 days,
+                                            MB-10 every 7 days).</p>
+                                    </li>
+                                    <li>
+                                        <p>Place all carts in the cagewasher for sanitation or wash with approved
+                                            disinfectant prior to
+                                            use.</p>
+                                    </li>
+                                    <li>
+                                        <p>Change the filters in the cage changing station at least once every six
+                                            months.</p>
+                                    </li>
+                                    <li>
+                                        <p>Wash cloth covers for clean cage shelving at least every six months.</p>
+                                    </li>
+                                    <li>
+                                        <p>Foam all walls, floors, and ceilings whenever a room is empty prior to
+                                            reoccupation or when
+                                            sanitation outcome is insufficient as indicated by ATP and/or
+                                            microbiological culture
+                                            results exceeding set forth limits (see the <em>Comparative Medicine Weekly
+                                                Schedule
+                                            </em>and <em>SOP909: Foamer Operation and Care </em>for foaming
+                                            instructions, refer to SOPs
+                                            112, 113 and 114).</p>
+                                    </li>
+                                    <li>
+                                        <p>Empty and sanitize all bedding containers in the cagewasher at least once
+                                            every three months.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <p>Elevators</p>
+                                <ol type="i">
+                                    <li>
+                                        <p>Elevators are cleaned by the janitorial company GCA as contracted by FAU.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Walls, ceilings, handrails, and the inside doors are wiped down daily
+                                                    with NABC
+                                                    disinfectant. The floors are mopped with the disinfectant.</p>
+                                            </li>
+                                            <li>
+                                                <p>The exteriors of the elevator are wiped down with NABC nightly and
+                                                    2-3 times per day.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>Record Keeping</h2>
+                        <ol type="a">
+                            <li>
+                                <p>Complete the <em>Daily Check Sheet </em>as necessary.</p>
+                            </li>
+                            <li>
+                                <p>Initial the <em>Comparative Medicine Weekly Schedule </em>at the required task
+                                    completed.</p>
+                            </li>
+                            <li>
+                                <p>Initial the hangtags for the appropriate sanitation of equipment (IVC rack, cage
+                                    changing station,
+                                    dump station).</p>
+                            </li>
+                            <li>
+                                <p>Label all food and bedding bin hangtags with sanitation date.</p>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+
+                <table cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Review Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Date</p>
+                            </td>
+                            <td>
+                                <p>Revision Number</p>
+                            </td>
+                            <td>
+                                <p>Description of</p>
+                                <p>Revision</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>3/27/2017</p>
+                            </td>
+                            <td>
+                                <p>3/27/2017</p>
+                            </td>
+                            <td>
+                                <p>FAUSOP 102.2</p>
+                            </td>
+                            <td>
+                                <p>Addition of elevator, sanitation of entire room(s), IVC</p>
+                                <p>cleanliness checks</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div> <!-- close container -->
+
+            <!-- /com.omniupdate.div -->
+        </maincontent>
+        <maincontent2>
+            <!-- com.omniupdate.div  label="content2"  group="Everyone"  button="707"  break="break" -->
+            <!-- ouc:editor csspath="/_resources/editor/admin.css" cssmenu="/_resources/editor/default.txt" width="1020"/ -->
+            <h2>The University...at a Glance</h2>
+            Some universities measure greatness in decades and centuries. Florida Atlantic University measures it with
+            every student who earns a degree, every researcher who makes a discovery and every community that is
+            transformed.<br /><br />At FAU's dedication ceremony in 1964, President Lyndon B. Johnson challenged the
+            University's pioneers: "It is time now...for a new, adventurous, imaginative, courageous breakthrough for a
+            new revolution in education in America."<br /><br />With those words, FAU opened its doors as the first
+            public university in southeast Florida and the first in America designed for upper division students only.
+            Since day one, FAU has pushed the bounds of higher education. Now, 50 years later, the University serves
+            more than 30,000 freshmen, transfers and graduate students at sites throughout its six-county service region
+            in southeast Florida.<br /><br />People from every walk of life find a place at FAU. Students choose from
+            more than 170 degree programs, faculty researchers utilize more than 40 research centers and the community
+            engages hundreds of cultural and educational events every year. <br /><br /><!-- /com.omniupdate.div -->
+        </maincontent2>
+    </content>
+</document>
