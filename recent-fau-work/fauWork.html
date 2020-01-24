@@ -4,229 +4,220 @@
 
 <document>
     <config>
-        <filename>index</filename>
-        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type"
-            alt="Please type an appropriate style.">generic</parameter>
+        <filename>faculty</filename>
+        <parameter name="pagetype" type="text" group="Admins" prompt="Page Type" alt="Please type an appropriate style.">generic</parameter>
     </config>
-    <properties>
-        <!-- com.omniupdate.properties -->
-        <title>Design Process</title>
-        <headrefs>Design Process</headrefs>
-
-        <parameter name="badge" type="radio" group="Everyone" prompt="Site Name"
-            alt="Do you want to display the site name?">
-            <option value="true" selected="false">Yes</option>
-            <option value="false" selected="true">No</option>
-        </parameter>
-        <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation"
-            alt="Do you want to display the top/horizontal navigation?">
-            <option value="true" selected="true">Yes</option>
-            <option value="false" selected="false">No</option>
-        </parameter>
-        <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel"
-            alt="Do you want to display a carousel or banner?">
-            <option value="true" selected="false">Yes</option>
-            <option value="false" selected="true">No</option>
-        </parameter>
-        <parameter name="layout" type="radio" group="Everyone" prompt="Layout"
-            alt="Which column layout do you want to display?">
-            <option value="1" selected="false">Full Page Width No Navigation</option>
-            <option value="2a" selected="true">Left Navigation with Content Column</option>
-            <option value="2b" selected="false">Right Navigation with Content Column</option>
-            <option value="3" selected="false">Left and Right Navigation with Content Column</option>
-            <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
-        </parameter>
-        <!-- /com.omniupdate.properties -->
+    <properties> 
+    <!-- com.omniupdate.properties -->
+    <title>Cancer Research at FAU - Faculty</title>
+    <parameter name="badge" type="radio" group="Everyone" prompt="Site Name" alt="Do you want to display the site name?">
+        <option value="true" selected="false">Yes</option>
+        <option value="false" selected="true">No</option>
+    </parameter>
+    <parameter name="navigation" type="radio" group="Everyone" prompt="Top Navigation" alt="Do you want to display the top/horizontal navigation?">
+        <option value="true" selected="true">Yes</option>
+        <option value="false" selected="false">No</option>
+    </parameter>
+    <parameter name="banner" type="radio" group="Everyone" prompt="Banner/Carousel" alt="Do you want to display a carousel or banner?">
+        <option value="true" selected="false">Yes</option>
+        <option value="false" selected="true">No</option>
+    </parameter>
+    <parameter name="layout" type="radio" group="Everyone" prompt="Layout" alt="Which column layout do you want to display?">
+        <option value="1" selected="false">Full Page Width No Navigation</option>
+        <option value="2a" selected="true">Left Navigation with Content Column</option>
+        <option value="2b" selected="false">Right Navigation with Content Column</option>
+        <option value="3" selected="false">Left and Right Navigation with Content Column</option>
+        <option value="4" selected="false">Left and Right Navigation with Two Content Columns</option>
+    </parameter>
+    <!-- /com.omniupdate.properties --> 
     </properties>
-    <metadata>
+    <metadata> 
         <!-- com.omniupdate.properties -->
-        <meta name="Description"
-            content="A website that gives a brief description of the design process in the division of research" />
-        <meta name="Keywords" content="design process" />
-        <!-- /com.omniupdate.properties -->
+        <meta name="Description" content="FAU, Division of Research, Cancer Research at FAU - Faculty" />
+        <meta name="Keywords" content="FAU, Division of Research, Cancer Research at FAU, Faculty" />
+        <!-- /com.omniupdate.properties --> 
     </metadata>
     <content>
-        <maincontent>
-            <style>
-                .main-image {
-                    height: 350px;
-                    width: 100%;
-                    object-fit: cover;
-                }
-
-                .intro-text {
-
-                    margin-top: 20px;
-                }
-
-                .noted-list {
-                    /* top, right, bottom, left */
-                    margin: 60px 0px 0px -40px;
-                }
-
-                .standard-step-list {
-                    margin-left: -25px
-                }
-
-                .example-project-table {
-                    margin-top: 20px;
-                }
-                @media only screen and (min-width: 301px) and (max-width: 600px) 
-                {
-                    .main-image{
-                        height: 250px;
-                        width: 100%;
-                        object-fit: cover;
-                    }
-                    .noted-list {
-                        /* top, right, bottom, left */
-                        margin: 20px 0px 0px -20px;
-                    }
-                }
-            </style>
-
-            <div class="container-fluid">
+        <maincontent> 
+            <!-- com.omniupdate.div label="content" group="Everyone" button="707" break="break" --><!-- ouc:editor wysiwyg="yes" csspath="/_resources/editor/fau-today.css" cssmenu="/_resources/editor/fau-today.txt" width="1020" div="#OUPreview"/ --><!-- com.omniupdate.div label="secondary-nav" group="Everyone" button="707" path="/research/cancer-research-at-fau/_includes/secondary-nav.html" -->
+			
+            <div class="container-fluid" id="cancerresearch">
                 <div class="row">
-                    <div class="col-lg-12 pagetop" style="valign: top;">
-                        <h1>Design Process</h1>
-                        <img class="main-image"
-                            src="/research/research-communications/images/news/alvaro-reyes-qWwpHwip31M-unsplash.jpg"
-                            alt="image for Design Process" />
-                        <p class="intro-text">The Division of Research communications team has designers available to work with you on
-                            creating the most effective communications materials to meet your objectives, budget and
-                            schedule. The team also works with the Division of Public Affairs creative services group
-                            and/or external designers, depending on the project.
-                        </p>
-                        <br />
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>The DOR communications team handles most routine requests, and will work with other
-                                    designers on a case-by-case basis. Examples of projects include:
-                                </p>
-                                <table class="table table-bordered example-project-table">
-                                    <tr>
-                                        <td>Advertisements</td>
-                                        <td>Banners</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Brochures</td>
-                                        <td>Direct mail campaigns</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Email communications</td>
-                                        <td>Event materials (programs, invitations, signage, etc.)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fliers</td>
-                                        <td>Multi-piece campaign collateral</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Posters</td>
-                                        <td>Web graphics </td>
-                                    </tr>
-                                </table>
+                    <div class="col-lg-12 pagetop">
+                       
+                         <!--  header background image with text overlay -->
+                        <div class="row header-background-row">
+                            <div class="header-background-img" style="background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(/research/cancer-research-at-fau/img/faculty-header.jpg);">
+                                <div class="overlay-container">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="center-title">
+                                                <h1 class="header-text-overlay">Faculty</h1>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <ul class="noted-list">
-                                    <li>For routine projects, please submit a work request using the DOR communications
-                                        <a
-                                            href="http://www.fau.edu/research/research-communications/work-requests/index.php" target="_blank">Work
-                                            Request</a> page.
-                                    </li>
-                                    <li>For more complex initiatives, please contact <a
-                                            href="mailto:perezl@fau.edu" target="_blank">Luis F. Perez</a> and/or
-                                        <a href="mailto:cammiclark@fau.edu" target="_blank">Cammi Clark</a> to start the discussion or
-                                        submit a
-                                        <a
-                                            href="http://www.fau.edu/research/research-communications/work-requests/index.php" target="_blank">Work
-                                            Request</a> outlining as much detail as possible.
-                                    </li>
-                                </ul>
+                         </div>
+                         <!-- close image & text overlay div -->
+                          
+                        <div class="row"> <div class="col-md-12" ><!--spacer --></div></div>
+                         <div class="row">
+                             <!-- body content here -->
+                        
+                            <!-- Bios -->                            
+                             <div class="col-md-12" >
+                                <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/shailaja1.jpg" class="bio-img" alt="Shailaja Allani, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Shailaja Allani, Ph.D.</h2>
+                                        <p class="bio-text">Shailaja Allani, Ph.D., is a research assistant professor in the Center for Molecular Biology and Biotechnology. Allani has a diverse scientific background with training in plant biotechnology, conservation genetics, and molecular biology. She received a Ph.D. in integrative biology from FAU, and earned a prestigious American Cancer Society fellowship during her postdoctoral training. She is involved in the field of oxidative stress and cellular metabolism in cancer and aging. She was awarded a pilot grant from the Nathan Shock Center for Aging for her studies on understanding cellular pathways involved in normal cell protection and killing of cancer cells.</p>
+                                    </div>
+                                </div>
+                               <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/asgharwaseem.jpg" class="bio-img" alt="Waseem Asghar, Ph.D." style="max-width:100px;" /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Waseem Asghar, Ph.D.</h2>
+                                        <p class="bio-text">Waseem Asghar, Ph.D., is an assistant professor in the College of Engineering and Computer Science at FAU. His research interests are in the areas of disease diagnostics, microfluidics, and biosensing. He has previously developed microfluidic devices for isolation of circulating tumor cells from blood using antibodies and RNA aptamers that specifically bind with tumor cells. He has also developed platforms to differentiate cancer cells based on their mechanical and viscoelastic properties.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/MareCudic1.jpg" class="bio-img" alt="Mare Cudic, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Mare Cudic, Ph.D.</h2>
+                                        <p class="bio-text">Mare Cudic, Ph.D., is an assistant professor in the Department of Chemistry and Biochemistry. Her research interests are primarily in the field of glycosciences, which explore the structures and functions of sugars. The main emphasis of her research is on protein-carbohydrate interactions that play a role in the progression of cancer and metastasis. She is using multidisciplinary approaches at the interface of chemistry and biology to elucidate the precise mechanism by which recognition of tumor associated glycans contributes functionally to breast cancer progression. The findings from her studies may lead to the development of potent inhibitors of metastatic processes and/or immunospecific cancer vaccines.</p>
+                                    </div>
+                                </div>
+                                 
+                                 <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/guzmanesther.jpg" class="bio-img" alt="Esther Guzmán, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Esther Guzmán, Ph.D.</h2>
+                                        <p class="bio-text">Esther Guzmán, Ph.D., is an associate research professor at the Harbor Branch Oceanographic Institute (HBOI). She received her Ph.D. in immunology from the University of Texas MD Anderson Cancer Center, Houston, followed by postdoctoral positions at the Henry Ford Hospital and at HBOI. She also leads the Cancer Cell Biology Program at HBOI. Her research focuses on finding marine natural products that have the potential to be novel therapeutics against cancer, novel drugs that target components of the immune system that link inflammation and cancer development, and novel tools to help us further our understanding of the group of more than 100 diseases grouped under the term cancer.</p>
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/Iragavarapu-Charyulu_webprofile2.jpg" class="bio-img" alt="Vijaya Iragavarapu-Charyulu, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Vijaya Iragavarapu-Charyulu, Ph.D.</h2>
+                                        <p class="bio-text">Vijaya Iragavarapu-Charyulu, Ph.D., is an associate professor in the Charles E. Schmidt College of Medicine. She has been conducting research on breast cancer for more than 20 years. Her special interest is in understanding the molecules and mechanisms involved in metastasis which is the major cause of death in women with breast cancer. Relative to this goal, she found two molecules (chitinase-3-like-1 and semaphoring 7A) that contribute to metastasis.</p>
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/TarshaJones.jpg" class="bio-img" alt="Tarsha Jones, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Tarsha Jones, Ph.D.</h2>
+                                        <p class="bio-text">Tarsha Jones, Ph.D., is an assistant professor in the Christine E. Lynn College of Nursing. Her research interests are in cancer prevention and control with an emphasis on breast cancer and improving the uptake of BRCA genetic counseling/testing and cancer risk reduction strategies among high-risk minority women. She is also interested in reducing breast cancer related health disparities among young women diagnosed with early age-onset breast cancer. Jones is currently funded by the National Cancer Institute through a research and career development award that focuses on increasing diversity of trained researchers in the biomedical and behavioral sciences.</p>
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/kang.jpg" class="bio-img" alt="Yunqing (Kevin) Kang, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Yunqing (Kevin) Kang, Ph.D.</h2>
+                                        <p class="bio-text">Yunqing (Kevin) Kang, Ph.D., is an assistant professor and biomedical engineer in the Department of Ocean and Mechanical Engineering. Kang works on developing new functional biomaterials for bone tissue regeneration and esophageal cancer treatment, for which he has been awarded grant funding from Osteo Science Foundation and the National Institutes of Health.</p>
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/andy-khamoui.jpg" class="bio-img" alt="Andy Khamoui, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Andy Khamoui, Ph.D.</h2>
+                                        <p class="bio-text">Andy Khamoui, Ph.D., is an assistant professor in the Department of Exercise Science and Health Promotion. Khamoui has broad background and interests in exercise physiology, skeletal muscle plasticity, and mitochondrial function in health and disease. His current research projects address mechanisms linking mitochondrial health to cancer cachexia, a life-threatening paraneoplastic condition characterized by unintended weight loss and skeletal muscle dysfunction.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/salvatore-lepore.png" class="bio-img" alt="Salvatore Lepore, Ph.D." style="width:100px;height:133px;object-fit:cover"/></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Salvatore Lepore, Ph.D.</h2>
+                                        <p class="bio-text">
+                                            Salvatore Lepore, Ph.D., is a professor in the Department of Chemistry and Biochemistry from the Charles E. Schmidt College of Science. He spent 19 years directing research on the development of new organic reactions with a view to their application to human health. His earlier projects involve the total synthesis of a multidrug reversal agent and the search for a safe and orally available blood-clot inhibitors. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/theodora-Leventouri.png" class="bio-img" alt="Theodora Leventouri, Ph.D." style="width:100px;height:133px;object-fit:cover"/></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Theodora Leventouri, Ph.D.</h2>
+                                        <p class="bio-text">
+                                            Theodora Leventouri, Ph.D., is a professor of physics in the Department of Physics at the Charles E. Schmidt College of Science. Her research interests cover structure and physical properties of crystalline matter, radiation therapy physics, clinical and computational medical physics. Her experimental methods of study include X-ray and neutron diffraction, electron microscopy and magnetometry. She is elected Fellow of the American Physical Society (APS) for advancing physics in medicine by developing and garnering national accreditation for two graduate medical physics  programs at FAU, and for pioneering studies on structure properties of high temperature superconductors and apatite based biomaterials.
 
-                            </div>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/zhongwei-li.png" class="bio-img" alt="Zhongwei Li, Ph.D." style="width:100px;height:133px;object-fit:cover"/></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Zhongwei Li, Ph.D.</h2>
+                                        <p class="bio-text">
+                                            Zhongwei Li, Ph.D., is a professor in the Department of Biomedical Science from the Charles E. Schmidt College of Medicine. His research program focuses on Ribonucleic acid (RNA) biology, a single-stranded chain of cells that processes protein. His work identifies genes and proteins that reduce oxidation levels in E. coli and human cells, demonstrating that RNA degradation can be a major mechanism for eliminating oxidized RNA and protecting cells under oxidative stress. His current project involves studying the changes in gene expression and microRNA levels as potential biomarkers for cancer and Alzheimer disease.
+                                        </p>
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/ogemarques.jpg" class="bio-img" alt="Oge Marques, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Oge Marques, Ph.D.</h2>
+                                        <p class="bio-text">Oge Marques, Ph.D, is a professor of engineering and computer science at FAU. He has more than 30 years of teaching and research experience in different countries, including Brazil, India, Spain, Austria and France. His research interests are in the field of intelligent processing of visual information, an interdisciplinary combination of image processing, computer vision, human vision science, image retrieval, artificial intelligence, machine learning and human computation, with emphasis on medical applications. He is interested in helping developing solutions for cancer diagnosis and prevention using the latest development in machine learning, data science and image analysis.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/wazir-muhammad.png" class="bio-img" alt="Wazir Muhammad, Ph.D." style="width:100px;height:133px;object-fit:cover"/></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Wazir Muhammad, Ph.D.</h2>
+                                        <p class="bio-text">Wazir Muhammad, Ph.D., is an assistant professor of medical physics in the Department of Physics at the Charles E. Schmidt College of Science. His research interests are on different modes and techniques of radiation therapy, radiation transport, image-guided radiation therapy (IGRT), machine learning and artificial intelligence (AI) in radiation oncology and cancer risk estimation through AI. Previously, he developed an early warning system by actively tracking all organ dose data for individual patients in order to improve patient safety in radiation therapy and a multi-parameterized artificial neural network based on easily available personal health data by the National Health Interview Survey (NHIS) to predict cancer risk prior to symptom onset.</p>
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/roche1.jpg" class="bio-img" alt="Stephane Roche, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Stephane Roche, Ph.D.</h2>
+                                        <p class="bio-text">
+                                        Stephane Roche, Ph.D., is an assistant professor in the Department of Chemistry and Biochemistry. His research program focuses on establishing new methodologies using organocatalysis, which will be directly applied in the total synthesis of complex targets. The total synthesis campaigns are gravitating around the development of innovative methodologies on chirality and peptide chemistry as tools for the preparation of complex non-proteinogenic amino acids, peptides, and alkaloids.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/terentisandrew.jpg" class="bio-img" alt="Andrew Terentis, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Andrew Terentis, Ph.D.</h2>
+                                        <p class="bio-text">
+                                        Andrew Terentis, Ph.D., is an associate professor in the Department of Chemistry and Biochemistry. He is a physical chemist with a general interest in the use of optical spectroscopic techniques, particularly Raman spectroscopy (RS), to characterize the structure of biomolecules, living cells, and tissue. His laboratory has made original contributions to the development of RS as a method for detecting and characterizing non-melanoma skin cancers, and the use of RS to visualize cell-penetrating peptides in live melanoma cells. His laboratory also conducts research on cancer-related enzymes such as indoleamine 2,3-dioxygenase (IDO).
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                 <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/Weisbach-headshot-100x133-2.jpg" class="bio-img" alt="Herbert Weissbach" /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Herbert Weissbach</h2>
+                                        <p class="bio-text">
+                                        Herbert Weissbach is an emeritus research professor in the Department of Chemistry and Biochemistry. A major research interest of his laboratory has been in the role of oxidative damage in aging and age-related diseases, and more specifically the mechanisms that cells use to protect against oxidative damage. Recent work has focused on sulindac, a known NSAID, in protecting cells against oxidative damage. The Msr system reduces sulindac, a prodrug, to sulindac sulfide, an active COX inhibitor. However, sulindac has novel properties unrelated to its NSAID activity. It can initiate a protective preconditioning mechanism in normal cells similar to that observed in ischemic preconditioning. Of interest is the finding that cancer cells, unlike normal cells, are more sensitive to oxidative damage after treatment with sulindac.
+                                        </p>
+                                    </div>
+                                </div>
+                                 <div class="row">
+                                    <div class="col-sm-2"><img src="http://www.fau.edu/research/cancer-research-at-fau/img/headshots/WrightAmy.jpg" class="bio-img" alt="Amy Wright, Ph.D." /></div>
+                                    <div class="col-md-10">
+                                        <h2 class="red-subhead">Amy Wright, Ph.D.</h2>
+                                        <p class="bio-text">
+                                        Amy Wright, Ph.D., is the director for the Center of Excellence in Biomedical and Marine Biotechnology and leads the Natural Products Chemistry Group at Harbor Branch Oceanographic Institute. She has spent 35 years conducting research in the field of natural products chemistry. The primary focus of her research has been the discovery of natural products useful in the development of novel therapeutic agents for the treatment of cancer and infectious disease.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><!-- End Bios -->
+                        
+                        <!-- end body content -->
                         </div>
-                        <hr />
-                        <h2>Standard Steps to Completing Design and Production </h2>
-                        <ol class="standard-step-list">
-                            <li>Develop and finalize the content (i.e., text, suggested imagery and/or graphics, etc.).
-                                <strong>This is the most important step since content drives the design.</strong>The DOR
-                                communications team will edit all materials to adhere to the <a
-                                    href="http://www.fau.edu/publicaffairs/branding/files/editorial-style-guide.pdf" target="_blank">FAU
-                                    Editorial Standards</a>.</li>
-                            <li>A designer will be assigned the project and, if necessary, he/she will contact you to
-                                discuss the project. </li>
-                            <li>The designer will create the material based on your objectives and provide you a PDF for
-                                review. Once you are satisfied, DOR communications will submit the design for creative
-                                services approval. <strong>All designs with an FAU logo must be approved by creative
-                                    services. Approvals are generally obtained in 2-3 days. </strong></li>
-                            <li>DOR Comm will obtain cost estimates and production schedules (if project will be
-                                printed) from approved vendors. </li>
-                            <li>DOR Comm will submit in Workday the estimate and creative services approval to
-                                purchasing to get a purchase order for print projects. DOR-wide projects are generally
-                                covered using the DOR Comm budget and tag number. For unit-specific projects, we may ask
-                                for a tag number before submitting the PO request. </li>
-                            <li>Upon final approval of the design, DOR Comm will submit the project to the vendor for
-                                production, and keep you apprised of the progress. Printing generally takes 5-20
-                                business days from the date the project is sent to the
-                                vendor to delivery, depending on the project. Most prints jobs are delivered directly to
-                                DOR Comm for quality check. Upon request,
-                                we’ll have the vendors deliver the completed jobs directly to you.
-                            </li>
-                        </ol>
-                        <hr />
-                        <h2>Project Timelines</h2>
-                        <p>The design and approval process generally can last 2-3 weeks after the final content is
-                            submitted. This does not include printing time. Complete project time from request to print
-                            delivery may vary depending on the nature of the project, if all necessary elements are
-                            provided to DOR Comm in a timely manner, and how quickly units review and approval
-                            materials.
-                        </p>
-                        <br/>
-                        <p>Please use these timelines (does not include printing time frames*) to plan your project.</p>
-                        <table class="table table-bordered">
-                            <tr>
-                                <th>Business Cards/Notecards/Postcards</th>
-                                <td>8 working days</td>
-                            </tr>
-                            <tr>
-                                <th>Trifold Brochures/Event Programs</th>
-                                <td>10-15 working days</td>
-                            </tr>
-                            <tr>
-                                <th>Multiple Page Brochure (up to 12 pages)</th>
-                                <td>15-20 working days</td>
-                            </tr>
-                            <tr>
-                                <th>Posters</th>
-                                <td>10-15 working days</td>
-                            </tr>
-                            <tr>
-                                <th>Pull-Up/Vinyl Banners</th>
-                                <td>10-15 working days</td>
-                            </tr>
-                            <tr>
-                                <th>Reprint (no revisions)</th>
-                                <td>8 working days</td>
-                            </tr>
-                            <tr>
-                                <th>Reprint w/revisions</th>
-                                <td>10-15 working days</td>
-                            </tr>
-                            <tr>
-                                <th>Email Blasts</th>
-                                <td>10-15 working days</td>
-                            </tr>
-                            <tr>
-                                <th>Web Images/Digital Graphics</th>
-                                <td>Three Weeks</td>
-                            </tr>
-                        </table>
+                        
+                        
                     </div>
                 </div>
             </div>
-
-
-            <!-- /com.omniupdate.div -->
+                        
+              
+            <!-- /com.omniupdate.div --> 
         </maincontent>
     </content>
 </document>
